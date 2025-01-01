@@ -58,17 +58,14 @@ const Popup: React.FC = () => {
 
     return (
         <div className="w-96 h-[32rem] flex flex-col p-4 bg-background">
+            <h1 className="text-lg text-primary-foreground text-center">
+                Syrup
+            </h1>
             <Header pageIcon={pageIcon} pageDomain={pageDomain} />
-            <h2 className="text-lg font-semibold pb-2 mb-2 text-primary text-center border-border border-b-2">
-                coupons for {pageDomain}
-            </h2>
             <CouponsList coupons={couponsDomain} handleCopy={handleCopy} />
             {isSubDomain && (
                 <>
                     <Header pageIcon={pageIcon} pageDomain={pageSubDomain} />
-                    <h2 className="text-lg font-semibold pb-2 mb-2 text-primary text-center border-border border-b-2">
-                        coupons for {pageSubDomain}
-                    </h2>
                     <CouponsList
                         coupons={couponsSubDomain}
                         handleCopy={handleCopy}

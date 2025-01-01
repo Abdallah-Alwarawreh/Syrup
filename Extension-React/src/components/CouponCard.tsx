@@ -15,10 +15,10 @@ const CouponCard: React.FC<{
 }> = ({ coupon, onCopy, copied }) => (
     <Card className="p-4 flex justify-between items-center bg-card text-card-foreground">
         <div>
-            <p className="font-bold text-primary">{coupon.code}</p>
+            <p className="font-bold text-card-foreground">{coupon.code}</p>
             <p className="text-sm text-muted-foreground">{coupon.title}</p>
         </div>
-        <Button onClick={onCopy} className="bg-primary text-primary-foreground">
+        <Button onClick={onCopy} className="bg-accent text-accent-foreground over:bg-primary over:text-primary-foreground">
             {copied ? "Copied!" : "Copy"}
         </Button>
     </Card>
