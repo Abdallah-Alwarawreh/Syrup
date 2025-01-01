@@ -1,4 +1,7 @@
 node_modules/
 Extension.pem
 .DS_Store
+# XCode (Safari)
 xcuserdata/
+Extension-Safari/build/*
+!.gitkeep
