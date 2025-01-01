@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "5OFF25LB",
+        "couponTitle": "Save 5% Off",
+        "couponDescription": "Get an additional 5% discount when you purchase 25lb Doheny's 3-inch Chlorine Tablet Buckets."
+    },
+    {
+        "couponCode": "SUMFUN23",
+        "couponTitle": "Enjoy $10 Off on $100 Purchase + Free Shipping",
+        "couponDescription": "Get ready to dive into savings with Doheny's Summer Fun Sale. Enjoy a fabulous $10 discount code on purchases of $100 or more, plus enjoy free shipping on your order. With these hot deals and cool savings, there's never been a better day to save big at Doheny.com."
+    },
+    {
+        "couponCode": "20FREESH",
+        "couponTitle": "Free Shipping on $100+ Orders",
+        "couponDescription": "Spend at least $100 at Doheny's and get free shipping when you apply this coupon code."
+    },
+    {
+        "couponCode": "20FREES2",
+        "couponTitle": "Free Shipping on Purchases of $100 or More",
+        "couponDescription": "Shop pool and spa products at Doheny's and get free shipping when you spend at least $100. Add code at checkout to redeem promo."
+    },
+    {
+        "couponCode": "FREESH20",
+        "couponTitle": "Free Shipping with Code",
+        "couponDescription": "Use this promo code at checkout to get free shipping on your Doheny's order when you spend $100 or more."
+    },
+    {
+        "couponCode": "OPEN2023",
+        "couponTitle": "Take $10 off Orders $100 +",
+        "couponDescription": "Save $10 on select orders over $100, some exclusions apply"
+    },
+    {
+        "couponCode": "POOLOPEN",
+        "couponTitle": "Get $5 off $50 Spend ",
+        "couponDescription": "$5 off $50 some Exclusions Apply"
+    }
+]

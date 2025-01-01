@@ -1,0 +1,22 @@
+[
+    {
+        "couponCode": "CPW50",
+        "couponTitle": "Take £50 Off Your Order",
+        "couponDescription": "Save big at Carphone Warehouse by getting £50 on your purchase."
+    },
+    {
+        "couponCode": "CPW100",
+        "couponTitle": "Take £100 Off Your Order",
+        "couponDescription": "Enjoy £100 off when you use this Carphone Warehouse code."
+    },
+    {
+        "couponCode": "CPW30",
+        "couponTitle": "Carphone Warehouse Coupon: 30% Off Your Order",
+        "couponDescription": "Take up to 30% off select items with this Carphone Warehouse code."
+    },
+    {
+        "couponCode": "SMARTSAVE120",
+        "couponTitle": "Only £30! w/ Coupon Code",
+        "couponDescription": "it's the best time to get iphone 6. only £30 upfront cost with voucher coupon code."
+    }
+]

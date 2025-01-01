@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "PUMAMENS",
+        "couponTitle": "Get 40% Off Puma Products ",
+        "couponDescription": "Paste this promo code at checkout and save 40% on Puma products."
+    },
+    {
+        "couponCode": "FREESHIPPING",
+        "couponTitle": "Get Free Shipping on Orders $99+",
+        "couponDescription": "Shop at Golf Town and get free shipping on orders of $99 or more. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "BURNER24",
+        "couponTitle": "Flash Sale! On Sale! with Code",
+        "couponDescription": "today only, taylormade burner plus 24pk golf balls are buy 1 get 1 free! enter promo code"
+    },
+    {
+        "couponCode": "BLACKFRIDAY",
+        "couponTitle": "Golf Town Coupon: 30% Off Your Order",
+        "couponDescription": "Get 30% off when you add this Golf Town code."
+    },
+    {
+        "couponCode": "GT20PROMO",
+        "couponTitle": "Golftown Coupon: $20 Off Your Order",
+        "couponDescription": "Enjoy $20 off sitewide with this Golf Town code."
+    },
+    {
+        "couponCode": "PUTTANDSAVE2019",
+        "couponTitle": "Score Big Savings: 10-50% Off Total Purchase",
+        "couponDescription": "Putt and Save Event. Save an Extra 10-50% on your entire purchase"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "MD50",
+        "couponTitle": "Get 50% Off Your Purchase",
+        "couponDescription": "Save 50% on your purchase at BJ's Wholesale Club with this discount code. Shop now and enjoy incredible savings on a wide range of products. Don't miss out on this amazing offer."
+    },
+    {
+        "couponCode": "message",
+        "couponTitle": "BJ's Coupons Discount Code: Up to 5% Off Your Order",
+        "couponDescription": "All shoppers can receive up to a 5% discount on their select purchase by simply applying this coupon at checkout."
+    },
+    {
+        "couponCode": "HAPPY20",
+        "couponTitle": "Bj's Wholesale Club Coupon: 20% Off",
+        "couponDescription": "Shop and receive 20% off orders with Bj's Wholesale Club's promo code on your cart."
+    },
+    {
+        "couponCode": "BJSDIGITURK",
+        "couponTitle": "Free Grocery Delivery",
+        "couponDescription": "Enter this Bj's Wholesale Club discount code to get free same day delivery on your grocery order."
+    },
+    {
+        "couponCode": "EASYORDER",
+        "couponTitle": "Take $15 Off",
+        "couponDescription": "$15 Off Orders Of $200"
+    },
+    {
+        "couponCode": "BJSB2S19",
+        "couponTitle": "Complimentary $35+ Grocery Orders Delivery",
+        "couponDescription": "Free grocery delivery on orders $35+"
+    },
+    {
+        "couponCode": "LABORDAY",
+        "couponTitle": "Save $15 Off With BJ's Promo Code",
+        "couponDescription": "Spend $200 or more using this Bj's Wholesale Club coupon code at checkout and save $15."
+    }
+]

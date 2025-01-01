@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "PROMOTION",
+        "couponTitle": "Enjoy 25% Savings On Your Purchase",
+        "couponDescription": "Get 25% Discount on Your Order"
+    },
+    {
+        "couponCode": "BB25",
+        "couponTitle": "Get 25% Discount Using Promo Code",
+        "couponDescription": "Take 25% off with coupon code"
+    },
+    {
+        "couponCode": "8CWKZ",
+        "couponTitle": "Get $15 Off With Sign Up Using Coupon Code!",
+        "couponDescription": "use coupon code at  for get $15 off when you sign up!"
+    },
+    {
+        "couponCode": "SPRING25",
+        "couponTitle": "Get Additional 20% Discount With Promo Code",
+        "couponDescription": "Receive an Extra 20% Off When You Use Promo Code"
+    },
+    {
+        "couponCode": "Free101",
+        "couponTitle": "Save 100% Off Using Code",
+        "couponDescription": "Free Load for Android Users 100% po to all network"
+    },
+    {
+        "couponCode": "MIDNITE",
+        "couponTitle": "Use Rep Code  In Promo Code For Savings",
+        "couponDescription": "coupon code into the 'promo code'  with rep code ao55555 to save more"
+    },
+    {
+        "couponCode": "BX12DEVPARTNER",
+        "couponTitle": "Take $100 Off with Code",
+        "couponDescription": "weezer heads to san francisco for boxworks conf - register with coupon code for $100 off"
+    }
+]

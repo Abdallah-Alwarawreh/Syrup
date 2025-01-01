@@ -1,0 +1,67 @@
+[
+    {
+        "couponCode": "NEW15",
+        "couponTitle": "New Customers Get 15% Off",
+        "couponDescription": "Sign up at Sephora and get your first order for 15% off when you use this coupon code at checkout."
+    },
+    {
+        "couponCode": "FLASH15",
+        "couponTitle": "Take 15% Off with Sephora Coupon Code",
+        "couponDescription": "Enjoy 15% off your order at Sephora when you redeem this discount code at checkout."
+    },
+    {
+        "couponCode": "SAVING",
+        "couponTitle": "Sephora Coupon Code: Take Up to 20% Off Any Item ",
+        "couponDescription": "Enjoy up to a 20% discount on any item when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "SURPRISE",
+        "couponTitle": "25% Off Using Sephora Promo Code at Checkout",
+        "couponDescription": "Save up to 25% off your purchase of makeup, skincare, and more using this coupon code."
+    },
+    {
+        "couponCode": "VCUK21",
+        "couponTitle": "Sephora Promo Code: Save 21% on Your Purchase",
+        "couponDescription": "Get 21% off your qualifying order at checkout when you apply this Sephora voucher code."
+    },
+    {
+        "couponCode": "PAYDAY15",
+        "couponTitle": "Enjoy 15% Off Your Purchase",
+        "couponDescription": "Shop for skincare, makeup, and more using this Sephora coupon code and get 15% off."
+    },
+    {
+        "couponCode": "BFAPPBAG",
+        "couponTitle": "Get Free Gift Orders £120+",
+        "couponDescription": "Enjoy free gift when you spend £120 and more at Sephora."
+    },
+    {
+        "couponCode": "SHOP15",
+        "couponTitle": "Spend $80, Get 15% Off",
+        "couponDescription": "Shop for makeup, skincare, and more using this Sephora discount for 15% off when you spend $80 or more."
+    },
+    {
+        "couponCode": "SHOP20",
+        "couponTitle": "20% Off Your Order of $100+",
+        "couponDescription": "Spend $100 or more online or in store at Sephora and get 20% off your purchase."
+    },
+    {
+        "couponCode": "FRAGRANCE15",
+        "couponTitle": "Sephora Discount Code: 15% Off Selected Fragrances",
+        "couponDescription": "Enter this Sephora promo code at checkout to apply 15% off your orders of selected fragrances."
+    },
+    {
+        "couponCode": "TREAT15",
+        "couponTitle": "Sephora Coupon: Get 15% Off Your Order",
+        "couponDescription": "Receive 15% off your order sitewide when you spend £100 or more at Sephora."
+    },
+    {
+        "couponCode": "SAVE10",
+        "couponTitle": "Take $10 Off When You Spend $100+",
+        "couponDescription": "Spend $100 or more at Sephora using this discount code and get $10 off your order."
+    },
+    {
+        "couponCode": "BANKHOL15",
+        "couponTitle": "Save 15% Off Sitewide",
+        "couponDescription": "Bank Holiday - 15% off Sitewide"
+    }
+]

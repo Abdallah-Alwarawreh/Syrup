@@ -1,0 +1,62 @@
+[
+    {
+        "couponCode": "GARDEN30",
+        "couponTitle": "Enjoy 30% Discount Using Promo Code",
+        "couponDescription": "Take 30% off with coupon code"
+    },
+    {
+        "couponCode": "SPY",
+        "couponTitle": "Enjoy A 10% Discount On Your Purchase",
+        "couponDescription": "Take 10% off your order"
+    },
+    {
+        "couponCode": "BDAY",
+        "couponTitle": "Snag 20% Off Using Promo Code",
+        "couponDescription": "Save 20% with coupon code"
+    },
+    {
+        "couponCode": "CYBER",
+        "couponTitle": "Snag 20% Savings Using Promo Code",
+        "couponDescription": "Take 20% off with discount code"
+    },
+    {
+        "couponCode": "WINTER",
+        "couponTitle": "50% Off Women's Clothing w/ Dillard's Coupon",
+        "couponDescription": "Get a fantastic 50% off on women's clothing by using the Dillard's coupon code. Grab this amazing deal now."
+    },
+    {
+        "couponCode": "KateSpade",
+        "couponTitle": "Dillard's Coupon: 25% Off Your Order",
+        "couponDescription": "Save extra 25% on kate spade collection with this Dillard's code."
+    },
+    {
+        "couponCode": "4BOOTS",
+        "couponTitle": "40% Off Boots w/ Dillard's Discount Code",
+        "couponDescription": "Enjoy 40% off on boots using this Dillard's discount code at checkout."
+    },
+    {
+        "couponCode": "TAKE20",
+        "couponTitle": "Dillard's Coupon: Up to 20% Off All Items",
+        "couponDescription": "Get up to 20% off on all items at dillards.com. Use code at checkout."
+    },
+    {
+        "couponCode": "MORESAVINGS",
+        "couponTitle": "Dillard's - 15% Off All Items Using Code",
+        "couponDescription": "Take 15% off on all items at Dillard's by applying the provided code during checkout."
+    },
+    {
+        "couponCode": "FREESHIPPING",
+        "couponTitle": "Enjoy Complimentary Shipping For $50+ Purchases",
+        "couponDescription": "Free Shipping on $50 or more"
+    },
+    {
+        "couponCode": "WZH3709",
+        "couponTitle": "Slash 30% Off Your Purchase With Their Promo Code",
+        "couponDescription": "Save 30% off using this discount code"
+    },
+    {
+        "couponCode": "SAVE15",
+        "couponTitle": "Enjoy 15% Discount With Their Coupon",
+        "couponDescription": "Take 15% off with coupon"
+    }
+]

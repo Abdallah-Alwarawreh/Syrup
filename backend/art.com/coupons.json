@@ -1,0 +1,42 @@
+[
+    {
+        "couponCode": "SAVE25",
+        "couponTitle": "Art.com Discount Code: $25 Off Your Purchase",
+        "couponDescription": "Shop and save $25 for orders over $150. Add this Art.com promo code at checkout."
+    },
+    {
+        "couponCode": "SAVEONART",
+        "couponTitle": "Take $25 Off Your Purchase",
+        "couponDescription": "Enjoy $25 off when you spend $150 and more at Art."
+    },
+    {
+        "couponCode": "VIPACCESS24",
+        "couponTitle": "Save 30% Off using Coupon Code",
+        "couponDescription": "get 30% off your purchases using the promo code at checkout."
+    },
+    {
+        "couponCode": "ARTIST10",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Use this promo code to get 10% off orders $100+ at checkout."
+    },
+    {
+        "couponCode": "ALLTREATS",
+        "couponTitle": "Art.com Discount Code: 13% Off Your Any Order",
+        "couponDescription": "Use this promotional code at checkout to score 13% off all your purchases."
+    },
+    {
+        "couponCode": "AKM437",
+        "couponTitle": "Art.com Promo Code: 20% Off Any Order Sitewide",
+        "couponDescription": "Take 20% off on orders of fine art, prints, decor and more at Art.com."
+    },
+    {
+        "couponCode": "KMN449",
+        "couponTitle": "Score 50% Off Your Purchase at Art.com",
+        "couponDescription": "Get 50% off on Canvas at Art.com. Paste this code during the checkout procedure."
+    },
+    {
+        "couponCode": "Text GETINSPIRED to 47138",
+        "couponTitle": "Art.com Coupon: $25 Off on Orders $150+",
+        "couponDescription": "Spend $150 or more at art.com and get $25 off the total with this promo."
+    }
+]

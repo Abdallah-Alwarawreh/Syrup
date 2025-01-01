@@ -1,0 +1,47 @@
+[
+    {
+        "couponCode": "EURAIL5",
+        "couponTitle": "Save 5%",
+        "couponDescription": "Get 5% Off on European Rail Passes when you spend $150 or more and enter this Eurail promo code at checkout."
+    },
+    {
+        "couponCode": "WIN10",
+        "couponTitle": "Save 10% With Eurail Promo Code!",
+        "couponDescription": "Save 10% off your next transportation package with Eurail."
+    },
+    {
+        "couponCode": "WELCOME10",
+        "couponTitle": "Eurail Coupon Code: Take 10% Off Any Purchase ",
+        "couponDescription": "Enjoy a 10% discount on any purchase when you enter this discount code at checkout."
+    },
+    {
+        "couponCode": "EURAIL20",
+        "couponTitle": "20% Off Your Order w/ Coupon Code",
+        "couponDescription": "Save 20% on your select purchase when this Eurail promotional code is used."
+    },
+    {
+        "couponCode": "DSC366",
+        "couponTitle": "Take Up to 10% Off Any Purchase ",
+        "couponDescription": "Enjoy shopping and get up to a 10% discount on any purchase when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "EURAILJAN",
+        "couponTitle": "Take up to 10% Off ",
+        "couponDescription": "Save up to 10% on all passes when you enter this Eurail promo code at checkout."
+    },
+    {
+        "couponCode": "BLACKFRIDAYER",
+        "couponTitle": "Additional $10 Off",
+        "couponDescription": "Buy passes using this Eurail promo code to receive up to $10 off your entire purchase."
+    },
+    {
+        "couponCode": "WINTER17ER",
+        "couponTitle": "Save 10% Off w/ Coupon Code",
+        "couponDescription": "Save 10% off on Your World Nomads Travel Insurance"
+    },
+    {
+        "couponCode": "",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Save 10% on your World Nomads Travel Insurance"
+    }
+]

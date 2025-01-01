@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "WELCOME10",
+        "couponTitle": "10% Off Your Order with Code",
+        "couponDescription": "Score up to 10% off your purchase of high quality fashions with Reiss coupon code."
+    },
+    {
+        "couponCode": "WINTER15",
+        "couponTitle": "Save 5% Off Any Order with Code",
+        "couponDescription": "Shop for men's and women's apparel using this Reiss coupon code and take up to 5% off."
+    },
+    {
+        "couponCode": "MULBERRY20",
+        "couponTitle": "Take Extra 20% Off Your Purchase ",
+        "couponDescription": "Enjoy shopping and get an extra 20% discount on your purchase when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "WELCOME15",
+        "couponTitle": "Save 40% Off Your Order",
+        "couponDescription": "Get up to 40% off your purchase of shirts, pants, and more with this Reiss discount code."
+    },
+    {
+        "couponCode": "BABORWEEK",
+        "couponTitle": "Reiss Coupon: 25% Off Your Order",
+        "couponDescription": "Save 25% on womenswear, menswear and childrenswear with this Reiss code."
+    },
+    {
+        "couponCode": "LABORDAY",
+        "couponTitle": "Free Shipping on Your Order",
+        "couponDescription": "Enter this promo code at checkout on your next purchase from Reiss and get free shipping on your order."
+    }
+]

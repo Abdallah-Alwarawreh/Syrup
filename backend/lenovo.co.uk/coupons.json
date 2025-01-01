@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "SUPERSAVE",
+        "couponTitle": "Save £500 On Your Purchase",
+        "couponDescription": "£500 Off Your Order"
+    },
+    {
+        "couponCode": "LEGION10",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Save 10% off on All LEGION Devices when You Use Code"
+    },
+    {
+        "couponCode": "CLEARANCE",
+        "couponTitle": "Save 30% Off w/ Promo Code",
+        "couponDescription": "30% Off Configurable Models"
+    },
+    {
+        "couponCode": "LOVEMOTO",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Take 10% off on Smartphones"
+    },
+    {
+        "couponCode": "WEEKEND5",
+        "couponTitle": "Save 5% Off w/ Discount Code",
+        "couponDescription": "Take 5% off on Regular Priced Items"
+    },
+    {
+        "couponCode": "IDEAPAD10",
+        "couponTitle": "Save 10% Off with Code",
+        "couponDescription": "10% Off Select Ideapads"
+    },
+    {
+        "couponCode": "LEGION15",
+        "couponTitle": "Save 15% Off w/ Discount Code",
+        "couponDescription": "15% Off All Legion"
+    },
+    {
+        "couponCode": "SAVE50",
+        "couponTitle": "Get £50 Discount On Your Purchase",
+        "couponDescription": "£50 Off Your Order"
+    },
+    {
+        "couponCode": "SHOPLENOVO",
+        "couponTitle": "Enjoy 15% Discount On Your Purchase",
+        "couponDescription": "15% Off Your Order"
+    },
+    {
+        "couponCode": "10THGENINTRO",
+        "couponTitle": "Enjoy 10% Discount On Your Purchase",
+        "couponDescription": "10% Off Your Order"
+    },
+    {
+        "couponCode": "SAVE5",
+        "couponTitle": "Save 5% Off",
+        "couponDescription": "Get an Additional 5% off on All Desktop PCs when You Use eCoupon"
+    },
+    {
+        "couponCode": "TAB21",
+        "couponTitle": "Get 15% Discount On Your Purchases",
+        "couponDescription": "Take 15% off your orders"
+    },
+    {
+        "couponCode": "EASTER22",
+        "couponTitle": "Save 30% Off",
+        "couponDescription": "30% Off On High Tech Devices For Business & Personal Life"
+    },
+    {
+        "couponCode": "FREEBAG",
+        "couponTitle": "Free Bag On Your Order",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "EMAILXMAS21",
+        "couponTitle": "Enjoy 10% Discount On Your Purchases",
+        "couponDescription": "Take 10% off your orders"
+    },
+    {
+        "couponCode": "DEAL40",
+        "couponTitle": "Save 40% Off w/ Promo Code",
+        "couponDescription": "Take 40% off on Accessories"
+    },
+    {
+        "couponCode": "MOTO4U",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "20% Off Across Our Smartphone Range"
+    },
+    {
+        "couponCode": "FLASHSALE",
+        "couponTitle": "Up to 30% off Flash Sale",
+        "couponDescription": "Save up to 30% off notebooks, desktops, tablets, accessories, and more during Lenovo's Flash Sale."
+    },
+    {
+        "couponCode": "VALENTINE",
+        "couponTitle": "Free Folio/bag on orders of any Tablet",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "TOPRATEDVIP",
+        "couponTitle": "Save 15% Off",
+        "couponDescription": "15% Off On Our Best Rated Laptops"
+    }
+]

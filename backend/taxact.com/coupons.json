@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "TY23BDCJPUB20POFF",
+        "couponTitle": "TaxAct Coupon: 20% Off",
+        "couponDescription": "Get 20% off federal fillings with TaxAct's promo code on your cart at checkout."
+    },
+    {
+        "couponCode": "TY21MAFFILIATE20POFF",
+        "couponTitle": "Enjoy 20% Savings Using Specified Coupon Code",
+        "couponDescription": "Get 20% off with coupon code"
+    },
+    {
+        "couponCode": "TY20AMEDIAGEN40POFF",
+        "couponTitle": "Enjoy 40% Discount Using Promo Code",
+        "couponDescription": "Get 40% off with promo code"
+    },
+    {
+        "couponCode": "TY20ESDORAF20POFF",
+        "couponTitle": "Get 20% Discount Using Promotional Code",
+        "couponDescription": "Score 20% off with promo code"
+    },
+    {
+        "couponCode": "TURBOTAXPRICE",
+        "couponTitle": "TaxAct Promo Code: Get Up to 80% Off Any Item ",
+        "couponDescription": "Redeem this promo code at checkout and save up to 80% on any item."
+    },
+    {
+        "couponCode": "YESTY18",
+        "couponTitle": "Save 30% off Federal Filings",
+        "couponDescription": "Save 30% off federal filings for a limited time"
+    }
+]

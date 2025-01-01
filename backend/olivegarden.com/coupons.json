@@ -1,0 +1,52 @@
+[
+    {
+        "couponCode": "5of30",
+        "couponTitle": "Olive Garden Coupon: Up to 30% Off Your Order",
+        "couponDescription": "Take up to 30% off your order at olivegarden.com. Redeem this promo code as you complete your purchase."
+    },
+    {
+        "couponCode": "5offtogo",
+        "couponTitle": "Olive Garden Discount Code: $5 Off Your Order",
+        "couponDescription": "Take $5 off your order at Olive Garden using this discount code upon checkout."
+    },
+    {
+        "couponCode": "FFADE",
+        "couponTitle": "Olive Garden Discount Code: Up to 35% Off Your Order",
+        "couponDescription": "Get up to 35% off your Olive Garden order by adding this code during checkout."
+    },
+    {
+        "couponCode": "JARDEN2120",
+        "couponTitle": "Save 20% on Your Purchase",
+        "couponDescription": "Get 20% off your order at Olive Garden by adding this code at the checkout page."
+    },
+    {
+        "couponCode": "89700",
+        "couponTitle": "Take $4 Off Your Order",
+        "couponDescription": "Redeem a $4 discount on your order at Olive Garden by adding this coupon code at the checkout page."
+    },
+    {
+        "couponCode": "202",
+        "couponTitle": "Get $6 Off Your Order Using Promo Code",
+        "couponDescription": "Score $6 off your order at Olive Garden with this promo code."
+    },
+    {
+        "couponCode": "BOGO",
+        "couponTitle": "Buy One, Get One Free",
+        "couponDescription": "Enjoy Olive Garden's buy one, get one offer when you paste this code during the checkout process."
+    },
+    {
+        "couponCode": "GIFTCARD20",
+        "couponTitle": "Enjoy 20% Off Using Olive Garden Promo Code",
+        "couponDescription": "Take 20% off your purchase at Olive Garden. Activate the code at the checkout step."
+    },
+    {
+        "couponCode": "58",
+        "couponTitle": "Olive Garden Coupon: Buy One, Get One Free",
+        "couponDescription": "Buy one, get one free using this Olive Garden promo code when checking out."
+    },
+    {
+        "couponCode": "ogsave20",
+        "couponTitle": "Enjoy 20% Savings Using Promo Code",
+        "couponDescription": "Get 20% off with code"
+    }
+]

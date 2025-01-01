@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "EXTRA25",
+        "couponTitle": "Save 25% Off",
+        "couponDescription": "Take up to 25% off with promo code"
+    },
+    {
+        "couponCode": "SAVE25",
+        "couponTitle": "Save 25% Off Using Code",
+        "couponDescription": "Score 25% off with code"
+    },
+    {
+        "couponCode": "SAVEMORE",
+        "couponTitle": "Get 25% Off Sitewide",
+        "couponDescription": "Take 25% off your"
+    },
+    {
+        "couponCode": "EXTRA30",
+        "couponTitle": "Save 10% Off using Coupon Code",
+        "couponDescription": "Score 10% off with promo code"
+    },
+    {
+        "couponCode": "CLEAROUT",
+        "couponTitle": "Save 15% Off",
+        "couponDescription": "Save up to 15% off with coupon code"
+    },
+    {
+        "couponCode": "EXTRA15",
+        "couponTitle": "Save 15% Off",
+        "couponDescription": "Save 15% off with coupon code"
+    },
+    {
+        "couponCode": "IWD15",
+        "couponTitle": "Save 15% Off using Coupon Code",
+        "couponDescription": "International Women's Day Sale - extra 15% off on Almost Everything"
+    },
+    {
+        "couponCode": "FREESHIP",
+        "couponTitle": "Save 10% Off using Coupon Code",
+        "couponDescription": "Score up to 10% off with discount code"
+    },
+    {
+        "couponCode": "SAVE20",
+        "couponTitle": "Save 10% Off Using Code",
+        "couponDescription": "Get up to 10% off with discount code"
+    },
+    {
+        "couponCode": "SHIP150",
+        "couponTitle": "Free Shipping on $150+",
+        "couponDescription": "Receive Free Shipping on $150 or more Order and Beauty $75 or more order"
+    },
+    {
+        "couponCode": "TSC",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "Save up to 20% off with promo code"
+    },
+    {
+        "couponCode": "EXTRA20",
+        "couponTitle": "Get Extra 20% Off Any Order",
+        "couponDescription": "Paste this promo code at chcekout and save an extra 20% on any order."
+    },
+    {
+        "couponCode": "SHIP99",
+        "couponTitle": "Save 15% Off",
+        "couponDescription": "Get up to 15% off with promo code"
+    },
+    {
+        "couponCode": "LOVE20",
+        "couponTitle": "Save 20% off Today's Shopping Choice",
+        "couponDescription": "Redeem this promo code to save 20% off your entire order."
+    },
+    {
+        "couponCode": "HOLIDAY20",
+        "couponTitle": "Extra 20% Off Select Items",
+        "couponDescription": "Save an extra 20% on holiday decor and kitchenware at TSC.ca. Use this discount code at checkout to unlock this deal. Shop now for festive finds and kitchen essentials at a lower price."
+    },
+    {
+        "couponCode": "BEAUTY20",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "Save up to 20% off with coupon"
+    },
+    {
+        "couponCode": "HOLIDAY25",
+        "couponTitle": "Today’s Shopping Choice Coupon Code: Take 25% Off Any Purchase ",
+        "couponDescription": "Enjoy a 25% discount on any purchase when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "EXTRA35",
+        "couponTitle": "Save 35% Off",
+        "couponDescription": "Take 35% off with promo code"
+    },
+    {
+        "couponCode": "SHOP30",
+        "couponTitle": "Take 30% Off Your Order",
+        "couponDescription": "Enjoy up to 30% on select brands at TSC."
+    },
+    {
+        "couponCode": "EFFY15",
+        "couponTitle": "Today’s Shopping Choice Coupon: 15% Off Your Purchase",
+        "couponDescription": "Shop and receive 15% off Effy jewelry orders with Todays Shopping Choice's promo code on your cart."
+    }
+]

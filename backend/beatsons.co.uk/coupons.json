@@ -1,0 +1,47 @@
+[
+    {
+        "couponCode": "BLACK10",
+        "couponTitle": "Beatson's Building Supplies Promo Code: 10% Off Your Purchase",
+        "couponDescription": "Enter this Beatson's Building Supplies coupon code at checkout to apply 10% off your orders."
+    },
+    {
+        "couponCode": "FD10",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Enjoy Up to 10% Off on All Doors and Floors"
+    },
+    {
+        "couponCode": "PANEL20",
+        "couponTitle": "Beatson's Building Supplies Discount Code: 20% Off Acoustic Wall Panelling",
+        "couponDescription": "Enter this Beatson's Building Supplies discount code at checkout to receive 20% off your orders of acoustic wall panelling."
+    },
+    {
+        "couponCode": "HAVE5",
+        "couponTitle": "Enjoy 5% Discount Using Coupon",
+        "couponDescription": "Take 5% off with coupon"
+    },
+    {
+        "couponCode": "SUMMER5",
+        "couponTitle": "Take 5% Off on Orders $150+",
+        "couponDescription": "Apply this coupon to receive 5% off orders totaling $150 or more."
+    },
+    {
+        "couponCode": "AUT444",
+        "couponTitle": "Enjoy 10% Discount Across Entire Site",
+        "couponDescription": "Receive 10% off Sitewide"
+    },
+    {
+        "couponCode": "AUT18SL",
+        "couponTitle": "Autumn Sale Now on. Doors, Floors, Hardware and More",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "ELI10",
+        "couponTitle": "Save 10% Off w/ Discount Code",
+        "couponDescription": "Save 10% off on Eliza Tinsley Products"
+    },
+    {
+        "couponCode": "XLJ10",
+        "couponTitle": "Save 10% Off w/ Coupon Code",
+        "couponDescription": "Save 10% off on XL Joinery Products"
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "FREESHIP",
+        "couponTitle": "Free Shipping",
+        "couponDescription": "Free shipping with coupon code"
+    },
+    {
+        "couponCode": "YMSTAFF20",
+        "couponTitle": "Get 20% Discount Using Promo Code",
+        "couponDescription": "Score up to 20% off with code"
+    },
+    {
+        "couponCode": "EXTRA15",
+        "couponTitle": "Get 15% Discount Using Coupon",
+        "couponDescription": "Score up to 15% off with coupon"
+    },
+    {
+        "couponCode": "cyber10",
+        "couponTitle": "Get 10% Savings Using Promo Code",
+        "couponDescription": "Score up to 10% off with coupon code"
+    },
+    {
+        "couponCode": "BOGOFREE",
+        "couponTitle": "On Sale! Sale using Coupon Code",
+        "couponDescription": "Buy One Get One Free on Sale items."
+    },
+    {
+        "couponCode": "21NDONE",
+        "couponTitle": "Get 21% Discount Across The Entire Site",
+        "couponDescription": "Enjoy 21% Off on site wide"
+    },
+    {
+        "couponCode": "F21MEN",
+        "couponTitle": "Get 21% Discount On Men's Items",
+        "couponDescription": "Take 21% Off your mens purchase"
+    },
+    {
+        "couponCode": "JOLLY",
+        "couponTitle": "Get A 30% Discount On Every Purchase",
+        "couponDescription": "Save 30% Off on All Orders"
+    },
+    {
+        "couponCode": "SAVE15",
+        "couponTitle": "Get 15% Off When Spending $75 Or More",
+        "couponDescription": "Spend More, Save More. Enjoy 15% Off on Orders $75 or More"
+    },
+    {
+        "couponCode": "CM30",
+        "couponTitle": "Extended Cyber Monday: 30% Off Site-Wide At Forever 21 Canada",
+        "couponDescription": "cyber monday extended. enjoy 30% off on site-wide at forever 21 canada. promo code (valid 11/27 only)"
+    },
+    {
+        "couponCode": "DRESS30",
+        "couponTitle": "Get 30% Discount On Full-Priced Plus Size Dresses",
+        "couponDescription": "Enjoy 30% Off All Regular Priced Plus Dresses"
+    },
+    {
+        "couponCode": "FRIENDS21",
+        "couponTitle": "Save 21% Off",
+        "couponDescription": "Friends and Family Sale. Enjoy 21% Off All Items with a Minimum Purchase of $40"
+    },
+    {
+        "couponCode": "EXTRA50",
+        "couponTitle": "Save 50% Off Sale",
+        "couponDescription": "Save Extra 50% Off on Sale Items"
+    },
+    {
+        "couponCode": "BOGO50",
+        "couponTitle": "Save 50% Off using Coupon Code",
+        "couponDescription": "Denim Sale. Buy 1 Get 1 50% Off on Denim"
+    },
+    {
+        "couponCode": "SUMMER20",
+        "couponTitle": "Get 20% Off On $150 Purchase: Buy More, Save More",
+        "couponDescription": "BUY MORE SAVE MORE. Enjoy 20% Off $150 order"
+    },
+    {
+        "couponCode": "SUMMER10",
+        "couponTitle": "Get 10% Off On Orders Over $50",
+        "couponDescription": "BUY MORE SAVE MORE. Enjoy 10% Off $50 order"
+    },
+    {
+        "couponCode": "SUMMER15",
+        "couponTitle": "Get 15% Off On $100 Purchase: More Savings",
+        "couponDescription": "BUY MORE SAVE MORE. Enjoy 15% Off $100 order"
+    },
+    {
+        "couponCode": "SWIM50",
+        "couponTitle": "Save 50% Off",
+        "couponDescription": "Buy One, Get One 50% Off on All Swimwear"
+    },
+    {
+        "couponCode": "SPORT30",
+        "couponTitle": "Save 30% Off",
+        "couponDescription": "Enjoy 30% Off on Activewear"
+    },
+    {
+        "couponCode": "EXTRA40",
+        "couponTitle": "Save 40% Off Sale",
+        "couponDescription": "Extra 40% Off on Sale Items"
+    }
+]

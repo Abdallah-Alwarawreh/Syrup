@@ -1,0 +1,47 @@
+[
+    {
+        "couponCode": "BRRR",
+        "couponTitle": "$25 Off $750+ Modern Bathroom Order With Code",
+        "couponDescription": "use coupon code for $25 off $750+ order at modern bathroom"
+    },
+    {
+        "couponCode": "AUGSAVE",
+        "couponTitle": "Take $30 Off using Coupon Code",
+        "couponDescription": "use coupon code for $30 on $750 order at modern bathroom"
+    },
+    {
+        "couponCode": "NOVSAVE",
+        "couponTitle": "Save $75 On $1000+ Patio/Bathroom Gallery Orders",
+        "couponDescription": "modern bathroom / patio gallery: save $75 on orders of $1,000 or more with the coupon code at"
+    },
+    {
+        "couponCode": "SAVE30",
+        "couponTitle": "Get $30 Discount On $750+ Purchase Using Code",
+        "couponDescription": "$30 off $750+ order with coupon code"
+    },
+    {
+        "couponCode": "SAVE25",
+        "couponTitle": "Grab $25 Discount On $500 Purchase, Valid Until 7/9",
+        "couponDescription": "missed our last sale? save $25 off $500 with coupon  thru 7/9."
+    },
+    {
+        "couponCode": "SM510",
+        "couponTitle": "Save 5% Off w/ Coupon Code",
+        "couponDescription": "save 5% on your next modern bathroom order with coupon code. exp 5/31."
+    },
+    {
+        "couponCode": "WYNDHAM",
+        "couponTitle": "Save 10% Off with Code",
+        "couponDescription": "deal of the day: save $649 on the catherine 41\" vanity + get 10% off with coupon !"
+    },
+    {
+        "couponCode": "MARCHSAVE",
+        "couponTitle": "Bathroom/Patio Gallery: $50 Off $1000+ With Code",
+        "couponDescription": "modern bathroom / patio gallery: save $50 off $1000 or more with the coupon code at"
+    },
+    {
+        "couponCode": "PUMPKIN",
+        "couponTitle": "Get 5% Off All Purchases Using Coupon Code",
+        "couponDescription": "save 5% on all orders with the coupon code at"
+    }
+]

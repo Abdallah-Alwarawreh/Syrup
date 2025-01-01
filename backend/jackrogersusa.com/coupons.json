@@ -1,0 +1,47 @@
+[
+    {
+        "couponCode": "SAVINGS",
+        "couponTitle": "Save 15% Off",
+        "couponDescription": "Get 15% off with code"
+    },
+    {
+        "couponCode": "BF42",
+        "couponTitle": "Jack Rogers Promo Code: 30% Off Your Order",
+        "couponDescription": "Shop and take 30% off your purchase using a promo code at checkout."
+    },
+    {
+        "couponCode": "OFFERSEXTRA15",
+        "couponTitle": "Take 15% Off Sitewide",
+        "couponDescription": "Use this Jack Rogers discount code to save 15% on your order."
+    },
+    {
+        "couponCode": "STAY15",
+        "couponTitle": "Take Up To 15% Off With Coupon",
+        "couponDescription": "Enter coupon code at Jack Rogers USA to take up to 15% off sitewide."
+    },
+    {
+        "couponCode": "TAKE30",
+        "couponTitle": "Save 30% Off",
+        "couponDescription": "Score up to 30% off purchase during Labor Day sale at Jack Rogers."
+    },
+    {
+        "couponCode": "LDW24",
+        "couponTitle": "Jack Rogers Promo Code: Get Up to 60% Off Any Order ",
+        "couponDescription": "Redeem this promo code at checkout and save up to 60% on any order."
+    },
+    {
+        "couponCode": "MISSYOU20",
+        "couponTitle": "Get 20% Discount Using Coupon Code",
+        "couponDescription": "Save up to 20% off with coupon"
+    },
+    {
+        "couponCode": "EXTRA20",
+        "couponTitle": "Extra 20% off ",
+        "couponDescription": "Enjoy an extra 20% off"
+    },
+    {
+        "couponCode": "EXTRA15",
+        "couponTitle": "Extra 15% off Sale Styles",
+        "couponDescription": "All sale items now an extra 15% off"
+    }
+]

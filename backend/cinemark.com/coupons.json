@@ -1,0 +1,52 @@
+[
+    {
+        "couponCode": "SOFETCH",
+        "couponTitle": "Cinemark Coupon: 30% Off Your Purchase",
+        "couponDescription": "Receive 30% of mean girls tickets for valentine's day at Cinemark."
+    },
+    {
+        "couponCode": "DONTWORRY",
+        "couponTitle": "Cinemark Coupon: 42% Off Your Order",
+        "couponDescription": "Get extra 42% off bob marley movie tickets at Cinemark."
+    },
+    {
+        "couponCode": "PURPLE10",
+        "couponTitle": "Cinemark Coupon: Up to 10% Off Your Tickets for 'The Color Purple'",
+        "couponDescription": "Get ready for a movie marathon at Cinemark. We're rolling out the red carpet with an up to 10% off promo code that will make your current movie experience even more memorable."
+    },
+    {
+        "couponCode": "DEADPOOL25",
+        "couponTitle": "Take 25% Off Your Order",
+        "couponDescription": "Get 25% off when you add this Cinemark code."
+    },
+    {
+        "couponCode": "WHITE",
+        "couponTitle": "Save Up to 10% Off Your Order",
+        "couponDescription": "Use this Cinemark promo code to get up to 10% off your select purchase at checkout."
+    },
+    {
+        "couponCode": "7u4a7",
+        "couponTitle": "Get 50% Off Your Order",
+        "couponDescription": "Save 50% on 1st month of movie club membership with this Cinemark code."
+    },
+    {
+        "couponCode": "PAWPATROLB2G1",
+        "couponTitle": "Cinemark Coupon: Buy 2 Tickets Get 1 Free ",
+        "couponDescription": "Buy two tickets, get one free when you use this Cinemark code."
+    },
+    {
+        "couponCode": "THANKSFATHOM",
+        "couponTitle": "Cinemark Promo Code: Buy 1 Get 1 Free ",
+        "couponDescription": "Purchase one item and get another free on Fathom events. Redeem this promo code at checkout."
+    },
+    {
+        "couponCode": "TWISTERS20",
+        "couponTitle": "Get 20% Off Your Purchase",
+        "couponDescription": "Save 20% on Twisters movie tickets at Cinemark with this coupon code. Enjoy a thrilling movie experience at a lower price. Use the code now to grab your discount and watch Twisters on the big screen."
+    },
+    {
+        "couponCode": "PIXAR",
+        "couponTitle": "Get 20% Off On Tickets",
+        "couponDescription": "Score up to 20% off on tickets at Cinemark."
+    }
+]

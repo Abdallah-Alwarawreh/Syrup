@@ -1,0 +1,57 @@
+[
+    {
+        "couponCode": "FREESHIP",
+        "couponTitle": "Get Up to 60% Off at HomeGoods",
+        "couponDescription": "Take an extra up to 60% off select items with a coupon code. Redeem at checkout."
+    },
+    {
+        "couponCode": "20OFF",
+        "couponTitle": "HomeGoods Coupon: 20% Off Your Purchase",
+        "couponDescription": "Shop and receive 20% off orders with this promo code from HomeGoods on your cart."
+    },
+    {
+        "couponCode": "HOLIDAY",
+        "couponTitle": "Extra 5% Off with Code",
+        "couponDescription": "Enter this code during checkout to receive an additional 5% discount at homegoods.com."
+    },
+    {
+        "couponCode": "ship89",
+        "couponTitle": "Get 10% Off Using Promo Code",
+        "couponDescription": "Save up to 10% off with discount code"
+    },
+    {
+        "couponCode": "SHIP119",
+        "couponTitle": "Free Shipping on Orders $119+",
+        "couponDescription": "Free Shipping on Orders $119+"
+    },
+    {
+        "couponCode": "HOME30",
+        "couponTitle": "HomeGoods Discount Code: Save 30% on Home Items ",
+        "couponDescription": "Shop at HomeGoods and enjoy a 30% discount on home items. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "ASSOCIATE10",
+        "couponTitle": "Get 10% Savings Using Promo Code",
+        "couponDescription": "Save up to 10% off with discount code"
+    },
+    {
+        "couponCode": "SHIP19",
+        "couponTitle": "Enjoy 19% Discount Using Promo Code",
+        "couponDescription": "Get 19% off with code"
+    },
+    {
+        "couponCode": "SHIP99",
+        "couponTitle": "Up to 10% Off at HomeGoods",
+        "couponDescription": "Use promo code during checkout to avail up to 10% off on your entire online purchases today. Shop now."
+    },
+    {
+        "couponCode": "Associate20",
+        "couponTitle": "Get 15% Discount With Coupon Code",
+        "couponDescription": "Score up to 15% off with coupon"
+    },
+    {
+        "couponCode": "100",
+        "couponTitle": "Up to 15% Off Your Order",
+        "couponDescription": "Use this promo code from HomeGoods to receive up to 15% off on your shopping cart."
+    }
+]

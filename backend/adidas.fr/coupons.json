@@ -1,0 +1,47 @@
+[
+    {
+        "couponCode": "ADI821",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "code promotion adidas.fr : 20% de réduction avec le coupon code valable uniquement ce vendredi :"
+    },
+    {
+        "couponCode": "APP20",
+        "couponTitle": "Get 20% Off On Your Entire Purchase",
+        "couponDescription": "Save Up to 20% on Your Total Purchase"
+    },
+    {
+        "couponCode": "EXTRA20",
+        "couponTitle": "Extra 20% Discount On Selected Items",
+        "couponDescription": "Take an Extra 20% Off on Select Products"
+    },
+    {
+        "couponCode": "SNEAKERS25",
+        "couponTitle": "Get 25% Discount Using Promo Code",
+        "couponDescription": "Take 25% off with code"
+    },
+    {
+        "couponCode": "WEEKLY",
+        "couponTitle": "Enjoy 10% Off With Coupon Code",
+        "couponDescription": "Shop and receive 10% off with a discount code on your purchase."
+    },
+    {
+        "couponCode": "SHOP30",
+        "couponTitle": "Save 30% With Their Promo Code",
+        "couponDescription": "Enjoy Up to 30% Discount When You Use Promo Code"
+    },
+    {
+        "couponCode": "SCHOOL",
+        "couponTitle": "Enjoy A 25% Discount Using Their Coupon",
+        "couponDescription": "Take 25% off with coupon"
+    },
+    {
+        "couponCode": "ADISALE",
+        "couponTitle": "Save 30% Off using Coupon Code",
+        "couponDescription": "Enjoy 30% Discount on Full Price Items"
+    },
+    {
+        "couponCode": "AMIS",
+        "couponTitle": "adidas Promo Code: 25% Off on Your Order",
+        "couponDescription": "Get 25% off on select adidas activewear when this promo code is applied at checkout."
+    }
+]

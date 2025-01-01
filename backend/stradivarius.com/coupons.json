@@ -1,0 +1,27 @@
+[
+    {
+        "couponCode": "BEST",
+        "couponTitle": "Score 20% Off with Stradivarius Coupon Code",
+        "couponDescription": "Enter this Stradivarius coupon code at checkout for up to 20% off your purchase."
+    },
+    {
+        "couponCode": "THANKYOU10",
+        "couponTitle": "Take Up to 10% Off with Promo Code",
+        "couponDescription": "Enter this Stradivarius promo code at checkout on your next purchase and enjoy up to 10% off your entire order."
+    },
+    {
+        "couponCode": "SAVE20",
+        "couponTitle": "20% Off Your Order of $100+",
+        "couponDescription": "Spend $100 or more using this Stradivarius coupon code and get 20% off your order."
+    },
+    {
+        "couponCode": "VGRP",
+        "couponTitle": "Stradivarius Promo Code: Get Up to 10% Off Any Order",
+        "couponDescription": "Redeem this promo code at checkout and save up to 10% on any order."
+    },
+    {
+        "couponCode": "NEWARRIVAL15",
+        "couponTitle": "Extra 15% Off New Arrivals",
+        "couponDescription": "Enter this Stradivarius discount code on your purchase of new arrivals and get an additional 15% off your order."
+    }
+]

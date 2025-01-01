@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "ELITE10",
+        "couponTitle": "Sanity Promo Code: 10% Off",
+        "couponDescription": "Buy and save 10% with this discount code on your purchase at Sanity."
+    },
+    {
+        "couponCode": "BOXSETSAVER24",
+        "couponTitle": "Sanity Coupon: 5% Off Your Order",
+        "couponDescription": "Take an extra 5% off on these box sets at Sanity."
+    },
+    {
+        "couponCode": "EXTRA5OFF",
+        "couponTitle": "Sanity Coupon: 5% Off Your Order",
+        "couponDescription": "Take 5% off your entire purchase at Sanity."
+    },
+    {
+        "couponCode": "LIFEWORKS10",
+        "couponTitle": "Get 15% Discount Using Promo Code",
+        "couponDescription": "Score 15% off with code"
+    },
+    {
+        "couponCode": "RETURN10",
+        "couponTitle": "Get 10% Off Using Promo Code",
+        "couponDescription": "Score up to 10% off with discount code"
+    },
+    {
+        "couponCode": "10OFF",
+        "couponTitle": "Sanity Discount Code: Extra 10% Off Your Order",
+        "couponDescription": "Score an additional 10% off sale items when you enter this promo code at checkout."
+    }
+]

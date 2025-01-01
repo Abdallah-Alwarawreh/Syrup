@@ -1,0 +1,47 @@
+[
+    {
+        "couponCode": "SHP30TF",
+        "couponTitle": "Get 30% Off Your Purchase",
+        "couponDescription": "Save at Camp Chef by getting 30% on turkey fryer."
+    },
+    {
+        "couponCode": "OBB20",
+        "couponTitle": "Save 20% Off w/ Promo Code",
+        "couponDescription": "get your shopping on! 20% & free ship at right now with coupon code & enter to win an artisan pizza oven!"
+    },
+    {
+        "couponCode": "KP3E3G",
+        "couponTitle": "10% Discount with Code",
+        "couponDescription": "Appl this Camp Chef promo code at checkout to save 10% on your order."
+    },
+    {
+        "couponCode": "SAVE95",
+        "couponTitle": "Save $95 Off Mountain Series Stryker 200 with Promo Code",
+        "couponDescription": "Purchase the Mountain series stryker 200 and save $95 on your order. Apply this coupon code at checkout."
+    },
+    {
+        "couponCode": "CCW5",
+        "couponTitle": "Save 5% with Code",
+        "couponDescription": "Enter this coupon code at checkout to get up to 5% off your Camp Chef purchase."
+    },
+    {
+        "couponCode": "FACEBOOK",
+        "couponTitle": "Save 20% Off with Code",
+        "couponDescription": "Receive 20% EVERY ITEM on Enjoy"
+    },
+    {
+        "couponCode": "SHIPFREE",
+        "couponTitle": "Get Complimentary Delivery On Your Order",
+        "couponDescription": "Enjoy Free Shipping on Your Purchase"
+    },
+    {
+        "couponCode": "RMNCLASSIC",
+        "couponTitle": "Woodwind Classic w/ Free Cover",
+        "couponDescription": "Woodwind Classic w/ Free Cover"
+    },
+    {
+        "couponCode": "SPORTOVEN",
+        "couponTitle": "Save 30% Off",
+        "couponDescription": "30% off this awesome oven"
+    }
+]

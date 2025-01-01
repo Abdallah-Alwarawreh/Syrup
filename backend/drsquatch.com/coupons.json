@@ -1,0 +1,22 @@
+[
+    {
+        "couponCode": "BOX24",
+        "couponTitle": "Take Up to 30% Off Orders $90+ ",
+        "couponDescription": "Enjoy shopping and get up to a 30% discount on orders over $90 when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "SUPER10",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Take 10% off when you use this Dr. Squatch code."
+    },
+    {
+        "couponCode": "X2U62Y",
+        "couponTitle": "Take 10% Off Your Purchase",
+        "couponDescription": "Enjoy 10% off select products with this Dr. Squatch code."
+    },
+    {
+        "couponCode": "NEWSUB20",
+        "couponTitle": "20% Off Your Subscription",
+        "couponDescription": "Take 20% off your first subscription. To qualify, don't forget to use this Dr. Squatch coupon code at checkout."
+    }
+]

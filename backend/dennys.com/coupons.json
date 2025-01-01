@@ -1,0 +1,47 @@
+[
+    {
+        "couponCode": "THANKS25",
+        "couponTitle": "Get 25% Off Entire Order",
+        "couponDescription": "Score up to 25% off entire order at Denny's."
+    },
+    {
+        "couponCode": "EASY",
+        "couponTitle": "Get 50% Off Restaurant Certificates",
+        "couponDescription": "Shop and score 50% off restaurant certificates at Denny's."
+    },
+    {
+        "couponCode": "15OFF",
+        "couponTitle": "Get 15% Discount Using Promo Code",
+        "couponDescription": "Score up to 15% off with promo code"
+    },
+    {
+        "couponCode": "TENOFF",
+        "couponTitle": "Get 10% Off Purchase",
+        "couponDescription": "Score up to 10% off entire purchase at Denny's."
+    },
+    {
+        "couponCode": "PUMPKIN20",
+        "couponTitle": "Save 20% Off Your Purchase",
+        "couponDescription": "When applying this Denny's promotional code, you can get 20% off your qualifying order at checkout."
+    },
+    {
+        "couponCode": "SHARETHELOVE",
+        "couponTitle": "Get 20% Off Orders",
+        "couponDescription": "Score up to 20% off entire order at Denny's."
+    },
+    {
+        "couponCode": "YGG",
+        "couponTitle": "Denny's Coupon: $10 Off Your Purchase",
+        "couponDescription": "Take $10 off your order for members with this Denny's code."
+    },
+    {
+        "couponCode": "FAMILYPACK",
+        "couponTitle": "Get Extra $5 Off Family Pack",
+        "couponDescription": "Score up to an extra $5 off Family Pack order at Denny's."
+    },
+    {
+        "couponCode": "ITS2022",
+        "couponTitle": "Get 20% Off Sitewide",
+        "couponDescription": "Score up to 20% off sitewide at Denny's."
+    }
+]

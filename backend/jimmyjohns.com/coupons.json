@@ -1,0 +1,42 @@
+[
+    {
+        "couponCode": "5OFF20",
+        "couponTitle": "Get $5 Discount Using Promo Code",
+        "couponDescription": "Take $5 off with promo code"
+    },
+    {
+        "couponCode": "PICKLEHAT",
+        "couponTitle": "Jimmy John's Promo Code: 15% Off Your Order",
+        "couponDescription": "Shop and take 15% off your purchase using a promo code on your cart."
+    },
+    {
+        "couponCode": "DIMEBAG",
+        "couponTitle": "Jimmy John's Discount Code: Get Deliciously Dope Dime Bag for $10",
+        "couponDescription": "Apply this discount code at checkout and get deliciously doped dime bag for $10."
+    },
+    {
+        "couponCode": "PICKUP20",
+        "couponTitle": "Enjoy 20% Discount Using Promotional Code",
+        "couponDescription": "Get 20% off with promo code"
+    },
+    {
+        "couponCode": "62807083779",
+        "couponTitle": "Jimmy John's Coupon: Free Gift on Your Purchase",
+        "couponDescription": "Enjoy a free gift for storewide orders on your cart using Jimmy John's promo code at checkout."
+    },
+    {
+        "couponCode": "LITTLETREAT",
+        "couponTitle": "Jimmy John's Discount Code: Extra $10 Off Your Order",
+        "couponDescription": "Purchase at Jimmy John's and get an additional $10 off sitewide orders over $10+ using this coupon code on your cart."
+    },
+    {
+        "couponCode": "PICKUP",
+        "couponTitle": "Get $5 Discount Using Promo Code",
+        "couponDescription": "Score $5 off with discount code"
+    },
+    {
+        "couponCode": "JJ20",
+        "couponTitle": "Big Savings at Jimmy Johns",
+        "couponDescription": "Big Savings at Jimmy Johns"
+    }
+]

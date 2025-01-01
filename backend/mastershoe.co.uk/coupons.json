@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "SAVE5P",
+        "couponTitle": "Enjoy A 5% Discount On Your Purchase",
+        "couponDescription": "Get 5% Off on Your Order"
+    },
+    {
+        "couponCode": "WGBL10",
+        "couponTitle": "Get 10% Discount On Your Entire Order",
+        "couponDescription": "Enjoy 10% Off on Your Total Purchase"
+    },
+    {
+        "couponCode": "WGBIRK10",
+        "couponTitle": "Get 10% Discount On Your Purchase",
+        "couponDescription": "Receive 10% Off on Your Order"
+    },
+    {
+        "couponCode": "SAVEME5",
+        "couponTitle": "Get 5% Discount On £49.99+ Purchases",
+        "couponDescription": "Receive 5% Off on Purchase Worth £49.99 or More"
+    },
+    {
+        "couponCode": "SAVEFIVE",
+        "couponTitle": "Enjoy 5% Savings Using Promo Code",
+        "couponDescription": "Save 5% off with discount code"
+    },
+    {
+        "couponCode": "BLKFRI",
+        "couponTitle": "Get 10% Discount On All Purchases With Code",
+        "couponDescription": "10% off all orders with coupon code"
+    },
+    {
+        "couponCode": "BLACKFRI21",
+        "couponTitle": "Enjoy 5% Savings Using Promo Code",
+        "couponDescription": "Score 5% off with discount code"
+    },
+    {
+        "couponCode": "EMU10",
+        "couponTitle": "Save 10% Off Using Code",
+        "couponDescription": "Save 10% Off on Emu"
+    },
+    {
+        "couponCode": "WG10100",
+        "couponTitle": "Take £10 Off Using Code",
+        "couponDescription": "Save £10 off on over £100"
+    },
+    {
+        "couponCode": "W5PERCENT",
+        "couponTitle": "Enjoy A 5% Discount",
+        "couponDescription": "Save 5%"
+    },
+    {
+        "couponCode": "WGJ10",
+        "couponTitle": "Save 10% Off w/ Discount Code",
+        "couponDescription": "Save 10% Off on Joya"
+    },
+    {
+        "couponCode": "WG550",
+        "couponTitle": "Take £5 Off w/ Coupon Code",
+        "couponDescription": "Get £5 off on over £50"
+    },
+    {
+        "couponCode": "WG15150",
+        "couponTitle": "Take £15 Off with Code",
+        "couponDescription": "Get £15 Off on Over £150"
+    },
+    {
+        "couponCode": "10VAN10",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Save 10% Off on Vans Authentic"
+    },
+    {
+        "couponCode": "BALCOM",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Save 10% Off on Hunter Balmoral Commando"
+    },
+    {
+        "couponCode": "BLISS",
+        "couponTitle": "Save 10% Off w/ Promo Code",
+        "couponDescription": "Save 10% Off on Joya Products"
+    },
+    {
+        "couponCode": "GEX5",
+        "couponTitle": "Enjoy 5% Savings On Geox Purchases",
+        "couponDescription": "Get a 5% discount Off Geox"
+    },
+    {
+        "couponCode": "MPSTO10",
+        "couponTitle": "Save 10% Off w/ Discount Code",
+        "couponDescription": "Take 10% Off on Mephisto"
+    },
+    {
+        "couponCode": "SICS5",
+        "couponTitle": "Save 5% Off using Coupon Code",
+        "couponDescription": "Save 5% Off on Asics"
+    },
+    {
+        "couponCode": "shine",
+        "couponTitle": "Birkenstock Sale.",
+        "couponDescription": null
+    }
+]

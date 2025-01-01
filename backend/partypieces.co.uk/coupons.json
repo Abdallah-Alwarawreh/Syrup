@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "FREEPP",
+        "couponTitle": "Free uk standard delivery on all orders over £45",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "NYE20",
+        "couponTitle": "Save 20% Off Using Code",
+        "couponDescription": "20% off New Year Sale"
+    },
+    {
+        "couponCode": "XMAS20",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "20% off all christmas supplies"
+    },
+    {
+        "couponCode": "PARTY10",
+        "couponTitle": "Enjoy 10% Discount Using Promotional Code",
+        "couponDescription": "Get 10% off with coupon"
+    },
+    {
+        "couponCode": "TOPKIDS10",
+        "couponTitle": "Enjoy 10% Off With Promo Code Usage",
+        "couponDescription": "Get Up to 10% Discount When You Use Promo Code"
+    },
+    {
+        "couponCode": "AFF5",
+        "couponTitle": "Get £5 Discount Using Promo Code",
+        "couponDescription": "Take £5 off with discount code"
+    },
+    {
+        "couponCode": "BF20OFF",
+        "couponTitle": "Get £20 Discount Using Promo Code",
+        "couponDescription": "Save £20 off with coupon code"
+    },
+    {
+        "couponCode": "CHEERFUL",
+        "couponTitle": "Save 20% Using Promotional Code",
+        "couponDescription": "Get 20% off with promo code"
+    },
+    {
+        "couponCode": "BF5OFF",
+        "couponTitle": "Get £5 Discount Using Promo Code",
+        "couponDescription": "Save £5 off with coupon code"
+    },
+    {
+        "couponCode": "PPAUG10",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "10% off orders over £35"
+    },
+    {
+        "couponCode": "PPSEP10",
+        "couponTitle": "Save 10% Off Using Code",
+        "couponDescription": "10% off orders over £35"
+    },
+    {
+        "couponCode": "AFF10PP",
+        "couponTitle": "Enjoy Additional 10% Discount On Your Purchase",
+        "couponDescription": "Get an Extra 10% Off on Your Order"
+    },
+    {
+        "couponCode": "BF10OFF",
+        "couponTitle": "Get £10 Discount With Promo Code",
+        "couponDescription": "Save £10 off with coupon code"
+    },
+    {
+        "couponCode": "SUMMERFUN",
+        "couponTitle": "Get 20% Discount Using Promo Code",
+        "couponDescription": "Score 20% off with promo code"
+    },
+    {
+        "couponCode": "SUMMER20",
+        "couponTitle": "Get 20% Off Your Shopping",
+        "couponDescription": "Enjoy 20% Discount on Your Purchase"
+    },
+    {
+        "couponCode": "SPOOKYFUN",
+        "couponTitle": "Get 30% Off Halloween Sale",
+        "couponDescription": "Score 30% off Halloween sale at Party Pieces."
+    },
+    {
+        "couponCode": "BESTINCLASS",
+        "couponTitle": "Get 15% Off 3+ Items From Kids Party",
+        "couponDescription": "Score 15% off 3 or more items from kids party at Party Pieces."
+    },
+    {
+        "couponCode": "WARMUP",
+        "couponTitle": "Get 20% Off Summer Sale",
+        "couponDescription": "Score 20% off summer sale at Party Pieces."
+    },
+    {
+        "couponCode": "FULLOFJOY",
+        "couponTitle": "Get 20% Off Christmas Balloons",
+        "couponDescription": "Score 20% off Christmas balloons at Party Pieces."
+    },
+    {
+        "couponCode": "SANTAISCOMING",
+        "couponTitle": "Get 3 For 2 On Christmas Eve Supplies",
+        "couponDescription": "Score 2 for 2 on Christmas eve supplies at Party Pieces."
+    }
+]

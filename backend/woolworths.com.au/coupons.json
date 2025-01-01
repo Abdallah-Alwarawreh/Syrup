@@ -1,0 +1,82 @@
+[
+    {
+        "couponCode": "EMNEW10",
+        "couponTitle": "Take $10 Off using Coupon Code",
+        "couponDescription": "Save $10 off with code on $100+ orders"
+    },
+    {
+        "couponCode": "GIFT",
+        "couponTitle": "Get Free Gift on Online Orders $160+ ",
+        "couponDescription": "Enjoy shopping and get free gift on online orders of $160 or more when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "XDEC2024",
+        "couponTitle": "Woolworths Promo Code: Get Up to 10% Off Your Order ",
+        "couponDescription": "Redeem this promo code at checkout and save up to 10% on your order."
+    },
+    {
+        "couponCode": "BF10",
+        "couponTitle": "Woolworths Coupon: 10% Off Your Order",
+        "couponDescription": "Take 10% off your purchase when this Woolworths promo code is applied to your cart at checkout."
+    },
+    {
+        "couponCode": "TINSEL",
+        "couponTitle": "Take Up to 10% Off Any Online Order $220+ ",
+        "couponDescription": "Enjoy shopping and get up to a 10% discount on any online order of $220 or more when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "merry",
+        "couponTitle": "Take Up to 10% Off Your Order ",
+        "couponDescription": "Enjoy shopping at Jockey and receive up to a 10% discount on your order. Redeem this discount code at checkout."
+    },
+    {
+        "couponCode": "SANT",
+        "couponTitle": "Save Up to 10% on Any Purchase ",
+        "couponDescription": "Shop at Woolworths and get up to a 10% discount on any purchase. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "SALE10",
+        "couponTitle": "10% Off Your Purchase w/ Promo Code",
+        "couponDescription": "Score a 10% discount on your select order when you use this Woolworths coupon code during checkout."
+    },
+    {
+        "couponCode": "SANTA",
+        "couponTitle": "Save Up to 10% on Any Purchase ",
+        "couponDescription": "Shop at Woolworths and get up to a 10% discount on any purchase. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "OFFER",
+        "couponTitle": "Take $30 Off Orders $250+ ",
+        "couponDescription": "Enjoy shopping and get a $30 discount on orders of $250 or more when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "10NEXT",
+        "couponTitle": "Save 10% Off with Code",
+        "couponDescription": "Take 10% off with coupon"
+    },
+    {
+        "couponCode": "JUL2023",
+        "couponTitle": "Save $10 on Your Order ",
+        "couponDescription": "Take $10 off with on qualifying purchases at Woolworths when using this discount code."
+    },
+    {
+        "couponCode": "OCT15",
+        "couponTitle": "Take Up to 10% with Woolworths Discount Code",
+        "couponDescription": "Save up to 10% off at Woolworths when you apply this promo code to your cart."
+    },
+    {
+        "couponCode": "SPRING10",
+        "couponTitle": "Woolworths Coupon Code: Get 10% Off Your Order",
+        "couponDescription": "Enjoy 10% off your Woolworths purchase when this discount code is applied."
+    },
+    {
+        "couponCode": "XNOV",
+        "couponTitle": "Get Up to 10% Off with Woolworths Promo Code",
+        "couponDescription": "Receive up to a 10% discount on your purchase when you enter this Woolworths coupon code at checkout."
+    },
+    {
+        "couponCode": "SHOP5",
+        "couponTitle": "Save 5% on Your Woolworths Order",
+        "couponDescription": "Use this Woolworths promo code at checkout to receive 5% off your purchases."
+    }
+]

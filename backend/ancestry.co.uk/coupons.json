@@ -1,0 +1,12 @@
+[
+    {
+        "couponCode": "HALF50",
+        "couponTitle": "Save 50% at Ancestry UK",
+        "couponDescription": "Take 50% off your first order at Ancestry.co.uk when you use this coupon code at checkout."
+    },
+    {
+        "couponCode": "WOOF20",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "Redeem this promo code at checkout and save 20% on orders of $79.20 or more."
+    }
+]

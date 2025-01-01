@@ -1,0 +1,62 @@
+[
+    {
+        "couponCode": "SAVE5",
+        "couponTitle": "Get £5 Discount On Your Total Store Purchase",
+        "couponDescription": "Take £5 off your entire purchase in the store."
+    },
+    {
+        "couponCode": "HSD250",
+        "couponTitle": "Enjoy £2.50 Discount Using Promo Code",
+        "couponDescription": "Get £2.50 off with coupon code"
+    },
+    {
+        "couponCode": "BF23",
+        "couponTitle": "Take £5 Off Using Code",
+        "couponDescription": "get an extra £5 off when you use discount coupon code at checkout."
+    },
+    {
+        "couponCode": "BF19",
+        "couponTitle": "£5 Discount Using Promo Code",
+        "couponDescription": "Take £5 off with promo code"
+    },
+    {
+        "couponCode": "GHK5OFF",
+        "couponTitle": "£5 Discount Available With Coupon Code",
+        "couponDescription": "Take £5 off with coupon code"
+    },
+    {
+        "couponCode": "XMAS",
+        "couponTitle": "Get £5 Discount Using Promo Code",
+        "couponDescription": "Score £5 off with promo code"
+    },
+    {
+        "couponCode": "SANTA5",
+        "couponTitle": "£5 Off Using Promo Code",
+        "couponDescription": "Take £5 off with discount code"
+    },
+    {
+        "couponCode": "HOLIDAY",
+        "couponTitle": "£5 Off Flash Sale! Use Code, Ends Monday!",
+        "couponDescription": "flash sale! get £5 off with coupon code. hurry, ends monday!"
+    },
+    {
+        "couponCode": "AUTUMN10",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "- 10% code by discount coupon code"
+    },
+    {
+        "couponCode": "BF24",
+        "couponTitle": "Take £5 Off w/ Discount Code",
+        "couponDescription": "get an extra £5 off your purchases using the promo code at checkout."
+    },
+    {
+        "couponCode": "SUMMER",
+        "couponTitle": "Take £5.00 Off with Code",
+        "couponDescription": "Do not forget to claim your £5.00 off a subscription this weekend! Just enter upon checkout discount closes on the 27th August!"
+    },
+    {
+        "couponCode": "billing",
+        "couponTitle": "Take £5 Off with Code",
+        "couponDescription": "This weekend only, we''re offering an EXTRA £5* discount off any magazine subscription at magazine.co.uk. Click here to browse through"
+    }
+]

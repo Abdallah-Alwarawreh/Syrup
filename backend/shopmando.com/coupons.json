@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "FRIDAY",
+        "couponTitle": "$5 Off Your Order",
+        "couponDescription": "Shop and get $5 off your purchase using a coupon code at checkout."
+    },
+    {
+        "couponCode": "THEDIRT",
+        "couponTitle": "Save 15% Off w/ Promo Code",
+        "couponDescription": "Save 15% off with promo code"
+    },
+    {
+        "couponCode": "HARRYS",
+        "couponTitle": "Take $5 Off w/ Promo Code",
+        "couponDescription": "Save $5 off with promo code"
+    },
+    {
+        "couponCode": "TALKIN",
+        "couponTitle": "Take $5 Off",
+        "couponDescription": "Score $5 off with coupon code"
+    },
+    {
+        "couponCode": "YAWT",
+        "couponTitle": "Mando Coupon: $5 Off Your Order",
+        "couponDescription": "Take $5 off your purchase with this Mando code."
+    },
+    {
+        "couponCode": "INTRO",
+        "couponTitle": "Take $5 Off",
+        "couponDescription": "Score $5 off with coupon"
+    },
+    {
+        "couponCode": "WELCOME15",
+        "couponTitle": "Save 15% Off w/ Coupon Code",
+        "couponDescription": "Save 15% off with coupon"
+    },
+    {
+        "couponCode": "JIGGIN",
+        "couponTitle": "Get $5 Off Your Order",
+        "couponDescription": "Take $5 off sitewide by adding this Mando code."
+    },
+    {
+        "couponCode": "CHAT",
+        "couponTitle": "Score $5 on Starter Pack with coupon code",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "ysk",
+        "couponTitle": "Save 10% Off Using Code",
+        "couponDescription": "Save 10% off with promo code"
+    },
+    {
+        "couponCode": "HYENAS",
+        "couponTitle": "Mando Discount Code: Up to 15% Off Your Order",
+        "couponDescription": "Simply enter this coupon code during checkout to get up to 15% off your select purchase."
+    },
+    {
+        "couponCode": "TRIPS",
+        "couponTitle": "Save 10% Off w/ Promo Code",
+        "couponDescription": "Take 10% off with code"
+    },
+    {
+        "couponCode": "THANKYOU",
+        "couponTitle": "Take $5 Off with Code",
+        "couponDescription": "Take $5 off with code"
+    },
+    {
+        "couponCode": "KFTV",
+        "couponTitle": "Take $5 Off",
+        "couponDescription": "Take $5 off with coupon code"
+    },
+    {
+        "couponCode": "SNAKE",
+        "couponTitle": "Mando Discount Code: Save 15% on Any Purchase ",
+        "couponDescription": "Shop at Mando and enjoy a 15% discount on any purchase. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "REDDIRT",
+        "couponTitle": "Mando Discount Code: $5 Off Your Order",
+        "couponDescription": "Shop and take $5 off your purchase using a discount code at checkout."
+    },
+    {
+        "couponCode": "WHW",
+        "couponTitle": "Take $5 Off Your Order",
+        "couponDescription": "Enter this Mando discount code at checkout to get $5 off your qualifying purchase."
+    },
+    {
+        "couponCode": "STAPLETON",
+        "couponTitle": "Mando Coupon: Up to 5% Off Your Purchase",
+        "couponDescription": "When this promotional code is applied during checkout, you can get up to 5% off your select order."
+    },
+    {
+        "couponCode": "WHEEL",
+        "couponTitle": "Up to 15% Off Your Purchase w/ Coupon",
+        "couponDescription": "Save up to 15% on your eligible order when this Mando discount code is applied."
+    },
+    {
+        "couponCode": "BASEBALLTODAY",
+        "couponTitle": "Save 15% Off Using Code",
+        "couponDescription": "Score 15% off with code"
+    }
+]

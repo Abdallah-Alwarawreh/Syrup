@@ -1,0 +1,27 @@
+[
+    {
+        "couponCode": "DAD15",
+        "couponTitle": "15% Off Gifts for Dad",
+        "couponDescription": "Save 15% for Father's Day when you apply the promo code at checkout."
+    },
+    {
+        "couponCode": "PAC15",
+        "couponTitle": "Take 15% Off Accessories ",
+        "couponDescription": "Limited-time to save 15% on pack accessories with the latest coupon code."
+    },
+    {
+        "couponCode": "FATHER15",
+        "couponTitle": "Flash Sale",
+        "couponDescription": "Time is running out to shop this 15% off sale. Apply the coupon code at checkout to see your savings."
+    },
+    {
+        "couponCode": "HOLIDAY15",
+        "couponTitle": "$1 Shipping + 15% Off",
+        "couponDescription": "Gifting is easier with $1 shipping for all US and Canada orders $150+. Plus, get 15% off your items with the coupon code."
+    },
+    {
+        "couponCode": "RAIN10",
+        "couponTitle": "Over 20% Off Rain Gear",
+        "couponDescription": "Chugach Rain Gear is now 20% off with an additional 10% off when you apply the promo code to eligible items in your cart."
+    }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "couponCode": "GRADS10",
+        "couponTitle": "Save 10% Using Promo Code",
+        "couponDescription": "Score 10% off with discount code"
+    },
+    {
+        "couponCode": "AVENTON",
+        "couponTitle": "Take Free Shipping On Your Order",
+        "couponDescription": "Receive free shipping when you spend above $35."
+    },
+    {
+        "couponCode": "25OFF",
+        "couponTitle": "Get Free Shipping on Orders $35+",
+        "couponDescription": "Apply Tile promo code to get free Shipping on on select bundle orders over $35."
+    }
+]

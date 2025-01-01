@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "OUT20",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "Extra 20% off on Outdoor Seating & more when You Use Code"
+    },
+    {
+        "couponCode": "B830",
+        "couponTitle": "Get 30% Discount On Your Purchase",
+        "couponDescription": "30% Off Your Order"
+    },
+    {
+        "couponCode": "GET15",
+        "couponTitle": "Prada Sale: 15% Off With 2-Item Purchase",
+        "couponDescription": "Buy 2, Get 15% Off Prada"
+    },
+    {
+        "couponCode": "AMEX20",
+        "couponTitle": "Get $20 Off $100+ Gilt City Buy With Amex Card",
+        "couponDescription": "$20 off Gilt City purchase of $100 or more with American Express Card"
+    },
+    {
+        "couponCode": "BB30",
+        "couponTitle": "Get Additional 30% Discount On Vera Wang Bedding",
+        "couponDescription": "Extra 30% Off Vera Wang Bedding"
+    },
+    {
+        "couponCode": "SHOES25",
+        "couponTitle": "Save 25% Off",
+        "couponDescription": "25% Off For Baby & Kids"
+    },
+    {
+        "couponCode": "MAYDEALS",
+        "couponTitle": "Save 30% Off",
+        "couponDescription": "30% Off 30% On Select Pet Products"
+    }
+]

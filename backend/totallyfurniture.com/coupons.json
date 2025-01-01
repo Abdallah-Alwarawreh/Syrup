@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "50OFF500",
+        "couponTitle": "Take $50 Off Your Purchase",
+        "couponDescription": "Spend $500 on your order to receive $50 off. Don't forget to enter this Totally Furniture promo code at checkout."
+    },
+    {
+        "couponCode": "THANKS",
+        "couponTitle": "Take 10% Off Your Order",
+        "couponDescription": "Enjoy10% off with minimum purchase of $100 and more at Totally Furniture."
+    },
+    {
+        "couponCode": "totvol-1-12",
+        "couponTitle": "Get 12% Discount On Purchases Over $1100",
+        "couponDescription": "Receive 12% off on $1100 or more"
+    },
+    {
+        "couponCode": "CAPITAL-ONE-5",
+        "couponTitle": "Totally Furniture Coupon: 5% Off Your Order",
+        "couponDescription": "Take 5% off when you use this Totally Furniture code."
+    },
+    {
+        "couponCode": "totvol-1-06",
+        "couponTitle": "Get 6% Discount On Purchases Over $600",
+        "couponDescription": "Receive 6% off on $600 or more"
+    },
+    {
+        "couponCode": "totvol-2-15",
+        "couponTitle": "Get 15% Discount On Purchases Over $2200",
+        "couponDescription": "Receive 15% off on $2200 or more"
+    },
+    {
+        "couponCode": "totvol-3-17",
+        "couponTitle": "Get 17% Discount On Purchases Over $5000",
+        "couponDescription": "Receive 17% off on $5000 or more"
+    }
+]

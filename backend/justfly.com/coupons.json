@@ -1,0 +1,57 @@
+[
+    {
+        "couponCode": "UPINTHEAIR",
+        "couponTitle": "Take $20 Off Your Order",
+        "couponDescription": "Enjoy up to $20 off when you add this Just Fly code."
+    },
+    {
+        "couponCode": "JFJETSET",
+        "couponTitle": "Save Up to $20 on Your Los Angel Ticket ",
+        "couponDescription": "Apply this discount code at checkout and get up to $20 discount on your Los Angel ticket."
+    },
+    {
+        "couponCode": "ascend",
+        "couponTitle": "JustFly Promo Code: Get $20 Off Any Order ",
+        "couponDescription": "Redeem this promo code at checkout and save $20 on any order."
+    },
+    {
+        "couponCode": "ADVENTUREAWAIT",
+        "couponTitle": "15% Off Your Order",
+        "couponDescription": "Shop and receive 15% off your purchase using a promo code on your cart."
+    },
+    {
+        "couponCode": "GETAWAYJF",
+        "couponTitle": "Just Fly Coupon: $10 Off Your Purchase",
+        "couponDescription": "Get $10 off airline tickets booking at Just Fly."
+    },
+    {
+        "couponCode": "FLY9",
+        "couponTitle": "$20 Off Your Order",
+        "couponDescription": "Take $20 off your purchase using a coupon code on your cart."
+    },
+    {
+        "couponCode": "UPANDAWAY",
+        "couponTitle": "JustFly Coupon Code: $10 Off Your Order",
+        "couponDescription": "Apply this coupon code from JustFly to receive a $10 discount on your order."
+    },
+    {
+        "couponCode": "soaring",
+        "couponTitle": "Score $5 Off Your Booking",
+        "couponDescription": "Enter this JustFly discount code to receive $5 off your purchase at checkout."
+    },
+    {
+        "couponCode": "WINGSUP",
+        "couponTitle": "JustFly Offer: $50 Off With Coupon Code",
+        "couponDescription": "Get $50 off your cart when you apply this promo code to your purchase at JustFly checkout."
+    },
+    {
+        "couponCode": "JUSTFLY",
+        "couponTitle": "Get 80% Savings Using Discount Code",
+        "couponDescription": "Score 80% off with discount code"
+    },
+    {
+        "couponCode": "FLIGHTSVACA",
+        "couponTitle": "Get $20 Off Flight Ticket to New York",
+        "couponDescription": "Paste this promo code at checkout and save $20 on a flight ticket to New York."
+    }
+]

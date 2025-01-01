@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "ADVENTURE20",
+        "couponTitle": "Enjoy 10% Savings Using This Discount Code",
+        "couponDescription": "Take up to 10% off with discount code"
+    },
+    {
+        "couponCode": "EXTRA10",
+        "couponTitle": "Unlock 10% Discount Using Promo Code",
+        "couponDescription": "Save 10% off with code"
+    },
+    {
+        "couponCode": "EXTRA20",
+        "couponTitle": "20% Off Qualifying Purchases",
+        "couponDescription": "Take an extra 20% discount on select items when you use this promo code at checkout."
+    },
+    {
+        "couponCode": "WHEELS01",
+        "couponTitle": "Take $45 Off",
+        "couponDescription": "Save $45 off with code"
+    },
+    {
+        "couponCode": "PROTECT20",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "Save 20% off with coupon"
+    },
+    {
+        "couponCode": "CLEAR10",
+        "couponTitle": "Wiggle Coupon: 10% Off Your Order",
+        "couponDescription": "Enjoy 10% off when you spend $100 and more at Wiggle."
+    },
+    {
+        "couponCode": "AUTUMNWINTER20",
+        "couponTitle": "Get 20% Discount Using Promo Code",
+        "couponDescription": "Take up to 20% off with code"
+    },
+    {
+        "couponCode": "SAVE",
+        "couponTitle": "Get $20 Off On $100+ Purchases With This Coupon",
+        "couponDescription": "Use this coupon to receive $20 off orders totaling $100 or more."
+    },
+    {
+        "couponCode": "EXTRA15",
+        "couponTitle": "Additional 15% Off Sale Items",
+        "couponDescription": "Get an extra 15% discount by applying this promo code at checkout."
+    },
+    {
+        "couponCode": "WIGGLE15",
+        "couponTitle": "Save 15% with Code",
+        "couponDescription": "Apply this coupon code at Wiggle to receive 15% off your order at checkout."
+    },
+    {
+        "couponCode": "WHEEL10",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Shop using Wiggle's discount code and get an extra 10% off Wheels & Tires on your purchase at checkout."
+    },
+    {
+        "couponCode": "SALE10",
+        "couponTitle": "Get 10% Discount Using Coupon Code",
+        "couponDescription": "Take 10% off with coupon code"
+    },
+    {
+        "couponCode": "OUTLET10",
+        "couponTitle": "Enjoy A 10% Discount Using Promo Code",
+        "couponDescription": "Get 10% off with promo code"
+    },
+    {
+        "couponCode": "NEWIE",
+        "couponTitle": "Save $10 Using Promo Code",
+        "couponDescription": "Get $10 off with code"
+    },
+    {
+        "couponCode": "UNITE10",
+        "couponTitle": "Enjoy Up To 10% Savings Using Discount Code",
+        "couponDescription": "Take up to 10% off with discount code"
+    },
+    {
+        "couponCode": "BIKE10",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Spend an additional 10% off Selected Bikes on your purchase using Wiggle's promo code at checkout."
+    },
+    {
+        "couponCode": "DHB08",
+        "couponTitle": "Enjoy Up To 20% Discount Using Coupon",
+        "couponDescription": "Get up to 20% off with coupon"
+    },
+    {
+        "couponCode": "NEWUS",
+        "couponTitle": "Take $20 Off w/ Coupon Code",
+        "couponDescription": "$20 off $100 spend new customers only"
+    },
+    {
+        "couponCode": "Outlet20",
+        "couponTitle": "Save £20 on Orders £100+",
+        "couponDescription": "Grab a £20 discount on your order over £100. Use this promo code at checkout."
+    },
+    {
+        "couponCode": "OUTLET",
+        "couponTitle": "£25 Off with Minimum Purchase",
+        "couponDescription": "Apply this promo code at checkout to save an extra £25 when you spend £100 or more on outlets."
+    }
+]

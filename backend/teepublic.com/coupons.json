@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "SNOWSTRUCK",
+        "couponTitle": "Get Up To 30% Discount Using This Coupon",
+        "couponDescription": "Save up to 30% off with coupon"
+    },
+    {
+        "couponCode": "M7E4H98",
+        "couponTitle": "Get 15% Discount With Promo Code Usage",
+        "couponDescription": "Enjoy Up to 15% Off When You Use Promo Code"
+    },
+    {
+        "couponCode": "Mocha35",
+        "couponTitle": "Get 35% Off Sitewide with Promo Code",
+        "couponDescription": "Redeem this coupon code at checkout and get a 35% discount on your order."
+    },
+    {
+        "couponCode": "EverythingC64",
+        "couponTitle": "Take 30% Off with Code",
+        "couponDescription": "Enter this promo code at checkout for a 30% discount on your order."
+    },
+    {
+        "couponCode": "MOOLAH20",
+        "couponTitle": "TeePublic Coupon: Extra 20% Off Your Order",
+        "couponDescription": "Take an additional 20% off your sitewide purchase using TeePublic's promo code at TeePublic."
+    },
+    {
+        "couponCode": "BODEBURNOUT35",
+        "couponTitle": "Take 35% Off Sitewide",
+        "couponDescription": "Receive a 35% discount on all orders by applying this promo code at teepublic.com."
+    }
+]

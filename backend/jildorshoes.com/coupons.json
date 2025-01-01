@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "BOOTS20",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "20% Off All Sale Boots"
+    },
+    {
+        "couponCode": "EXTRA20",
+        "couponTitle": "Save 20% On Your Purchase",
+        "couponDescription": "20% Off Your Order"
+    },
+    {
+        "couponCode": "GIVEBACK10",
+        "couponTitle": "Enjoy A 10% Discount On Your Total Order",
+        "couponDescription": "10% Off Your Entire Purchase"
+    },
+    {
+        "couponCode": "SALE20",
+        "couponTitle": "Save 20% Off with Code",
+        "couponDescription": "20% Off All Sale Merchandise"
+    },
+    {
+        "couponCode": "FALL20",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "20% Off All Full Priced 275 Central"
+    },
+    {
+        "couponCode": "FIRST-TIME10",
+        "couponTitle": "Grab 10% Off On Select Products",
+        "couponDescription": "Enjoy 10% Discount on Eligible Items"
+    },
+    {
+        "couponCode": "SUPERSALE",
+        "couponTitle": "Save 20% Off Sale w/ Discount Code",
+        "couponDescription": "Take 20% off on Sale items"
+    },
+    {
+        "couponCode": "SUPERSALE30",
+        "couponTitle": "Save 30% Off",
+        "couponDescription": "Take an additional 30% off your order during Jildor Super Sale."
+    },
+    {
+        "couponCode": "FINAL30",
+        "couponTitle": "Save 30% Off",
+        "couponDescription": "Take an Additional 30% off Already Reduced Sale Merchandise for a Total Savings of Up to 70% off with Code"
+    },
+    {
+        "couponCode": "EXTRA30",
+        "couponTitle": "Save 30% Off Using Code",
+        "couponDescription": "30% Off Sale Merchandise"
+    },
+    {
+        "couponCode": "exclusive20",
+        "couponTitle": "Extra 20% Off All Sale Items",
+        "couponDescription": "Take an additional 20% off all sale merchandise."
+    },
+    {
+        "couponCode": "SANDALS20",
+        "couponTitle": "Save 20% Off Using Code",
+        "couponDescription": "20% Off Already Reduced Sandals"
+    },
+    {
+        "couponCode": "MOM20",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "20% Off Sale Merchandise"
+    },
+    {
+        "couponCode": "FREESHIP",
+        "couponTitle": "Free Shipping w/ Promo Code",
+        "couponDescription": "Free shipping with promo code"
+    },
+    {
+        "couponCode": "PRIVATE20",
+        "couponTitle": "Save 20% Off Using Code",
+        "couponDescription": "20% Off All Sale Sneakers"
+    },
+    {
+        "couponCode": "275CENTRAL",
+        "couponTitle": "Get 20% Discount On Your Purchases",
+        "couponDescription": "Take 20% off your orders"
+    },
+    {
+        "couponCode": "JILDOR10",
+        "couponTitle": "Get 10% Off Select Items",
+        "couponDescription": "Enjoy Up to 10% Discount on Eligible Products"
+    },
+    {
+        "couponCode": "SUMMER20",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "20% Off All Merchandise"
+    },
+    {
+        "couponCode": "275CENTAL",
+        "couponTitle": "Get 20% Off On Selected Products",
+        "couponDescription": "Enjoy 20% Discount on Eligible Items"
+    },
+    {
+        "couponCode": "Summer30",
+        "couponTitle": "Additional 20% Discount On All Sale Items",
+        "couponDescription": "Extra 20% off All Sale Merchandise"
+    }
+]

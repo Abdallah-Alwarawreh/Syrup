@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "SPENDSAVE17",
+        "couponTitle": "Take $10 Off w/ Promo Code",
+        "couponDescription": "Receive $10 off on When You Spend $50 +"
+    },
+    {
+        "couponCode": "FREESHIP50",
+        "couponTitle": "Save 50% Off Using Code",
+        "couponDescription": "Massive Fragrance Sale Up to 50% off"
+    },
+    {
+        "couponCode": "THANKYOU10",
+        "couponTitle": "Get 85% Off Using Promo Code",
+        "couponDescription": "Score 85% off with discount code"
+    },
+    {
+        "couponCode": "free",
+        "couponTitle": "Save 60% at Priceline Pharmacy",
+        "couponDescription": "Take an extra 60% off select items with coupon code. Redeem at checkout."
+    },
+    {
+        "couponCode": "CYBER10",
+        "couponTitle": "Get A 10% Discount On Your Shopping",
+        "couponDescription": "Receive 10% Off on Your Purchase"
+    },
+    {
+        "couponCode": "SPENDANDSAVE",
+        "couponTitle": "Take $10 Off using Coupon Code",
+        "couponDescription": "Sister Club members - $10 off on $50 purchase"
+    }
+]

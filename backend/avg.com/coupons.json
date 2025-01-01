@@ -1,0 +1,57 @@
+[
+    {
+        "couponCode": "AVGPROTECTION15",
+        "couponTitle": "Save 15% Off using Coupon Code",
+        "couponDescription": "Get Up to 15% Discount on Your Order"
+    },
+    {
+        "couponCode": "AVGOCT10",
+        "couponTitle": "Save 10% Off using Coupon Code",
+        "couponDescription": "Receive Up to 10% Off on Select Products"
+    },
+    {
+        "couponCode": "HURRY15",
+        "couponTitle": "Save 15% Off",
+        "couponDescription": "Get Up to 15% Off on Select Products"
+    },
+    {
+        "couponCode": "AVGTECH10",
+        "couponTitle": "Save 10% Off w/ Coupon Code",
+        "couponDescription": "Save up to 10% off with coupon"
+    },
+    {
+        "couponCode": "THANKFUL15",
+        "couponTitle": "Save 15% Off Sitewide",
+        "couponDescription": "Take 15% Off Sitewide When You Use Promo Code"
+    },
+    {
+        "couponCode": "MemBen0902B",
+        "couponTitle": "Take $9 Off",
+        "couponDescription": "Save $9 off"
+    },
+    {
+        "couponCode": "VDAY10",
+        "couponTitle": "Save 10% Off Sitewide w/ Promo Code",
+        "couponDescription": "Save 10% Sitewide with Promo Code"
+    },
+    {
+        "couponCode": "AVG10CAUSE",
+        "couponTitle": "Save 10% Off w/ Coupon Code",
+        "couponDescription": "Save 10% with coupon code"
+    },
+    {
+        "couponCode": "AVGSUMMER",
+        "couponTitle": "Save 10% Off Sitewide w/ Promo Code",
+        "couponDescription": "Save an additional 10% off on Everything"
+    },
+    {
+        "couponCode": "AVGSpring5",
+        "couponTitle": "Save 5% Off Sitewide w/ Coupon Code",
+        "couponDescription": "Additional 5% off on Everything"
+    },
+    {
+        "couponCode": "EASTER5AVG",
+        "couponTitle": "Save 20% Off w/ Discount Code",
+        "couponDescription": "Take 20% off on all products and an EXTRA 5% off"
+    }
+]

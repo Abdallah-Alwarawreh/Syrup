@@ -1,0 +1,47 @@
+[
+    {
+        "couponCode": "HOLIDAYTILE20",
+        "couponTitle": "Tile Promo Code: 20% Off",
+        "couponDescription": "Apply 20% off at checkout when you purchase using Tile's discount code for sitewide orders on your cart."
+    },
+    {
+        "couponCode": "BOYSCAST",
+        "couponTitle": "Tile Promo Code: 15% Off Your Order",
+        "couponDescription": "Don't forget to enter this coupon code at checkout to receive 15% off your select purchase."
+    },
+    {
+        "couponCode": "TRACKER20",
+        "couponTitle": "Tile Coupon: 20% Off Your Order",
+        "couponDescription": "Enjoy 20% off when you purchase $75 by adding this Tile code."
+    },
+    {
+        "couponCode": "ONTEXAS",
+        "couponTitle": "Tile Discount Code: Up to 15% Off Your Purchase",
+        "couponDescription": "Visit Tile and get up to 15% off sitewide orders with this coupon code on your cart at checkout."
+    },
+    {
+        "couponCode": "multi25",
+        "couponTitle": "Save 25% on Any Purchase ",
+        "couponDescription": "Shop at Tile and get a 25% discount on any purchase. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "Cyber10",
+        "couponTitle": "Get $10 Off Your Order",
+        "couponDescription": "Take $10 off your purchase this cyber monday alert with this Tile code."
+    },
+    {
+        "couponCode": "BFSPECIAL",
+        "couponTitle": "Save $10 Off Your Order w/ Coupon",
+        "couponDescription": "Take $10 off your qualifying purchase when this Tile discount code is applied at checkout."
+    },
+    {
+        "couponCode": "EARLYBF20",
+        "couponTitle": "20% Off Your Purchase",
+        "couponDescription": "Shop and take 20% off your purchase using a promo code on your cart."
+    },
+    {
+        "couponCode": "bogo50",
+        "couponTitle": "Tile Coupon: 25% Off All Orders",
+        "couponDescription": "Apply this coupon code from Tile to receive a 25% discount on your order."
+    }
+]

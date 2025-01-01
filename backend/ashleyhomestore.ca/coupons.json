@@ -1,0 +1,42 @@
+[
+    {
+        "couponCode": "CF5",
+        "couponTitle": "Get 5% off ",
+        "couponDescription": "Enjoy 5% off site-wide"
+    },
+    {
+        "couponCode": "COUPONSCA5",
+        "couponTitle": "Take 5% Off Your Order",
+        "couponDescription": "Save 5% on your entire purchase with this Ashley Homestore CA code."
+    },
+    {
+        "couponCode": "VENNGO10",
+        "couponTitle": "Ashley Homestore Coupon: 10% Off Your Order",
+        "couponDescription": "Save 10% on all items by adding this\nAshley Homestore code."
+    },
+    {
+        "couponCode": "UNIONSAVINGS10",
+        "couponTitle": "Take 10% Off Your Purchase",
+        "couponDescription": "Save at Ashley Homestore CA by getting 10% on your order."
+    },
+    {
+        "couponCode": "perkop10",
+        "couponTitle": "Ashley Homestore Coupon: 10% Off Your Order",
+        "couponDescription": "Take 10% off all purchase with this Ashley Home Store code."
+    },
+    {
+        "couponCode": "CYBER20",
+        "couponTitle": "Apply 20% Off With Code",
+        "couponDescription": "Enjoy 20% off on your cart using the Ashley Homestore CA discount code on your purchases."
+    },
+    {
+        "couponCode": "EXTRA15",
+        "couponTitle": "Get 15% Off with Code",
+        "couponDescription": "Online only, use code at checkout"
+    },
+    {
+        "couponCode": "daylight10",
+        "couponTitle": "Save 10% Off w/ Promo Code",
+        "couponDescription": "Take up to 10% off with promo code"
+    }
+]

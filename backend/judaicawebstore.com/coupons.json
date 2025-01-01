@@ -1,0 +1,62 @@
+[
+    {
+        "couponCode": "WELCOME10",
+        "couponTitle": "Judaica Web Store Coupon: 10% Off Your Order",
+        "couponDescription": "Apply this promotional code during checkout to get 10% off your eligible purchase."
+    },
+    {
+        "couponCode": "WELCOME5",
+        "couponTitle": "Judaica Web Store Coupon: 5% Off Your Order",
+        "couponDescription": "All shoppers can receive a 5% discount on their select purchase by simply applying this promo code at checkout."
+    },
+    {
+        "couponCode": "JWG_10",
+        "couponTitle": "Save 10% Off with Code",
+        "couponDescription": "10% Off for orders over $150"
+    },
+    {
+        "couponCode": "JWG_5",
+        "couponTitle": "Save 5% Off w/ Discount Code",
+        "couponDescription": "5% Off for orders over $50"
+    },
+    {
+        "couponCode": "JWG5",
+        "couponTitle": "Get 5% Off Of The Judaica Web Store",
+        "couponDescription": "Get 5% Off on all products at the Judaica Web Store. Save big on jewelry, pendants, apparel, and more."
+    },
+    {
+        "couponCode": "ENJOY10",
+        "couponTitle": "Judaica Web Store Discount Code: Save 10% on Any Purchase ",
+        "couponDescription": "Shop at Judaica Web Store and enjoy 10% discount on any purchase. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "MISSYOU10",
+        "couponTitle": "Up to 40% Off With Code",
+        "couponDescription": "Shop and save a discount of up to 40% using this promo code on your cart."
+    },
+    {
+        "couponCode": "Holidays",
+        "couponTitle": "Save $10 On Purchases Over $100 At Judaica Web Store",
+        "couponDescription": "Get $10 Off on order $100 or more at Judaica Web Store and save big on apparel."
+    },
+    {
+        "couponCode": "Sefira10",
+        "couponTitle": "Get 10% Off Your Order At Judaica Web Store",
+        "couponDescription": "Take 10% off when you add this Judaica Web Store code and save big on home decor, jewelry, apparel, and more."
+    },
+    {
+        "couponCode": "SPECIAL12",
+        "couponTitle": "12% Off Your Order",
+        "couponDescription": "Use this coupon code at the Judaica Web Store to save 12% on full-priced items."
+    },
+    {
+        "couponCode": "JWG_75",
+        "couponTitle": "Save 7.5% Off Using Code",
+        "couponDescription": "7.5% Off for orders over $100"
+    },
+    {
+        "couponCode": "catalogs",
+        "couponTitle": "Enjoy Complimentary Delivery For Orders Over $100",
+        "couponDescription": "Free shipping on all orders over $100."
+    }
+]

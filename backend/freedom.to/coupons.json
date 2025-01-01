@@ -1,0 +1,87 @@
+[
+    {
+        "couponCode": "GET25",
+        "couponTitle": "25% Off Your Order",
+        "couponDescription": "Shop at Freedom and take 25% off your purchase of plans using a coupon code on your cart."
+    },
+    {
+        "couponCode": "15OFF",
+        "couponTitle": "Save 15% Off w/ Coupon Code",
+        "couponDescription": "Save 15% off with coupon"
+    },
+    {
+        "couponCode": "UPGRADE30",
+        "couponTitle": "Freedom Coupon: 30% Off Your Order",
+        "couponDescription": "Save 30% on subscription with this Freedom code."
+    },
+    {
+        "couponCode": "GET20",
+        "couponTitle": "Save 20% Off w/ Promo Code",
+        "couponDescription": "Save 20% off with coupon"
+    },
+    {
+        "couponCode": "BF60",
+        "couponTitle": "Freedom Coupon: 60% Off Your Order",
+        "couponDescription": "Take up to 60% off sitewide by adding this Freedom code."
+    },
+    {
+        "couponCode": "60NOW",
+        "couponTitle": "Freedom Coupon: 60% Off Your Order",
+        "couponDescription": "Take 60% off all the features of freedom premium at Freedom."
+    },
+    {
+        "couponCode": "OCT2024",
+        "couponTitle": "Freedom Coupon: 50% Off Your Order",
+        "couponDescription": "Bog savings at Freedom by getting 50% on your purchase."
+    },
+    {
+        "couponCode": "JUL2024",
+        "couponTitle": "Take 50% Off Any Order",
+        "couponDescription": "Save at Freedom by getting an extra 50% on your purchase."
+    },
+    {
+        "couponCode": "MAY2024",
+        "couponTitle": "Get 50% Off Your Order",
+        "couponDescription": "Save 50% on forever plan with this Freedom code."
+    },
+    {
+        "couponCode": "FOCUS2024",
+        "couponTitle": " Freedom Discount Code: Save 40% on Freedom Yearly Premium ",
+        "couponDescription": "Shop at Freedom and enjoy a 40% discount on freedom yearly premium when you apply this discount code at checkout."
+    },
+    {
+        "couponCode": "BESTEVER",
+        "couponTitle": "Get 60% Off Your Order",
+        "couponDescription": "Enjoy 60% off your Freedom purchase with this code."
+    },
+    {
+        "couponCode": "SEP2023",
+        "couponTitle": "Freedom Promo Code: 50% Off Your Order",
+        "couponDescription": "Take 50% off your qualifying purchase by applying this promo code at checkout."
+    },
+    {
+        "couponCode": "THIRTYOFF",
+        "couponTitle": "Save 30% Off",
+        "couponDescription": "Save an extra 30% off on Freedom monthly plans with this discount code during checkout!"
+    },
+    {
+        "couponCode": "PRODUCTIVE",
+        "couponTitle": "Save 50% Off",
+        "couponDescription": "Save an extra 50% off Freedom Forever plans using discount code on the ChargeBee checkout page (last step before purchase)"
+    },
+    {
+        "couponCode": "NEW30",
+        "couponTitle": "Save 30% Off on Freedom  Yearly or Forever Plans",
+        "couponDescription": "Save 30% off Freedom Yearly or Forever, just use code when checking out!"
+    },
+    {
+        "couponCode": "JUL2020",
+        "couponTitle": "50% Off On Freedom Forever Plan",
+        "couponDescription": "For a limited time only save an extra 50% Off On the Freedom Forever plan when using this promo code at checkout."
+    },
+    {
+        "couponCode": "CYBER2023",
+        "couponTitle": "Freedom Discount Code: Save 40% Off Insntantly",
+        "couponDescription": "Get 40% off Freedom yearly when this promo code is used."
+    }
+]

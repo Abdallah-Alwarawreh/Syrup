@@ -1,0 +1,17 @@
+[
+    {
+        "couponCode": "CYBERWEB24",
+        "couponTitle": "Take 20% Off Your Order",
+        "couponDescription": "Save 20% on all course fees by adding this Get Smarter code."
+    },
+    {
+        "couponCode": "SUST2023",
+        "couponTitle": "Receive 15% Off w/ Promo Code",
+        "couponDescription": "Enter this coupon code at checkout to save an extra 15% on selected sustainability courses."
+    },
+    {
+        "couponCode": "GS-AF-LEARN15-2022",
+        "couponTitle": "Save 15% on Courses! ",
+        "couponDescription": "Save up to 15% off!"
+    }
+]

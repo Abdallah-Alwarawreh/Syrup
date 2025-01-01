@@ -1,0 +1,47 @@
+[
+    {
+        "couponCode": "MEGA10",
+        "couponTitle": "Enjoy 10% Discount Using Promo Code",
+        "couponDescription": "Score 10% off with code"
+    },
+    {
+        "couponCode": "EXTRA10YC",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Take 10% off with coupon code"
+    },
+    {
+        "couponCode": "BFVIP10",
+        "couponTitle": "Yours Clothing Coupon Code: Save £10 on Next Order",
+        "couponDescription": "Enjoy £10 discount on next order when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "VIPYC5GRT",
+        "couponTitle": "£10 Gift Card  £40 Order",
+        "couponDescription": "Shop yoursclothing.co.uk with VIP Exclusive Black Friday and receive £10 Gift Card on a £40 order at checkout."
+    },
+    {
+        "couponCode": "YCAPP10",
+        "couponTitle": "Yours Clothing Discount Code: Save £10 on Orders £40+ ",
+        "couponDescription": "Shop at Yours Clothing and get a £10 discount when you spend £40 or more. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "CYBERAPP10",
+        "couponTitle": "Enjoy £10 Off Your Purchase + Free Shipping",
+        "couponDescription": "Enter this Yours Clothing voucher code to receive £10 off your select order via app plus free delivery at checkout."
+    },
+    {
+        "couponCode": "OMGFREE",
+        "couponTitle": "Enjoy Complimentary Delivery With Promo Code",
+        "couponDescription": "Get Free Shipping When You Use Promo Code"
+    },
+    {
+        "couponCode": "XMAS10",
+        "couponTitle": "Take £10 Off Your Order",
+        "couponDescription": "Get £10 off when you purchase £60 and more at Yours Clothing."
+    },
+    {
+        "couponCode": "BFAPP10",
+        "couponTitle": "Yours Clothing Coupon: £10 Off Your Order & Free Delivery When You Download Their App ",
+        "couponDescription": "Enjoy an instant £10 off your purchase and free delivery when you download their app at yoursclothing.co.uk. Don't forget to apply their coupon code at checkout."
+    }
+]

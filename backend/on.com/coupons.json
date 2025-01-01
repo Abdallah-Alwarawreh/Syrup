@@ -1,0 +1,17 @@
+[
+    {
+        "couponCode": "RICHROLL10",
+        "couponTitle": "Get 10% Off Your Order",
+        "couponDescription": "Take 10% off everything in the store using this On coupon code at checkout."
+    },
+    {
+        "couponCode": "RUNTOGETHER",
+        "couponTitle": "Up to 30% Off with On Coupon Code",
+        "couponDescription": "Redeem this On discount code at checkout on your next order to get up to 30% off your purchase."
+    },
+    {
+        "couponCode": "MOVETOGETHER",
+        "couponTitle": "Buy One, Get One Free Shoes",
+        "couponDescription": "Shop for shoes at On and enter this promo code at checkout to get one free pair of shoes with the purchase of a pair of shoes."
+    }
+]

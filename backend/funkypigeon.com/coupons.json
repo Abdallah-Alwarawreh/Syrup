@@ -1,0 +1,27 @@
+[
+    {
+        "couponCode": "SALE50",
+        "couponTitle": "Get 50% Off Your Order",
+        "couponDescription": "Take 50% off 5 and more cards with this Funky Pigeon code."
+    },
+    {
+        "couponCode": "NEWCARD20",
+        "couponTitle": "20% Off Your Order with Discount Code",
+        "couponDescription": "Save 20% on your eligible purchase when this Funky Pigeon promotional code is applied at checkout."
+    },
+    {
+        "couponCode": "DEC30",
+        "couponTitle": "Save 30% Off",
+        "couponDescription": "Take 30% off with code"
+    },
+    {
+        "couponCode": "50FIVE",
+        "couponTitle": "Get 50% Off When You Buy 5 or More Cards with Promo Code",
+        "couponDescription": "Buy and save 50% on your 5+ Cards purchase with this discount code at Funky Pigeon."
+    },
+    {
+        "couponCode": "SF25",
+        "couponTitle": "Save 50% Off w/ Promo Code",
+        "couponDescription": "Get 50% off with promo code"
+    }
+]

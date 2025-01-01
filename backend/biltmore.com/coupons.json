@@ -1,0 +1,67 @@
+[
+    {
+        "couponCode": "WINE",
+        "couponTitle": "Get 25% Discount On Your Shopping",
+        "couponDescription": "Enjoy 25% Off on Your Purchase"
+    },
+    {
+        "couponCode": "TAKE30",
+        "couponTitle": "Get 30% Off With Promo Code Usage",
+        "couponDescription": "Enjoy Up to 30% Off When You Use Promo Code"
+    },
+    {
+        "couponCode": "THANKYOU20",
+        "couponTitle": "Get 20% Discount On All Items Using Code",
+        "couponDescription": "Receive 20% Off Sitewide with Promo Code"
+    },
+    {
+        "couponCode": "CYBER",
+        "couponTitle": "Grab 25% Discount Using Promo Code",
+        "couponDescription": "Take 25% off with discount code"
+    },
+    {
+        "couponCode": "61455",
+        "couponTitle": "Enjoy Up To 25% Savings On Your Order",
+        "couponDescription": "Take Up to 25% Off on Your Purchase"
+    },
+    {
+        "couponCode": "TRAVEL2023",
+        "couponTitle": "Biltmore Promo Code: 25% Off Your Purchase",
+        "couponDescription": "Order using Biltmore's coupon code and receive 25% off your sitewide purchase at checkout."
+    },
+    {
+        "couponCode": "BAGS25",
+        "couponTitle": "Save 25% Off w/ Promo Code",
+        "couponDescription": "now through july 31, shop online with promo code and save 25% on all beautifully crafted"
+    },
+    {
+        "couponCode": "FREESHIP",
+        "couponTitle": "Enjoy Complimentary Delivery Using Discount Code",
+        "couponDescription": "Get Free Shipping with Promo Code"
+    },
+    {
+        "couponCode": "abenity",
+        "couponTitle": "Get $10 Off Using Promo Code",
+        "couponDescription": "Take $10 off with discount code"
+    },
+    {
+        "couponCode": "secu",
+        "couponTitle": "Discount admission",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "TORT20",
+        "couponTitle": "Save 20% Off w/ Discount Code",
+        "couponDescription": "20% off now through August"
+    },
+    {
+        "couponCode": "youdecide",
+        "couponTitle": "Get $10 Discount Using Promo Code",
+        "couponDescription": "Score $10 off with promo code"
+    },
+    {
+        "couponCode": "speed",
+        "couponTitle": "Save on Biltmore Estate tickets",
+        "couponDescription": null
+    }
+]

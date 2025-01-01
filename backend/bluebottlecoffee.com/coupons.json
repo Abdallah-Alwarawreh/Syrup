@@ -1,0 +1,27 @@
+[
+    {
+        "couponCode": "SET15",
+        "couponTitle": "Get 15% off Select Coffees",
+        "couponDescription": "Select coffees now 15% off"
+    },
+    {
+        "couponCode": "DEALMOONOCT",
+        "couponTitle": "Enjoy Up to 15% Off Your Subscription",
+        "couponDescription": "Take up to 15% discount when you subscribe to your favorite coffee at Bluebottlecoffee.com"
+    },
+    {
+        "couponCode": "MOON5",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "Take up to 20% off with discount code"
+    },
+    {
+        "couponCode": "SPRINGOFF",
+        "couponTitle": "Save 15% Off w/ Promo Code",
+        "couponDescription": "Get up to 15% off with coupon"
+    },
+    {
+        "couponCode": "holiday10",
+        "couponTitle": "Free Shipping",
+        "couponDescription": "Free shipping with promo code"
+    }
+]

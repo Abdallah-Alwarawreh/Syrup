@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "HHSHOPRW11",
+        "couponTitle": "Enjoy A 10% Discount",
+        "couponDescription": "Save 10% off"
+    },
+    {
+        "couponCode": "hhxmas11d",
+        "couponTitle": "Get $20 Discount On $100 Purchase",
+        "couponDescription": "Save $20 off $100"
+    },
+    {
+        "couponCode": "hhfree12",
+        "couponTitle": "No-Cost Delivery On All Purchases",
+        "couponDescription": "Free Shipping with Any Order"
+    },
+    {
+        "couponCode": "SUMMER25",
+        "couponTitle": "25% off Everything",
+        "couponDescription": "Save 25% off all purchases! US and Canada only. Not valid on workwear.Cannot be combined with other offers, sale items or Pro Accounts."
+    },
+    {
+        "couponCode": "HHMAY25",
+        "couponTitle": "Save 25% off Everything",
+        "couponDescription": "Save 25% off Everything"
+    },
+    {
+        "couponCode": "HHFREESHIP",
+        "couponTitle": "Enjoy Zero Delivery Costs On All Purchases",
+        "couponDescription": "Free Shipping on Any Order"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "couponCode": "SAVE15",
+        "couponTitle": "Get 20% Off Select Items",
+        "couponDescription": "Score up to 20% off select items purchase at Nuts."
+    },
+    {
+        "couponCode": "LEYKIS",
+        "couponTitle": "Nuts.com Coupon: Get 4 Free Samples",
+        "couponDescription": "Apply this promo code when you place your next nuts.com order and receive four free samples valued at $15."
+    },
+    {
+        "couponCode": "SPRING10",
+        "couponTitle": "Nuts.com Discount Code: Extra 10% Off Your Order",
+        "couponDescription": "Redeem this discount code at Nuts.com to take an extra 10% off on your purchase."
+    },
+    {
+        "couponCode": "SPRING20",
+        "couponTitle": "Nuts.com Coupon Code: Extra 20% Off All Items",
+        "couponDescription": "Enter this coupon code at Nuts.com to receive an additional 20% off on all products."
+    }
+]

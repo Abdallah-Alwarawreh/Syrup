@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "SAVE30",
+        "couponTitle": "Save 30% Off Using Code",
+        "couponDescription": "Take 30% off with code"
+    },
+    {
+        "couponCode": "FRESH25",
+        "couponTitle": "Get 25% Off Any Item ",
+        "couponDescription": "Paste this promo code at checkout and save 25% on any item."
+    },
+    {
+        "couponCode": "HOLIDAY15",
+        "couponTitle": "TAP Coupon Code: Get 15% Off",
+        "couponDescription": "Unlock 15% off your next travel booking at TAP with this coupon code. Save on flights, hotels, and more to make your adventures more affordable. Dont miss this chance to explore while keeping your budget in check."
+    },
+    {
+        "couponCode": "CHOCOLATE15EUR",
+        "couponTitle": "TAP Discount Code: Up to 15% Off Your Purchase Sitewide",
+        "couponDescription": "Save up to 15% on your purchase across the entire site at TAP Air Portugal. Use this discount code during checkout for instant savings. Don't miss this chance to book your flight for less."
+    },
+    {
+        "couponCode": "TRAVEL5",
+        "couponTitle": "TAP Promo Code: Up to 45% Off Your Order",
+        "couponDescription": "Buy and save up to 45% with this discount code for select bookings on your purchase at TAP."
+    },
+    {
+        "couponCode": "HALLOWEEN",
+        "couponTitle": "Get 25% Off Your Order",
+        "couponDescription": "Enjoy 25% off your Fly Tap purchase with this code."
+    },
+    {
+        "couponCode": "STOPOVER",
+        "couponTitle": "Save 15% on Select Hotels With Portugal Coupon",
+        "couponDescription": "Score 15% Off your stay Senhora Da Rosa Tradition And Nature Hotel with this verified promo code."
+    }
+]

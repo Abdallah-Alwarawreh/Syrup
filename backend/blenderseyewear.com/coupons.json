@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "PARTNER15",
+        "couponTitle": "15% OFF Blenders Purchase",
+        "couponDescription": "15% OFF Blenders Purchase"
+    },
+    {
+        "couponCode": "Blend15",
+        "couponTitle": "Save 15% Off w/ Coupon Code",
+        "couponDescription": "Get 15% off with discount code"
+    },
+    {
+        "couponCode": "HAILIE15",
+        "couponTitle": "Blenders Eyewear Coupon: 15% Off Your Order",
+        "couponDescription": "Save 15% on best selling sunglasses with this Blenders Eyewear code."
+    },
+    {
+        "couponCode": "Harmony",
+        "couponTitle": "Take 20% Off Your Order",
+        "couponDescription": "Get 20% off when you add this Blenders Eyewear code."
+    },
+    {
+        "couponCode": "PARTNER10",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "10% OFF Blenders Eyewear Purchase"
+    },
+    {
+        "couponCode": "ghost",
+        "couponTitle": "Blenders Eyewear Coupon: 40% Off Your Order",
+        "couponDescription": "Big savings at Blenders Eyewear by getting 40% on your purchase."
+    },
+    {
+        "couponCode": "perkinsvip",
+        "couponTitle": "Get 15% Off Your Order",
+        "couponDescription": "Save big at Blenders Eyewear by getting 15% on sunglasses."
+    }
+]

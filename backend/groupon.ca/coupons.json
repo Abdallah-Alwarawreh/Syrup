@@ -1,0 +1,12 @@
+[
+    {
+        "couponCode": "SAVE20",
+        "couponTitle": "Enjoy 20% Discount Using Promo Code",
+        "couponDescription": "Get 20% off with this Groupon coupon code when used at checkout."
+    },
+    {
+        "couponCode": "SAVE10",
+        "couponTitle": "$10 Off Your First Groupon Canada Purchase!",
+        "couponDescription": "Save $10 Off Your First Groupon enter promo code sitewide at checkout today!"
+    }
+]

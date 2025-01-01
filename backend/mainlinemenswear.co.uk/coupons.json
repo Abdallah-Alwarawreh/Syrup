@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "AMZ10",
+        "couponTitle": "Take £10 Off with Code",
+        "couponDescription": "£10 off when you spend over £100 with amazon pay"
+    },
+    {
+        "couponCode": "NSOW52",
+        "couponTitle": "Enjoy A 10% Discount On All Items",
+        "couponDescription": "10% off everything"
+    },
+    {
+        "couponCode": "AMAZON15",
+        "couponTitle": "Use Amazon Check out and Save 15% off Full Priced Items",
+        "couponDescription": "15% off Full Price Items Using Amazon Pay & Free UK Delivery On Orders Over £35"
+    },
+    {
+        "couponCode": "CLEARPAY15",
+        "couponTitle": "Get 15% off with promo code",
+        "couponDescription": "Get 15% off all full price items using Clearpay at checkout. 15% off valid on all full price clothing, footwear and accessories when using Clearpay at checkout, valid on UK orders only. This offer cannot be used in conjunction with any other offer. Clearpay is credit. T&Cs & late fees apply"
+    },
+    {
+        "couponCode": "FRESH10",
+        "couponTitle": "Save 10% Off with Code",
+        "couponDescription": "10% Off New Items"
+    },
+    {
+        "couponCode": "FLASH10",
+        "couponTitle": "Enjoy 10% Off With Clearpay Checkout",
+        "couponDescription": "Get 10% off on Your Entire Order when You Use Clearpay at Checkout"
+    },
+    {
+        "couponCode": "JAN23TREAT",
+        "couponTitle": "Save 10% Off with Code",
+        "couponDescription": "Save 10% off on all outlet styles orders during Grab a Payday Treat."
+    }
+]

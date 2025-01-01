@@ -1,0 +1,27 @@
+[
+    {
+        "couponCode": "JENNA",
+        "couponTitle": "Enjoy 15% Savings Using Promo Code",
+        "couponDescription": "Take 15% off with discount code"
+    },
+    {
+        "couponCode": "SLINGMALAYALAM",
+        "couponTitle": "Take $20 Off",
+        "couponDescription": "Save $20 off on Sling TV Malayalam monthly programming using . While supplies last"
+    },
+    {
+        "couponCode": "SLINGTELUGU",
+        "couponTitle": "Take $20 Off",
+        "couponDescription": "Save $20 off on Monthly Sling TV Telugu programming. While Supplies Last"
+    },
+    {
+        "couponCode": "SLINGKANNADA",
+        "couponTitle": "Take $20 Off",
+        "couponDescription": "Save $20 off on monthly Sling TV Kannada programming with . Only while supplies last"
+    },
+    {
+        "couponCode": "SLINGTAMIL",
+        "couponTitle": "Take $20 Off w/ Coupon Code",
+        "couponDescription": "Save $20 off on Sling TV Tamil monthly pack. Only while supplies last using"
+    }
+]

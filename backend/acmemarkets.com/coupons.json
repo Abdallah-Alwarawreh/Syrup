@@ -1,0 +1,62 @@
+[
+    {
+        "couponCode": "SAVE20",
+        "couponTitle": "Take $20 off Your First Order of $75+!",
+        "couponDescription": "Get $20 Off + Free Shipping on $75+ Purchase"
+    },
+    {
+        "couponCode": "SAVE30",
+        "couponTitle": "Get $30 off your first DriveUp & Go™ order when you spend $75 or more",
+        "couponDescription": "Apply Acme Markets coupon code to save $30 off first DriveUp & Go on $75 or more order."
+    },
+    {
+        "couponCode": "SAVE5",
+        "couponTitle": "Get $5 Off On Qualified Products",
+        "couponDescription": "Receive $5 Discount on Eligible Items"
+    },
+    {
+        "couponCode": "SAVE4",
+        "couponTitle": "Save $4 On Purchase Of 2+ Selected Items",
+        "couponDescription": "Get $4 Off When You Purchase 2 or More Select Items"
+    },
+    {
+        "couponCode": "SPEND25",
+        "couponTitle": "$5 Off On $25+ Purchases",
+        "couponDescription": "Get $5 Discount When You Spend $25 or More"
+    },
+    {
+        "couponCode": "CYBERCRES20",
+        "couponTitle": "Get 20% Off Your Purchase",
+        "couponDescription": "Save 20% on select crescent brands by adding this Acme Markets code."
+    },
+    {
+        "couponCode": "SPEND15",
+        "couponTitle": "Get $5 Off On Your Purchase",
+        "couponDescription": "Enjoy $5 Discount on Your Order"
+    },
+    {
+        "couponCode": "SAVE10",
+        "couponTitle": "Save $10 On A $40 Purchase",
+        "couponDescription": "Get $10 Off on $40 Worth of Purchase"
+    },
+    {
+        "couponCode": "SNACK",
+        "couponTitle": "Enjoy $2 Discount On Your Purchase",
+        "couponDescription": "Get $2 Off on Your Order"
+    },
+    {
+        "couponCode": "XHDSKHD",
+        "couponTitle": "Get $10 Off Your Order ",
+        "couponDescription": "Paste this promo code at checkout and save $10 on your order."
+    },
+    {
+        "couponCode": "HFZAKJF",
+        "couponTitle": "ACME Markets Discount Code: Save 20% on Your Purchase ",
+        "couponDescription": "Shop at ACME Markets and enjoy a 20% discount on your purchase. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "MOMFAVES",
+        "couponTitle": "Get $5 Off On Chosen Items",
+        "couponDescription": "Enjoy $5 Discount on Select Products"
+    }
+]

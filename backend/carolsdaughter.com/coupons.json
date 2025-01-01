@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "FLASH50",
+        "couponTitle": "Apply Coupon Code For 50% Discount",
+        "couponDescription": "Get 50% off with coupon code"
+    },
+    {
+        "couponCode": "SMS15",
+        "couponTitle": "Enjoy 15% Off Your Purchase",
+        "couponDescription": "Get Up to 15% Discount on Your Order"
+    },
+    {
+        "couponCode": "BOGO",
+        "couponTitle": ": Free Item With Purchase",
+        "couponDescription": "Buy One Get One Free Your Order"
+    },
+    {
+        "couponCode": "SINGLE11",
+        "couponTitle": "Only $11.11! with Code",
+        "couponDescription": "Use this Carols Daughter promo code to get black vanilla set for only $11.11."
+    },
+    {
+        "couponCode": "TRICKORTREAT",
+        "couponTitle": "Spend 30% Off With Promo Code",
+        "couponDescription": "At checkout, apply 30% off with a promo code on your purchase at Carol's Daughter."
+    },
+    {
+        "couponCode": "ROUTINE",
+        "couponTitle": "Get 30% Discount Using Coupon",
+        "couponDescription": "Save 30% off with coupon"
+    },
+    {
+        "couponCode": "SALE30",
+        "couponTitle": "Enjoy A 30% Discount On Your Purchase",
+        "couponDescription": "30% Off Your Order"
+    },
+    {
+        "couponCode": "BF2021",
+        "couponTitle": "Complimentary Set On $55+ Purchases",
+        "couponDescription": "Free Gift set With Purchase Of $55 Or More"
+    },
+    {
+        "couponCode": "SINGLE",
+        "couponTitle": "Get 10% Discount Using Promo Code",
+        "couponDescription": "Save 10% off with code"
+    },
+    {
+        "couponCode": "exclusive30",
+        "couponTitle": "Get 30% Discount Using Promo Code",
+        "couponDescription": "Score up to 30% off with coupon code"
+    },
+    {
+        "couponCode": "FALLSAVINGS",
+        "couponTitle": "Up to 30% Off on 4+ Items",
+        "couponDescription": "Save up to 30% off when you purchase four or more products when you buy more Save More."
+    },
+    {
+        "couponCode": "HAIRDAY",
+        "couponTitle": "Free Shipping",
+        "couponDescription": "Free shipping with discount code"
+    },
+    {
+        "couponCode": "WASHDAY",
+        "couponTitle": "Purchase Wash Day Delight, Receive Towel Free",
+        "couponDescription": "Buy any Wash Day Delight and Get a Free Towel"
+    },
+    {
+        "couponCode": "OURTREAT",
+        "couponTitle": "Save 50% Off w/ Coupon Code",
+        "couponDescription": "Save Up to 50% off on 3 or More Items when You Use Promo Code"
+    },
+    {
+        "couponCode": "SUMMER",
+        "couponTitle": "Get Up To 40% Off Your Order At Carol's Daughter",
+        "couponDescription": "Save now at Carols Daughter by getting up to 40% off your order."
+    },
+    {
+        "couponCode": "SALE50",
+        "couponTitle": "Save 50% Off w/ Coupon Code",
+        "couponDescription": "50% off semi annual sale"
+    },
+    {
+        "couponCode": "MEMORIAL50",
+        "couponTitle": "Save 50% Off w/ Discount Code",
+        "couponDescription": "50% Off Body & Family Favorites"
+    },
+    {
+        "couponCode": "TIER30",
+        "couponTitle": "Enjoy A 30% Discount On Your Purchase",
+        "couponDescription": "30% Off Your Order"
+    },
+    {
+        "couponCode": "TIER40",
+        "couponTitle": "Slash 40% Off Your Purchase",
+        "couponDescription": "40% Off Your Order"
+    },
+    {
+        "couponCode": "FREEGIFT",
+        "couponTitle": "Get Complimentary Hand Cream With $25+ Purchase",
+        "couponDescription": "Receive a Free Hand Cream on Purchase Worth $25 or More"
+    }
+]

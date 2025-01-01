@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "SAVE19",
+        "couponTitle": "Enterprise Rent-A-Car UK Discount Code: Extra 5% Off Your Purchase",
+        "couponDescription": "Receive an addtional 5% off car rentals on your order with Enterprise Rent-A-Car UK's promo code. Redeem at checkout."
+    },
+    {
+        "couponCode": "eur299",
+        "couponTitle": "Take 10% Off Your Purchase ",
+        "couponDescription": "Enjoy shopping and get a 10% discount on your purchase when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "UELFANS",
+        "couponTitle": "Save 5% Off with Code",
+        "couponDescription": "Save 5% off on Car Hire for UEFA Europa League and Football Fans"
+    },
+    {
+        "couponCode": "GOLFANS",
+        "couponTitle": "Get 5% Off On Chosen Items",
+        "couponDescription": "Enjoy 5% Discount on Select Products"
+    },
+    {
+        "couponCode": "MK14WES",
+        "couponTitle": "Weekend Special Rates starting at £9.99 per day",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "NLUKPRO",
+        "couponTitle": "Save 15% Off with Code",
+        "couponDescription": "Save 15% off on Rentals at select Locations in Amsterdam"
+    }
+]

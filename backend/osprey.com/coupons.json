@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "osprey25",
+        "couponTitle": "Save 25% Off",
+        "couponDescription": "Get up to 25% off with coupon"
+    },
+    {
+        "couponCode": "10OFF",
+        "couponTitle": "Save 50% Off",
+        "couponDescription": "Save 50% off with discount code"
+    },
+    {
+        "couponCode": "FREEWATER",
+        "couponTitle": "Save 80% Off w/ Coupon Code",
+        "couponDescription": "Take up to 80% off with promo code"
+    },
+    {
+        "couponCode": "APRIL15MOVE",
+        "couponTitle": "Save 15% Off w/ Coupon Code",
+        "couponDescription": "Take 15% off with code"
+    },
+    {
+        "couponCode": "OVER50MENTOR",
+        "couponTitle": "Save 40% Off using Coupon Code",
+        "couponDescription": "Take 40% off with coupon code"
+    },
+    {
+        "couponCode": "14C45BAB",
+        "couponTitle": "Take $185 Off Using Code",
+        "couponDescription": "Score $185 off with coupon code"
+    },
+    {
+        "couponCode": "OSPREY2023",
+        "couponTitle": "Save 25% Off",
+        "couponDescription": "Score 25% off with coupon"
+    }
+]

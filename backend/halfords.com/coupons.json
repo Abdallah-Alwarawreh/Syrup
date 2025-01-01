@@ -1,0 +1,17 @@
+[
+    {
+        "couponCode": "XMAS10",
+        "couponTitle": "Save 10% Off w/ Promo Code",
+        "couponDescription": "Get an Extra 10% Discount with Promo Code"
+    },
+    {
+        "couponCode": "DEAL10",
+        "couponTitle": "Save 10% Off w/ Promo Code",
+        "couponDescription": "Get an Additional 10% Off on Your Purchase"
+    },
+    {
+        "couponCode": "PACS10",
+        "couponTitle": "Halfords Coupon Code: Take 10% Off Bike Parts and Accessories £30+ ",
+        "couponDescription": "Enjoy a 10% discount on bike parts and accessories of £30 or more when you enter this coupon code at checkout."
+    }
+]

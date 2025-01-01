@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "extra20",
+        "couponTitle": "Save 15% Off Using Code",
+        "couponDescription": "Score up to 15% off with discount code"
+    },
+    {
+        "couponCode": "MAY23",
+        "couponTitle": "Free Shipping With Peter Millar Code Usage",
+        "couponDescription": "Receive complimentary shipping when you add this Peter Millar code."
+    },
+    {
+        "couponCode": "SHIPSEPT",
+        "couponTitle": "Enjoy complimentary shipping on your purchase at petermillar.com.",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "AUGLOOKS",
+        "couponTitle": "Enjoy complimentary shipping when you add this Peter Millar code.",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "PMAPRIL",
+        "couponTitle": "Enjoy Free Shipping With This Code",
+        "couponDescription": "Get complimentary shipping when you apply this code."
+    },
+    {
+        "couponCode": "MAR23",
+        "couponTitle": "Free Shipping With Peter Millar Coupon Code",
+        "couponDescription": "Enjoy complimentary shipping with this Peter Millar coupon code."
+    },
+    {
+        "couponCode": "FALL23",
+        "couponTitle": "Free Shipping",
+        "couponDescription": "Enjoy shopping and get free standard shipping on your purchase when you enter this coupon code at checkout."
+    }
+]

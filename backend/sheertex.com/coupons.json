@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "UNSUNGFREESHIPPING",
+        "couponTitle": "Free Shipping using Coupon Code",
+        "couponDescription": "Free shipping with promo code"
+    },
+    {
+        "couponCode": "UFCVEGAS89",
+        "couponTitle": "Get Extra 15% Off on Orders $80+",
+        "couponDescription": "Grab an extra 15% discount on orders over $80. Paste this promo code at checkout."
+    },
+    {
+        "couponCode": "FREESHIPPING",
+        "couponTitle": "Free Shipping",
+        "couponDescription": "Free shipping with coupon"
+    },
+    {
+        "couponCode": "SHEERTEX60",
+        "couponTitle": "Save 60% Off w/ Promo Code",
+        "couponDescription": "Receive 60% off on Spring dresses orders at sheertex.com."
+    },
+    {
+        "couponCode": "SYDNEYANNABB10",
+        "couponTitle": " Sheertex Coupon: 10% Off Your Order",
+        "couponDescription": "Take an extra 10% off sitewide with this \nSheertex code."
+    },
+    {
+        "couponCode": "FIRST10",
+        "couponTitle": "Save 10% Off Your first Orders With Code",
+        "couponDescription": "Apply this Sheertex coupon code at checkout to enjoy 10% off your first order."
+    }
+]

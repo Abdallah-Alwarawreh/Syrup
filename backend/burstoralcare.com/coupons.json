@@ -1,0 +1,22 @@
+[
+    {
+        "couponCode": "SAVE10",
+        "couponTitle": "Save 10% off Everything",
+        "couponDescription": "Save 10% off Everything"
+    },
+    {
+        "couponCode": "CPBURST10",
+        "couponTitle": "Get 10% Off Your Order",
+        "couponDescription": "Take 10% off your purchase for limited time at Burst Oral Care."
+    },
+    {
+        "couponCode": "BURST10",
+        "couponTitle": "Save 10% off Now!",
+        "couponDescription": "Save 10% off Now!"
+    },
+    {
+        "couponCode": "ROSEGOLD10",
+        "couponTitle": "10% off select items",
+        "couponDescription": "10% off select items"
+    }
+]
