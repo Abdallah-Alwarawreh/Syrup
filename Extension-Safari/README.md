@@ -25,10 +25,10 @@
 
 7. If you would like to use the extension on iOS:
     - [iPhone] Open the settings app then go into Privacy & Security > Developer Mode and ensure it is enabled
-    - Connect the phone to your macOS device via USB
+    - Connect your iPhone to your macOS device via USB
     - [macOS] At the top of Xcode switch "Syrup (macOS)" to "Syrup (iOS)"
     - [macOS] Wait for it to install the required files to the phone (you can check the status by going to Product > Destination > Manage Run Destinations)
-    - [macOS] Once it has finished ensure the selected device is your iPhone and not a simulator then click the play button at the top left and it should build the iOS app on your device
+    - [macOS] Once it has finished ensure the selected device (shown next to where it says "Syrup (iOS)") is your iPhone and not a simulator device then click the play button at the top left and it should build the iOS app on your device
         - [iPhone] If it doesn't open and instead shows a popup titled "Untrusted Developer" go to Settings > General > VPN & Device Management > YOUR APPLE EMAIL > Trust then open the app
     - [iPhone] Open safari and click the button on the left of the url bar
     - [iPhone] Go into Manage Extensions and ensure Syrup is enabled
@@ -41,6 +41,4 @@
 
 5. Once the `Archives` menu shows up click the `Distribute App` option on the right
 
-6. Select `Custom` > `Copy App` and select the `build` directory
-
-7. Click export and you should see the `Syrup.app` within a directory in the `build` directory
+6. The only option that works without a paid apple developer account is `Custom` > `Copy App` however I'm unsure if that would work if you share the `Syrup.app` to other people since it wouldn't be signed for them.
