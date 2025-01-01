@@ -80,12 +80,14 @@ const GetCouponData = async (couponId: string, domain: string) => {
         emailOutUrl: string;
         verified: boolean;
         exclusive: boolean;
+        expirationDate: string;
     } = await res.json();
 
     return {
         couponCode: data.code,
         couponTitle: data.title,
         couponDescription: data.desc,
+        couponExpirationDate: data.expirationDate,
     };
 };
 
@@ -109,6 +111,7 @@ const SaveCoupons = async (coupons: any) => {
             couponCode: string;
             couponTitle: string;
             couponDescription: string;
+            couponExpirationDate: string;
         }[];
     }[] = [];
 
@@ -137,6 +140,7 @@ const SaveCoupons = async (coupons: any) => {
             couponCode: string;
             couponTitle: string;
             couponDescription: string;
+            couponExpirationDate: string;
         }>[] = [];
 
         for (const couponId of couponIds) {

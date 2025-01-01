@@ -9,6 +9,7 @@ const coupons: {
         couponCode: string;
         couponTitle: string;
         couponDescription: string;
+        couponExpirationDate: string;
     }[];
 }[] = require("./coupons.json");
 const bar = new ProgressBar(":bar :current/:total", { total: coupons.length });

@@ -13,6 +13,11 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                 sendResponse({ coupons: [] });
             });
         return true;
+    } else if (request.action === "setBadgeText") {
+        chrome.action.setBadgeText({
+            tabId: sender.tab.id,
+            text: request.text,
+        });
     }
 
     if (request.action === "openPopup") {

@@ -214,6 +214,69 @@ export default function Home() {
             </div>
 
             {/* TODO: Why Choose Syrup? */}
+            <div className="flex flex-col w-full py-16 ">
+                {/* Section 1 */}
+                <div className="flex flex-col md:flex-row items-center md:items-start w-full bg-blue-200">
+                    <div className="md:w-1/2 p-6">
+                        <img
+                            src="https://placehold.co/400"
+                            alt="Smart Coupon Finder"
+                            className="rounded-lg shadow-md float-left"
+                        />
+                    </div>
+                    <div className="md:w-1/2 p-6">
+                        <h3 className="text-2xl font-bold mb-4">
+                            Smart Coupon Finder
+                        </h3>
+                        <p>
+                            Syrup automatically finds and applies the best
+                            coupons at checkout, saving you time and money with
+                            zero effort.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Section 2 */}
+                <div className="flex flex-col md:flex-row-reverse items-center md:items-start w-full bg-green-200">
+                    <div className="md:w-1/2 p-6">
+                        <img
+                            src="https://placehold.co/400"
+                            alt="Privacy Focused"
+                            className="rounded-lg shadow-md float-right"
+                        />
+                    </div>
+                    <div className="md:w-1/2 p-6">
+                        <h3 className="text-2xl font-bold mb-4">
+                            Privacy-Focused
+                        </h3>
+                        <p>
+                            Unlike other tools, Syrup doesn’t track your data or
+                            compromise your privacy. Your savings, your terms.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Section 3 */}
+                <div className="flex flex-col md:flex-row items-center md:items-start w-full bg-orange-200">
+                    <div className="md:w-1/2 p-6">
+                        <img
+                            src="https://placehold.co/400"
+                            alt="Open Source & Transparent"
+                            className="rounded-lg shadow-md"
+                        />
+                    </div>
+                    <div className="md:w-1/2 p-6">
+                        <h3 className="text-2xl font-bold mb-4">
+                            Open Source & Transparent
+                        </h3>
+                        <p>
+                            Syrup is built on trust and transparency. With
+                            open-source code, you can verify every line and
+                            contribute to the project.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             {/* User Testimonials */}
             <Testimonials />

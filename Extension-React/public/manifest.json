@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Syrup",
     "description": "A Honey alternative, find and apply the best coupons automatically.",
-    "version": "0.2",
+    "version": "0.3",
     "permissions": ["activeTab"],
     "background": {
         "service_worker": "background.js",

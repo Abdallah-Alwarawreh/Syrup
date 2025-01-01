@@ -3,9 +3,15 @@
  *******************************************************/
 (() => {
     /*******************************************************
-     * 1. Domain-Specific Overrides
+     * 1. Configurations
      *******************************************************/
-    const domainConfigurations = {
+    const maxWaitTime = 4000;
+    
+    const domainReplacements = {
+        "nordcheckout.com": "nordvpn.com",
+    };
+
+    const domainConfigs = {
         "applebees.com": {
             inputSelector: "#txtPromoCode",
             applyButtonSelector: ".btnPromoApply",
@@ -14,20 +20,16 @@
             priceSelector: ".order-price",
             removeCouponButtonSelector: ".lnkPromoRemove",
         },
+        "nordvpn.com": {
+            inputSelector: "input[name='couponCode']",
+            preApplyButtonSelector: "p[data-testid='coupon-show-form-button'] > a",
+            applyButtonSelector: "button[data-testid='coupon-apply-button']",
+            successSelector: "div[data-testid='coupon-applied-message']",
+            failureSelector: "div[data-testid='coupon-error-alert']",
+            priceSelector: "span[data-testid='CartSummary-total-amount']",
+            removeCouponButtonSelector: "button[data-testid='coupon-delete-applied-button']",
+        },
     };
-
-    /*******************************************************
-     * 2. E-Commerce Platform Detection + Standard Configs
-     *******************************************************/
-    function detectPlatform() {
-        const html = document.documentElement.innerHTML.toLowerCase();
-
-        if (html.includes("woocommerce") || html.includes("wp-content/plugins/woocommerce")) {
-            return "woocommerce";
-        }
-
-        return null;
-    }
 
     const platformConfigs = {
         woocommerce: {
@@ -40,6 +42,19 @@
             removeCouponButtonSelector: ".woocommerce-remove-coupon",
         },
     };
+
+    /*******************************************************
+     * 2. E-Commerce Platform Detection
+     *******************************************************/
+    function detectPlatform() {
+        const html = document.documentElement.innerHTML.toLowerCase();
+
+        if (html.includes("woocommerce") || html.includes("wp-content/plugins/woocommerce")) {
+            return "woocommerce";
+        }
+
+        return null;
+    }
 
     /*******************************************************
      * 3. Helper Functions / Variables
@@ -108,11 +123,20 @@
     async function applySingleCoupon(
         inputSelector,
         couponCode,
+        preApplyButtonSelector,
         applyButtonSelector,
         successSelector,
         failureSelector,
         priceSelector
     ) {
+        const preApplyButton = preApplyButtonSelector
+            ? document.querySelector(preApplyButtonSelector)
+            : null;
+
+        if (preApplyButton) {
+            preApplyButton.click();
+        }
+
         const input = inputSelector ? document.querySelector(inputSelector) : null;
         const applyButton = applyButtonSelector
             ? document.querySelector(applyButtonSelector)
@@ -137,7 +161,6 @@
         if (successSelector && failureSelector) {
             await new Promise((resolve) => {
                 const startTime = Date.now();
-                const maxWait = 4000;
                 const interval = setInterval(() => {
                     const sEl = document.querySelector(successSelector);
                     const fEl = document.querySelector(failureSelector);
@@ -150,7 +173,7 @@
                         failureBySelector = true;
                         clearInterval(interval);
                         resolve();
-                    } else if (Date.now() - startTime > maxWait) {
+                    } else if (Date.now() - startTime > maxWaitTime) {
                         clearInterval(interval);
                         resolve();
                     }
@@ -218,6 +241,7 @@
             const result = await applySingleCoupon(
                 config.inputSelector,
                 couponCode,
+                config.preApplyButtonSelector,
                 config.applyButtonSelector,
                 config.successSelector,
                 config.failureSelector,
@@ -243,6 +267,7 @@
             await applySingleCoupon(
                 config.inputSelector,
                 bestCoupon,
+                config.preApplyButtonSelector,
                 config.applyButtonSelector,
                 config.successSelector,
                 config.failureSelector,
@@ -553,11 +578,12 @@
      * 7. Determine Config Based on Domain or Platform
      *******************************************************/
     function determineConfig() {
-        const domain = window.location.hostname.replace("www.", "");
+        let domain = window.location.hostname.replace("www.", "");
+        if (domainReplacements[domain]) domain = domainReplacements[domain];
 
         // 1) Check domain config
-        if (domainConfigurations[domain]) {
-            return domainConfigurations[domain];
+        if (domainConfigs[domain]) {
+            return domainConfigs[domain];
         }
 
         // 2) Check platform
@@ -574,7 +600,8 @@
      * 8. Main
      *******************************************************/
     async function main() {
-        const domain = window.location.hostname.replace("www.", "");
+        let domain = window.location.hostname.replace("www.", "");
+        if (domainReplacements[domain]) domain = domainReplacements[domain];
         const path = window.location.pathname;
 
         // 1) Attempt to fetch coupons
@@ -586,11 +613,17 @@
         }
 
         if (!coupons || coupons.length === 0) {
+            console.log("[Syrup] No coupons found.");
             return; // No coupons to try
         }
 
+        chrome.runtime.sendMessage({
+            action: "setBadgeText",
+            text: coupons.length.toString(),
+        });
+
         // 2) Check if user is on a likely checkout page
-        const isCheckoutPath = ["checkout", "cart", "basket", "order"].some((keyword) =>
+        const isCheckoutPath = ["checkout", "cart", "basket", "order", "payment"].some((keyword) =>
             path.includes(keyword)
         );
         if (!isCheckoutPath) {
