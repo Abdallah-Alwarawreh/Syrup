@@ -5,7 +5,7 @@ const CouponsList: React.FC<{
     coupons: Coupon[] | null;
     handleCopy: (code: string, index: number) => void;
 }> = ({ coupons, handleCopy }) => (
-    <ScrollArea className="flex-1">
+    <ScrollArea className="flex-1 pb-2 border-border border-b-2">
         {coupons ? (
             coupons.length > 0 ? (
                 <div className="space-y-2">

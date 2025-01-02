@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Coupon } from "./components/CouponCard";
-import Header from "./components/Header";
-import CouponsList from "./components/CouponsList";
 import { fetchCoupons } from "./lib/utils";
-import { ThemeToggle } from "./components/ThemeToggle";
 import { parseDomain } from "parse-domain";
+import CouponsPage from "./components/CouponsPage";
 
 const domainReplacements: any = {
     "nordcheckout.com": "nordvpn.com",
@@ -120,41 +118,15 @@ const Popup: React.FC = () => {
     };
 
     return (
-        <div className="w-96 h-[32rem] flex flex-col p-4 pt-2">
-            <h2 className="text-lg font-semibold pb-2 mb-2 text-primary text-center border-border border-b-2">
-                Coupons
-            </h2>
-            {errorMsg ? (
-                <p className="text-sm text-center text-red-500 dark:text-red-300">
-                    {errorMsg}
-                </p>
-            ) : (
-                <>
-                    <Header pageIcon={pageIcon} pageDomain={pageDomain} />
-                    <CouponsList
-                        coupons={couponsDomain}
-                        handleCopy={handleCopy}
-                    />
-
-                    {isSubDomain && (
-                        <div className="h-[50%] pt-2">
-                            <Header
-                                pageIcon={pageIcon}
-                                pageDomain={pageSubDomain}
-                            />
-                            <CouponsList
-                                coupons={couponsSubDomain}
-                                handleCopy={handleCopy}
-                            />
-                        </div>
-                    )}
-                </>
-            )}
-
-            <div className="flex items-center absolute top-1 right-1">
-                <ThemeToggle />
-            </div>
-        </div>
+        <CouponsPage
+            pageIcon={pageIcon}
+            pageDomain={pageDomain}
+            pageSubDomain={pageSubDomain}
+            isSubDomain={isSubDomain}
+            couponsDomain={couponsDomain}
+            couponsSubDomain={couponsSubDomain}
+            handleCopy={handleCopy}
+            errorMsg={errorMsg} />
     );
 };
 

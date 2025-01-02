@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Syrup",
+    "name": "Syrup (Open Beta)",
     "description": "A Honey alternative, find and apply the best coupons automatically.",
     "version": "0.3",
     "permissions": ["activeTab"],
