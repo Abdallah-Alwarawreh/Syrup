@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "bunx parse-domain-update && tsc -b && vite build",
+        "build": "bunx parse-domain-update && vite build",
         "lint": "eslint .",
         "preview": "vite preview"
     },
