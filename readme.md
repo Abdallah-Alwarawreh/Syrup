@@ -35,7 +35,7 @@ To use or contribute to Syrup, make sure you have the following:
 - A supported browser: Chrome, Edge, Firefox, Brave, or any browser with WebExtension support.  
 
 ### For Developers:  
-- [Node.js](https://nodejs.org/) and npm installed for development.  
+- [Bun.js](https://bun.sh/) installed for development.  
 
 ---
 
@@ -51,8 +51,8 @@ To use or contribute to Syrup, make sure you have the following:
 2. **Build the Extension**:  
    Install dependencies and build:  
    ```bash  
-   npm install  
-   npm run build  
+   bun install  
+   bun run build  
    ```  
 
 3. **Add to Your Browser**:  
