@@ -1,0 +1,62 @@
+{
+    "apply": {
+        "message": "Aplikovat"
+    },
+    "ignore": {
+        "message": "Ignorovat"
+    },
+    "syrup_logo": {
+        "message": "Syrup Logo"
+    },
+    "show_extension": {
+        "message": "Zobrazit rozšíření"
+    },
+    "no_auto_apply_setup": {
+        "message": "Pro tuto stránku není k dispozici auto-aplikující systém."
+    },
+    "click_apply_to_try_them_all": {
+        "message": "Stiskněte Aplikovat pro vyzkoušení všech."
+    },
+    "syrup_found_coupons": {
+        "message": "Syrup našel kupóny!"
+    },
+    "got_it": {
+        "message": "Chápu"
+    },
+    "testing_coupons": {
+        "message": "Testuji kupóny..."
+    },
+    "testing_coupon_current_of_total": {
+        "message": "Testuji kupón %currentIndex% z %total%"
+    },
+    "cancel": {
+        "message": "Zrušit"
+    },
+    "use_best": {
+        "message": "Použít nejlepší"
+    },
+    "testing_cancelled": {
+        "message": "Testování zrušeno."
+    },
+    "scan_was_stopped_no_coupons_applied": {
+        "message": "Skenování bylo zastaveno. Žádné kupóny nebyly aplikovány."
+    },
+    "we_found_the_best_coupon": {
+        "message": "Našli jsme ten nejlepší kupón!"
+    },
+    "applied_coupon_and_saved_savings_new_total": {
+        "message": "Byl použit kupón \"%bestCoupon%\" a bylo ušetřeno %savings%. Nová cena: %finalPrice%"
+    },
+    "no_better_price_found": {
+        "message": "Nebyla nalezena lepší cena."
+    },
+    "all_coupons_tested_but_none_lowered_your_total": {
+        "message": "Zkusili jsme všechny kupóny, ale žádné cenu nesnížili."
+    },
+    "now_trying_best_so_far": {
+        "message": "Nyní zkouším \"%currentCoupon%\". Dosavadní nejlepší cena: %bestPriceSoFar%"
+    },
+    "best_price_so_far": {
+        "message": "Dosavadní nejlepší cena: $%bestPriceSoFar%"
+    }
+}

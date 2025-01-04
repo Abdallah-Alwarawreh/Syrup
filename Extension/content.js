@@ -7,7 +7,7 @@ function replaceValue(selector, value) {
         el.focus();
         document.execCommand("selectAll");
         if (!document.execCommand("insertText", false, value)) {
-            el.value = "new text";
+            el.value = value;
         }
         el.dispatchEvent(new Event("change", { bubbles: true }));
     }

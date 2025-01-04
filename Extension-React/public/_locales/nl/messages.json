@@ -1,0 +1,62 @@
+{
+    "apply": {
+        "message": "Toepassen"
+    },
+    "ignore": {
+        "message": "Negeren"
+    },
+    "syrup_logo": {
+        "message": "Syrup Logo"
+    },
+    "show_extension": {
+        "message": "Toon Extensie"
+    },
+    "no_auto_apply_setup": {
+        "message": "Automatisch toepassen is op deze site niet beschikbaar."
+    },
+    "click_apply_to_try_them_all": {
+        "message": "Klik op Toepassen om ze allemaal uit te proberen."
+    },
+    "syrup_found_coupons": {
+        "message": "Syrup heeft kortingscodes gevonden!"
+    },
+    "got_it": {
+        "message": "Begrepen"
+    },
+    "testing_coupons": {
+        "message": "Kortingsbonnen aan het testen..."
+    },
+    "testing_coupon_current_of_total": {
+        "message": "Kortingsbon %currentIndex% van de %total% aan het testen"
+    },
+    "cancel": {
+        "message": "Annuleren"
+    },
+    "use_best": {
+        "message": "Gebruik de beste"
+    },
+    "testing_cancelled": {
+        "message": "Testen geannuleerd."
+    },
+    "scan_was_stopped_no_coupons_applied": {
+        "message": "De scan is gestopt. Geen kortingscodes toegepast."
+    },
+    "we_found_the_best_coupon": {
+        "message": "We hebben de beste kortingscode gevonden!"
+    },
+    "applied_coupon_and_saved_savings_new_total": {
+        "message": "Kortingscode \"%bestCoupon%\" is toegevoegd en bespaarde %savings%. Nieuw totaalbedrag: %finalPrice%"
+    },
+    "no_better_price_found": {
+        "message": "Er is geen betere prijs gevonden."
+    },
+    "all_coupons_tested_but_none_lowered_your_total": {
+        "message": "Alle kortingscodes zijn getest, maar geen enkele verlaagde je totaal."
+    },
+    "now_trying_best_so_far": {
+        "message": "\"%currentCoupon%\" Aan het uitproberen. Beste prijs tot nu toe: %bestPriceSoFar%"
+    },
+    "best_price_so_far": {
+        "message": "Beste prijs tot nu toe: $%bestPriceSoFar%"
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "apply": {
+        "message": "Anvend"
+    },
+    "ignore": {
+        "message": "Ignorer"
+    },
+    "syrup_logo": {
+        "message": "Syrup Logo"
+    },
+    "show_extension": {
+        "message": "Vis Udvidelse"
+    },
+    "no_auto_apply_setup": {
+        "message": "Ingen auto-anvend opsætning for dette websted."
+    },
+    "click_apply_to_try_them_all": {
+        "message": "Klik Anvend for at prøve dem alle."
+    },
+    "syrup_found_coupons": {
+        "message": "Syrup fandt kuponer!"
+    },
+    "got_it": {
+        "message": "Fik den"
+    },
+    "testing_coupons": {
+        "message": "Tester Kuponer..."
+    },
+    "testing_coupon_current_of_total": {
+        "message": "Tester kupon %currentIndex% af %total%"
+    },
+    "cancel": {
+        "message": "Annuller"
+    },
+    "use_best": {
+        "message": "Brug Bedste"
+    },
+    "testing_cancelled": {
+        "message": "Test Annulleret."
+    },
+    "scan_was_stopped_no_coupons_applied": {
+        "message": "Scan blev stoppet. Ingen kuponer anvendt."
+    },
+    "we_found_the_best_coupon": {
+        "message": "Vi fandt den bedste kupon!"
+    },
+    "applied_coupon_and_saved_savings_new_total": {
+        "message": "Anvendte kupon \"%bestCoupon%\" og sparede %savings%. Nyt beløb: %finalPrice%"
+    },
+    "no_better_price_found": {
+        "message": "Ingen bedre pris fundet."
+    },
+    "all_coupons_tested_but_none_lowered_your_total": {
+        "message": "Alle kuponer blev afprøvet, men ingen nedsatte dit beløb."
+    },
+    "now_trying_best_so_far": {
+        "message": "Prøver nu \"%currentCoupon%\". Bedste pris indtil videre: %bestPriceSoFar%"
+    },
+    "best_price_so_far": {
+        "message": "Bedste pris indtil videre: $%bestPriceSoFar%"
+    }
+}

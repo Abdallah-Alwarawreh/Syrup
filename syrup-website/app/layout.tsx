@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "@/components/theme-provider";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 
@@ -22,16 +21,7 @@ export default function RootLayout({
         <>
             <html lang="en" suppressHydrationWarning>
                 <head />
-                <body className={roboto.className}>
-                    <ThemeProvider
-                        attribute="class"
-                        defaultTheme="white"
-                        enableSystem
-                        disableTransitionOnChange
-                    >
-                        {children}
-                    </ThemeProvider>
-                </body>
+                <body className={roboto.className}>{children}</body>
             </html>
         </>
     );

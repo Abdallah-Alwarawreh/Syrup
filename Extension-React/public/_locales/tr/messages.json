@@ -1,0 +1,62 @@
+{
+    "apply": {
+        "message": "Uygula"
+    },
+    "ignore": {
+        "message": "Yok say"
+    },
+    "syrup_logo": {
+        "message": "Syrup logosu"
+    },
+    "show_extension": {
+        "message": "Eklentiyi göster"
+    },
+    "no_auto_apply_setup": {
+        "message": "Bu site için otomatik kurulum düzeneği yok."
+    },
+    "click_apply_to_try_them_all": {
+        "message": "Hepsini denemek için uygulaya tıkla."
+    },
+    "syrup_found_coupons": {
+        "message": "Syrup kuponlar buldu!"
+    },
+    "got_it": {
+        "message": "Anladım"
+    },
+    "testing_coupons": {
+        "message": "Kuponlar deneniyor..."
+    },
+    "testing_coupon_current_of_total": {
+        "message": "%total%'den %currentIndex%'inci kupon test ediliyor"
+    },
+    "cancel": {
+        "message": "İptal et"
+    },
+    "use_best": {
+        "message": "En iyiyi kullan"
+    },
+    "testing_cancelled": {
+        "message": "Test iptal edildi."
+    },
+    "scan_was_stopped_no_coupons_applied": {
+        "message": "Tarama durduruldu. Hiçbir kupon uygulanmadı."
+    },
+    "we_found_the_best_coupon": {
+        "message": "En iyi kuponu bulduk!"
+    },
+    "applied_coupon_and_saved_savings_new_total": {
+        "message": "\"%bestCoupon%\" kuponu uygulandı ve %savings% tutarında tasarruf edildi. Yeni tutar: %finalPrice%"
+    },
+    "no_better_price_found": {
+        "message": "Daha iyi fiyat bulunamadı."
+    },
+    "all_coupons_tested_but_none_lowered_your_total": {
+        "message": "Bütün kuponlar denendi ancak hiçbiri toplam tutarınızı düşürmedi."
+    },
+    "now_trying_best_so_far": {
+        "message": "Şu anda \"%currentCoupon%\" deneniyor. Şu ana kadar ki en iyi fiyat: %bestPriceSoFar%"
+    },
+    "best_price_so_far": {
+        "message": "Şu ana kadar ki en iyi fiyat: $%bestPriceSoFar%"
+    }
+}

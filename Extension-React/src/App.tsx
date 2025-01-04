@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Coupon } from "./components/CouponCard";
-import { fetchCoupons } from "./lib/utils";
+import { Coupon } from "@/components/CouponCard";
+import { fetchCoupons } from "@/lib/utils";
 import { parseDomain } from "parse-domain";
-import CouponsPage from "./components/CouponsPage";
+import CouponsPage from "@/components/CouponsPage";
 
 const domainReplacements: any = {
     "nordcheckout.com": "nordvpn.com",

@@ -3,7 +3,12 @@
 [![Build Extension](https://github.com/Abdallah-Alwarawreh/Syrup/actions/workflows/build-extension.yml/badge.svg)](https://github.com/Abdallah-Alwarawreh/Syrup/actions/workflows/build-extension.yml) [![Discord](https://img.shields.io/discord/1322120002576453745?color=5865F2&label=Discord&logo=discord&logoColor=white)](https://dsc.gg/hexium)
 
 
-Syrup is a lightweight, open-source browser extension designed to make finding and applying the best coupons effortless. Unlike traditional tools like Honey, Syrup prioritizes **transparency**, **user privacy**, and **ethical design** over profit-driven motives.  
+Syrup is a lightweight, open-source browser extension designed to make finding and applying the best coupons effortless. Unlike traditional tools like Honey, Syrup prioritizes **transparency**, **user privacy**, and **ethical design** over profit-driven motives.
+
+Please read [the privacy policy](./Privacy%20Policy.md).
+
+You can help the project financially by becoming a patreon member [here](https://www.patreon.com/c/abdallahalwarawreh/membership). 
+
 
 ---
 
@@ -13,7 +18,8 @@ Watch how and why Syrup was made!
 
 <div align="center">  
   <a href="https://www.youtube.com/watch?v=uBy9rERgmlU">  
-    <img src="imgs/thumbnail.png" alt="Honey Is A Scam... So I Made My Own">  
+    <img src="imgs/thumbnail.png" alt="Honey Is A Scam... So I Made My Own">
+    <img src="imgs/AvailableonYouTube-white-SVG.svg" alt="Watch on YouTube" style="position: absolute; bottom: 10px; right: 10px; width: 15%;">
   </a>  
 </div>  
 
@@ -27,20 +33,20 @@ Watch how and why Syrup was made!
 
 ---
 
-## 🛠️ Prerequisites  
+## 💪 Installing
+The Syrup extension is availabe to anyone using a Chromium or Firefox-based browser with WebExtension support!
 
-To use or contribute to Syrup, make sure you have the following:  
-
-### For Users:  
-- A supported browser: Chrome, Edge, Firefox, Brave, or any browser with WebExtension support.  
-
-### For Developers:  
-- [Node.js](https://nodejs.org/) and npm installed for development.  
+[![Chrome download link](https://user-images.githubusercontent.com/585534/107280622-91a8ea80-6a26-11eb-8d07-77c548b28665.png)](https://chromewebstore.google.com/detail/syrup/odfgjmajnbkiabjnfiijllkihjpilfch)
+[![Firefox download link](https://user-images.githubusercontent.com/585534/107280546-7b9b2a00-6a26-11eb-8f9f-f95932f4bfec.png)](https://addons.mozilla.org/en-US/firefox/addon/syrup)
+...or manually as a [.crx-file](./Syrup.crx)
 
 ---
 
-## 🚀 Installation  
+## 🚀 Building  
 
+0. **Prerequisites**: \
+   [Node.js](https://nodejs.org/) and npm installed for development.  
+   
 1. **Download the Extension**:  
    Clone or download the repo:  
    ```bash  
@@ -61,7 +67,7 @@ To use or contribute to Syrup, make sure you have the following:
 
 ---
 
-## 🤝 Contribution  
+## 🤝 Contributing
 
 We welcome contributions to improve Syrup! Here’s how you can help:  
 
@@ -78,6 +84,12 @@ We welcome contributions to improve Syrup! Here’s how you can help:
 4. Open a Pull Request!  
 
 For major changes, please open an issue first to discuss what you’d like to contribute.  
+
+---
+
+## 📚 Tech Stack
+
+[Techstack](./techstack.md)
 
 ---
 

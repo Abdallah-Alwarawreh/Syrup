@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 -4 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_503_4163)">
+<rect width="28" height="20" rx="2" fill="white"/>
+<mask id="mask0_503_4163" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
+<rect width="28" height="20" rx="2" fill="white"/>
+</mask>
+<g mask="url(#mask0_503_4163)">
+<rect width="28" height="20" fill="#FF2936"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 20H10.6667V0H0V20Z" fill="#128415"/>
+<path d="M10.6667 13.3333C12.5076 13.3333 14 11.8409 14 9.99999C14 8.15905 12.5076 6.66666 10.6667 6.66666C8.82572 6.66666 7.33333 8.15905 7.33333 9.99999C7.33333 11.8409 8.82572 13.3333 10.6667 13.3333Z" stroke="#FAF94F" stroke-width="1.33333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.3335 8.33333C9.3335 8.14924 9.48273 8 9.66683 8H11.6668C11.8509 8 12.0002 8.14924 12.0002 8.33333V10.6667C12.0002 11.403 11.4032 12 10.6668 12V12C9.93045 12 9.3335 11.403 9.3335 10.6667V8.33333Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 10.6667C11.0349 10.6667 11.3333 9.70153 11.3333 9.33334C11.3333 8.96515 11.0349 8.66667 10.6667 8.66667C10.2985 8.66667 10 8.96515 10 9.33334C10 9.70153 10.2985 10.6667 10.6667 10.6667Z" fill="#1D50B5"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_503_4163">
+<rect width="28" height="20" rx="2" fill="white"/>
+</clipPath>
+</defs>
+</svg>

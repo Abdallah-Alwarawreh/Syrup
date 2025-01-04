@@ -1,5 +1,5 @@
-import Header from "./Header";
-import CouponsList from "./CouponsList";
+import Header from "@/components/Header";
+import CouponsList from "@/components/CouponsList";
 
 export interface CouponData {
     pageIcon: string;
@@ -23,7 +23,8 @@ const CouponsEntry: React.FC<CouponData> = ({pageIcon, pageDomain, couponsDomain
             <Header pageIcon={pageIcon} pageDomain={pageDomain} />
             <CouponsList
                 coupons={couponsDomain}
-                handleCopy={handleCopy} />
+                handleCopy={handleCopy}
+            />
         </div>
     );
 }

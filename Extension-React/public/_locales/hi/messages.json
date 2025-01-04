@@ -1,0 +1,62 @@
+{
+    "apply": {
+        "message": "अप्लाई"
+    },
+    "ignore": {
+        "message": "अनदेखा करे"
+    },
+    "syrup_logo": {
+        "message": "Syrup लोगो"
+    },
+    "show_extension": {
+        "message": "एक्सटैन्शन दिखाए"
+    },
+    "no_auto_apply_setup": {
+        "message": "इस साइट के लिए कोई ऑटो अप्लाई सेटअप नहीं है।"
+    },
+    "click_apply_to_try_them_all": {
+        "message": "उन सभी को आज़माने के लिए अप्लाई पर क्लिक करे।"
+    },
+    "syrup_found_coupons": {
+        "message": "Syrup को कूपन मिले!"
+    },
+    "got_it": {
+        "message": "समझ गया"
+    },
+    "testing_coupons": {
+        "message": "कूपन की जाँच..."
+    },
+    "testing_coupon_current_of_total": {
+        "message": "कूपन की जाँच %currentIndex% का %total%"
+    },
+    "cancel": {
+        "message": "रद्द करें"
+    },
+    "use_best": {
+        "message": "सबसे अच्छा इस्तेमाल करे"
+    },
+    "testing_cancelled": {
+        "message": "जाँच रद्द की गई।"
+    },
+    "scan_was_stopped_no_coupons_applied": {
+        "message": "स्कैन रोक दिया गया। कोई कूपन इस्तेमाल नहीं किया गया।"
+    },
+    "we_found_the_best_coupon": {
+        "message": "हमें सबसे अच्छा कूपन मिला!"
+    },
+    "applied_coupon_and_saved_savings_new_total": {
+        "message": "कूपन लागू \"%bestCoupon%\" और बचाया %savings% नया कुल राशि: %finalPrice%"
+    },
+    "no_better_price_found": {
+        "message": "इससे बेहतर कीमत नहीं मिली।"
+    },
+    "all_coupons_tested_but_none_lowered_your_total": {
+        "message": "सभी कूपनों का परीक्षण किया गया, लेकिन किसी से भी आपकी कुल राशि कम नहीं की।"
+    },
+    "now_trying_best_so_far": {
+        "message": "अब कोशिश कर रहे \"%currentCoupon%\" अभी तक की अच्छी कीमत: $%bestPriceSoFar%"
+    },
+    "best_price_so_far": {
+        "message": "अभी तक की अच्छी कीमत: $%bestPriceSoFar%"
+    }
+}

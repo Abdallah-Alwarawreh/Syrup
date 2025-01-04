@@ -1,0 +1,62 @@
+{
+    "apply": {
+        "message": "Anwenden"
+    },
+    "ignore": {
+        "message": "Ignorieren"
+    },
+    "syrup_logo": {
+        "message": "Syrup Logo"
+    },
+    "show_extension": {
+        "message": "Erweiterung anzeigen"
+    },
+    "no_auto_apply_setup": {
+        "message": "Kein automatisches Anwenden auf dieser Seite möglich."
+    },
+    "click_apply_to_try_them_all": {
+        "message": "Klicke auf Anwenden, um alle auszuprobieren."
+    },
+    "syrup_found_coupons": {
+        "message": "Syrup hat Gutscheine gefunden!"
+    },
+    "got_it": {
+        "message": "Okay"
+    },
+    "testing_coupons": {
+        "message": "Teste Gutscheine..."
+    },
+    "testing_coupon_current_of_total": {
+        "message": "Teste Gutschein %currentIndex% von %total%"
+    },
+    "cancel": {
+        "message": "Abbrechen"
+    },
+    "use_best": {
+        "message": "Besten verwenden"
+    },
+    "testing_cancelled": {
+        "message": "Test abgebrochen."
+    },
+    "scan_was_stopped_no_coupons_applied": {
+        "message": "Scan wurde gestoppt. Keine Gutscheine angewendet."
+    },
+    "we_found_the_best_coupon": {
+        "message": "Wir haben den besten Gutschein gefunden!"
+    },
+    "applied_coupon_and_saved_savings_new_total": {
+        "message": "Gutschein \"%bestCoupon%\" angewendet und %savings% gespart. Neuer Gesamtbetrag: %finalPrice%"
+    },
+    "no_better_price_found": {
+        "message": "Es wurde kein besserer Preis gefunden."
+    },
+    "all_coupons_tested_but_none_lowered_your_total": {
+        "message": "Alle Gutscheine wurden getestet, aber keiner hat den Gesamtbetrag verringert."
+    },
+    "now_trying_best_so_far": {
+        "message": "Versuche jetzt \"%currentCoupon%\". Bester Preis bisher: %bestPriceSoFar%"
+    },
+    "best_price_so_far": {
+        "message": "Bester Preis bisher: %bestPriceSoFar%"
+    }
+}
