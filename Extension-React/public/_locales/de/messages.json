@@ -58,5 +58,8 @@
     },
     "best_price_so_far": {
         "message": "Bester Preis bisher: %bestPriceSoFar%"
+    },
+    "Theme": {
+        "message": "Thema"
     }
 }
