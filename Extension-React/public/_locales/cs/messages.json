@@ -58,5 +58,8 @@
     },
     "best_price_so_far": {
         "message": "Dosavadní nejlepší cena: $%bestPriceSoFar%"
+    },
+    "Theme": {
+        "message": "Téma"
     }
 }
