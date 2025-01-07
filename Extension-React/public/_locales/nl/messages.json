@@ -58,5 +58,8 @@
     },
     "best_price_so_far": {
         "message": "Beste prijs tot nu toe: $%bestPriceSoFar%"
+    },
+    "language_name": {
+        "message": "Engels"
     }
 }
