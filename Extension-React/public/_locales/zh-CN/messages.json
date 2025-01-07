@@ -58,5 +58,8 @@
     },
     "best_price_so_far": {
         "message": "目前最佳价格：%bestPriceSoFar%元"
+    },
+    "language_name": {
+        "message": "英语"
     }
 }
