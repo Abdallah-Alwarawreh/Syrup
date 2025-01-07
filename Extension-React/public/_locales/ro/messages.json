@@ -58,5 +58,8 @@
     },
     "best_price_so_far": {
         "message": "Cel mai bun preț până acum: $%bestPriceSoFar%"
+    },
+    "Theme": {
+        "message": "Temă"
     }
 }
