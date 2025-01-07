@@ -61,5 +61,8 @@
     },
     "language_name": {
         "message": "英语"
+    },
+    "Theme": {
+        "message": "主题"
     }
 }
