@@ -61,5 +61,8 @@
     },
     "language_name": {
         "message": "Engels"
+    },
+    "Theme": {
+        "message": "Thema"
     }
 }
