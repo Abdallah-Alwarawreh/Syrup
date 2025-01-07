@@ -58,5 +58,8 @@
     },
     "best_price_so_far": {
         "message": "Miglior prezzo: %bestPriceSoFar%"
+    },
+    "language_name": {
+        "message": "Inglese"
     }
 }
