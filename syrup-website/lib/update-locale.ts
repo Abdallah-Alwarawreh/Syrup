@@ -20,6 +20,7 @@ export async function updateLocale(locale: string) {
         }
 
         console.log("Locale updated successfully");
+        window.location.reload();
     } catch (error) {
         console.error("An error occured during changing locale:", error);
     }

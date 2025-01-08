@@ -9,20 +9,20 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-// import { updateLocale } from "@/lib/update-locale";
-
+import { updateLocale } from "@/lib/update-locale";
+import { getLocale } from 'next-intl/server';
 
 export function TestDropdown() {
     const defaultLocale = "en";
+
+    // add more languages here
     return (
         <DropdownMenu>
-            <DropdownMenuTrigger asChild>
+            <DropdownMenuTrigger>
                 Languages
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56">
-                <DropdownMenuLabel>Languages</DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <DropdownMenuRadioGroup value={defaultLocale} onValueChange={console.log}>
+            <DropdownMenuContent>
+                <DropdownMenuRadioGroup value={defaultLocale} onValueChange={updateLocale}>
                     <DropdownMenuRadioItem value="en">English</DropdownMenuRadioItem>
                     <DropdownMenuRadioItem value="qq">Test</DropdownMenuRadioItem>
                 </DropdownMenuRadioGroup>
@@ -30,4 +30,3 @@ export function TestDropdown() {
         </DropdownMenu>
     );
 }
-
