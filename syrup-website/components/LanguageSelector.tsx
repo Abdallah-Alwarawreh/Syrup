@@ -10,10 +10,10 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { updateLocale } from "@/lib/update-locale";
-import { getLocale } from 'next-intl/server';
+import { useLocale } from "next-intl";
 
 export function TestDropdown() {
-    const defaultLocale = "en";
+    const defaultLocale = useLocale();
 
     // add more languages here
     return (
