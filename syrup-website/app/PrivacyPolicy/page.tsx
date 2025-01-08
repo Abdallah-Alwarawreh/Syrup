@@ -1,173 +1,154 @@
 import React from "react";
 
+import { useTranslations, useFormatter } from 'next-intl';
+
 const PrivacyPolicy = () => {
+    const t = useTranslations("PrivacyPolicy");
+    const format = useFormatter();
+    const effectiveDate = new Date("2025-01-05T00:00:00.000Z");
     return (
         <div className="container mx-auto px-4 py-8">
             <div className="h-[10vh]"></div>
             <div className="max-w-4xl mx-auto bg-white shadow-md rounded-md p-6">
                 <h1 className="text-2xl font-bold mb-4 text-gray-800">
-                    Privacy Policy for Syrup
+                    {t("header")}
                 </h1>
                 <p className="text-sm text-gray-600 mb-6">
-                    <strong>Effective Date:</strong> 5/1/2024
+                    {t("effective-date", {
+                        date: format.dateTime(effectiveDate, {
+                            year: "numeric",
+                            month: "numeric",
+                            day: "numeric",
+                        })
+                    })}
                 </p>
 
                 <section className="mb-6">
                     <h2 className="text-xl font-semibold text-gray-800 mb-2">
-                        Introduction
+                        {t("intro-header")}
                     </h2>
                     <p className="text-gray-700 leading-relaxed">
-                        At Syrup, your privacy is a top priority. We are
-                        committed to protecting your data and being transparent
-                        about how we handle it. This privacy policy outlines the
-                        information we collect, how we use it, and your rights
-                        regarding your data.
+                        {t("intro-body")}
                     </p>
                 </section>
 
                 <section className="mb-6">
                     <h2 className="text-xl font-semibold text-gray-800 mb-2">
-                        Information We Collect
+                        {t("collected-info-header")}
                     </h2>
                     <p className="text-gray-700 leading-relaxed">
-                        Syrup is designed with privacy in mind. Here’s what we
-                        do and do not collect:
+                        {t("collected-info-intro")}
                     </p>
                     <ul className="list-disc list-inside mt-2 text-gray-700">
                         <li>
-                            <strong>No Personal Data Collected:</strong> Syrup
-                            does not collect your name, email address, or any
-                            other personal information.
+                            {t.rich("collected-info-no-personal-data", {
+                                strong: (txt) => <strong>{txt}</strong>
+                            })}
                         </li>
                         <li>
-                            <strong>Minimal Usage Data:</strong> To improve
-                            functionality, Syrup may collect anonymous data such
-                            as:
+                            {t.rich("collected-info-minimal-usage-data", {
+                                strong: (txt) => <strong>{txt}</strong>
+                            })}
                             <ul className="list-disc list-inside ml-4">
                                 <li>
-                                    The number of times discounts are applied
-                                    successfully.
+                                    {t("collected-info-minimal-usage-data-1")}
                                 </li>
                                 <li>
-                                    General usage statistics (e.g., which
-                                    websites discounts are most frequently
-                                    applied to).
+                                    {t("collected-info-minimal-usage-data-2")}
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <strong>IP Addresses:</strong> Syrup may collect IP
-                            addresses for logs and security purposes.
+                            {t.rich("collected-info-ip-adress", {
+                                strong: (txt) => <strong>{txt}</strong>
+                            })}
                         </li>
                         <li>
-                            <strong>No Tracking:</strong> Syrup does not track
-                            your browsing history, search history, or online
-                            activity.
+                            {t.rich("collected-data-no-tracking", {
+                                strong: (txt) => <strong>{txt}</strong>
+                            })}
                         </li>
                     </ul>
                 </section>
 
                 <section className="mb-6">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-2">{t("how-we-use-info-header")}</h2>
+                    <p className="text-gray-700 leading-relaxed">{t("how-we-use-info-intro")}</p>
+                    <ul className="list-disc list-inside mt-2 text-gray-700">
+                        <li>{t("how-we-use-info-list-1")}</li>
+                        <li>{t("how-we-use-info-list-2")}</li>
+                        <li>{t("how-we-use-info-list-3")}</li>
+                    </ul>
+                </section>
+
+                <section className="mb-6">
                     <h2 className="text-xl font-semibold text-gray-800 mb-2">
-                        How We Use Your Information
+                        {t("info-we-share-header")}
                     </h2>
                     <p className="text-gray-700 leading-relaxed">
-                        The limited anonymous data we collect is used solely
-                        for:
+                        {t("info-we-share-intro")}
+                    </p>
+                </section>
+
+                <section className="mb-6">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                        {t("coockies-header")}
+                    </h2>
+                    <p className="text-gray-700 leading-relaxed">
+                        {t("coockies-intro")}
+                    </p>
+                </section>
+
+                <section className="mb-6">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                        {t("your-choices-header")}
+                    </h2>
+                    <p className="text-gray-700 leading-relaxed">
+                        {t("your-choices-intro")}
                     </p>
                     <ul className="list-disc list-inside mt-2 text-gray-700">
                         <li>
-                            Improving Syrup’s performance and ensuring it
-                            functions as intended.
+                            {t("your-choices-list-1")}
                         </li>
-                        <li>Identifying and fixing bugs.</li>
                         <li>
-                            Enhancing compatibility with supported websites.
+                            {t("your-choices-list-2")}
                         </li>
                     </ul>
                 </section>
 
                 <section className="mb-6">
                     <h2 className="text-xl font-semibold text-gray-800 mb-2">
-                        Information We Share
+                        {t("data-security-header")}
                     </h2>
                     <p className="text-gray-700 leading-relaxed">
-                        Syrup does not share, sell, or rent your data to third
-                        parties. Any collected data is processed securely and
-                        used internally for the purposes outlined above.
+                        {t("data-security-intro")}
                     </p>
                 </section>
 
                 <section className="mb-6">
                     <h2 className="text-xl font-semibold text-gray-800 mb-2">
-                        Cookies and Third-Party Services
+                        {t("changes-to-this-policy-header")}
                     </h2>
                     <p className="text-gray-700 leading-relaxed">
-                        Syrup does not use cookies or integrate with third-party
-                        services that track your activity.
-                    </p>
-                </section>
-
-                <section className="mb-6">
-                    <h2 className="text-xl font-semibold text-gray-800 mb-2">
-                        Your Choices and Control
-                    </h2>
-                    <p className="text-gray-700 leading-relaxed">
-                        As a user, you have full control over Syrup:
-                    </p>
-                    <ul className="list-disc list-inside mt-2 text-gray-700">
-                        <li>
-                            You can disable or uninstall the extension at any
-                            time through your browser settings.
-                        </li>
-                        <li>
-                            All usage data is anonymous and cannot be linked
-                            back to you.
-                        </li>
-                    </ul>
-                </section>
-
-                <section className="mb-6">
-                    <h2 className="text-xl font-semibold text-gray-800 mb-2">
-                        Data Security
-                    </h2>
-                    <p className="text-gray-700 leading-relaxed">
-                        We take security seriously and implement appropriate
-                        measures to protect any data processed by Syrup.
-                        However, no system is 100% secure, and we encourage you
-                        to practice safe browsing habits.
-                    </p>
-                </section>
-
-                <section className="mb-6">
-                    <h2 className="text-xl font-semibold text-gray-800 mb-2">
-                        Changes to This Privacy Policy
-                    </h2>
-                    <p className="text-gray-700 leading-relaxed">
-                        We may update this privacy policy from time to time to
-                        reflect improvements or changes in regulations. Any
-                        updates will be published on our official website or
-                        GitHub repository, and we encourage you to review this
-                        page periodically.
+                        {t("changes-to-this-policy-intro")}
                     </p>
                 </section>
 
                 <section>
                     <h2 className="text-xl font-semibold text-gray-800 mb-2">
-                        Contact Us
+                        {t("contact-us-header")}
                     </h2>
                     <p className="text-gray-700 leading-relaxed">
-                        If you have questions or concerns about Syrup’s privacy
-                        policy, please reach out to us at:{" "}
-                        <a
-                            href="https://dsc.gg/hexium"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-600 hover:underline"
-                        >
-                            https://dsc.gg/hexium
-                        </a>
-                        .
+                        {t.rich("contact-us-intro", {
+                            link: () => <a
+                                href="https://dsc.gg/hexium"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 hover:underline"
+                            >
+                                https://dsc.gg/hexium
+                            </a>
+                        })}
                     </p>
                 </section>
             </div>
