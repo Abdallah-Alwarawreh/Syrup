@@ -9,7 +9,10 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import Link from "next/link";
 
+import { useTranslations } from 'next-intl';
+
 export function Hero() {
+    const t = useTranslations("HomePage");
     const [browser, setBrowser] = useState("Chrome");
 
     useEffect(() => {
@@ -43,22 +46,19 @@ export function Hero() {
 
             <div className="space-y-6">
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-gray-900">
-                    We search for
-                    <br />
-                    the internet's
-                    <br />
-                    best coupons
+                    {t.rich("hero-desc", {
+                        br: () => <br/>
+                    })}
                 </h1>
                 <p className="text-xl text-gray-600">
-                    Stop wasting time and money, Syrup helps you find coupon
-                    codes on 30,000+ sites.
+                    {t("hero-desc-detailed")}
                 </p>
                 <Button
                     size="lg"
                     className="bg-[#a82c04] hover:bg-[#8a2503] text-white px-8 mr-6"
                     asChild
                 >
-                    <Link href="/download">Add to {browser}</Link>
+                    <Link href="/download">{t("hero-browser", {browser: browser})}</Link>
                 </Button>
                 <Button
                     size="lg"
@@ -66,7 +66,7 @@ export function Hero() {
                     asChild
                 >
                     <Link href="https://github.com/Abdallah-Alwarawreh/Syrup">
-                        View on GitHub
+                        {t("hero-github")}
                     </Link>
                 </Button>
             </div>

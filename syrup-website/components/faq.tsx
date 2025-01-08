@@ -5,23 +5,26 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import { useTranslations } from 'next-intl';
+
 export function FAQ() {
+    const t = useTranslations("HomePage");
     const faqs = [
         {
-            question: "Is Syrup really free?",
-            answer: "Yes! Syrup is completely free to use. We only make money from donations.",
+            question: t("faq-free-question"),
+            answer: t("faq-free-answer"),
         },
         {
-            question: "How does Syrup work?",
-            answer: "Syrup works by automatically finding and testing coupon codes when you shop online. When you're checking out at a supported store, Syrup will pop up and try all available coupon codes to find you the best deal.",
+            question: t("faq-how-it-works-question"),
+            answer: t("faq-how-it-works-answer"),
         },
         {
-            question: "Is Syrup safe to use?",
-            answer: "Yes, Syrup is safe to use. We are an open-source project, and our code is publicly available for review.",
+            question: t("faq-safe-question"),
+            answer: t("faq-safe-answer"),
         },
         {
-            question: "Which stores work with Syrup?",
-            answer: "Syrup works with over 30,000 stores online, including most major retailers. You'll see the Syrup icon appear automatically when you're shopping at a supported store.",
+            question: t("faq-stores-question"),
+            answer: t("faq-stores-answer"),
         },
     ];
 
@@ -30,10 +33,10 @@ export function FAQ() {
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <h2 className="text-4xl font-bold mb-4">
-                        Frequently Asked Questions
+                        {t("faq-header")}
                     </h2>
                     <p className="text-gray-600 text-lg">
-                        Got questions? We've got answers.
+                        {t("faq-qestions")}
                     </p>
                 </div>
                 <div className="max-w-3xl mx-auto">

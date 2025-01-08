@@ -5,7 +5,10 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 
+import { useTranslations } from 'next-intl';
+
 export function Header() {
+    const t = useTranslations("Common");
     useEffect(() => {
         let lastScrollY = window.scrollY;
 
@@ -49,10 +52,10 @@ export function Header() {
                     href="/about"
                     className="text-gray-500 hover:text-primary"
                 >
-                    About
+                    {t("header-about")}
                 </Link>
                 <Button className="bg-[#a82c04] hover:bg-[#8a2503]" asChild>
-                    <Link href="/download">Download</Link>
+                    <Link href="/download">{t("header-download")}</Link>
                 </Button>
             </nav>
         </header>

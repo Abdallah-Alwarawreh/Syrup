@@ -9,6 +9,8 @@ import { Roboto } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Testimonials } from "@/components/Testimonials";
 
+import {useTranslations} from 'next-intl';
+
 const roboto = Roboto({
     weight: "400",
     subsets: ["latin"],
