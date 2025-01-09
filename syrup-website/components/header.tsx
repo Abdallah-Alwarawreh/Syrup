@@ -50,11 +50,11 @@ export function Header() {
             <nav className="flex justify-between items-center gap-[20%]">
                 <Link
                     href="/about"
-                    className="text-gray-500 hover:text-primary"
+                    className="text-gray-500 hover:text-primary whitespace-nowrap"
                 >
                     {t("header-about")}
                 </Link>
-                <Button className="bg-[#a82c04] hover:bg-[#8a2503]" asChild>
+                <Button className="whitespace-nowrap bg-[#a82c04] hover:bg-[#8a2503]" asChild>
                     <Link href="/download">{t("header-download")}</Link>
                 </Button>
             </nav>
