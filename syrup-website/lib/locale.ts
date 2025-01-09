@@ -50,6 +50,10 @@ export async function getUserLocale() {
   return detectLocale(acceptLanguage);
 }
 
+export async function getDefaultLocale() {
+  return DEFAULT_LOCALE;
+}
+
 export async function setUserLocale(locale: string) {
   cookies().set(COOKIE_NAME, locale);
 }
