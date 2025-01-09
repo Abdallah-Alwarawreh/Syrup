@@ -4,8 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
-// import { TestDropdown } from "@/components/LanguageSelector";
-import { TestDropdown } from "@/components/LanguageSelector";
 
 import { useTranslations } from 'next-intl';
 
@@ -50,7 +48,6 @@ export function Header() {
                 <span className="text-xl font-semibold">Syrup</span>
             </Link>
             <nav className="flex justify-between items-center gap-[20%]">
-                <TestDropdown/>
                 <Link
                     href="/about"
                     className="text-gray-500 hover:text-primary"

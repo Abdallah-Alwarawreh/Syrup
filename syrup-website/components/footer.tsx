@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
+import { LanguageDropdown } from "@/components/LanguageSelector";
 
 import { useTranslations } from 'next-intl';
 
@@ -172,6 +173,7 @@ export function Footer() {
                         {t("footer-rights", {year: new Date().getFullYear()})}
                     </p>
                     <div className="flex gap-6">
+                        <LanguageDropdown/>
                         <Button
                             variant="link"
                             className="h-auto p-0 text-gray-700 hover:text-black"

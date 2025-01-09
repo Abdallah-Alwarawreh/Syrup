@@ -12,7 +12,7 @@ import {
 import { updateLocale } from "@/lib/update-locale";
 import { useLocale, useTranslations } from "next-intl";
 
-export function TestDropdown() {
+export function LanguageDropdown() {
     const defaultLocale = useLocale();
     const t = useTranslations("Languages");
 
