@@ -24,7 +24,7 @@ export function TestDropdown() {
             <DropdownMenuContent>
                 <DropdownMenuRadioGroup value={defaultLocale} onValueChange={updateLocale}>
                     <DropdownMenuRadioItem value="en">English</DropdownMenuRadioItem>
-                    <DropdownMenuRadioItem value="qq">Test</DropdownMenuRadioItem>
+                    <DropdownMenuRadioItem value="ru">Русский</DropdownMenuRadioItem>
                 </DropdownMenuRadioGroup>
             </DropdownMenuContent>
         </DropdownMenu>
