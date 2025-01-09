@@ -97,6 +97,9 @@
     "bg": "Bulgarian",
     "cz": "Czech"
   },
+  "Languages": {
+    "languages": "Languages"
+  },
   "PrivacyPolicy": {
     "header": "Privacy Policy for Syrup",
     "effective-date": "Effective Date: {date}",

@@ -10,16 +10,18 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { updateLocale } from "@/lib/update-locale";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export function TestDropdown() {
     const defaultLocale = useLocale();
+    const t = useTranslations("Languages");
 
     // add more languages here
+    // and a fancy icon
     return (
         <DropdownMenu>
             <DropdownMenuTrigger>
-                Languages
+                {t("languages")}
             </DropdownMenuTrigger>
             <DropdownMenuContent>
                 <DropdownMenuRadioGroup value={defaultLocale} onValueChange={updateLocale}>
