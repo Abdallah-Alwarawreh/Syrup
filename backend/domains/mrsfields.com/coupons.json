@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "HOLIDAY20",
+        "couponTitle": "Save 20% Off w/ Coupon Code",
+        "couponDescription": "Use this promo code at Mrs. Fields to receive 20% off."
+    },
+    {
+        "couponCode": "HOLIDAY30",
+        "couponTitle": "Mrs. Fields Coupon: 30% Off",
+        "couponDescription": "Get 30% off orders with this promo code on your cart at Mrs. Fields."
+    },
+    {
+        "couponCode": "ORDER20",
+        "couponTitle": "Save 20% Using The Coupon Code",
+        "couponDescription": "Take up to 20% off with coupon code"
+    },
+    {
+        "couponCode": "welcome20",
+        "couponTitle": "Enjoy 20% Savings Using Promo Code",
+        "couponDescription": "Take up to 20% off with promo code"
+    },
+    {
+        "couponCode": "Snowman",
+        "couponTitle": "15% Off Your Order",
+        "couponDescription": "Shop and take 15% off your purchase using a promo code on your cart."
+    },
+    {
+        "couponCode": "MYSTERYDEAL",
+        "couponTitle": "Mrs. Fields Coupon: Up to 60% Off Your Purchase",
+        "couponDescription": "Use this promo code at checkout to get up to 60% off your qualifying order."
+    },
+    {
+        "couponCode": "CYBERDEAL30",
+        "couponTitle": "Mrs. Fields Promo Code: 30% Off Your Order",
+        "couponDescription": "Shop using this discount code and get 30% off your sitewide purchase at Mrs. Fields."
+    },
+    {
+        "couponCode": "EXIT20",
+        "couponTitle": "Mrs. Fields's Discount Code: 20% Off Any Purchase",
+        "couponDescription": "Apply this discount code at checkout and enjoy a 20% off on any purchase."
+    },
+    {
+        "couponCode": "BIGDEAL",
+        "couponTitle": "Quarter Off Entire Site Sale",
+        "couponDescription": "25% off sitewide"
+    },
+    {
+        "couponCode": "FREESTANDARD",
+        "couponTitle": "Unlock Free Shipping With This Coupon Code",
+        "couponDescription": "Get free shipping on your purchase. Enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "HOLIDAY25",
+        "couponTitle": "25% Off Your Order",
+        "couponDescription": "Shop and take 25% off your purchase using a coupon code on your cart."
+    },
+    {
+        "couponCode": "CART20",
+        "couponTitle": "Mrs. Fields Coupon: 20% Off Your Order",
+        "couponDescription": "Save 20% on your purchase with this Mrs. Fields code."
+    },
+    {
+        "couponCode": "THANKS",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "20% Off Thank You Gifts"
+    },
+    {
+        "couponCode": "TREAT30",
+        "couponTitle": "Take 30% Off Your Order",
+        "couponDescription": "Enjoy 30% off your Mrs. Fields purchase with this code."
+    },
+    {
+        "couponCode": "SNOWFLAKE24",
+        "couponTitle": "Mrs. Fields Coupon: 20% Off Your Order",
+        "couponDescription": "Take 20% off sitewide by adding this Mrs. Fields code."
+    },
+    {
+        "couponCode": "CYBERDEAL35",
+        "couponTitle": "Save 35% Off",
+        "couponDescription": "Apply this coupon to get an additional 35% off your order at Mrs. Fields."
+    },
+    {
+        "couponCode": "CYBER30",
+        "couponTitle": "Save 30% Off Sitewide",
+        "couponDescription": "enjoy 30% off sitewide when you order from www.mrsfields.com. use the discount coupon code at checkout to receive the discount shown in this email."
+    },
+    {
+        "couponCode": "CYBER25",
+        "couponTitle": "Mrs. Fields Coupon Code: 25% Off Your Purchase",
+        "couponDescription": "Take 25% off using the discount code from Mrs. Fields in your shopping cart at checkout."
+    },
+    {
+        "couponCode": "PEACE",
+        "couponTitle": "Mrs. Fields Coupon: 15% Off Your Order",
+        "couponDescription": "Get up to 15% off your Mrs. Fields purchase with this code."
+    },
+    {
+        "couponCode": "TINS",
+        "couponTitle": "Get 30% Off Your Order",
+        "couponDescription": "Save 30% on gift tins with this Mrs. Fields code."
+    }
+]

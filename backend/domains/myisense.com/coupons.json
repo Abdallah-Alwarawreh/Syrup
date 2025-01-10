@@ -1,0 +1,22 @@
+[
+    {
+        "couponCode": "ISENSE100",
+        "couponTitle": "Take $100 Off w/ Discount Code",
+        "couponDescription": "Save $100 off with discount code"
+    },
+    {
+        "couponCode": "SLEEP50",
+        "couponTitle": "iSense Code: Get 5% Off",
+        "couponDescription": "Shop for pillows, bedding, and more and get up to 5% off with this discount code."
+    },
+    {
+        "couponCode": "SPRING50",
+        "couponTitle": "iSense Discount Code: Up to 5% Off",
+        "couponDescription": "Get up to 5% off your purchase when you enter this iSense discount code at checkout. Save money on pillows, beds, and more."
+    },
+    {
+        "couponCode": "FLASH5",
+        "couponTitle": "Enjoy 5% Off By Using iSense Promo Code",
+        "couponDescription": "Score 5% off your mattress, pillows, and more with this iSense coupon code."
+    }
+]

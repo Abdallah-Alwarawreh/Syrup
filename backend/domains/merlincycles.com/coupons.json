@@ -1,0 +1,47 @@
+[
+    {
+        "couponCode": "time20",
+        "couponTitle": "Save 20% Off at Merlin Cycles Order With Code",
+        "couponDescription": "Use the code during checkout to save 20% off your Merlin Cycles order."
+    },
+    {
+        "couponCode": "TDF5",
+        "couponTitle": "Take 5% Off Clothing",
+        "couponDescription": "Redeem this promo code at checkout to save 5% on clothing at Merlin Cycles."
+    },
+    {
+        "couponCode": "NEW10",
+        "couponTitle": "10% Off Your First Purchase",
+        "couponDescription": "Place your first order at Merlin Cycles and save 10% off. Use this code at checkout to redeem."
+    },
+    {
+        "couponCode": "Lights10",
+        "couponTitle": "Take an Extra 10% Off",
+        "couponDescription": "Save an additional 10% on your purchase by entering this code at Merlin Cycles."
+    },
+    {
+        "couponCode": "SPIUK10",
+        "couponTitle": "Extra 10% Off Spiuk",
+        "couponDescription": "Save an additional 10% on already-discounted Spiuk products at Merlin Cycles. Add this discount code at checkout to redeem offer."
+    },
+    {
+        "couponCode": "vgw1",
+        "couponTitle": "Up to 15% Discount",
+        "couponDescription": "Merlin Cycles is offering up to 15% off when you use this promo code at checkout."
+    },
+    {
+        "couponCode": "PEDAL7",
+        "couponTitle": "7.5% Off Select Road Pedals",
+        "couponDescription": "Use this Merlin Cycles promo code to save 7.5% on Shimano R540 and R550 Road Pedals."
+    },
+    {
+        "couponCode": "WELCOMEFIVE",
+        "couponTitle": "Merlin Cycles Discount Code: Save 5% on Bike Accessories ",
+        "couponDescription": "Shop at Merlin Cycles and enjoy a 5% discount on bike accessories. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "CASS7",
+        "couponTitle": "Save 7.5% on Select Products",
+        "couponDescription": "Shop Shimano 5700 and 5800 Cassettes at Merlin Cycles and get 7.5% off with this coupon code."
+    }
+]

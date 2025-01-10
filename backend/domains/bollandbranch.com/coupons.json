@@ -1,0 +1,42 @@
+[
+    {
+        "couponCode": "FINAL40",
+        "couponTitle": "Save 40% Off",
+        "couponDescription": "get up to 40% off select styles using the promo code at checkout."
+    },
+    {
+        "couponCode": "welcome15",
+        "couponTitle": "Save 15% Off",
+        "couponDescription": "Get an Extra 15% Discount on Orders Worth $200 or More"
+    },
+    {
+        "couponCode": "CYBER25",
+        "couponTitle": "Save 25% Off Sitewide",
+        "couponDescription": "Take 25% off everything with no minimum purchase at Boll And Branch."
+    },
+    {
+        "couponCode": "MORE150",
+        "couponTitle": "Boll & Branch Promo Code: $150 Off Your Purchase",
+        "couponDescription": "With this offer, you may get $150 off your $750 minimum store purchase at Boll & Branch."
+    },
+    {
+        "couponCode": "MOM15",
+        "couponTitle": "Boll & Branch Coupon: 15% Off Your Order",
+        "couponDescription": "Get 15% off on $300 purchase plus sleepwear gift when you spend $499 at Boll & Branch."
+    },
+    {
+        "couponCode": "DREAMHOME",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "Take 20% off your order when you spend $300 and above."
+    },
+    {
+        "couponCode": "WINTER20",
+        "couponTitle": "Boll & Branch Discount Code: 20% Off Everything",
+        "couponDescription": "Enter this Boll & Branch discount code at checkout to claim 20% off a regular-price purchase plus up to 40% off select styles."
+    },
+    {
+        "couponCode": "SHEETS20",
+        "couponTitle": "Receive 20% Off Your Purchase",
+        "couponDescription": "When this Boll & Branch coupon code is applied, you can score 20% off bedding."
+    }
+]

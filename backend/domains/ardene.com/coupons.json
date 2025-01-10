@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "ARDENETEN",
+        "couponTitle": "$10 Off Sitewide",
+        "couponDescription": "Ardene.com is offering $10 off your purchase when you use this promo code. This code applies to everything on the site, so you can snag some great deals on dresses, shoes, accessories and more."
+    },
+    {
+        "couponCode": "ARDENEFIVE",
+        "couponTitle": "$5 Off Orders Sitewide",
+        "couponDescription": "Shop for some new clothes. Check out Ardene.com. You can get $5 off your purchase when you use this coupon code at checkout. This code works on everything from tops and bottoms to shoes and accessories."
+    },
+    {
+        "couponCode": "ARDENEBELL15",
+        "couponTitle": "Ardene Discount Code: 15% Off Your Order",
+        "couponDescription": "Save 15% using this coupon code on your sitewide purchase at Ardene."
+    },
+    {
+        "couponCode": "USA-ARDFS",
+        "couponTitle": "Get Free Shipping on Your First Purchase of $20+",
+        "couponDescription": "Get FREE SHIPPING over $20 for first time purchasers"
+    },
+    {
+        "couponCode": "SHOPANDSAVE",
+        "couponTitle": "Take $5 Off w/ Discount Code",
+        "couponDescription": "Save $5 with coupon code"
+    },
+    {
+        "couponCode": "USA-ARD20",
+        "couponTitle": "Extra 20% off ",
+        "couponDescription": "Get EXTRA 20% off for first time purchasers"
+    }
+]

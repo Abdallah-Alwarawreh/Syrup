@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "FR20",
+        "couponTitle": "Save 20% Off w/ Promo Code",
+        "couponDescription": "Receive 20% Off on Your Order"
+    },
+    {
+        "couponCode": "SD30",
+        "couponTitle": "Score 30% Off with Promo Code",
+        "couponDescription": "Enter this coupon code at checkout to get an extra 30% off full-priced items."
+    },
+    {
+        "couponCode": "WEB10",
+        "couponTitle": "Save 10% Off w/ Promo Code",
+        "couponDescription": "With a code from Luisa via Roma, take 10% off of a number of full-priced items."
+    },
+    {
+        "couponCode": "PL15",
+        "couponTitle": "Receive 15% Off Your Purchase",
+        "couponDescription": "Apply this Luisa Via Roma promotional code at checkout to get 15% off your eligible order."
+    },
+    {
+        "couponCode": "BF40",
+        "couponTitle": "Luisa Via Roma Coupon Code: Take 40% Off Your Purchase ",
+        "couponDescription": "Enjoy 40% discount on your purchase when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "CYBER40",
+        "couponTitle": "Save 40% Off",
+        "couponDescription": "During Cyber Monday, you can receive 40% off when you use this code at checkout."
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "couponCode": "SHOPFIRST2011",
+        "couponTitle": "Save 25% Off + Free Shipping",
+        "couponDescription": "25% off plus free shipping using the coupon code"
+    },
+    {
+        "couponCode": "FACEBOOKVIP",
+        "couponTitle": "Save 25% Off w/ Coupon Code",
+        "couponDescription": "25% off* your purchase for customer appreciation! enter coupon code at checkout.*conditions"
+    },
+    {
+        "couponCode": "TWITTERNOW",
+        "couponTitle": "Save 25% Off",
+        "couponDescription": "\"get 25% off* the entire store! use coupon code \" www.roots.ca -their twitter feed."
+    },
+    {
+        "couponCode": "SURPRISE",
+        "couponTitle": "Free Shipping In Us/Canada, $20 International ^Dg",
+        "couponDescription": "free shipping on any order size across canada or the u.s. + $20 flat rate for international orders. enter coupon code checkout. ^dg"
+    },
+    {
+        "couponCode": "Twenty",
+        "couponTitle": "Get 20% Off Using Promo Code",
+        "couponDescription": "Save 20% with coupon code"
+    }
+]

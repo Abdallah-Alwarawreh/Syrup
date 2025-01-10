@@ -1,0 +1,42 @@
+[
+    {
+        "couponCode": "59%off",
+        "couponTitle": "Get Up to 59% Off",
+        "couponDescription": "Save up to 59% off your total purchase when you use this Studio promo code at checkout."
+    },
+    {
+        "couponCode": "BIRTHDAYOCT",
+        "couponTitle": "Get 15% Off Your Purchase",
+        "couponDescription": "Enjoy 15% off everything with this Studio code."
+    },
+    {
+        "couponCode": "SD30",
+        "couponTitle": "Save 30% Off using Coupon Code",
+        "couponDescription": "Get 30% off with this Studio discount code when you apply it during the checkout process."
+    },
+    {
+        "couponCode": "clear50",
+        "couponTitle": "Save 50% Off",
+        "couponDescription": "Take 50% off when you apply this Studio promo code in your cart."
+    },
+    {
+        "couponCode": "STUDIOSAV10",
+        "couponTitle": "Enjoy 10% Off with Code",
+        "couponDescription": "Take 10% off with this Studio discount code when applied at checkout."
+    },
+    {
+        "couponCode": "EXTRA30",
+        "couponTitle": "Save 30% Off w/ Coupon Code",
+        "couponDescription": "Get 30% off when you use this Studio coupon code in your cart at checkout."
+    },
+    {
+        "couponCode": "EXTRA50",
+        "couponTitle": "Save 50% Off Using Code",
+        "couponDescription": "Take 50% off with this Studio coupon code when you apply it at checkout."
+    },
+    {
+        "couponCode": "EXTRA20",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "Save 20% off with this coupon code when you use it at the checkout process."
+    }
+]

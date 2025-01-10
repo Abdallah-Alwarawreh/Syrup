@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "75OFF",
+        "couponTitle": "Take £75 Off w/ Discount Code",
+        "couponDescription": "get £75 off on orders over £300+ using the promo code at checkout."
+    },
+    {
+        "couponCode": "5OFF",
+        "couponTitle": "Take £5 Off w/ Coupon Code",
+        "couponDescription": "get £5 off on orders over £50+ using the promo code at checkout."
+    },
+    {
+        "couponCode": "10OFF",
+        "couponTitle": "Take £10 Off w/ Promo Code",
+        "couponDescription": "get £10 off on orders over £75+ using the promo code at checkout."
+    },
+    {
+        "couponCode": "15OFF",
+        "couponTitle": "Take £15 Off Using Code",
+        "couponDescription": "get £15 off on orders over £100+ using the promo code at checkout."
+    },
+    {
+        "couponCode": "30OFF",
+        "couponTitle": "Take £30 Off with Code",
+        "couponDescription": "get £30 off on orders over £150+ using the promo code at checkout."
+    },
+    {
+        "couponCode": "60OFF",
+        "couponTitle": "Take £60 Off w/ Discount Code",
+        "couponDescription": "Apply this Escentual coupon code at checkout to take £60 off order over £250."
+    },
+    {
+        "couponCode": "WELCOME",
+        "couponTitle": "Save 10% Off Your Purchase",
+        "couponDescription": "Enjoy an extra 10% off your order with this Escentual coupon code."
+    },
+    {
+        "couponCode": "MARIALOPEZ",
+        "couponTitle": "Escentual Coupon: 5% Off Your Purchase",
+        "couponDescription": "Get 5% off sitewide orders with Escentual's promo code on your cart at checkout."
+    },
+    {
+        "couponCode": "EXTRA10",
+        "couponTitle": "Get an Extra 10% Off Any Order",
+        "couponDescription": "Use this coupon code to save an additional 10% sitewide at Escentual."
+    },
+    {
+        "couponCode": "ESENTUAL15",
+        "couponTitle": "Get 15% Off £120+ Purchases Using Code",
+        "couponDescription": "Save an Extra 15% off on Any Orders Over £120 with Code"
+    },
+    {
+        "couponCode": "SUN25",
+        "couponTitle": "Save 25% Off w/ Discount Code",
+        "couponDescription": "Save 25% off RRP on All Suncare Products with Code"
+    },
+    {
+        "couponCode": "25%OFF",
+        "couponTitle": "Escentual Discount Code: Up To 10% Off Your Order",
+        "couponDescription": "Enter this Escentual discount code at checkout to take up to 10% off your orders."
+    },
+    {
+        "couponCode": "FRAGRANCE25",
+        "couponTitle": "Get 25% Off All Fragrances",
+        "couponDescription": "Shop your favorite fragrances at Escentual and save 25% by redeeming this promo code."
+    },
+    {
+        "couponCode": "750FF",
+        "couponTitle": "Escentual Coupon: $75 Off Your Order",
+        "couponDescription": "Take $75 off when you spend $300 and more at Escentual."
+    },
+    {
+        "couponCode": "20OFF",
+        "couponTitle": "Take $20 Off Orders $150+ ",
+        "couponDescription": "Enjoy shopping and get a $20 discount on orders of $150 or more when you enter this coupon code at chekout."
+    },
+    {
+        "couponCode": "ESCENTUAL20",
+        "couponTitle": "Save 20% at Escentual",
+        "couponDescription": "Shop regularly priced items at Escentual and save 20% when you apply this coupon code at checkout."
+    },
+    {
+        "couponCode": "ESCENTUAL10",
+        "couponTitle": "10% Off with Ccode",
+        "couponDescription": "Get 10% off when you use this code to shop fragrances, skincare, makeup, and more at Escentual."
+    },
+    {
+        "couponCode": "50FF",
+        "couponTitle": "Take $5 Off Your Order",
+        "couponDescription": "Enjoy extra $5 off when you spend $50 at Escentual."
+    },
+    {
+        "couponCode": "EXCENTUAL25",
+        "couponTitle": "Enjoy 25% Savings On Your Purchases",
+        "couponDescription": "Take 25% off your orders"
+    },
+    {
+        "couponCode": "AVENE20",
+        "couponTitle": "Escentual Coupon Code: 20% Off Your Order",
+        "couponDescription": "Apply this coupon code from Escentual to receive a 20% discount on your order."
+    }
+]

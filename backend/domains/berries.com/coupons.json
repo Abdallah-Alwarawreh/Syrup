@@ -1,0 +1,27 @@
+[
+    {
+        "couponCode": "FIVEBERRY",
+        "couponTitle": "Save 5% Off",
+        "couponDescription": "Receive Up to 5% Discount When You Use Promo Code"
+    },
+    {
+        "couponCode": "15PASSPORT",
+        "couponTitle": "Shari's Berries Coupon: Get $15 Off When You Order $59.99+",
+        "couponDescription": "Pop out your passports, members. Unlock a fabulous discount of $15 off on all orders worth $59.99 and above at berries.com using this coupon code. This is your golden ticket to save big on the finest selections of Shari's Berries top-rated products."
+    },
+    {
+        "couponCode": "CORPSHOPSB",
+        "couponTitle": "Shari's Berries Promo Code: Get 15% Off Orders $29.99+ ",
+        "couponDescription": "Redeem this promo code at checkout and save 15% on orders over $29.99."
+    },
+    {
+        "couponCode": "SBIRTHDAY10",
+        "couponTitle": "Save 10% on Berries! ",
+        "couponDescription": "Save 10% on Birthday Berries!"
+    },
+    {
+        "couponCode": "SAVEXMAS",
+        "couponTitle": "Shari's Berries Coupon: 20% Off Your Order",
+        "couponDescription": "Get 20% off on all orders sitewide at berries.com when you apply this promo code at checkout."
+    }
+]

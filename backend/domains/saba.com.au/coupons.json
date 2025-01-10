@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "SBFREESHIP",
+        "couponTitle": "Free Shipping using Coupon Code",
+        "couponDescription": "Receive free shipping on your order when this Saba promo code is applied."
+    },
+    {
+        "couponCode": "ANNIVERSARY",
+        "couponTitle": "Get 20% Discount Using Coupon",
+        "couponDescription": "Save up to 20% off with coupon"
+    },
+    {
+        "couponCode": "SBWELCOME20",
+        "couponTitle": "Enjoy 20% Off Your Order",
+        "couponDescription": "Check this SABA AU code for a 20% discount on your purchase. T&Cs apply."
+    },
+    {
+        "couponCode": "SBHELLO15",
+        "couponTitle": "Get 15% Off Full-Priced Items With Saba Coupon",
+        "couponDescription": "Apply this Saba coupon code to receive 15% off  full priced items."
+    },
+    {
+        "couponCode": "VOGUE",
+        "couponTitle": "Save 20% Off + Free Delivery",
+        "couponDescription": "it's on! shop online using promotion coupon code for free domestic delivery. plus we've taken a further 20% off sale"
+    },
+    {
+        "couponCode": "VOSNfree",
+        "couponTitle": "Save 20% Off + Free Delivery w/ Coupon Code",
+        "couponDescription": "to celebrate receive free delivery today. use promo code. plus 20% off menswear, knits & sale"
+    },
+    {
+        "couponCode": "GQWINTER",
+        "couponTitle": "Get 25% Discount On Men's Online Shopping Code",
+        "couponDescription": "receive 25% off full price menswear with online shopping  coupon code"
+    }
+]

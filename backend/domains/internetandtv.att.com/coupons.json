@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "HOLIDAY50",
+        "couponTitle": "Extra $50 Reward Card",
+        "couponDescription": "Order AT&T Fiber and get an extra $50 reward card when you enter code at checkout."
+    },
+    {
+        "couponCode": "FALL50",
+        "couponTitle": "Free $50 Reward Card with AT&T Fiber",
+        "couponDescription": "order at&t fiber and get an extra $50 reward card when you enter coupon code at checkout."
+    },
+    {
+        "couponCode": "BACK2SCHOOL",
+        "couponTitle": "Get an Extra $75 Reward Card",
+        "couponDescription": "Order AT&T Fiber and use this coupon code to get an extra $75 reward card."
+    },
+    {
+        "couponCode": "SUMMER50",
+        "couponTitle": "Get an Extra $50 Reward Card",
+        "couponDescription": "Order AT&T Fiber and use this coupon code to get an extra $50 reward card."
+    },
+    {
+        "couponCode": "SPRING100",
+        "couponTitle": "Get a $100 AT&T Visa® Reward Card | Stackable Code!",
+        "couponDescription": "get up to a $100 at&t visa reward card when you sign up for at&t fiber. get additional savings when you enter  and extra100 combined at checkout."
+    },
+    {
+        "couponCode": "NEWYEAR50",
+        "couponTitle": "Order AT&T Fiber and get an extra $50 reward card",
+        "couponDescription": "Order AT&T Fiber and get an extra $50 reward card"
+    },
+    {
+        "couponCode": "EXTRA100",
+        "couponTitle": "Get a $350 AT&T Visa® Reward Card When You Stack Codes",
+        "couponDescription": "sign up for at&t fiber to automatically get a $150 visa reward card, then get an additional $200 by adding codes to checkout spring100 and"
+    }
+]

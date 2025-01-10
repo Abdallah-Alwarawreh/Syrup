@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "SALE25",
+        "couponTitle": "Save 25% Off at White Fox Boutique With Code",
+        "couponDescription": "Take 5% off your order when you use the code during checkout at White Fox Boutique."
+    },
+    {
+        "couponCode": "CFOLLOW10",
+        "couponTitle": "Save 10% Off Your Order With CouponFollow Exclusive",
+        "couponDescription": "Take 10% off all orders with this CouponFollow exclusive code. Excludes sale and collaboration items. See site for more details."
+    },
+    {
+        "couponCode": "APP15",
+        "couponTitle": "White Fox Promo: Extra 15% Off In-App Purchase",
+        "couponDescription": "Download the White Fox Boutique app and enjoy an extra 15% off your order."
+    },
+    {
+        "couponCode": "CFOLLOW15",
+        "couponTitle": "CouponFollow Exclusive: Save 15% Off at White Fox Boutique",
+        "couponDescription": "Enjoy 15% off on orders over $150 at White Fox Boutique with this CouponFollow exclusive code. Excludes sale and collaboration items."
+    },
+    {
+        "couponCode": "SHOP30",
+        "couponTitle": "Boxing Day Sale: Get 30% Off Your Order",
+        "couponDescription": "Enjoy 30% off everything at White Fox Boutique when you apply this coupon code at checkout. Includes already reduced items. Excludes gift cards and collaborations. Cannot be combined with other codes or offers."
+    },
+    {
+        "couponCode": "GIFT30",
+        "couponTitle": "30% Off Everything with Coupon Code",
+        "couponDescription": "Score 30% off everything including reduced items. Excludes gift cards and collaborations."
+    }
+]

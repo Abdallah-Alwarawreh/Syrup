@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "JULY2022",
+        "couponTitle": "Save 5% Off",
+        "couponDescription": "Get up to 5% off with code"
+    },
+    {
+        "couponCode": "April23",
+        "couponTitle": "Take $5 Off",
+        "couponDescription": "Take $5 off with promo code"
+    },
+    {
+        "couponCode": "nov22",
+        "couponTitle": "Take $5 Off with Code",
+        "couponDescription": "Shop and take advantage of the discount of $5 off with a coupon code."
+    },
+    {
+        "couponCode": "fanship50",
+        "couponTitle": "Save 35% Off w/ Coupon Code",
+        "couponDescription": "Score up to 35% off with discount code"
+    },
+    {
+        "couponCode": "NOV2021",
+        "couponTitle": "Save 5% Off Using Code",
+        "couponDescription": "Get up to 5% off with code"
+    },
+    {
+        "couponCode": "APRIL21",
+        "couponTitle": "Save 5% Off",
+        "couponDescription": "Save up to 5% off with discount code"
+    },
+    {
+        "couponCode": "yeti2020",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "Take up to 20% off with code"
+    }
+]

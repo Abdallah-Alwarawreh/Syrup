@@ -1,0 +1,27 @@
+[
+    {
+        "couponCode": "EGWRWEB",
+        "couponTitle": "Rent a car for just $12.99 per day, F-M! Terms & Conditions Apply.",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "BJS8UPG",
+        "couponTitle": "Get 10% Discount Using Promo Code",
+        "couponDescription": "Save 10% off with code"
+    },
+    {
+        "couponCode": "eur300",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Receive 10% off on Weekly Rentals in France"
+    },
+    {
+        "couponCode": "eur301",
+        "couponTitle": "Save 10% Off w/ Promo Code",
+        "couponDescription": "Get 10% off on Weekly Rentals in Spain"
+    },
+    {
+        "couponCode": "eur299",
+        "couponTitle": "Save 10% Off w/ Coupon Code",
+        "couponDescription": "Receive 10% off on Weekly Rentals in Germany"
+    }
+]

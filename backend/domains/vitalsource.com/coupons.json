@@ -1,0 +1,12 @@
+[
+    {
+        "couponCode": "SAVE5OFF50",
+        "couponTitle": "Get $5 Discount On $50+ Sitewide Purchases",
+        "couponDescription": "Receive $5 off on any purchase of $50 or more sitewide"
+    },
+    {
+        "couponCode": "EXTRA10",
+        "couponTitle": "Get 10% Off Using Coupon Code",
+        "couponDescription": "Use this VitalSource promo code to receive 10% off your order of textbooks."
+    }
+]

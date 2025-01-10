@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "DISCOUNTS",
+        "couponTitle": "5% Off with Coupon Code",
+        "couponDescription": "Make your travel experience affordable with Agoda. Apply this coupon coupon code at checkout and get a 5% discount on all orders. Minimum spend $60."
+    },
+    {
+        "couponCode": "AGODADEAL5",
+        "couponTitle": "Save $40 off With Hotel Booking Promo Code",
+        "couponDescription": "Take $40 off with code"
+    },
+    {
+        "couponCode": "AGODASALE",
+        "couponTitle": "Enjoy 4% Savings On Your Entire Order",
+        "couponDescription": "Get 4% Off on Your Total Purchase"
+    },
+    {
+        "couponCode": "WEEKENDSALE",
+        "couponTitle": "Agoda Coupon: 52% Off All Orders",
+        "couponDescription": "Agoda is offering an extra 52% off orders of $36 or more on certain hotels using a promo code."
+    },
+    {
+        "couponCode": "AGEXCLUSIVE",
+        "couponTitle": "Agoda Coupon: Extra $150 Off Your Purchase",
+        "couponDescription": "Enjoy an additional $150 off orders on your cart using Agoda's promo code at checkout."
+    },
+    {
+        "couponCode": "AGODATRAVELS",
+        "couponTitle": "5% Discount on All Purchase",
+        "couponDescription": "Use this Agoda coupon to get an additional 5% off orders of $100 or more on select items."
+    },
+    {
+        "couponCode": "AGODADEAL",
+        "couponTitle": "Get Up To 5% Off Your Order",
+        "couponDescription": "Enjoy up to 5% off when you use this Agoda code."
+    },
+    {
+        "couponCode": "AGODA10",
+        "couponTitle": "10% Off Your Order",
+        "couponDescription": "Shop and take 10% off your purchase sitewide using a coupon code on your cart."
+    },
+    {
+        "couponCode": "AUCKLAND",
+        "couponTitle": "Save 10% Off w/ Discount Code",
+        "couponDescription": "10% off accommodations in Auckland"
+    },
+    {
+        "couponCode": "AGODADEAL8",
+        "couponTitle": "Save $50 Off Orders $120 or More With Coupon",
+        "couponDescription": "Save up to 8% on hotel bookings at Agoda with this promo code. Spend a minimum of $120 to qualify. This deal is perfect for your next trip. Book now and get discounts on your hotel stay."
+    },
+    {
+        "couponCode": "1STABC2",
+        "couponTitle": "Save 10% Off using Coupon Code",
+        "couponDescription": "Save up to 10% off your first Booking at agoda.com."
+    },
+    {
+        "couponCode": "24HOURSALE",
+        "couponTitle": "Save $7 Using Promo Code",
+        "couponDescription": "Get $7 off with coupon code"
+    },
+    {
+        "couponCode": "HOSTALES",
+        "couponTitle": "Save Up to 20% on Your Purchase ",
+        "couponDescription": "Shop at Agoda and get up to a 20% discount on your purchase. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "TAIPEI",
+        "couponTitle": "Save 8% Off",
+        "couponDescription": "8% off accommodations in Taipei"
+    },
+    {
+        "couponCode": "KUALALUMPUR",
+        "couponTitle": "Save 8% Off",
+        "couponDescription": "8% off accommodations in Kuala Lumpur"
+    },
+    {
+        "couponCode": "GLOBE6",
+        "couponTitle": "Agoda Coupon Code: 6% Off All Orders",
+        "couponDescription": "Use a coupon to get an extra 6% off clearance, no minimum is required at Agoda."
+    },
+    {
+        "couponCode": "PARIS",
+        "couponTitle": "Additional 10% Discount On Selected Paris Deals",
+        "couponDescription": "Extra 10% off select deals in Paris"
+    },
+    {
+        "couponCode": "MALDIVES",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "10% off accommodations in Maldives"
+    },
+    {
+        "couponCode": "RESORTS",
+        "couponTitle": "Agoda Coupon: 20% Off Your Purchase",
+        "couponDescription": "Save at Agoda by getting extra 20% on your order."
+    },
+    {
+        "couponCode": "MANILA",
+        "couponTitle": "Save 5% Off",
+        "couponDescription": "5% off accommodations in Manila"
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "couponCode": "EXTRA30",
+        "couponTitle": "Enjoy Additional 30% Discount On Sale Items",
+        "couponDescription": "Extra 30% off Sale"
+    },
+    {
+        "couponCode": "MAIL20",
+        "couponTitle": "Hobbs Coupon: 20% Off Any Order",
+        "couponDescription": "Save at Hobbs by getting 20% on any purchase."
+    },
+    {
+        "couponCode": "SAVE25",
+        "couponTitle": "Score 25% Off Your Purchase",
+        "couponDescription": "Simply enter this Hobbs coupon code at checkout to enjoy 25% off your order."
+    },
+    {
+        "couponCode": "NEW20",
+        "couponTitle": "Receive 20% Off Your Order",
+        "couponDescription": "Use this Hobbs discount code to get 20% off your purchase at checkout."
+    },
+    {
+        "couponCode": "HOBBS2901",
+        "couponTitle": "Save 10% Off w/ Discount Code",
+        "couponDescription": "Save an extra 10% off on full priced items using discount code"
+    },
+    {
+        "couponCode": "EXTRA20",
+        "couponTitle": "Enjoy An Additional 20% Discount On Sale Items",
+        "couponDescription": "Extra 20% off Sale"
+    },
+    {
+        "couponCode": "FP25",
+        "couponTitle": "Save 25% Off",
+        "couponDescription": "25% off Full Price styles"
+    },
+    {
+        "couponCode": "MOM20",
+        "couponTitle": "Save 20% Off w/ Discount Code",
+        "couponDescription": "20% off Full Price Styles"
+    },
+    {
+        "couponCode": "EXTRA",
+        "couponTitle": "Enjoy Additional 20% Discount On Sale Items",
+        "couponDescription": "Extra 20% off Sale"
+    },
+    {
+        "couponCode": "FREEDEL",
+        "couponTitle": "Free Shipping on Your Order",
+        "couponDescription": "Shop and take free shipping on your purchase sitewide worth $149 using a promo code on your cart."
+    },
+    {
+        "couponCode": "HOBBS0412",
+        "couponTitle": "Enjoy 10% Savings On Your Shopping",
+        "couponDescription": "Get Up to 10% Discount on Your Purchase"
+    },
+    {
+        "couponCode": "GIFT",
+        "couponTitle": "Take £50 Off",
+        "couponDescription": "£50 off for every £200 spend"
+    },
+    {
+        "couponCode": "HOBBS25",
+        "couponTitle": "Enjoy A 25% Discount On All Items",
+        "couponDescription": "25% off Everything"
+    },
+    {
+        "couponCode": "HOBBS50",
+        "couponTitle": "Save $50 On Purchases Over $250",
+        "couponDescription": "$50 off orders $250+"
+    },
+    {
+        "couponCode": "SEP20",
+        "couponTitle": "Get 20% Discount On Your Entire Order",
+        "couponDescription": "Enjoy Up to 20% Off on Your Total Purchase"
+    },
+    {
+        "couponCode": "EXTRA10",
+        "couponTitle": "Extra 10% off on Sale!",
+        "couponDescription": "Save an extra 10% off on Sale items using code!"
+    },
+    {
+        "couponCode": "DRESS25",
+        "couponTitle": "Save 25% Off",
+        "couponDescription": "25% off full price dresses with code"
+    }
+]

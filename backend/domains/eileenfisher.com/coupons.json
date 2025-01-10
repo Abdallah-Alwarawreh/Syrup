@@ -1,0 +1,22 @@
+[
+    {
+        "couponCode": "WEAR25",
+        "couponTitle": "Take $25 Off",
+        "couponDescription": "Take $25 off with discount code"
+    },
+    {
+        "couponCode": "MAXEY15",
+        "couponTitle": "Get 15% Off Your Purchase",
+        "couponDescription": "Take 15% off your order on black friday sale at Eileen Fisher."
+    },
+    {
+        "couponCode": "THANKS",
+        "couponTitle": "Save 25% On Your Shopping Haul",
+        "couponDescription": "Enjoy 25% Discount on Your Purchase"
+    },
+    {
+        "couponCode": "SEASON50",
+        "couponTitle": "Save $50 on Any Purchase ",
+        "couponDescription": "Shop at Eileen Fisher and get a $50 discount on any purchase. Apply this discount code at checkout."
+    }
+]

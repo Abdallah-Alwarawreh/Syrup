@@ -1,0 +1,12 @@
+[
+    {
+        "couponCode": "TREAT10",
+        "couponTitle": "Very Discount Code: £10 Off £100+ Orders",
+        "couponDescription": "Apply this Very coupon code at checkout to claim £10 back when you spend £100 or more."
+    },
+    {
+        "couponCode": "WELCOME",
+        "couponTitle": "Take 20% Off Your First Credit Order",
+        "couponDescription": "Enjoy shopping and get up to a 20% discount on any purchase when you enter this coupon code at checkout."
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "couponCode": "GIFT25",
+        "couponTitle": "Take 25% Off Your Order",
+        "couponDescription": "Big savings at MNML by getting 25% on your purchase."
+    },
+    {
+        "couponCode": "MD25",
+        "couponTitle": "Get 25% Off Sitewide with Promo Code",
+        "couponDescription": "Enter this coupon code at checkout and take a 25% discount on your order."
+    },
+    {
+        "couponCode": "SHIPCOUPON",
+        "couponTitle": "Free Shipping with Code",
+        "couponDescription": "Score Free Express Shipping on orders $100+"
+    },
+    {
+        "couponCode": "GTVISION10",
+        "couponTitle": "Get 40% Off Streetwear Styles",
+        "couponDescription": "Apply this coupon to your cart to take up to 40% off your next purchase of streetwear, apparel, accessories, and more."
+    }
+]

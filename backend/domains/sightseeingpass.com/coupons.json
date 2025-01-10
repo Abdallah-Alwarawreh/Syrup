@@ -1,0 +1,47 @@
+[
+    {
+        "couponCode": "HOLIDAYS",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Get up to 10% off your purchases using the promo code: Holidays at checkout."
+    },
+    {
+        "couponCode": "EMAIL24",
+        "couponTitle": "Save 40% Off Using Code",
+        "couponDescription": "Take up to 40% off when you add this The Sightseeing Pass code."
+    },
+    {
+        "couponCode": "save5more",
+        "couponTitle": "5% Off Any Sightseeing Pass Purchase",
+        "couponDescription": "Use this coupon code to save 5% off your Sightseeing Pass now."
+    },
+    {
+        "couponCode": "FTBF",
+        "couponTitle": "15% Off Sightseeing Pass for New York",
+        "couponDescription": "Use this coupon now and save money on Sightseeing to New York."
+    },
+    {
+        "couponCode": "AIRLINK",
+        "couponTitle": "Save 5% Off All Attractions",
+        "couponDescription": "Save money and take 5% off attractions, bus tours, cruises, and more with Sightseeing Pass."
+    },
+    {
+        "couponCode": "NYFACILE",
+        "couponTitle": "Sightseeing Pass Coupon Code: Take 10% Off Any Purchase ",
+        "couponDescription": "Enjoy a 10% discount on any purchase when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "MOLAVIAJAR",
+        "couponTitle": "Save 10% Off Your Order and Sightsee",
+        "couponDescription": "Redeem this coupon code during this time and save 10% off Sightseeing Pass."
+    },
+    {
+        "couponCode": "njtransit",
+        "couponTitle": "Save 5% Off: Sightseeing Pass Discount",
+        "couponDescription": "Use this chance and save money on bus tours, attractions, cruises, and more with Sightseeing Pass promo code."
+    },
+    {
+        "couponCode": "oct23",
+        "couponTitle": "Sightseeing Pass Promo: 15% Off All Destinations",
+        "couponDescription": "Apply this coupon code to save 15% off all destinations with Sightseeing Pass coupon."
+    }
+]

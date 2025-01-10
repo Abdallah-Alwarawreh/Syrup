@@ -1,0 +1,17 @@
+[
+    {
+        "couponCode": "GARDEN20",
+        "couponTitle": "Take 20% Off Using Coupon",
+        "couponDescription": "Apply this code at aldi.co.uk for a 20% discount on selected lines. Limited-time offer."
+    },
+    {
+        "couponCode": "OUTDOOR40",
+        "couponTitle": "Get 40% Off selected Garden Furniture & Outdoor Kitchen Items With Code",
+        "couponDescription": "Enter this aldi.co.uk coupon code to enjoy 40% off selected products from garden furniture and outdoor kitchen category."
+    },
+    {
+        "couponCode": "FREEDELIVERY",
+        "couponTitle": "Free Extra-Large Item Delivery on Select Products",
+        "couponDescription": "Free Extra-Large Item Delivery on Select Products"
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "couponCode": "GIFT25",
+        "couponTitle": "Get 25% Off with Code",
+        "couponDescription": "Use this hims discount code and save 25% on personalized, doctor-backed treatment plans."
+    },
+    {
+        "couponCode": "gladiator",
+        "couponTitle": "Get hims Products at $5 ",
+        "couponDescription": "Get select items for only $5 when you apply this hims code at checkout."
+    },
+    {
+        "couponCode": "stuffed",
+        "couponTitle": "hims Promo Code: $20 Off Your Order ",
+        "couponDescription": "Use this hims promo code and save $20 on your next order."
+    },
+    {
+        "couponCode": "shakaskin",
+        "couponTitle": "hims Coupon Code: 50% Off Your Purchase",
+        "couponDescription": "Enter this coupon code at checkout to get 50% off your hims purchase."
+    },
+    {
+        "couponCode": "hariskin",
+        "couponTitle": "Get 50% Off Hair and Skin Products",
+        "couponDescription": "Shop qualifying hair and skin products at hims and save 50% with this code."
+    },
+    {
+        "couponCode": "mickstape",
+        "couponTitle": "Save 10% on Your First Order",
+        "couponDescription": "Get 10% off your first order when you enter this promo code at checkout. New customers only."
+    },
+    {
+        "couponCode": "Offer20",
+        "couponTitle": "Get 20% Off Your Purchase",
+        "couponDescription": "Use this hims promotional code at checkout to receive a 20% discount on your order."
+    },
+    {
+        "couponCode": "forhims",
+        "couponTitle": "hims Coupon Code: $5 Off Your Order",
+        "couponDescription": "Shop qualifying hims products and get them for just $5. Apply this coupon code at checkout to redeem offer."
+    },
+    {
+        "couponCode": "hims5",
+        "couponTitle": "hims Discount Code: $44 Off Complete Hair Kit",
+        "couponDescription": "Use this promo code to get your first month of the hims Complete Hair Kit for just $5 ($44 discount)."
+    },
+    {
+        "couponCode": "heartland",
+        "couponTitle": "$44 Off Your Order",
+        "couponDescription": "Make qualifying purchases at hims and save $44 by applying this coupon code during checkout."
+    }
+]

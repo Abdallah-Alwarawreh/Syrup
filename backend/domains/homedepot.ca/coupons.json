@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "SAVE25D",
+        "couponTitle": "$25 Off on Purchase $100 and Above",
+        "couponDescription": "For a limited time, Home Depot Canada is offering $25 off when you make a purchase of at least $100. Add code at checkout to redeem."
+    },
+    {
+        "couponCode": "HDOFFICE10",
+        "couponTitle": "Home Depot Canada Promo Code: 10% Off Your Order",
+        "couponDescription": "Enter this promo code at checkout to enjoy 10% off on your next Home Depot Canada order."
+    },
+    {
+        "couponCode": "ZIPTOP20OFF",
+        "couponTitle": "Save 20% Off Tools With Home Depot Promo Code",
+        "couponDescription": "Save 20% off with discount code"
+    },
+    {
+        "couponCode": "homedepot",
+        "couponTitle": "$10 Off on Orders $100+",
+        "couponDescription": "Use this discount code to get $10 off when you spend at least $100 at Home Depot Canada."
+    },
+    {
+        "couponCode": "SHEDS11",
+        "couponTitle": "Home Depot Canada Coupon: Free Shipping",
+        "couponDescription": "Apply this code at checkout and enjoy free shipping on your purchase from Home Depot Canada."
+    },
+    {
+        "couponCode": "Cli",
+        "couponTitle": "Home Depot Canada Coupon: Save Big on Power Tools",
+        "couponDescription": "Shop Home Depot Canada and save big on numerous power tools with this coupon code."
+    },
+    {
+        "couponCode": "FREE",
+        "couponTitle": "Free Shipping w/ Coupon Code",
+        "couponDescription": "Free shipping with promo code"
+    }
+]

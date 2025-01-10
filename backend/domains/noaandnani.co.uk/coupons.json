@@ -1,0 +1,57 @@
+[
+    {
+        "couponCode": "XTRA10",
+        "couponTitle": "Enjoy 10% Discount Using Promo Code",
+        "couponDescription": "Get 10% off with promo code"
+    },
+    {
+        "couponCode": "SLIDE20",
+        "couponTitle": "Enjoy 20% Discount Using Their Coupon",
+        "couponDescription": "Get 20% off with coupon"
+    },
+    {
+        "couponCode": "FLASH10",
+        "couponTitle": "10% Off Your Order",
+        "couponDescription": "Get 10% off your order plus a free table using a promo code at checkout."
+    },
+    {
+        "couponCode": "HALFMAT",
+        "couponTitle": "Get Up to 15% Off Your Order",
+        "couponDescription": "Apply this Noa and Nani promo code during checkout to qualify for up to 15% off your eligible purchase."
+    },
+    {
+        "couponCode": "STOCK30",
+        "couponTitle": "Get 30% Off Using Promo Code",
+        "couponDescription": "Score 30% off with discount code"
+    },
+    {
+        "couponCode": "WELCOME",
+        "couponTitle": "Save 5% Using Promo Code: Exclusive Deal",
+        "couponDescription": "Score 5% off with promo code"
+    },
+    {
+        "couponCode": "backtoschool",
+        "couponTitle": "Save 10% Off Using Code",
+        "couponDescription": "10% off our range"
+    },
+    {
+        "couponCode": "MOTHER",
+        "couponTitle": "Score 10% Savings Using Promo Code",
+        "couponDescription": "Get 10% off with discount code"
+    },
+    {
+        "couponCode": "SPRING10",
+        "couponTitle": "Save 10% Off w/ Coupon Code",
+        "couponDescription": "sale alert! receive 10% off orders over £200 with coupon code. limited time only - 24th - 27th may! shop now!"
+    },
+    {
+        "couponCode": "TKSMUM",
+        "couponTitle": "Noa and Nani Code: EXTRA 10% Off Any Purchase",
+        "couponDescription": "Add this Noa and Nani coupon code at checkout to get an extra 10% off your orders."
+    },
+    {
+        "couponCode": "BLACK",
+        "couponTitle": "On Sale!",
+        "couponDescription": "our black friday deal, order a bed today and enter the coupon code to receive a free bed tidy worth £14.99. offer ends 23:59 today 28/11/14"
+    }
+]

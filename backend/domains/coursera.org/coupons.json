@@ -1,0 +1,27 @@
+[
+    {
+        "couponCode": "fromCoursera10",
+        "couponTitle": "Coursera Discount Code: Save 10% on 12 Months Course",
+        "couponDescription": "Apply this discount code at checkout and get 10% discount on twelve month course."
+    },
+    {
+        "couponCode": "CAPITALONESPRING",
+        "couponTitle": "Get 10% Off Your Purchase",
+        "couponDescription": "Save 10% on subscription with this Coursera code."
+    },
+    {
+        "couponCode": "SAVE5",
+        "couponTitle": "Enjoy 5% Discount Using Promotional Code",
+        "couponDescription": "Get 5% off with promo code"
+    },
+    {
+        "couponCode": "SHIP89",
+        "couponTitle": "Free Shipping on Your Order",
+        "couponDescription": "Shop and take free shipping on your purchase worth $89 or more using a promo code on your cart."
+    },
+    {
+        "couponCode": "click here",
+        "couponTitle": "Enroll In Top Global Courses For Free On Coursera",
+        "couponDescription": "Join Coursera for FREE!  Take the world's best courses, online!"
+    }
+]

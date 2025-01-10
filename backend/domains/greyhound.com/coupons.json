@@ -1,0 +1,22 @@
+[
+    {
+        "couponCode": "GHPD20",
+        "couponTitle": "Greyhound Coupon: 20% Off Your Order",
+        "couponDescription": "Take 20% off your purchase with this Greyhound code."
+    },
+    {
+        "couponCode": "ESAVER",
+        "couponTitle": "Enjoy 10% Discount On Regular Fare",
+        "couponDescription": "Save 10% off Standard Fare"
+    },
+    {
+        "couponCode": "nybosr",
+        "couponTitle": "Get 12% Discount On Ny To Boston Standard Fare",
+        "couponDescription": "Save 12% off Standard Fare from New York to Boston - $35"
+    },
+    {
+        "couponCode": "EP152010",
+        "couponTitle": "hot us freebie - free one way greyhound bus ticket to las vegasselect your location & use promo code -...",
+        "couponDescription": null
+    }
+]

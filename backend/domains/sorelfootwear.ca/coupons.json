@@ -1,0 +1,57 @@
+[
+    {
+        "couponCode": "SORAFF60",
+        "couponTitle": "Save 20% Off with Code",
+        "couponDescription": "Up to 20% off on Sale Price"
+    },
+    {
+        "couponCode": "SOREL10",
+        "couponTitle": "Additional 10% off Fall and Winter Sale",
+        "couponDescription": "Additional 10% off Fall and Winter Sale"
+    },
+    {
+        "couponCode": "SOREL50",
+        "couponTitle": "Get 50% Discount Using Promo Code",
+        "couponDescription": "Save 50% off with coupon code"
+    },
+    {
+        "couponCode": "DISNEYXSOREL",
+        "couponTitle": "Get 20% Discount With Promo Code",
+        "couponDescription": "Save 20% off with coupon code"
+    },
+    {
+        "couponCode": "SORELOCT",
+        "couponTitle": "Get 60% Discount Using Promo Code",
+        "couponDescription": "Score 60% off with code"
+    },
+    {
+        "couponCode": "SORPERK15",
+        "couponTitle": "Get 10% Discount Using The Promo Code",
+        "couponDescription": "Save up to 10% off with coupon code"
+    },
+    {
+        "couponCode": "EXTRA10",
+        "couponTitle": "Take 10% Off Sitewide",
+        "couponDescription": "Save 10% on your order when you use this Sorel Footwear promo code."
+    },
+    {
+        "couponCode": "SOREL20",
+        "couponTitle": "Get 20% Discount Using Coupon Code",
+        "couponDescription": "Score up to 20% off with coupon"
+    },
+    {
+        "couponCode": "SORAFF65",
+        "couponTitle": "Save 65% Off w/ Promo Code",
+        "couponDescription": "Up to 65% Off on Select Womens Sandals, Boots, Apparel, and Accessories"
+    },
+    {
+        "couponCode": "CYBERMONDAY",
+        "couponTitle": "Get 50% Discount Using Promo Code",
+        "couponDescription": "Save 50% off with coupon code"
+    },
+    {
+        "couponCode": "SORAFF70",
+        "couponTitle": "Get 70% Discount On Selected Women's Sandals",
+        "couponDescription": "Receive 70% off on select Women's Sandals"
+    }
+]

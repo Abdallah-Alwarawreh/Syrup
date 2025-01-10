@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "CLEAR20",
+        "couponTitle": "Up To 70% Off Clearance - New Items Added",
+        "couponDescription": "Clearance Bargains Up to 50% off- New Lines Added Plus An extra 20% off"
+    },
+    {
+        "couponCode": "CLEAR10",
+        "couponTitle": "Extra 10% off Clearance",
+        "couponDescription": "extra 10% off clearance with coupon code. up to 70% off +quick delivery."
+    },
+    {
+        "couponCode": "TREAT20",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "Up to 20% off on select lines this weekend"
+    },
+    {
+        "couponCode": "TREAT10",
+        "couponTitle": "Save 10% Off using Coupon Code",
+        "couponDescription": "Up to 10% off on select lines this weekend only"
+    },
+    {
+        "couponCode": "HEADBOARDS",
+        "couponTitle": "Save 10% Off using Coupon Code",
+        "couponDescription": "Get 10% off on Headboards"
+    },
+    {
+        "couponCode": "FOOTSTOOLS",
+        "couponTitle": "Save 10% Off w/ Promo Code",
+        "couponDescription": "Save an extra 10% off on Footstools with any Upholstery Collection"
+    }
+]

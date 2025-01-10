@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "LUCKY10",
+        "couponTitle": "Additional 10% Discount On All Items",
+        "couponDescription": "Extra 10% off sitewide"
+    },
+    {
+        "couponCode": "10EXTRA",
+        "couponTitle": "Special Offer: $10 Discount On $100 Spend For New Members",
+        "couponDescription": "New Member Special: Get $10 off first order with $100 spend"
+    },
+    {
+        "couponCode": "10RAISEAF",
+        "couponTitle": "Take $10 Off",
+        "couponDescription": "New Customers Get $10 off on Your First order of $50 or more"
+    },
+    {
+        "couponCode": "10RAISE40AF",
+        "couponTitle": "Enjoy $10 Off On Chosen Items",
+        "couponDescription": "Get $10 Discount on Select Products"
+    },
+    {
+        "couponCode": "RAISE1",
+        "couponTitle": "Additional 1% Discount On Select Brands",
+        "couponDescription": "Receive an extra 1% off on select Brands"
+    },
+    {
+        "couponCode": "10PERCENT",
+        "couponTitle": "Get 10% Discount With Promo Code",
+        "couponDescription": "Receive Up to 10% Off When You Use Promo Code"
+    },
+    {
+        "couponCode": "15PERCENT",
+        "couponTitle": "Save 15% Off",
+        "couponDescription": "Get an Extra 15% Off on Your First Order"
+    },
+    {
+        "couponCode": "first",
+        "couponTitle": "Additional 10% Off On Already Reduced Gift Cards",
+        "couponDescription": "Extra 10% off all discounted gift cards"
+    },
+    {
+        "couponCode": "COOLJA1177",
+        "couponTitle": "Save Up to 30% on Any Purchase Email Sign Up ",
+        "couponDescription": "Shop at Raise and get up to a 30% discount on any purchase when you sing up by email. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "NEW5RAISEAF",
+        "couponTitle": "Take $5 Off",
+        "couponDescription": "New Customers Get $5 off on Your First order of $25 or more"
+    },
+    {
+        "couponCode": "3FORME",
+        "couponTitle": "Raise Coupon Code: Save Up to 5% on Your Order",
+        "couponDescription": "Benefit from the exclusive Raise coupon code and enjoy a cost-saving opportunity on your purchase. Avail up to a 5% discount on your order with this limited-time promotion. Optimize your savings while enhancing your shopping experience."
+    },
+    {
+        "couponCode": "SELL50",
+        "couponTitle": "Save 50% Off w/ Discount Code",
+        "couponDescription": "Save 50% off with discount code"
+    },
+    {
+        "couponCode": "SAVEMORE",
+        "couponTitle": "Save 3% Off",
+        "couponDescription": "Save 3% off with code"
+    },
+    {
+        "couponCode": "FLASH",
+        "couponTitle": "Save 3% Off Your Order",
+        "couponDescription": "Take an extra 3% off members\" favorites with this Raise discount code."
+    },
+    {
+        "couponCode": "TRIP",
+        "couponTitle": "Raise Promo Code: Get Extra 3% Off Your Order",
+        "couponDescription": "Redeem this promo code at checkout and save extra 3% on your order."
+    },
+    {
+        "couponCode": "FALLFAVES",
+        "couponTitle": "Raise Coupon Code: Take Extra 3% Off Your Purchase ",
+        "couponDescription": "Shop at Raise and get extra 3% discount on your purchase when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "SEMISALE3",
+        "couponTitle": "Get A 3% Discount With Coupon",
+        "couponDescription": "Save 3% off with coupon"
+    },
+    {
+        "couponCode": "adventure",
+        "couponTitle": "Raise Coupon: 30% Off Your Purchase Instantly",
+        "couponDescription": "Apply this coupon to receive an additional 30% off on certain styles."
+    },
+    {
+        "couponCode": "SORRY5",
+        "couponTitle": "Get $20 Discount Using Coupon",
+        "couponDescription": "Score $20 off with coupon"
+    },
+    {
+        "couponCode": "SCOREBIG",
+        "couponTitle": "Get 25% Off Adidas Products with Promo Code",
+        "couponDescription": "Paste this promo code at checkout and grab a 25% discount on Adidas products."
+    }
+]

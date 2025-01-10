@@ -1,0 +1,27 @@
+[
+    {
+        "couponCode": "EXTRA15",
+        "couponTitle": "Get A 15% Discount On All Items",
+        "couponDescription": "15% off everything"
+    },
+    {
+        "couponCode": "BLACK18",
+        "couponTitle": "Get 15% Off £100+ Spend With Click & Collect",
+        "couponDescription": "15% off Click & Collect when you spend £100+"
+    },
+    {
+        "couponCode": "SEPT218",
+        "couponTitle": "Get 10% Off £75+ Orders With Click & Collect",
+        "couponDescription": "10% off Click & Collect when you spend £75+"
+    },
+    {
+        "couponCode": "SEPT18",
+        "couponTitle": "10% Off On Click & Collect Orders Over £7",
+        "couponDescription": "ACCEPT Customer Services Sign In or Register 0 Your Basket Order Line 0330 123 4123 10% off everything when you Click & Collect min spend £7"
+    },
+    {
+        "couponCode": "JUNE18",
+        "couponTitle": "Get 10% Off All £75+ Orders Using Promo Code",
+        "couponDescription": "10% off Everything with Orders of £75+ when You Use Code"
+    }
+]

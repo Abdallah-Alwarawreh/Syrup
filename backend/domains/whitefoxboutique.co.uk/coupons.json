@@ -1,0 +1,52 @@
+[
+    {
+        "couponCode": "CFOLLOW15",
+        "couponTitle": "CouponFollow Exclusive | 15% Off Your Order ",
+        "couponDescription": "This CouponFollow exclusive code gets you 15% off your order of £100 or more at White Fox Boutique. The discount does not apply to sale or collaboration items."
+    },
+    {
+        "couponCode": "CFOLLOW10",
+        "couponTitle": "CouponFollow Exclusive |  10% Off Your Order",
+        "couponDescription": "Get 10% off all orders at White Fox Boutique with this exclusive code from CouponFollow. Enjoy stylish clothing and accessories at a discount. Offer does not include sale items or collaboration collections."
+    },
+    {
+        "couponCode": "SHOP30",
+        "couponTitle": "White Fox Boxing Day Sale: Get 30% Off Your Order",
+        "couponDescription": "Receive 30% off everything at White Fox Boutique when this coupon code is applied at checkout. Includes already reduced items. Excludes gift cards and collaborations. Cannot be combined with any other codes or offers."
+    },
+    {
+        "couponCode": "GIFT30",
+        "couponTitle": "Take 30% Off Your Order",
+        "couponDescription": "Save 30% on your entire purchase with this White Fox code."
+    },
+    {
+        "couponCode": "CYBER",
+        "couponTitle": "Save 30% Off w/ Promo Code",
+        "couponDescription": "Cyber Monday: 30% off on Everything Includes Already Reduced items"
+    },
+    {
+        "couponCode": "BLKFRI",
+        "couponTitle": "White Fox Discount Code: 30% Off Entire Site",
+        "couponDescription": "Enter this White Fox discount code at checkout to get 30% off your entire order."
+    },
+    {
+        "couponCode": "SHOP15",
+        "couponTitle": "Get 15% Off Your First App Order",
+        "couponDescription": "Download the White Fox Boutique app and score 15% off on your first in-app purchase."
+    },
+    {
+        "couponCode": "SALE25",
+        "couponTitle": "Singles Day Sale - Enjoy 25% Off",
+        "couponDescription": "Shop White Fox Boutique and save 25% for a limited time"
+    },
+    {
+        "couponCode": "WF30",
+        "couponTitle": "Save 25% Off",
+        "couponDescription": "Take up to 25% off with coupon code"
+    },
+    {
+        "couponCode": "EARLY40",
+        "couponTitle": "Save 40% Off w/ Promo Code",
+        "couponDescription": "Pre-Black Friday Frenzy - 40% off on Already Reduced"
+    }
+]

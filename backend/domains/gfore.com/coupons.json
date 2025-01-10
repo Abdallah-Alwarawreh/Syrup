@@ -1,0 +1,52 @@
+[
+    {
+        "couponCode": "20EXTRA",
+        "couponTitle": "Save 20% off Select Sale Styles",
+        "couponDescription": "Take an Extra 20% Off on Select sale items"
+    },
+    {
+        "couponCode": "EXTRA2024",
+        "couponTitle": "Take 20% Off Your Order",
+        "couponDescription": "Save an additional 20% on your entire purchase in the store."
+    },
+    {
+        "couponCode": "AUGSHIP",
+        "couponTitle": "Free Standard Shipping At Gfore.Com",
+        "couponDescription": "Enjoy Complimentary standard shipping on orders at gfore.com."
+    },
+    {
+        "couponCode": "CYBERMONDAY",
+        "couponTitle": "Save 10% Off w/ Discount Code",
+        "couponDescription": "Apply this coupon code at checkout and take an extra 10% discount on your order."
+    },
+    {
+        "couponCode": "MAYSHIP24",
+        "couponTitle": "complimentary standard shipping offer valid on all orders placed from 12:01am est on 05/19/2024 to 11:59pm est on 05/26/2024 using coupon code at checkout.",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "MAYSHIP",
+        "couponTitle": "Enjoy Complimentary Gfore Shipping With Code",
+        "couponDescription": "Take advantage of free shipping with code at Gfore."
+    },
+    {
+        "couponCode": "EXTRA2023",
+        "couponTitle": "Save 50% Off",
+        "couponDescription": "Save up to 50% off select styles plus an extra 20% with this G/FORE promo code."
+    },
+    {
+        "couponCode": "FEBSHIP24",
+        "couponTitle": "Get Free Shipping On Your Order",
+        "couponDescription": "Receive complimentary standard shipping with this Gfore code."
+    },
+    {
+        "couponCode": "NOVSHIP",
+        "couponTitle": "Free Shipping w/ Promo Code",
+        "couponDescription": "Paste this promo code at checkout and get free standard shipping on your order."
+    },
+    {
+        "couponCode": "SEPTSHIP",
+        "couponTitle": "Free Delivery On All Orders With Coupon",
+        "couponDescription": "With a coupon, get free delivery on all orders with no minimum purchase required."
+    }
+]

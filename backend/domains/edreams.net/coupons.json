@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "1SALE",
+        "couponTitle": "Take $35 Off",
+        "couponDescription": "Grab $35 off on Flight Bookings Over $450 or Save $110 on Flight and Hotel Bookings Over $1,200"
+    },
+    {
+        "couponCode": "BLACK20US",
+        "couponTitle": "EDreams Coupon: $20 Off Your Order",
+        "couponDescription": "Save $20 on flights (select the prime fare) by adding this EDreams code."
+    },
+    {
+        "couponCode": "BLACK40US",
+        "couponTitle": "Take $40 Off Your Order",
+        "couponDescription": "Save  $40 on flight plus hotel by adding this EDreams code."
+    },
+    {
+        "couponCode": "BETTER25US",
+        "couponTitle": "Get $25 Off Your Purchase",
+        "couponDescription": "Save  $25 on flights by adding this EDreams code."
+    },
+    {
+        "couponCode": "APP10US",
+        "couponTitle": "$10 Off Your Order",
+        "couponDescription": "Shop and get $10 off your purchase using a promo code on your cart."
+    },
+    {
+        "couponCode": "APP10",
+        "couponTitle": "Save $10 on First App Flight Booking Over $200+",
+        "couponDescription": "Get a $10 discount on your first app flight booking over $200. Use this coupon code at checkout."
+    },
+    {
+        "couponCode": "BLACKWEEK19",
+        "couponTitle": "Take $100 Off w/ Coupon Code",
+        "couponDescription": "Get $100 Discount on Flight and Hotel Reservation"
+    },
+    {
+        "couponCode": "SALES25",
+        "couponTitle": "Take $25 Off",
+        "couponDescription": "Save $25 off on Flights with a Minimum Booking Value of $200"
+    },
+    {
+        "couponCode": "JANSALE3",
+        "couponTitle": "Take $25 Off w/ Discount Code",
+        "couponDescription": "Save $25 off on Your Flight + $80 off on Your Flight and Hotel"
+    },
+    {
+        "couponCode": "20EDREAMS",
+        "couponTitle": "Enjoy $20 Savings with Minimum Spend",
+        "couponDescription": "Apply this coupon code at checkout for $20 off orders over $200."
+    },
+    {
+        "couponCode": "FLY15EDUS",
+        "couponTitle": "Get $15 Discount Using Promo Code",
+        "couponDescription": "Score $15 off with promo code"
+    },
+    {
+        "couponCode": "SALES70",
+        "couponTitle": "Take $70 Off",
+        "couponDescription": "Save $70 off on Flight andFlight Booking with Minimum Booking Value of $900"
+    },
+    {
+        "couponCode": "IWANT20",
+        "couponTitle": "Get $20 Off On Your Purchase",
+        "couponDescription": "Enjoy $20 Discount on Your Order"
+    },
+    {
+        "couponCode": "GWEEKUS",
+        "couponTitle": "Extra 20% Off Your Order",
+        "couponDescription": "Shop and take an extra 20% off your purchase using a promo code on your cart."
+    },
+    {
+        "couponCode": "4THJULYED",
+        "couponTitle": "Get $15 Discount Using This Coupon Code",
+        "couponDescription": "Take $15 off with coupon code"
+    },
+    {
+        "couponCode": "4THJULYINTED",
+        "couponTitle": "Get $20 Discount Using Promotional Code",
+        "couponDescription": "Take $20 off with coupon code"
+    },
+    {
+        "couponCode": "3SALE",
+        "couponTitle": "Get $25 Off Using This Coupon Code",
+        "couponDescription": "Save $25.00 with coupon code"
+    },
+    {
+        "couponCode": "SUMMER",
+        "couponTitle": "Enjoy $90 Discount With Promo Code",
+        "couponDescription": "Get $90 off with discount code"
+    },
+    {
+        "couponCode": "HOME",
+        "couponTitle": "Get $15 Discount On Flights Costing $100+",
+        "couponDescription": "Save $15 off on $100 or more Flights"
+    },
+    {
+        "couponCode": "CYBERWEEK19",
+        "couponTitle": "Grab $85 Discount Using Promo Code",
+        "couponDescription": "Get $85 off with discount code"
+    }
+]

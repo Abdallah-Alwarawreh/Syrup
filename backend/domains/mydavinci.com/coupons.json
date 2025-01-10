@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "HOLIDAY",
+        "couponTitle": "Enjoy 20% Discount On Every Purchase",
+        "couponDescription": "20% Off All Orders"
+    },
+    {
+        "couponCode": "FRIDAY",
+        "couponTitle": "Enjoy A 20% Discount On Your Purchase",
+        "couponDescription": "20% Off Your Order"
+    },
+    {
+        "couponCode": "ANNIVERSARY",
+        "couponTitle": "Enjoy A 15% Discount On Your Purchase",
+        "couponDescription": "15% Off Your Order"
+    },
+    {
+        "couponCode": "MOM",
+        "couponTitle": "Enjoy Extra 20% Savings Using Promo Code",
+        "couponDescription": "Get an Additional 20% Off with Promo Code"
+    },
+    {
+        "couponCode": "DAD",
+        "couponTitle": "Save 20% On Your Purchase",
+        "couponDescription": "20% Off Your Order"
+    },
+    {
+        "couponCode": "LUV30",
+        "couponTitle": "30% Off Your Order",
+        "couponDescription": "Get 30% off your purchase using a coupon code on your cart."
+    },
+    {
+        "couponCode": "PRESIDENT30",
+        "couponTitle": "My Da Vinci Coupon: Extra 30% Off Your Purchase",
+        "couponDescription": "Shop and save an additional 30% with this promo code for sitewide orders on your cart at My Da Vinci."
+    },
+    {
+        "couponCode": "SUMMER",
+        "couponTitle": "Get 20% Off Summer Sale",
+        "couponDescription": "Scor up to 20% off pop art portraits from photos during summer sale at myDaVinci."
+    },
+    {
+        "couponCode": "WOMEN30",
+        "couponTitle": "My Da Vinci Coupon Code: Take Extra 30% Off Your Purchase ",
+        "couponDescription": "Enjoy an extra 30% discount on your purchase when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "SPRING",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "20% Off Any Item"
+    },
+    {
+        "couponCode": "RETURN30",
+        "couponTitle": "My Da Vinci Coupon: 30% Off Your Order",
+        "couponDescription": "Take up to 30% off when you add this My Da Vinci discount code."
+    },
+    {
+        "couponCode": "LOVE",
+        "couponTitle": "Save 20% Off w/ Coupon Code",
+        "couponDescription": "20% Off Valentine's Day Sale"
+    },
+    {
+        "couponCode": "FAMILY",
+        "couponTitle": "My Da Vinci Discount: Holiday Sale 25% Off",
+        "couponDescription": "Enter this My Da Vinci promo code at checkout to get 25% off your orders."
+    },
+    {
+        "couponCode": "PETS",
+        "couponTitle": "Save 30% on Custom Pet Artwork",
+        "couponDescription": "With a My Da Vinci coupon, get an additional 30% off your custom pet artwork."
+    },
+    {
+        "couponCode": "ALL30",
+        "couponTitle": "Save 30% Off Sitewide w/ Coupon Code",
+        "couponDescription": "Save 30% off on your entire purchase at mydavinci.com."
+    },
+    {
+        "couponCode": "FLASH30",
+        "couponTitle": "Save 30% Off w/ Discount Code",
+        "couponDescription": "Redeem this promo code at checkout and save 30% on your order."
+    },
+    {
+        "couponCode": "VETERAN",
+        "couponTitle": "Save 30% Off",
+        "couponDescription": "Take 30% off with coupon"
+    },
+    {
+        "couponCode": "MEMORIES",
+        "couponTitle": "Save 30% Using Promo Code",
+        "couponDescription": "Score 30% off with discount code"
+    },
+    {
+        "couponCode": "SCHOOL30",
+        "couponTitle": "My Da Vinci Promo Code: 30% Off Your Purchase",
+        "couponDescription": "Save an extra 30% on your order when this coupon code is applied."
+    },
+    {
+        "couponCode": "HANDS",
+        "couponTitle": "My Da Vinci's Promo Code: Up to 30% Off Your Order ",
+        "couponDescription": "Redeem this promo code at checkout and enjoy up to 30% off on your order."
+    }
+]

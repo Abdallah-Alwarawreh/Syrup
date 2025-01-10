@@ -1,0 +1,17 @@
+[
+    {
+        "couponCode": "COM67",
+        "couponTitle": "Save 40% on .COM, Only $5.87 Annually",
+        "couponDescription": "Take 40% off your purchase of .com domains with prices starting at just $5.87 per year."
+    },
+    {
+        "couponCode": "NET19",
+        "couponTitle": "Register your .NET Domain for Only $10.44 with Code",
+        "couponDescription": "Enter this Spaceship promo code at checkout to get your .NET domain for only $10.44."
+    },
+    {
+        "couponCode": "EASYWPDEAL",
+        "couponTitle": "Get 1 Month Free with Spaceship Coupon Code",
+        "couponDescription": "Use this Spaceship promo code at checkout on your EasyWP Starter Wordpress hosting plan and get your first month for free."
+    }
+]

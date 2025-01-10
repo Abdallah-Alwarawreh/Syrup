@@ -1,0 +1,22 @@
+[
+    {
+        "couponCode": "801",
+        "couponTitle": "Save 35% Off Any Purchase With Code",
+        "couponDescription": "Save with a 35% discount on any purchase when you apply this code at checkout."
+    },
+    {
+        "couponCode": "654612",
+        "couponTitle": "Get 5% Off Any Order",
+        "couponDescription": "Paste this promo code at checkout and save 5% on any order."
+    },
+    {
+        "couponCode": "save500",
+        "couponTitle": "Kick Back and Save 30%",
+        "couponDescription": "Save up to 30% on your next recliner and more from La-Z-Boy when you check out with this coupon."
+    },
+    {
+        "couponCode": "LZBT399",
+        "couponTitle": "$399 Recliner Special",
+        "couponDescription": "Only available through online purchaseget the Rialto recliner for $399 by using this promo at checkout."
+    }
+]

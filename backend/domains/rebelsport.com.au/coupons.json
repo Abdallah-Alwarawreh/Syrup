@@ -1,0 +1,27 @@
+[
+    {
+        "couponCode": "CLEARANCE",
+        "couponTitle": "Rebel Sport Promo Code: Get 30% Off Any Order",
+        "couponDescription": "Redeem this promo code at checkout and save 30% on any order."
+    },
+    {
+        "couponCode": "FANGEAR30",
+        "couponTitle": "Take 30% Off Your Order",
+        "couponDescription": "Save big at Rebel Sport by getting up to 30% on select items."
+    },
+    {
+        "couponCode": "TAKE10",
+        "couponTitle": "Enjoy 10% Reduction On All Online Purchases",
+        "couponDescription": "Take 10% off Sitewide - Online Only"
+    },
+    {
+        "couponCode": "BLACKFRIDAY",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Black Friday Sale - Additional 10% Discount"
+    },
+    {
+        "couponCode": "DISCOUNT10",
+        "couponTitle": "Enjoy 10% Savings On All Orders",
+        "couponDescription": "Save 10% off on any purchase"
+    }
+]

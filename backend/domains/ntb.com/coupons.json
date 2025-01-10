@@ -1,0 +1,17 @@
+[
+    {
+        "couponCode": "OILPROMO",
+        "couponTitle": "$20 off Synthetic Oil Change",
+        "couponDescription": "Get a Conventional Oil Change for only $21.99 or save $20 on a Synthetic Blend or Full Synthetic Oil Change with Promo Code. Schedule an appointment today!"
+    },
+    {
+        "couponCode": "SIGN",
+        "couponTitle": "Get $200 Off Your Order",
+        "couponDescription": "Take up to $200 off when you add this National Tire & Battery code."
+    },
+    {
+        "couponCode": "5OFFNOW",
+        "couponTitle": "5% Off Your Order",
+        "couponDescription": "Score an extra 5% off on your NTB order sitewide using this NTB coupon code during checkout."
+    }
+]

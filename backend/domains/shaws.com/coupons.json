@@ -1,0 +1,67 @@
+[
+    {
+        "couponCode": "WELCOME60",
+        "couponTitle": "Shaws Coupon: $60 Off Your Order + Free Shipping",
+        "couponDescription": "Use this discount code to save $60 on your qualifying purchase plus free delivery at checkout."
+    },
+    {
+        "couponCode": "SAVE4",
+        "couponTitle": "Enjoy $4 Off On Your Shopping",
+        "couponDescription": "Get $4 Discount on Your Purchase"
+    },
+    {
+        "couponCode": "SAVE20",
+        "couponTitle": "Take $20 off Your First Order of $75+",
+        "couponDescription": "Enjoy $20 off your first order over $75, plus free delivery!"
+    },
+    {
+        "couponCode": "MOMFAVES",
+        "couponTitle": "Get $5 Discount Using Exclusive Promo Code",
+        "couponDescription": "Save $5 off with coupon code"
+    },
+    {
+        "couponCode": "SNACK",
+        "couponTitle": "Get A $2 Discount Using Promo Code",
+        "couponDescription": "Score $2 off with promo code"
+    },
+    {
+        "couponCode": "SPEND15",
+        "couponTitle": "Take $5 Off w/ Discount Code",
+        "couponDescription": "Enjoy $5 Discount on Orders Worth $15 or More"
+    },
+    {
+        "couponCode": "SAVE30",
+        "couponTitle": "Get $30 off your first DriveUp & Go™ order when you spend $75 or more",
+        "couponDescription": "Get $30 off your first DriveUp & Go order when you spend $75 or more"
+    },
+    {
+        "couponCode": "SAVE10",
+        "couponTitle": "Save $10 Using Discount Code",
+        "couponDescription": "Get $10 off with code"
+    },
+    {
+        "couponCode": "SHIPWINE",
+        "couponTitle": "Shaw's Promo Code: Get Free Shipping On Your Order",
+        "couponDescription": "Receive free shipping on your first purchase when you spend $75 and more."
+    },
+    {
+        "couponCode": "SAVE3O",
+        "couponTitle": "$30 Off Your Order",
+        "couponDescription": "Shop at shaws.com and take $30 off your purchase sitewide worth $75 or more using a promo code on your cart."
+    },
+    {
+        "couponCode": "SPEND25",
+        "couponTitle": "Get $5 Discount Using Promo Code",
+        "couponDescription": "Save $5 off with discount code"
+    },
+    {
+        "couponCode": "SAVE5",
+        "couponTitle": "Enjoy $5 Discount With Promo Code Usage",
+        "couponDescription": "Get an Extra $5 Off When You Use Promo Code"
+    },
+    {
+        "couponCode": "SAVE8",
+        "couponTitle": "Get $8 Off With Code",
+        "couponDescription": "Order today and take $8 off when you Buy 2 Baby Products with a coupon code on your purchase at Shaw's Supermarket."
+    }
+]

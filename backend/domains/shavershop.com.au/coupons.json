@@ -1,0 +1,22 @@
+[
+    {
+        "couponCode": "SHAVE10",
+        "couponTitle": "Save $10 on Your Purchase",
+        "couponDescription": "Apply this coupon code to your Shaver Shop cart to receive $10 off on your purchase."
+    },
+    {
+        "couponCode": "48HOURS",
+        "couponTitle": "Shaver Shop Promo Code: Save Up to 15% on Your Order",
+        "couponDescription": "Receive up to 15% off your Shaver Shop purchase when this coupon code is applied at checkout."
+    },
+    {
+        "couponCode": "SMART50YOYS",
+        "couponTitle": "Save 70% Off w/ Coupon Code",
+        "couponDescription": "Score 70% off with discount code"
+    },
+    {
+        "couponCode": "multishape",
+        "couponTitle": "Shaver Shop Coupon: Get 17% Off Your Order",
+        "couponDescription": "Use this Shaver Shop discount code at checkout to score 17% off on your order."
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "AGAIN",
+        "couponTitle": "15% Off Your Order",
+        "couponDescription": "Shop and get 15% off your purchase using a coupon code on your cart."
+    },
+    {
+        "couponCode": "SEAWORLDSAVE",
+        "couponTitle": "Sea World Coupon: Take $50 Off Your Order",
+        "couponDescription": "Enjoy $50 off upgrade to an annual pass by adding this Sea World code."
+    },
+    {
+        "couponCode": "SWOHOS5",
+        "couponTitle": "Sea World Coupon: $5 Off Your Purchase",
+        "couponDescription": "Save at Sea World by getting $5 on your ticket."
+    },
+    {
+        "couponCode": "SWCMCDONALDSSD09",
+        "couponTitle": "Save $15 on Single-Day Admission",
+        "couponDescription": "Use this coupon code to take $15 off single-day admission tickets: $49.95 for adults and $39.95 for children."
+    },
+    {
+        "couponCode": "BFCU",
+        "couponTitle": "Up to $12 Off at SeaWorld San Antonio",
+        "couponDescription": "Save $12 on adult tickets and $10 for kids at SeaWorld Sant Antonio. Enter promo code at checkout to redeem discount."
+    },
+    {
+        "couponCode": "SWCMcDonaldsSpook2011",
+        "couponTitle": "Adults Pay Kids Price and Kids Enter for Free",
+        "couponDescription": "For a limited time, SeaWorld San Diego is offering free entry for kids and single-day adult tickets at the kids price. Use this code at checkout to apply discount."
+    },
+    {
+        "couponCode": "Pepsi2010",
+        "couponTitle": "$10 Off Single-Day Tickets",
+        "couponDescription": "Visit any SeaWorld location and get $10 off single-day admission when you redeem this promo code."
+    }
+]

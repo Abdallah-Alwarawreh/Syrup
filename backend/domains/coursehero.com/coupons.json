@@ -1,0 +1,17 @@
+[
+    {
+        "couponCode": "CURIOUS20",
+        "couponTitle": "Get 20% Discount On Your Course Hero Buy!",
+        "couponDescription": "Save 20% off on your Course Hero purchase!"
+    },
+    {
+        "couponCode": "STUDY40",
+        "couponTitle": "Course Hero Discount Code: Get 40% Off Now",
+        "couponDescription": "Add this Course Hero code at checkout to take 40% off Annual Subscription."
+    },
+    {
+        "couponCode": "click here",
+        "couponTitle": "Course Hero membership From $9.95/month",
+        "couponDescription": null
+    }
+]

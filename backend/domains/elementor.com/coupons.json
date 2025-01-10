@@ -1,0 +1,27 @@
+[
+    {
+        "couponCode": "bsite20",
+        "couponTitle": "Take an Extra 20% Off Elementor Hosting Plans",
+        "couponDescription": "Buy and save 20% off your cart when you subscribe to an \nElementor hosting plan using the promo code at checkout."
+    },
+    {
+        "couponCode": "BUSINESS20",
+        "couponTitle": "Save 33% Off with Code",
+        "couponDescription": "Score 33% off with coupon code"
+    },
+    {
+        "couponCode": "XOXOXO",
+        "couponTitle": "Get 20% Off Your Purchase",
+        "couponDescription": "Save 20% on woo commerce thank you page by adding this Elementor code."
+    },
+    {
+        "couponCode": "bf2019_personal",
+        "couponTitle": "Enjoy 15% Savings Using Promo Code",
+        "couponDescription": "Get up to 15% off with discount code"
+    },
+    {
+        "couponCode": "safe mode",
+        "couponTitle": "Save 10% Off using Coupon Code",
+        "couponDescription": "for there release of elementor pro 2.4, use coupon code coupon to get 10% off elementor pro"
+    }
+]

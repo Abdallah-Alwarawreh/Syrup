@@ -1,0 +1,57 @@
+[
+    {
+        "couponCode": "FREETAXUSA25",
+        "couponTitle": "Quarter Off Total Purchase",
+        "couponDescription": "25% off entire order"
+    },
+    {
+        "couponCode": "ROYCE25",
+        "couponTitle": "Save 100% Off",
+        "couponDescription": "100% free federal tax e-file at coupon code to get 25% of your state e-file."
+    },
+    {
+        "couponCode": "FREETAXUSA10",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Take 10% off on FreeTaxUSA"
+    },
+    {
+        "couponCode": "FIVEOFF",
+        "couponTitle": "Grab $5 Discount On Any Federal Return",
+        "couponDescription": "Save $5 off any Federal Return"
+    },
+    {
+        "couponCode": "DLX4LESS",
+        "couponTitle": "Enjoy 25% Discount On Freetax's Deluxe Service",
+        "couponDescription": "Save 25% off the Deluxe Service at FreeTaxUSA."
+    },
+    {
+        "couponCode": "MBTFREES",
+        "couponTitle": "Free Shipping w/ Promo Code",
+        "couponDescription": "Free shipping"
+    },
+    {
+        "couponCode": "Keri25",
+        "couponTitle": "Save 25% Off",
+        "couponDescription": "file your federal and state tax return for less than $10. use promo code for 25% off."
+    },
+    {
+        "couponCode": "PROMPTING",
+        "couponTitle": "Get 25% Discount Across Website Using Code",
+        "couponDescription": "Enjoy 25% Off Sitewide with Promo Code"
+    },
+    {
+        "couponCode": "SAVEINMARCH",
+        "couponTitle": "Enjoy 20% Savings Using Special Promo Code",
+        "couponDescription": "Get 20% off with coupon code"
+    },
+    {
+        "couponCode": "PCODES50",
+        "couponTitle": "Deluxe Service: Enjoy 50% Savings!",
+        "couponDescription": "Save 50% off Deluxe Service"
+    },
+    {
+        "couponCode": "3OFFPERBOX",
+        "couponTitle": "Get $3 Discount On $12.99 Purchase",
+        "couponDescription": "Save $3 off $12.99"
+    }
+]

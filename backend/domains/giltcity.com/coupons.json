@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "BUY15",
+        "couponTitle": "Save 15% Off",
+        "couponDescription": "Buy 2 Get 15% off on Prada"
+    },
+    {
+        "couponCode": "20KIDS",
+        "couponTitle": "Enjoy 20% Discount On All Items",
+        "couponDescription": "20% Off Everything"
+    },
+    {
+        "couponCode": "GET15",
+        "couponTitle": "Save 15% Off w/ Coupon Code",
+        "couponDescription": "Buy 2 Items, Get 15% off on Prada when You Use Code"
+    },
+    {
+        "couponCode": "20MOM",
+        "couponTitle": "Save 20% Off w/ Coupon Code",
+        "couponDescription": "20% Off Mother's Day Gifts"
+    },
+    {
+        "couponCode": "SPRING10",
+        "couponTitle": "Get $10 Discount On Purchases Over $50",
+        "couponDescription": "Save $10 off on orders of $50 or more"
+    },
+    {
+        "couponCode": "SHOE25",
+        "couponTitle": "Save 25% Off",
+        "couponDescription": "Take 25% off on Women's Shoes"
+    },
+    {
+        "couponCode": "SPRING30",
+        "couponTitle": "Enjoy $30 Discount On Purchases Over $150",
+        "couponDescription": "Save $30 off on orders of $150 or more"
+    },
+    {
+        "couponCode": "SPRING20",
+        "couponTitle": "Get $20 Discount On Purchases Over $100",
+        "couponDescription": "Save $20 off on orders of $100 or more"
+    },
+    {
+        "couponCode": "FINE10",
+        "couponTitle": "Save 10% Off Using Code",
+        "couponDescription": "10% Off Fine Jewelry For Him & Her"
+    },
+    {
+        "couponCode": "AMEXCITY20",
+        "couponTitle": "Get 20% Discount On Current Purchase With Code",
+        "couponDescription": "Enjoy 20% off Your Next Order when You Use Code"
+    },
+    {
+        "couponCode": "AMEXCITY",
+        "couponTitle": "Enjoy A 20% Discount On Your Purchase",
+        "couponDescription": "20% Off Your Order"
+    },
+    {
+        "couponCode": "SAVE15",
+        "couponTitle": "Save 15% Off w/ Coupon Code",
+        "couponDescription": "Take 15% off on Valentino"
+    },
+    {
+        "couponCode": "STEAL20",
+        "couponTitle": "Save 20% Off Using Code",
+        "couponDescription": "Extra 20% off on Festival Style for Her when You Use Code"
+    },
+    {
+        "couponCode": "FLASH20",
+        "couponTitle": "Save 20% Off w/ Promo Code",
+        "couponDescription": "Extra 20% off on Shoes, Handbags, Jewelry & Accessories when You Use Code"
+    },
+    {
+        "couponCode": "STEALS20",
+        "couponTitle": "Get 20% Discount With Promotional Code Use",
+        "couponDescription": "Extra 20% off Your Purchase when You Use Code"
+    },
+    {
+        "couponCode": "GILT20",
+        "couponTitle": "Enjoy 20% Discount Across All Items",
+        "couponDescription": "20% Off Sitewide"
+    },
+    {
+        "couponCode": "DENIM",
+        "couponTitle": "Save 20% On Your Purchase",
+        "couponDescription": "20% Off Your Order"
+    },
+    {
+        "couponCode": "YAY25",
+        "couponTitle": "Save 25% Off w/ Promo Code",
+        "couponDescription": "25% Off Clearance"
+    },
+    {
+        "couponCode": "BATH25",
+        "couponTitle": "Save 25% Off w/ Promo Code",
+        "couponDescription": "25% Off All Bath On Gilt Home"
+    },
+    {
+        "couponCode": "LILX20",
+        "couponTitle": "Save 20% Off with Code",
+        "couponDescription": "20% Off Clothes & Shoes"
+    }
+]

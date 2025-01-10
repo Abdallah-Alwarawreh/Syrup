@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "CEWUFJUPL",
+        "couponTitle": "10% Off Your Order",
+        "couponDescription": "Shop at Lulu and Georgia and take 10% off your purchase sitewide using a coupon code on your cart."
+    },
+    {
+        "couponCode": "MDW15",
+        "couponTitle": "Grab 15% Discount On Purchases Over $500",
+        "couponDescription": "15% off orders $500+"
+    },
+    {
+        "couponCode": "BW12NC3810",
+        "couponTitle": "Lulu & Georgia Discount Code: 10% Off Your Order",
+        "couponDescription": "Apply 10% off using this coupon code on your sitewide purchase at Lulu & Georgia."
+    },
+    {
+        "couponCode": "MDW20",
+        "couponTitle": "Get 20% Discount On Orders Over $1000",
+        "couponDescription": "Score 20% off on $1000+ orders"
+    },
+    {
+        "couponCode": "SBDPQPWRB",
+        "couponTitle": "Free Item on Your Order",
+        "couponDescription": "Shop and take a free gift on your purchase sitewide using a promo code on your cart."
+    },
+    {
+        "couponCode": "BCHG88A10",
+        "couponTitle": "Get 10% Off Your Order ",
+        "couponDescription": "Paste this promo code at checkout and save 10% on your order."
+    },
+    {
+        "couponCode": "MDW25",
+        "couponTitle": "Get 25% Discount On Purchases Over $1500",
+        "couponDescription": "25% off orders $1500+"
+    }
+]

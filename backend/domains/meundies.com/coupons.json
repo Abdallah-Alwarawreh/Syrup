@@ -1,0 +1,47 @@
+[
+    {
+        "couponCode": "WELCOMEFAM",
+        "couponTitle": "Enjoy 15% Savings Using Promotional Code",
+        "couponDescription": "Receive 15% Discount with Promo Code"
+    },
+    {
+        "couponCode": "FIRST50",
+        "couponTitle": "MeUndies Code: 50% Off First Membership Order",
+        "couponDescription": "Add this MeUndies discount code at checkout to save 50% off your first membership order."
+    },
+    {
+        "couponCode": "COZY25",
+        "couponTitle": "Save 25% Off w/ Discount Code",
+        "couponDescription": "Shop and take 25% off Loungewear using a discount code on your purchase."
+    },
+    {
+        "couponCode": "BFCM50",
+        "couponTitle": "MeUndies Coupon: Up to 50% Off Your Purchase",
+        "couponDescription": "Simply apply this promo code during checkout to get up to 50% off your select order."
+    },
+    {
+        "couponCode": "RELAX40",
+        "couponTitle": "MeUndies Discount Code: Save 40% on Loungewear ",
+        "couponDescription": "Shop at MeUndies and enjoy a 40% discount on loungewear. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "SINGLE",
+        "couponTitle": "Only $39!",
+        "couponDescription": "Purchase onesies, rompers or jumpsuits for $39 when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "HELLOFAM20",
+        "couponTitle": "Take 20% Off With Code",
+        "couponDescription": "Receive 20% off your purchase with a coupon code at MeUndies."
+    },
+    {
+        "couponCode": "FIRST35",
+        "couponTitle": "Get 35% Discount On First Buy With Code",
+        "couponDescription": "take 35% off your first purchase with coupon code."
+    },
+    {
+        "couponCode": "SCARY50",
+        "couponTitle": "MeUndies Coupon Code: Take Up to 50% Off Halloween Prints ",
+        "couponDescription": "Enjoy up to 50% discount on Halloween prints when you enter this coupon code at checkout."
+    }
+]

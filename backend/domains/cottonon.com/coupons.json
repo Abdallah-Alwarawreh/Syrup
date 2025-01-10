@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "EXTRA20",
+        "couponTitle": "Save 20% Off Using Code",
+        "couponDescription": "Get An extra 20% off on Men's Sale items"
+    },
+    {
+        "couponCode": "DENIM20",
+        "couponTitle": "Take $20 Off w/ Promo Code",
+        "couponDescription": "Save $20 off on jeans orders for men and women at cottonon."
+    },
+    {
+        "couponCode": "GLOW20",
+        "couponTitle": "Save 20% Off w/ Promo Code",
+        "couponDescription": "Apply this Cotton On promo code at checkout to get 20% off your orders of selected full priced Cotton On Women, Cotton On Men, Cotton On Body, Cotton On Kids, Rubi and Typo styles."
+    },
+    {
+        "couponCode": "MOREPLZ",
+        "couponTitle": "Cotton On Coupon: 20% Off Your Order",
+        "couponDescription": "Save 20% on kids collection with this Cotton On code."
+    },
+    {
+        "couponCode": "TYPO25",
+        "couponTitle": "Save 25% Off",
+        "couponDescription": "Save 25% off with coupon code"
+    },
+    {
+        "couponCode": "Klarna",
+        "couponTitle": "Save 30% Off Using Code",
+        "couponDescription": "Enter this coupon code at checkout and get 30% discount on your purchase."
+    }
+]

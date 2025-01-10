@@ -1,0 +1,57 @@
+[
+    {
+        "couponCode": "HEALTHY50",
+        "couponTitle": "Half Off Your Total Purchase",
+        "couponDescription": "Enjoy 50% Discount on Your Entire Order"
+    },
+    {
+        "couponCode": "YUMIBABY50",
+        "couponTitle": "Save 50% Off w/ Coupon Code",
+        "couponDescription": "Enjoy 50% Discount on Your First Order"
+    },
+    {
+        "couponCode": "HOLIDAY50",
+        "couponTitle": "50% Off First Shipment",
+        "couponDescription": "New customers score up to 50% off first shipment at Yumi."
+    },
+    {
+        "couponCode": "FOLLOW50",
+        "couponTitle": "**CouponFollow Exclusive** 50% off First Order",
+        "couponDescription": "Save 50% off your first purchase with this CouponFollow exclusive offer"
+    },
+    {
+        "couponCode": "FREESHIP",
+        "couponTitle": "Free Shipping On $75+ At Yumi",
+        "couponDescription": "Use this Yumi coupon code at checkout to get Free Shipping on orders over $75."
+    },
+    {
+        "couponCode": "TAYLORM50",
+        "couponTitle": "Huge Savings- 50% Off Using Code",
+        "couponDescription": "For a limited time, helloyumi.com is giving away 50% savings on your order at checkout. You can't miss it."
+    },
+    {
+        "couponCode": "YUM8",
+        "couponTitle": "Get 35% Discount Using Promo Code",
+        "couponDescription": "Save 35% off with coupon code"
+    },
+    {
+        "couponCode": "50OFFPARTNER",
+        "couponTitle": "Save 50% off First Order",
+        "couponDescription": "Save 50% off First Order"
+    },
+    {
+        "couponCode": "BABY50",
+        "couponTitle": "Get 50% Discount Using Promo Code",
+        "couponDescription": "Take up to 50% off with coupon code"
+    },
+    {
+        "couponCode": "FRESH50",
+        "couponTitle": "Yumi Coupon Code: Take Extra 50% Off Any Items ",
+        "couponDescription": "Enjoy an extra 50% discount on any items when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "50OFFSC",
+        "couponTitle": "Enjoy 50% Discount Using Promotional Code",
+        "couponDescription": "Get 50% off with code"
+    }
+]

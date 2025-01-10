@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "CLAIRE20",
+        "couponTitle": "TomboyX Discount Code: 20% Off",
+        "couponDescription": "Receive 20% off orders on your shopping cart when you apply TomboyX's coupon code at checkout."
+    },
+    {
+        "couponCode": "NEWTBX15",
+        "couponTitle": "15% Off Your Order",
+        "couponDescription": "Shop and get 15% off your purchase using a promo code on your cart."
+    },
+    {
+        "couponCode": "TBXSAVE20",
+        "couponTitle": "TomboyX Promo Code: 20% Off",
+        "couponDescription": "Shop and receive 20% off using this discount code on your purchase at TomboyX."
+    },
+    {
+        "couponCode": "ERINTBX",
+        "couponTitle": "Save 20% on Your Purchase ",
+        "couponDescription": "Shop at TomboyX and get a 20% discount on your purchase. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "ACTIVE40",
+        "couponTitle": "TomboyX Discount Code: Extra 40% Off Your Order",
+        "couponDescription": "Apply an additional 40% off using this coupon code on your purchase at TomboyX."
+    },
+    {
+        "couponCode": "WELCOME9SK6FVPX",
+        "couponTitle": "New Customers Save 15%",
+        "couponDescription": "Save 15% on your first order when you use this TomboyX coupon code at checkout."
+    },
+    {
+        "couponCode": "VOTER",
+        "couponTitle": "Save 20% Off Sitewide Using Code",
+        "couponDescription": "Save 20% using this coupon code on your sitewide purchase at TomboyX."
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "couponCode": "NEWYEAR30",
+        "couponTitle": "SCUF Gaming Coupon: 30% Off Your Purchase",
+        "couponDescription": "Grab a 30% discount on your order when you enter this promo code at checkout."
+    },
+    {
+        "couponCode": "ZED",
+        "couponTitle": "Take 5% Off Your Purchase ",
+        "couponDescription": "Enjoy shopping and get a 5% discount on your purchase when you enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "FREESHIP",
+        "couponTitle": "Free Shipping",
+        "couponDescription": "Free standard shipping"
+    },
+    {
+        "couponCode": "loyalscuf",
+        "couponTitle": "Save 6% off Everything",
+        "couponDescription": "Save 6% off Everything"
+    },
+    {
+        "couponCode": "scufmycart",
+        "couponTitle": "Get 5% Off Your Purchase",
+        "couponDescription": "Enjoy 5% off sitewide by using this Scuf Gaming code."
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "couponCode": "HEALTHYAVOCADO",
+        "couponTitle": "Save 20% Off with Code",
+        "couponDescription": "Get 20% off sitewide"
+    },
+    {
+        "couponCode": "BUILT",
+        "couponTitle": "Take 10% Off Everything at the Built Sitewide Sale ",
+        "couponDescription": "Happy holidays from Built! Right now, all Built protein bar products are 10% off when you use this coupon code."
+    },
+    {
+        "couponCode": "LAURAD",
+        "couponTitle": "Builtbar Offer: Take 10% Off Your Order",
+        "couponDescription": "Enjoy 20% off your cart using the coupon code in your shopping cart at checkout."
+    },
+    {
+        "couponCode": "Natty",
+        "couponTitle": "Save Up to 20% on Any Purchase ",
+        "couponDescription": "Shop at Builtbar and get up to a 20% discount on any purchase. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "SAVE12",
+        "couponTitle": "Save 12% on Your Next Purchase at Builtbar.com",
+        "couponDescription": "Redeem this promo code to save 12% on your next shipment of Built protein bars."
+    }
+]

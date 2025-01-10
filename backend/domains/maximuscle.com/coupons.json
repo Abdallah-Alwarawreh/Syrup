@@ -1,0 +1,102 @@
+[
+    {
+        "couponCode": "FLASH",
+        "couponTitle": "Enjoy A 30% Discount On All Items",
+        "couponDescription": "30% off everything."
+    },
+    {
+        "couponCode": "EXTRA20",
+        "couponTitle": "Enjoy 20% Savings On All Items",
+        "couponDescription": "20% Off Everything"
+    },
+    {
+        "couponCode": "BARS20",
+        "couponTitle": "Save 20% Off Using Code",
+        "couponDescription": "20% Off Protein Bars"
+    },
+    {
+        "couponCode": "DIPPER20",
+        "couponTitle": "Save 20% Off",
+        "couponDescription": "20% Off Your Order"
+    },
+    {
+        "couponCode": "PUSH20",
+        "couponTitle": "Enjoy A 20% Discount On Your Purchases",
+        "couponDescription": "Take 20% off your orders"
+    },
+    {
+        "couponCode": "MAXI10",
+        "couponTitle": "use coupon code for a discount",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "BFWKS20",
+        "couponTitle": "Get A 20% Discount On Your Purchases",
+        "couponDescription": "Take 20% off your orders"
+    },
+    {
+        "couponCode": "EMAIL25",
+        "couponTitle": "Save 25% Off using Coupon Code",
+        "couponDescription": "25% off your first order."
+    },
+    {
+        "couponCode": "START20",
+        "couponTitle": "Get 20% Discount On Your Purchases",
+        "couponDescription": "Take 20% off your orders"
+    },
+    {
+        "couponCode": "EXTRA",
+        "couponTitle": "Save 30% Off Outlet",
+        "couponDescription": "Apply Maximuscle promo code to save an extra 30% off outlet products purchase during outlet week sale."
+    },
+    {
+        "couponCode": "EMAIL",
+        "couponTitle": "Get 25% Off Everything With Checkout Code",
+        "couponDescription": "Save 25% discount sitewide when you use the code at checkout"
+    },
+    {
+        "couponCode": "MAXWHEY20",
+        "couponTitle": "Get 20% Discount On Your Purchases",
+        "couponDescription": "Take 20% off your orders"
+    },
+    {
+        "couponCode": "TREAT30",
+        "couponTitle": "Get 30% Discount On Your Purchases",
+        "couponDescription": "Take 30% off your orders"
+    },
+    {
+        "couponCode": "FREEBAR",
+        "couponTitle": "Get Free Protein Bar On Your Order",
+        "couponDescription": "Enjoy free protein bar when you spend above £50 at Maxi Muscle."
+    },
+    {
+        "couponCode": "SUMMER20",
+        "couponTitle": "Save 25% On First Order, 20% On Following Buys",
+        "couponDescription": "take 25% off your first order with code: email25; and get up to 20% off your orders with coupon code"
+    },
+    {
+        "couponCode": "SUMMER15",
+        "couponTitle": "Get 15% Off And Free Delivery Over £40",
+        "couponDescription": "Take 15% off on your orders plus Free Shipping on £40 or more"
+    },
+    {
+        "couponCode": "SCRATCH10",
+        "couponTitle": "Get £10 Discount On £20+ Purchases",
+        "couponDescription": "Save £10 off on orders of £20 or more"
+    },
+    {
+        "couponCode": "START20",
+        "couponTitle": "Enjoy 20% Discount On Your Purchases",
+        "couponDescription": "Take 20% off your orders"
+    },
+    {
+        "couponCode": "BFWKS20",
+        "couponTitle": "Get 20% Discount On Your Purchases",
+        "couponDescription": "Take 20% off your orders"
+    },
+    {
+        "couponCode": "BFWKS20",
+        "couponTitle": "Enjoy 20% Discount On Your Purchases",
+        "couponDescription": "Take 20% off your orders"
+    }
+]

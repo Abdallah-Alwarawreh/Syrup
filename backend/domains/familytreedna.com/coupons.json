@@ -1,0 +1,22 @@
+[
+    {
+        "couponCode": "30OFF",
+        "couponTitle": "Take $30 Off Your Order",
+        "couponDescription": "Enjoy $30 off sitewide by adding this Family Tree DNA code."
+    },
+    {
+        "couponCode": "FREESHIP",
+        "couponTitle": "Get Free Shipping",
+        "couponDescription": "Receive free shipping on your order when you use this coupon code at checkout."
+    },
+    {
+        "couponCode": "RT24FFV",
+        "couponTitle": "Take $30 Off",
+        "couponDescription": "Score $30 off with this Family Tree DNA coupon code when used in your cart."
+    },
+    {
+        "couponCode": "RT24111TBYV",
+        "couponTitle": "Take $10 Off with Code",
+        "couponDescription": "Get $10 off when using this Family Tree DNA promo code at checkout."
+    }
+]

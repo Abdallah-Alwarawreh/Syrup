@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "WELCOME10",
+        "couponTitle": "Take 10% Off Your Purchase",
+        "couponDescription": "Enjoy 10% off your order by adding this Approved Food code."
+    },
+    {
+        "couponCode": "DISC35",
+        "couponTitle": "Take £5.25 Off w/ Discount Code",
+        "couponDescription": "Discount code to claim £5.25 off your shipping when you spend £35+ on goods ends 23:59 TONIGHT!"
+    },
+    {
+        "couponCode": "MAYMSE",
+        "couponTitle": "Get Up to 10% Off Any Order ",
+        "couponDescription": "Paste this promo code at checkout and save up to 10% on any order."
+    },
+    {
+        "couponCode": "JANMSE",
+        "couponTitle": "Get Up to 10% Off Your Purchase",
+        "couponDescription": "Enjoy up to 10% savings on your order at Approved Food using this promo code. Simply apply at checkout for instant discounts. Hurry, this is for a limited time only."
+    },
+    {
+        "couponCode": "HappyDay",
+        "couponTitle": "Save 50% Off w/ Promo Code",
+        "couponDescription": "quick get an extra 50% off smallganics by using voucher coupon code at the checkout"
+    },
+    {
+        "couponCode": "ambrosia",
+        "couponTitle": "2 crates of ambrosia rice pudding with apple for free*  use coupon code delivery is £5.95",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "MSE10",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "wow, uk shoppers - buy bulk near-end food awesome prices - 10% off with coupon code until 15 june"
+    }
+]

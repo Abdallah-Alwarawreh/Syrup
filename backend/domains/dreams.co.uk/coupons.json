@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "SN20",
+        "couponTitle": "Get 20% Off On Your Total Purchase",
+        "couponDescription": "Enjoy 20% Discount on Your Entire Order"
+    },
+    {
+        "couponCode": "DEAL3",
+        "couponTitle": "Latina Double Bed Frame with Taylor Mattress Now: £249",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "pillow2",
+        "couponTitle": "2 TheraPur Actigel Pillows Now: £99",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "DEAL1",
+        "couponTitle": "Messina Double Bed Frame with Taylor Mattress Now: £199",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "DEAL2",
+        "couponTitle": "Kiera Double Bed Frame with Taylor Mattress Now: £199",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "DREAMS10",
+        "couponTitle": "Save 10% Off with Discount Code",
+        "couponDescription": "Use this Dreams promo code at checkout to receive an extra 10% off all Tempur mattresses."
+    }
+]

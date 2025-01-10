@@ -1,0 +1,42 @@
+[
+    {
+        "couponCode": "SEVIG",
+        "couponTitle": "5% Off with Code",
+        "couponDescription": "Save 5% at Seville Classics when you redeem this promo code at checkout."
+    },
+    {
+        "couponCode": "THANKYOU",
+        "couponTitle": "10% Off at Seville Classics",
+        "couponDescription": "Enter this coupon code at checkout to save 10% on your Seville Classics order."
+    },
+    {
+        "couponCode": "BF15",
+        "couponTitle": "Seville Classics Promo Code: Take Extra 15% Off Any Order",
+        "couponDescription": "Use this coupon code at checkout to receive an extra 15% discount on all orders."
+    },
+    {
+        "couponCode": "Bfcm30",
+        "couponTitle": "Seville Classics Promo Code: 30% Off Your Order",
+        "couponDescription": "Shop and take 30% off your purchase using a promo code on your cart."
+    },
+    {
+        "couponCode": "LABORDAYSALE24",
+        "couponTitle": "Take 10% Off Your Purchase",
+        "couponDescription": "Save an extra 10% on houseware products this labor day sale at Seville Classics."
+    },
+    {
+        "couponCode": "AIR5",
+        "couponTitle": "5% Off AIRLIFT",
+        "couponDescription": "Shop best-selling AIRLIFT ergonomic solutions at Seville Classics and get 5% off with this code."
+    },
+    {
+        "couponCode": "SHELF5",
+        "couponTitle": "5% Savings on Shelving",
+        "couponDescription": "Seville Classics is offering a 5% discount on all their collection of best-selling shelving. Add code at checkout to redeem offer."
+    },
+    {
+        "couponCode": "UHD5",
+        "couponTitle": "5% Discount on UltraHD Cabinets",
+        "couponDescription": "Apply this coupon code at Seville Classics to take 5% off all of their best-selling UltraHD Cabinets."
+    }
+]

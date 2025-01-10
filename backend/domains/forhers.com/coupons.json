@@ -1,0 +1,22 @@
+[
+    {
+        "couponCode": "PACK15D",
+        "couponTitle": "$15 Birth Control",
+        "couponDescription": "Birth control delivered to your home without the hassle. Try today for $15 with code"
+    },
+    {
+        "couponCode": "OFFER5",
+        "couponTitle": "Save 40% on the Complete Hair Kit + Extra $5 Off",
+        "couponDescription": "Receive 40% off on Complete Hair Kit plus an Extra $5 Off"
+    },
+    {
+        "couponCode": "pack10d",
+        "couponTitle": "Save $25 off Birth Control -- Just $10 for First Purchase",
+        "couponDescription": "Save $25 off Birth Control -- Just $10 for First Purchase"
+    },
+    {
+        "couponCode": "skin5d",
+        "couponTitle": "Save $5 on First Purchase of Anti-Aging Formula",
+        "couponDescription": "Save $5 on First Purchase of Anti-Aging Formula"
+    }
+]

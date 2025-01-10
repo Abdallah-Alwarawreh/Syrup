@@ -1,0 +1,22 @@
+[
+    {
+        "couponCode": "ARTHISTORYDIARY10",
+        "couponTitle": "Take 10% Off Your Order",
+        "couponDescription": "Enjoy 10% off sitewide with this Taschen code."
+    },
+    {
+        "couponCode": "fwa_special",
+        "couponTitle": "Enjoy 10% Off at TASCHEN",
+        "couponDescription": "Apply this coupon code at checkout to get a 10% discount on your TASCHEN order."
+    },
+    {
+        "couponCode": "ilovebooks",
+        "couponTitle": "20% Off at TASCHEN With Promo Code",
+        "couponDescription": "Save 20% off your order at TASCHEN when you use this code at checkout."
+    },
+    {
+        "couponCode": "MODESENSFREESHIPPING",
+        "couponTitle": "TASCHEN Promo Code: Free Shipping on Your Order",
+        "couponDescription": "Apply free shipping at checkout when you purchase using TASCHEN's discount code for sitewide orders on your cart."
+    }
+]

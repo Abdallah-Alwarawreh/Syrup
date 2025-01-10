@@ -1,0 +1,57 @@
+[
+    {
+        "couponCode": "20BUCKSBACK",
+        "couponTitle": "Free $20 Gift Card",
+        "couponDescription": "Spend at least $179 at Blade HQ and get a $20 gift card for free. Use this code on qualifying purchases to redeem."
+    },
+    {
+        "couponCode": "GMSH10BK",
+        "couponTitle": "Get 10% Off and a Freebie",
+        "couponDescription": "Spend $39 or more and receive a Free Blade HQ shirt + 10% discount card."
+    },
+    {
+        "couponCode": "CHESTNUTS",
+        "couponTitle": "Free Grindworx Warhead Lighter on $79+ Orders",
+        "couponDescription": "Purchase at least $79 of products at Blade HQ and use this code to get a free Grindworx Warhead Lighter."
+    },
+    {
+        "couponCode": "RadPatch",
+        "couponTitle": "Free Blade HQ Patch",
+        "couponDescription": "Get a Free Blade HQ Patch on orders of $49+. Apply code at checkout to redeem."
+    },
+    {
+        "couponCode": "ACE",
+        "couponTitle": "Free Shipping",
+        "couponDescription": "Save on knives from Benchmade, Chaves, and more, and get FREE shipping and a FREE patch on every order"
+    },
+    {
+        "couponCode": "BLADEHQ10",
+        "couponTitle": "Save 10% Off Sitewide",
+        "couponDescription": "Use this coupon to receive a 10% discount on all orders."
+    },
+    {
+        "couponCode": "BHQGM10BK",
+        "couponTitle": "Enjoy 10% Discount On Purchases Over $150",
+        "couponDescription": "Take 10% off your orders of $150 or more"
+    },
+    {
+        "couponCode": "COOLHAT",
+        "couponTitle": "Get a Limited Edition Hat for Free",
+        "couponDescription": "Blade HQ orders of $75 or more qualify for a free limited edition hat. Enter this coupon code at checkout to redeem."
+    },
+    {
+        "couponCode": "CSHATGW",
+        "couponTitle": "Free Hat and Folding Knife",
+        "couponDescription": "Spend at least $25 at Blade HQ and get a free hat and folding knife. Enter this coupon code at checkout to redeem offer."
+    },
+    {
+        "couponCode": "BHQ-POUCH",
+        "couponTitle": "Free Blade HQ Pouch",
+        "couponDescription": "Use this promo code when you spend at least $99 at Blade HQ to get a free pouch."
+    },
+    {
+        "couponCode": "SCHH2G",
+        "couponTitle": "Free Schrade Hat from Blade HQ",
+        "couponDescription": "Enter this code and get a free hat when you spend $79 or more at Blade HQ."
+    }
+]

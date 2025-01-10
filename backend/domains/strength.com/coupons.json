@@ -1,0 +1,77 @@
+[
+    {
+        "couponCode": "MAH10",
+        "couponTitle": "Save 10% Off w/ Discount Code",
+        "couponDescription": "Save 10% off on your Strength.com order using code at checkout!"
+    },
+    {
+        "couponCode": "FIRSTTIME10",
+        "couponTitle": "Save 10% off First Purchase",
+        "couponDescription": "Save 10% off First Purchase"
+    },
+    {
+        "couponCode": "TAKE10SH",
+        "couponTitle": "10% off Everything",
+        "couponDescription": "Save 10% off with discount code"
+    },
+    {
+        "couponCode": "GIMME10",
+        "couponTitle": "Strength Coupon: 10% Off Your Order",
+        "couponDescription": "Take 10% off all purchase by adding this Strength code."
+    },
+    {
+        "couponCode": "TAKE15SH",
+        "couponTitle": "15% Off All Orders Over $75",
+        "couponDescription": "15% Off All Orders Over $75"
+    },
+    {
+        "couponCode": "TAKE30SH",
+        "couponTitle": "30% Off All Orders over $150",
+        "couponDescription": "30% Off All Orders over $150"
+    },
+    {
+        "couponCode": "CCAUSE10",
+        "couponTitle": "Get 10% Off Site-Wide With Discount Code Now",
+        "couponDescription": "save 10% sitewide at  with coupon code. find more  coupons today!"
+    },
+    {
+        "couponCode": "GiftIt2020",
+        "couponTitle": "free bottle to a friend",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "FMTC10",
+        "couponTitle": "Enjoy 10% Discount Across The Entire Site",
+        "couponDescription": "Receive 10% off on Sitewide"
+    },
+    {
+        "couponCode": "TEST",
+        "couponTitle": "Boost Savings: Extra 10% Off At Strength.Com!",
+        "couponDescription": "Score an extra 10% off Strength.com member discount using discount code!"
+    },
+    {
+        "couponCode": "8OFFSHOTGUN",
+        "couponTitle": "Take $8 Off w/ Coupon Code",
+        "couponDescription": "supplement deals: vpx no shotgun $8 off coupon 8offshotgun at muscle& use coupon code and..."
+    },
+    {
+        "couponCode": "AMERICANSTRENGTH",
+        "couponTitle": "4th of July Day Sale - Save 25% at Strength.com",
+        "couponDescription": "4th of July Day Sale - Save 25% at Strength.com"
+    },
+    {
+        "couponCode": "THANKYOUDADS",
+        "couponTitle": "Father's Day Sale - Save 25% at Strength.com\t",
+        "couponDescription": "Father's Day Sale - Save 25% at Strength.com"
+    },
+    {
+        "couponCode": "2MM",
+        "couponTitle": "Only $22!",
+        "couponDescription": "supplementhunt deal. muscle milk chocolate 2.47lbs 2 for $22 coupon code"
+    },
+    {
+        "couponCode": "MT10",
+        "couponTitle": "Save 100% Off",
+        "couponDescription": "10lb muscletech 100% whey protein triple chocolate supreme use coupon code"
+    }
+]

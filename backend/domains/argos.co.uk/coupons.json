@@ -1,0 +1,42 @@
+[
+    {
+        "couponCode": "RHOBBS20",
+        "couponTitle": "Save 20% Off Using Code",
+        "couponDescription": "Take 20% off russell hobbs small appliances and irons at Argos."
+    },
+    {
+        "couponCode": "LEGO20",
+        "couponTitle": "Get 20% Off Any Order",
+        "couponDescription": "Enter this coupon code at checkout and get a 20% discount on your order."
+    },
+    {
+        "couponCode": "TEFAL30",
+        "couponTitle": "Save 30% Off",
+        "couponDescription": "Use the code to save 30% on a selection of Tefal clothing care products at Argos."
+    },
+    {
+        "couponCode": "REDEEM",
+        "couponTitle": "Take £5 Off Using Code",
+        "couponDescription": "Use this Argos discount code at checkout to take £5 off your orders of £50 or more."
+    },
+    {
+        "couponCode": "GAMING20",
+        "couponTitle": "Save 20% Off using Coupon Code",
+        "couponDescription": "Save 20% on your purchase of Selected Gaming Furniture using this coupon code at checkout."
+    },
+    {
+        "couponCode": "NINJA35",
+        "couponTitle": "Argos Discount Code: Save 35% on Any Purchase ",
+        "couponDescription": "Shop at Argos and enjoy a 35% discount on any purchase. Apply this discount code at checkout."
+    },
+    {
+        "couponCode": "FURN20",
+        "couponTitle": "Save 20% Off with Code",
+        "couponDescription": "Save 20% off on Furniture when You Use Code"
+    },
+    {
+        "couponCode": "HOSTING20",
+        "couponTitle": "Get 20% Off Your Order",
+        "couponDescription": "Save 20% when you spend £100 on select hosting furniture using this Argos voucher code at checkout."
+    }
+]

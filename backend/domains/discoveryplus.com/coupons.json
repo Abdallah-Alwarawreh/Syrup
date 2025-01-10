@@ -1,0 +1,27 @@
+[
+    {
+        "couponCode": "CHEAP30",
+        "couponTitle": "30 Days Free With Code",
+        "couponDescription": "Get a 30 day subscription for free when you use this discovery+ promo code."
+    },
+    {
+        "couponCode": "50off",
+        "couponTitle": "Save 50% Off First Year of discovery+",
+        "couponDescription": "Use this coupon code to get your first year of discovery+ for half the regular annual price."
+    },
+    {
+        "couponCode": "WELLDONE30",
+        "couponTitle": "Try discovery+ Free for 30 days",
+        "couponDescription": "Enter this promo code and get a 30-day trial of discovery+ for free. Terms and conditions apply."
+    },
+    {
+        "couponCode": "5offdis",
+        "couponTitle": "$5 Off discovery+",
+        "couponDescription": "Apply this coupon code at checkout to save $5 when you purchase an annual subscription to discovery+."
+    },
+    {
+        "couponCode": "30BE@R2020",
+        "couponTitle": "Save 30% Off Subscription",
+        "couponDescription": "Sign up for discovery+ and save 30% when you redeem this discount code at checkout."
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "NGS15CA2Q2024",
+        "couponTitle": "Get 15% off Your First Order ",
+        "couponDescription": "Get 15% Off Your First Order of $15+ (max $10 value)"
+    },
+    {
+        "couponCode": "50OFF3",
+        "couponTitle": "Get 50% off Orders $12 or More! ",
+        "couponDescription": "Orders over $12 eligible for 50% off"
+    },
+    {
+        "couponCode": "30OFF1 ",
+        "couponTitle": "Get 30% off Your Order! ",
+        "couponDescription": "Select orders eligible for savings of 30%"
+    },
+    {
+        "couponCode": "FEEDME10",
+        "couponTitle": "New Customers Save $10 on Your Order!",
+        "couponDescription": "First time customers save $10"
+    },
+    {
+        "couponCode": "NYC30",
+        "couponTitle": "Get 30% off Select Orders! ",
+        "couponDescription": "Select orders eligible for 30% off"
+    },
+    {
+        "couponCode": "NGS15CA4Q2023",
+        "couponTitle": "15% off Your First Order ",
+        "couponDescription": "Get 15% Off Your First Order of $15+"
+    }
+]

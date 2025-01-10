@@ -1,0 +1,47 @@
+[
+    {
+        "couponCode": "TAKE20OFF",
+        "couponTitle": "Take $20 Off Using Reebelo Coupon",
+        "couponDescription": "Use this promo code to purchase electronics at $20 off. Redeem at checkout to enjoy your discount."
+    },
+    {
+        "couponCode": "REORDER5",
+        "couponTitle": "Reebelo Discount Code: 5% Off Your Order",
+        "couponDescription": "Score 5% off your eligible purchase using this promotional code during checkout."
+    },
+    {
+        "couponCode": "Courtesy50",
+        "couponTitle": "Get $50 Off Your Order",
+        "couponDescription": "Enjoy $50 off sitewide by using this Reebelo code."
+    },
+    {
+        "couponCode": "REFURBED20",
+        "couponTitle": "Take $20 Off Sitewide with Code",
+        "couponDescription": "Redeem this Reebelo promo code at checkout to get $20 off your purchase of ipads, laptops, appliances, and more."
+    },
+    {
+        "couponCode": "5PCTREORDER",
+        "couponTitle": "Reebelo Coupon Code: 5% Off",
+        "couponDescription": "Get 5% off your purchase of tablets, laptops, smartphones, and more using this Reebelo coupon code."
+    },
+    {
+        "couponCode": "REFURBISHED30",
+        "couponTitle": "$35 Off Your Order Sitewide",
+        "couponDescription": "Get $35 off your purchase when you enter this discount code at checkout on your next order."
+    },
+    {
+        "couponCode": "REFURBED30",
+        "couponTitle": "Reebelo Promo Code: 10% Off Your Order",
+        "couponDescription": "Shop for iPhones, tablets, gaming accessories, and more using this Reebelo promo code for 10% off."
+    },
+    {
+        "couponCode": "TAKE10OFF",
+        "couponTitle": "$10 Off Using Reebelo Coupon",
+        "couponDescription": "Shop for sports equipment and electronics for $10 off when you enter this Reebelo promo code at checkout."
+    },
+    {
+        "couponCode": "EXPLORE10",
+        "couponTitle": "10% Off Your Order with Reebelo Promo Code",
+        "couponDescription": "Enter this Reebelo discount code at checkout to get 10% off your purchase total."
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "couponCode": "FIRSTORDER",
+        "couponTitle": "Get $20 Off Sitewide with Promo Code",
+        "couponDescription": "Purchase at Winc and get 20% off your first order using this coupon code on your cart."
+    },
+    {
+        "couponCode": "HOLIDAYGIFT10",
+        "couponTitle": "Get Extra 20% Off Gift Card $100+ ",
+        "couponDescription": "Paste this promo code at checkout and save an extra 20% on gift card of $100 or more."
+    },
+    {
+        "couponCode": "trywinc",
+        "couponTitle": "Take $35 Off Bottles 4+",
+        "couponDescription": "Enjoy shopping and get a $35 discount when you purchase four or more tables. Enter this coupon code at checkout."
+    },
+    {
+        "couponCode": "HOLIDAYGIFT7",
+        "couponTitle": "Winc Coupon: 20% Off Your Order",
+        "couponDescription": "Save 20% on gift card by adding this Winc code."
+    },
+    {
+        "couponCode": "CYBER002",
+        "couponTitle": "Enjoy Up to 20% Off Your Purchase",
+        "couponDescription": "When entering this Winc discount code, you can save up to 20% on your qualifying order."
+    },
+    {
+        "couponCode": "WINC6",
+        "couponTitle": "Winc Coupon: $45 Off Your Order",
+        "couponDescription": "Receive $45 off 6 bottles of wine. Just add this code in your cart."
+    },
+    {
+        "couponCode": "HOLIDAYGIFT2",
+        "couponTitle": "Winc Coupon Code: Take 15% Off $150 Gift Card ",
+        "couponDescription": "Enter this coupon code at checkout and enjoy a 15% discount on a $150 gift card."
+    },
+    {
+        "couponCode": "LOVEWINC",
+        "couponTitle": "Get 15% Discount Using Promo Code",
+        "couponDescription": "Take 15% off with promo code"
+    },
+    {
+        "couponCode": "HOLIDAYGIFT1",
+        "couponTitle": "Get 15% Off Select Gift Cards",
+        "couponDescription": "Get 15% off a $150-value gift card at Winc with this promo code. This is a great way to treat yourself or someone special while saving money. Don't miss out on this limited-time offer."
+    },
+    {
+        "couponCode": "LABORDAY820",
+        "couponTitle": "Winc Coupon: $35 Off Your Order",
+        "couponDescription": "Enjoy $35 off your first purchase with this Winc code."
+    },
+    {
+        "couponCode": "HBDUSA35",
+        "couponTitle": "Get $35 Off Your Order",
+        "couponDescription": "Enjoy $35 off 4 and more bottles for new members at Winc."
+    }
+]

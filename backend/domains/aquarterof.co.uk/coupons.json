@@ -1,0 +1,72 @@
+[
+    {
+        "couponCode": "FRSH35M",
+        "couponTitle": "Free Shipping on £35+",
+        "couponDescription": "Get Free Shipping on Orders Worth £35 or More"
+    },
+    {
+        "couponCode": "SHFR35",
+        "couponTitle": "Free Shipping with Code",
+        "couponDescription": "Enjoy Free Shipping on Your Order"
+    },
+    {
+        "couponCode": "SAVE15",
+        "couponTitle": "15% Off Your Purchase",
+        "couponDescription": "Shop and take 15% off your purchase worth £25 or more using an A Quarter Of discount code at checkout."
+    },
+    {
+        "couponCode": "SWEETEN",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "Score 10% off with discount code"
+    },
+    {
+        "couponCode": "TENBRR",
+        "couponTitle": "Save 10% Off w/ Promo Code",
+        "couponDescription": "Save an Extra 10% When You Use Promo Code"
+    },
+    {
+        "couponCode": "SAVE20",
+        "couponTitle": "20% Off Your Purchase",
+        "couponDescription": "Receive 20% off your purchase worth £25 or more using a promo code on your cart."
+    },
+    {
+        "couponCode": "JINGLE12",
+        "couponTitle": "Save 10% Off with Code",
+        "couponDescription": "special offer! get 10% off your order of £25+ today.enter discount coupon code at the checkout."
+    },
+    {
+        "couponCode": "TWENB",
+        "couponTitle": "Save 20% Off Sitewide Using Code",
+        "couponDescription": "Save 20% Sitewide with Promo Code"
+    },
+    {
+        "couponCode": "GOLDMEDAL",
+        "couponTitle": "Save 15% Off Sitewide w/ Coupon Code",
+        "couponDescription": "15% off all orders of £25+ excl. shipping on the website. valid until the end of the closing ceremony, enter coupon code"
+    },
+    {
+        "couponCode": "JUBBLY",
+        "couponTitle": "Save 15% Off",
+        "couponDescription": "15% discount this week on orders over £25. use the coupon code jubilee... geddit? at checkout."
+    },
+    {
+        "couponCode": "APR18",
+        "couponTitle": "Save 15% Off Sitewide",
+        "couponDescription": "retro sweetshop is offering 15% off all orders over £25 today. get in!! enter coupon code at checkout. no need to thank me :o"
+    },
+    {
+        "couponCode": "BOX15",
+        "couponTitle": "Save 15% Off",
+        "couponDescription": "fancy a change from easter eggs? get 15% off aquarterofs fab range of wooden boxes with coupon code"
+    },
+    {
+        "couponCode": "XMAS15",
+        "couponTitle": "Save 15% Off with Code",
+        "couponDescription": "i just bought : peanut brittle from 15% off with coupon code delivery is great!"
+    },
+    {
+        "couponCode": "BLUEMONDAY",
+        "couponTitle": "Save 15% Off",
+        "couponDescription": "cheap sweets!!! not that we like to shout about it, but spend over £25 for 15% off all our sweets till jan 31, enter  at checkout."
+    }
+]

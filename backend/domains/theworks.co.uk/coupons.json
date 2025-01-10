@@ -1,0 +1,42 @@
+[
+    {
+        "couponCode": "BEANS10",
+        "couponTitle": "Get 10% Discount Using Promo Code",
+        "couponDescription": "Score 10% off with code"
+    },
+    {
+        "couponCode": "BOYFRIEND",
+        "couponTitle": "The Works Coupon: 50% Off Next-Day Delivery on Your Order",
+        "couponDescription": "Get 50% off on next-day delivery when you order the exclusive Sprayed Edge Paperback of \"The Boyfriend.\" Just use this coupon code to enjoy speedy delivery."
+    },
+    {
+        "couponCode": "Babydeals10",
+        "couponTitle": "The Works Coupon: 10% Off Your Order",
+        "couponDescription": "Save at The Works by getting 10% on your purchase."
+    },
+    {
+        "couponCode": "TW20",
+        "couponTitle": "Save 20% Off Using Code",
+        "couponDescription": "Get 20% off with promo code"
+    },
+    {
+        "couponCode": "TW15",
+        "couponTitle": "Save Up To 15% Using Discount Code",
+        "couponDescription": "Take up to 15% off with coupon code"
+    },
+    {
+        "couponCode": "DWM15",
+        "couponTitle": "Save on Dansway Media",
+        "couponDescription": null
+    },
+    {
+        "couponCode": "PLAY25",
+        "couponTitle": "The Works Coupon: Up to 25% Off",
+        "couponDescription": "Save up to 25% on your £20+ purchase using this coupon code at The Works."
+    },
+    {
+        "couponCode": "DEAL20",
+        "couponTitle": "The Works Promo Code: 20% Off",
+        "couponDescription": "Get 20% off with The Works promo code on your cart at checkout."
+    }
+]

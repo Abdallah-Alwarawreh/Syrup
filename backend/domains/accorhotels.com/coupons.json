@@ -1,0 +1,32 @@
+[
+    {
+        "couponCode": "TEN15",
+        "couponTitle": "Take $20 Off Using Code",
+        "couponDescription": "summer discount at ibis hotels ! up to $20 off per night ! book now with the coupon code"
+    },
+    {
+        "couponCode": "VISAIN",
+        "couponTitle": "Get 15% Off Your Order",
+        "couponDescription": "Take up to 15% off across accor hotels with breakfast at ALL - Accor."
+    },
+    {
+        "couponCode": "FRIEND",
+        "couponTitle": "Save 40% Off w/ Discount Code",
+        "couponDescription": "exclusive to accor friends & family. get a room and save 40% at  use coupon code. find out more at"
+    },
+    {
+        "couponCode": "SUPERS",
+        "couponTitle": "Book Now And Enjoy 50% Discount With Coupon Code",
+        "couponDescription": "save 50% off with coupon code ! book now !"
+    },
+    {
+        "couponCode": "PULLMAN",
+        "couponTitle": "Take $5 Off w/ Discount Code",
+        "couponDescription": "$5 off when you book your tickets online using promo code"
+    },
+    {
+        "couponCode": "VISAGE",
+        "couponTitle": "Save 10% Off",
+        "couponDescription": "10% off Best Unrestricted Rate"
+    }
+]

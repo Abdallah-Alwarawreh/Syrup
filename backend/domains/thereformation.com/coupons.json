@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "BFCM24EXCHANGE",
+        "couponTitle": "Take 25% Off Your Order",
+        "couponDescription": "Enjoy 25% off your purchase with this Reformation code."
+    },
+    {
+        "couponCode": "EXTRA15",
+        "couponTitle": "Save 15% Off",
+        "couponDescription": "You can get an additional 15% off when you enter the special code at checkout."
+    },
+    {
+        "couponCode": "million",
+        "couponTitle": "Halve Your Cost: Use Promo Code For 50% Off",
+        "couponDescription": "Save 50% off with promo code"
+    },
+    {
+        "couponCode": "PORTLAND",
+        "couponTitle": "Reformation Coupon: 10% Off",
+        "couponDescription": "Enjoy 10% off orders on your cart using Reformation's promo code at checkout."
+    },
+    {
+        "couponCode": "PON",
+        "couponTitle": "Reformation Promo Code: Up to 15% Off Your Order",
+        "couponDescription": "Take up to an extra 15% off your purchase by applying this coupon code at checkout."
+    },
+    {
+        "couponCode": "REFBABE20",
+        "couponTitle": "Reformation Promo Code: Score 20% Off Your Order",
+        "couponDescription": "Enter this Reformation discount code at checkout and get 20% off your next purchase of the best fashions."
+    },
+    {
+        "couponCode": "TEST10",
+        "couponTitle": "Reformation Promo Code: Take 10% Off Your Order",
+        "couponDescription": "Use this Reformation code to save 10% on your purchase."
+    }
+]

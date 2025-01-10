@@ -1,0 +1,37 @@
+[
+    {
+        "couponCode": "ELECT",
+        "couponTitle": "Save 30% Off Select Gifts Orders ",
+        "couponDescription": "Score up to 30% off select gifts orders at Walmart Photo."
+    },
+    {
+        "couponCode": "30CNVS",
+        "couponTitle": "Get Extra 30% Off Canvas Prints",
+        "couponDescription": "Score up to an extra 30% off canvas prints at Walmart Photo."
+    },
+    {
+        "couponCode": "PHOTO100",
+        "couponTitle": "Get $100 Off Home Items",
+        "couponDescription": "Score up to P$100 off select personalized home items purchase at Walmart Photo"
+    },
+    {
+        "couponCode": "20CARDS",
+        "couponTitle": "Get 20% Off 60+ 5x7 Card Stock Holiday Cards Order",
+        "couponDescription": "Score up to 20% off 60+ 5x7 card stock holiday cards order at Walmart Photo."
+    },
+    {
+        "couponCode": "WELCOME25",
+        "couponTitle": "Get Extra 25% Off $20 Sitewide",
+        "couponDescription": "Score up to an extra 25% off $20 or more sitewide orders at Walmart Photo."
+    },
+    {
+        "couponCode": "LOADIT4U",
+        "couponTitle": "Get $10 Off Order $50+",
+        "couponDescription": "Score up to $10 off orders $50 or more at Walmart Photo."
+    },
+    {
+        "couponCode": "wowfresh",
+        "couponTitle": "Get $10 Off First $50+ Orders",
+        "couponDescription": "New customers score up to $10 off first $50 or more orders at Walmart Photo."
+    }
+]
