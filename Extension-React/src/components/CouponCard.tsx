@@ -20,8 +20,13 @@ const interpolateColor = (value: number, min: number, max: number): string => {
     return `hsl(${hue}, 70%, 45%)`;
 };
 
+export enum FeedbackType {
+    POSITIVE = 'POSITIVE',
+    NEGATIVE = 'NEGATIVE'
+}
+
 export type FeedbackData = {
-    [couponCode: string]: 'up' | 'down';
+    [couponCode: string]: FeedbackType;
 };
 
 const CouponCard: React.FC<{
@@ -32,7 +37,7 @@ const CouponCard: React.FC<{
     maxScore: number;
 }> = ({ coupon, onCopy, copied, minScore, maxScore }) => {
     const { t } = useTranslation();
-    const [feedbackGiven, setFeedbackGiven] = useState<'up' | 'down' | null>(null);
+    const [feedbackGiven, setFeedbackGiven] = useState<FeedbackType | null>(null);
     const [showFeedback, setShowFeedback] = useState(false);
     let score = round(coupon.score, 2);
     const color = interpolateColor(score, minScore, maxScore);
@@ -53,15 +58,14 @@ const CouponCard: React.FC<{
     
     const handleFeedback = (isPositive: boolean) => {
         if (feedbackGiven) return;
-        const newFeedback = isPositive ? 'up' : 'down';
+        const newFeedback = isPositive ? FeedbackType.POSITIVE : FeedbackType.NEGATIVE;
         
         setFeedbackGiven(newFeedback);
         
         if (isPositive) {
-            syrupApiClient.reportValidCoupon(coupon.code);
-        }
-        else {
-            syrupApiClient.reportInvalidCoupon(coupon.code);
+            syrupApiClient.reportValidCoupon(coupon.id);
+        } else {
+            syrupApiClient.reportInvalidCoupon(coupon.id);
         }
         
         browser.storage.local.get('feedback').then((data) => {
@@ -93,7 +97,7 @@ const CouponCard: React.FC<{
                             className={`
                                 transition-all ease-in-out duration-200 hover:scale-110
                                 hover:bg-green-100 hover:dark:bg-green-900/50
-                                ${feedbackGiven === 'up' ? 'dark:bg-green-900 disabled:opacity-75' : ''}
+                                ${feedbackGiven === FeedbackType.POSITIVE ? 'dark:bg-green-900 disabled:opacity-75' : ''}
                             `}
                         >
                             <ThumbsUp className="h-4 w-4" />
@@ -106,7 +110,7 @@ const CouponCard: React.FC<{
                             className={`
                                 transition-all ease-in-out duration-200 hover:scale-110
                                 hover:bg-red-100 hover:dark:bg-red-900/50
-                                ${feedbackGiven === 'down' ? 'dark:bg-red-900 disabled:opacity-75' : ''}
+                                ${feedbackGiven === FeedbackType.NEGATIVE ? 'dark:bg-red-900 disabled:opacity-75' : ''}
                             `}
                         >
                             <ThumbsDown className="h-4 w-4" />
