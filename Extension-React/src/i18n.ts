@@ -2,9 +2,9 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import Backend from "i18next-http-backend";
 import universalLanguageDetect from "@unly/universal-language-detector";
-import browser from 'webextension-polyfill';
 
 import langNames from "@/json/language_names.json";
+import { getSetting, setSetting } from "@/lib/settings.ts";
 
 export const languages = Object.keys(langNames);
 export const languageNames: Record<string, string> = langNames;
@@ -15,36 +15,25 @@ const systemLanguage = universalLanguageDetect({
     fallbackLanguage: "en", // Fallback language in case the user's language cannot be resolved
 });
 export let storedLanguage: string;
-let hasLanguageBeenSwitched = false;
 
-const saveLanguage = (lang: string): void => {
-    browser.storage.sync.set({
-        language: lang,
-        hasBeenSwitched: true
-    }).then(() => {
-        storedLanguage = lang;
-        hasLanguageBeenSwitched = true;
-    });
+const saveLanguage = async (lang: string): Promise<void> => {
+    await setSetting("language", lang);
+    storedLanguage = lang;
 };
 
-export const getLanguage: Promise<string> = browser.storage.sync.get(['language', 'hasBeenSwitched']).then((data) => {
-    hasLanguageBeenSwitched = data.hasBeenSwitched as boolean || false as boolean;
-    
-    if (!hasLanguageBeenSwitched) {
-        console.log("[Syrup] First time use, clearing language settings");
-        browser.storage.sync.clear();
-        storedLanguage = systemLanguage;
-        saveLanguage(storedLanguage);
-    } else {
-        storedLanguage = data.language as string;
-        console.log("[Syrup] Using previously set language:", storedLanguage);
+export const getLanguage = async (): Promise<string> => {
+    let language = await getSetting("language");
+    if (!language) {
+        language = systemLanguage;
+        await saveLanguage(language);
     }
 
+    storedLanguage = language;
     return storedLanguage;
-});
+};
 
 export const initializeI18n = async () => {
-    const language = (await getLanguage) || systemLanguage;
+    const language = (await getLanguage()) || fallbackLanguage;
 
     const options = {
         loadPath: "/_locales/{{lng}}/translation.json",
@@ -68,9 +57,9 @@ export const initializeI18n = async () => {
 initializeI18n();
 
 export const switchLanguage = (lng: string) => {
-    i18n.changeLanguage(lng).then(() => {
+    i18n.changeLanguage(lng).then(async () => {
         console.log("[Syrup] Language switched to", lng);
-        saveLanguage(lng);
+        await saveLanguage(lng);
     });
 };
 
