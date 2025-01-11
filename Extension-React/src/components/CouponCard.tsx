@@ -114,7 +114,7 @@ const CouponCard: React.FC<{
                     </>
                 ) : (
                     <Button onClick={handleCopy} className="bg-primary text-primary-foreground transition-all ease-in-out 
-                        duration-200 hover:scale-110 hover:bg-slate-100 hover:dark:bg-slate-100">
+                        duration-200 hover:scale-110">
                         {copied ? t("Copied!") : t("Copy")}
                     </Button>
                 )}
