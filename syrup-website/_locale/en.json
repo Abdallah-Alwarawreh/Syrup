@@ -95,7 +95,9 @@
     "tr": "Turkish",
     "hi": "Hindi",
     "bg": "Bulgarian",
-    "cz": "Czech"
+    "cz": "Czech",
+    "pl": "Polish",
+    "ru": "Russian"
   },
   "Languages": {
     "languages": "Languages"
