@@ -40,13 +40,13 @@ function detectLocale(acceptLanguage: string): string {
 }
 
 export async function getUserLocale() {
-  const cookie = cookies().get(COOKIE_NAME)?.value;
+  const cookie = (await cookies()).get(COOKIE_NAME)?.value;
 
   if (cookie) {
     return cookie;
   }
 
-  const acceptLanguage = headers().get("accept-language") || "";
+  const acceptLanguage = (await headers()).get("accept-language") || "";
   return detectLocale(acceptLanguage);
 }
 
@@ -55,5 +55,5 @@ export async function getDefaultLocale() {
 }
 
 export async function setUserLocale(locale: string) {
-  cookies().set(COOKIE_NAME, locale);
+  await cookies().set(COOKIE_NAME, locale);
 }
