@@ -55,5 +55,5 @@ export async function getDefaultLocale() {
 }
 
 export async function setUserLocale(locale: string) {
-  await cookies().set(COOKIE_NAME, locale);
+  (await cookies()).set(COOKIE_NAME, locale);
 }
