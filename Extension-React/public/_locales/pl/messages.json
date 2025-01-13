@@ -1,0 +1,68 @@
+{
+  "language_name": {
+    "message": "Polski"
+  },
+  "apply": {
+    "message": "Zastosuj"
+  },
+  "ignore": {
+    "message": "Ignoruj"
+  },
+  "syrup_logo": {
+    "message": "Logo Syrup"
+  },
+  "show_extension": {
+    "message": "Pokaż rozszerzenie"
+  },
+  "no_auto_apply_setup": {
+    "message": "Brak automatycznej konfiguracji dla tej strony."
+  },
+  "click_apply_to_try_them_all": {
+    "message": "Kliknij Zastosuj, aby wypróbować wszystkie."
+  },
+  "syrup_found_coupons": {
+    "message": "Syrup znalazł kupony!"
+  },
+  "got_it": {
+    "message": "Zrozumiałem"
+  },
+  "testing_coupons": {
+    "message": "Testowanie kuponów..."
+  },
+  "testing_coupon_current_of_total": {
+    "message": "Testowanie kuponu %currentIndex% z %total%"
+  },
+  "cancel": {
+    "message": "Anuluj"
+  },
+  "use_best": {
+    "message": "Użyj najlepszego"
+  },
+  "testing_cancelled": {
+    "message": "Testowanie anulowane."
+  },
+  "scan_was_stopped_no_coupons_applied": {
+    "message": "Skanowanie zostało przerwane. Nie zastosowano żadnych kuponów."
+  },
+  "we_found_the_best_coupon": {
+    "message": "Znaleźliśmy najlepszy kupon!"
+  },
+  "applied_coupon_and_saved_savings_new_total": {
+    "message": "Zastosowano kupon \"%bestCoupon%\" i zaoszczędzono %savings%. Nowa suma: %finalPrice%"
+  },
+  "no_better_price_found": {
+    "message": "Nie znaleziono lepszej ceny."
+  },
+  "all_coupons_tested_but_none_lowered_your_total": {
+    "message": "Przetestowano wszystkie kupony, ale żaden nie obniżył Twojej sumy."
+  },
+  "now_trying_best_so_far": {
+    "message": "Teraz testujemy \"%currentCoupon%\". Najlepsza cena do tej pory: %bestPriceSoFar%"
+  },
+  "best_price_so_far": {
+    "message": "Najlepsza cena do tej pory: $%bestPriceSoFar%"
+  },
+  "Theme": {
+    "message": "Motyw"
+  }
+}

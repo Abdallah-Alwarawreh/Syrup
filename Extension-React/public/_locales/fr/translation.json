@@ -12,5 +12,7 @@
     "Domain_invalid": "Domaine non valide",
     "Browser_domain": "Ce domaine n'est pas pris en charge par l'extension",
     "Settings": "Paramètres",
-    "Language": "Langue"
+    "Language": "Langue",
+    "no_coupons_found": "Aucun coupon trouvé",
+    "keep_looking": "Je vous tiendrai informé si j'en trouve un!"
 }

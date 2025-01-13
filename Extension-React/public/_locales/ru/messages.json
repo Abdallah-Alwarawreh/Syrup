@@ -1,0 +1,68 @@
+{
+  "language_name": {
+    "message": "Русский"
+  },
+  "apply": {
+    "message": "Применить"
+  },
+  "ignore": {
+    "message": "Игнорировать"
+  },
+  "syrup_logo": {
+    "message": "Логотип Syrup"
+  },
+  "show_extension": {
+    "message": "Показать расширение"
+  },
+  "no_auto_apply_setup": {
+    "message": "Автоматическая конфигурация для этого сайта отсутствует."
+  },
+  "click_apply_to_try_them_all": {
+    "message": "Нажмите Применить чтобы попробовать их всех."
+  },
+  "syrup_found_coupons": {
+    "message": "Syrup нашёл купоны!"
+  },
+  "got_it": {
+    "message": "Понятно"
+  },
+  "testing_coupons": {
+    "message": "Тестируем купоны..."
+  },
+  "testing_coupon_current_of_total": {
+    "message": "Тестирование купона %currentIndex% из %total%"
+  },
+  "cancel": {
+    "message": "Отменить"
+  },
+  "use_best": {
+    "message": "Использовать лучший"
+  },
+  "testing_cancelled": {
+    "message": "Тестирование отменено."
+  },
+  "scan_was_stopped_no_coupons_applied": {
+    "message": "Сканирование было остановлено. Ни один купон не был применён."
+  },
+  "we_found_the_best_coupon": {
+    "message": "Мы нашли лучший купон!"
+  },
+  "applied_coupon_and_saved_savings_new_total": {
+    "message": "Применён купон \"%bestCoupon%\" и сохранены %savings%. Новая сумма: %finalPrice%"
+  },
+  "no_better_price_found": {
+    "message": "Не было найдено лучшей цены."
+  },
+  "all_coupons_tested_but_none_lowered_your_total": {
+    "message": "Все купоны были протестированы, но ни один не уменьшил вашу сумму."
+  },
+  "now_trying_best_so_far": {
+    "message": "Теперь пробуем \"%currentCoupon%\". Наилучшая цена на данный момент: %bestPriceSoFar%"
+  },
+  "best_price_so_far": {
+    "message": "Наилучшая цена на данный момент: $%bestPriceSoFar%"
+  },
+  "Theme": {
+    "message": "Тема"
+  }
+}

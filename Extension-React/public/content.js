@@ -60,7 +60,7 @@
                 return "woocommerce";
             }
         } catch (error) {
-            console.error("[Syrup] Error detecting platform:", error);
+            logger.warn("Failed to detect platform:", error);
         }
         return null;
     }
@@ -77,8 +77,8 @@
                     { action: "getCoupons", domain },
                     (response) => {
                         if (chrome.runtime.lastError) {
-                            console.error(
-                                "[Syrup] Runtime error during message passing:",
+                            logger.error(
+                                "Runtime error during message passing:",
                                 chrome.runtime.lastError
                             );
                             reject(chrome.runtime.lastError.message);
@@ -94,15 +94,13 @@
                             resolve();
                             chrome.storage.local.set({ coupons });
                         } else {
-                            console.warn(
-                                "[Syrup] No coupons returned from background."
-                            );
-                            reject("No coupons found");
+                            logger.warn("No coupons returned from background");
+                            resolve();
                         }
                     }
                 );
             } catch (error) {
-                console.error("[Syrup] Error fetching coupons:", error);
+                logger.error("Error fetching coupons:", error);
                 reject("Failed to fetch coupons");
             }
         });
@@ -119,7 +117,7 @@
             const translations = await response.json();
             return translations;
         } catch (error) {
-            console.error("Failed to load translations:", error);
+            logger.error("Failed to load translations:", error);
             return {};
         }
     }
@@ -129,7 +127,7 @@
             currentLang = lang;
             translations = await loadTranslations(lang);
         } catch (error) {
-            console.error("[Syrup] Error setting language:", error);
+            logger.error("Failed to set language:", error);
         }
     }
 
@@ -140,10 +138,7 @@
                 callback(storedLanguage || chrome.i18n.getUILanguage() || "en");
             });
         } catch (error) {
-            console.error(
-                "[Syrup] Error getting language from storage:",
-                error
-            );
+            logger.warn("Failed to get language from storage:", error);
             callback("en");
         }
     }
@@ -152,7 +147,7 @@
         try {
             return translations[key]?.message || key;
         } catch (error) {
-            console.error("[Syrup] Error getting message for key:", key, error);
+            logger.error("Error getting message for key:", key, error);
             return key;
         }
     }
@@ -168,11 +163,7 @@
             }
             return translated;
         } catch (error) {
-            console.error(
-                "[Syrup] Error getting translation for key:",
-                key,
-                error
-            );
+            logger.error("Error getting translation for key:", key, error);
             return key;
         }
     }
@@ -187,10 +178,7 @@
                 el.getClientRects().length
             );
         } catch (error) {
-            console.error(
-                "[Syrup] Error checking visibility of element:",
-                error
-            );
+            logger.warn("Failed to check visibility of element:", error);
             return false;
         }
     }
@@ -201,7 +189,7 @@
             const numericString = str.replace(/[^\d.-]/g, "");
             return parseFloat(numericString) || 0;
         } catch (error) {
-            console.error("[Syrup] Error parsing price:", error);
+            logger.warn("Error parsing price:", error);
             return 0;
         }
     }
@@ -218,8 +206,8 @@
             }
             return el;
         } catch (error) {
-            console.error(
-                `[Syrup] Error replacing value for selector: ${selector}`,
+            logger.warn(
+                `Failed to replace value for selector: ${selector}`,
                 error
             );
             return null;
@@ -239,9 +227,62 @@
             }
             await new Promise((resolve) => setTimeout(resolve, 1000));
         } catch (error) {
-            console.error("[Syrup] Error reverting coupon:", error);
+            logger.error("Error reverting coupon:", error);
         }
     }
+
+    const logger = {
+        prefix: "[Syrup]",
+        isDev: false,
+        forceDebug: false,
+
+        init() {
+            return new Promise((resolve) => {
+                try {
+                    //https://stackoverflow.com/questions/30213993/management-permissions-for-chrome-extension-in-content-script
+                    chrome.runtime.sendMessage(
+                        { action: "checkDev" },
+                        (response) => {
+                            this.isDev = response;
+                            resolve();
+                        }
+                    );
+                } catch {
+                    //assume not dev
+                    resolve();
+                }
+            });
+        },
+
+        log(...args) {
+            if (this.isDev || this.forceDebug) {
+                console.log(this.prefix, ...args);
+            }
+        },
+
+        info(...args) {
+            if (this.isDev || this.forceDebug) {
+                console.info(this.prefix, ...args);
+            }
+        },
+
+        warn(...args) {
+            if (this.isDev || this.forceDebug) {
+                console.warn(this.prefix, ...args);
+            }
+        },
+
+        error(...args) {
+            // Always log errors, even in production
+            console.error(this.prefix, ...args);
+        },
+
+        debug(...args) {
+            if (this.isDev || this.forceDebug) {
+                console.debug(this.prefix, ...args);
+            }
+        },
+    };
 
     /*******************************************************
      * 4. Testing & Applying Coupons
@@ -347,10 +388,7 @@
                 };
             }
         } catch (error) {
-            console.error(
-                `[Syrup] Error applying coupon ${couponCode}:`,
-                error
-            );
+            logger.error(`Error applying coupon ${couponCode}:`, error);
             return { success: false, priceDrop: 0, finalPrice: 0 };
         }
     }
@@ -405,10 +443,7 @@
                     config.removeCouponButtonSelector
                 );
             } catch (error) {
-                console.error(
-                    `[Syrup] Error testing coupon ${couponCode}:`,
-                    error
-                );
+                logger.error(`Error testing coupon ${couponCode}:`, error);
             }
         }
 
@@ -808,6 +843,7 @@
      * 8. Main
      *******************************************************/
     async function main() {
+        await logger.init();
         let domain = window.location.hostname.replace("www.", "");
         if (domainReplacements[domain]) domain = domainReplacements[domain];
         const path = window.location.pathname;
@@ -816,12 +852,12 @@
         try {
             await fetchCoupons(domain);
         } catch (err) {
-            console.error("[Syrup] Failed to fetch coupons:", err);
+            logger.warn("Failed to fetch coupons:", err);
             return;
         }
 
         if (!coupons || coupons.length === 0) {
-            console.log("[Syrup] No coupons found.");
+            logger.info("No coupons found");
             return; // No coupons to try
         }
 
@@ -856,7 +892,7 @@
 
     // Delay a bit for the page to load
     setTimeout(() => {
-        main().catch((err) => console.error("[Syrup] Main error:", err));
+        main().catch((err) => logger.error("Main error:", err));
     }, 3000);
 
     getLanguageFromStorage(setLanguage);

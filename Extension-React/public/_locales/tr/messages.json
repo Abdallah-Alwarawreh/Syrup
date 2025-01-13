@@ -58,5 +58,8 @@
     },
     "best_price_so_far": {
         "message": "Şu ana kadar ki en iyi fiyat: $%bestPriceSoFar%"
+    },
+    "Theme": {
+        "message": "Tema"
     }
 }

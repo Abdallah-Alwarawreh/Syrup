@@ -1,3 +1,4 @@
 node_modules/
 Extension.pem
 .DS_Store
+Extension-React/dist.pem

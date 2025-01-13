@@ -24,7 +24,7 @@
         "message": "Okay"
     },
     "testing_coupons": {
-        "message": "Teste Gutscheine..."
+        "message": "Gutscheine testen..."
     },
     "testing_coupon_current_of_total": {
         "message": "Teste Gutschein %currentIndex% von %total%"
@@ -58,5 +58,8 @@
     },
     "best_price_so_far": {
         "message": "Bester Preis bisher: %bestPriceSoFar%"
+    },
+    "Theme": {
+        "message": "Thema"
     }
 }

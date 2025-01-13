@@ -58,5 +58,11 @@
     },
     "best_price_so_far": {
         "message": "أفضل سعر حتى الآن: $%bestPriceSoFar%"
+    },
+    "language_name": {
+        "message": "إنجليزي"
+    },
+    "Theme": {
+        "message": "الثيم"
     }
 }

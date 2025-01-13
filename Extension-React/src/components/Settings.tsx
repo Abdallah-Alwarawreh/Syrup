@@ -5,7 +5,7 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 import { useTranslation } from "react-i18next";
 
-const Settings: React.FC<{}> = () => {
+const Settings: React.FC = () => {
     const { t } = useTranslation();
     return (
         <div className="settings w-[100%] h-[100%] grid grid-cols-1 grid-rows-[10%,80%,10%] fixed top-0 left-0 hidden bg-background">

@@ -58,5 +58,11 @@
     },
     "best_price_so_far": {
         "message": "अभी तक की अच्छी कीमत: $%bestPriceSoFar%"
+    },
+    "language_name": {
+        "message": "अंग्रेज़ी"
+    },
+    "Theme": {
+        "message": "विषय"
     }
 }

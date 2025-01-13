@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useCallback } from "react";
-import { Coupon } from "@/components/CouponCard";
 import { fetchCoupons } from "@/lib/utils";
 import { parseDomain } from "parse-domain";
 import CouponsPage from "@/components/CouponsPage";
 import Header from "@/components/Header";
+import { Coupon } from "@/lib/sas/models.ts";
 
 interface ParseResult {
     domain: string;
