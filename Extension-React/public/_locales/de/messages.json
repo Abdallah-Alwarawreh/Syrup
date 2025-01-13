@@ -24,7 +24,7 @@
         "message": "Okay"
     },
     "testing_coupons": {
-        "message": "Gutscheine testen..."
+        "message": "Coupons testen..."
     },
     "testing_coupon_current_of_total": {
         "message": "Teste Gutschein %currentIndex% von %total%"
