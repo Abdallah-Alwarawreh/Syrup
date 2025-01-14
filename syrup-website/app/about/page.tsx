@@ -7,10 +7,13 @@ import { useRouter } from "next/navigation";
 import developers from "@/public/about/developer.json";
 import translation from "@/public/about/translation.json";
 
+import { useTranslations } from 'next-intl';
+
 const Developers = JSON.stringify(developers);
 const Translation = JSON.stringify(translation);
 
 export default function About() {
+    const t = useTranslations("About");
     const [DevelopersElement, setDevelopers] = useState<JSX.Element[]>([]);
     const [TranslationElement, setTranslation] = useState<JSX.Element[]>([]);
     const [ContributorsElement, setContributors] = useState<JSX.Element[]>([]);
@@ -56,7 +59,7 @@ export default function About() {
                             <p className="mb-4 text-sm text-muted-foreground">
                                 {developers.find(
                                     (dev: any) => dev.name === formattedLogin
-                                )?.role || "Contributor"}
+                                )?.role || t("contributor")}
                             </p>
                             <a
                                 href={contributor.html_url}
@@ -64,7 +67,7 @@ export default function About() {
                                 className="inline-flex items-center text-sm text-muted-foreground hover:text-primary"
                             >
                                 <Github className="lucide lucide-github mr-1 h-4 w-4" />{" "}
-                                Github Profile
+                                {t("github-profile")}
                             </a>
                         </div>
                     );
@@ -83,7 +86,7 @@ export default function About() {
                                 {formattedLogin}
                             </h3>
                             <p className="text-muted-foreground">
-                                Contributions: {contributor.contributions}
+                                {t("contributions", { contribs: contributor.contributions})}
                             </p>
                             <a
                                 href={contributor.html_url}
@@ -91,7 +94,7 @@ export default function About() {
                                 className="inline-flex items-center text-sm text-muted-foreground hover:text-primary mt-3"
                             >
                                 <Github className="lucide lucide-github mr-1 h-4 w-4" />{" "}
-                                Github Profile
+                                {t("github-profile")}
                             </a>
                         </div>
                     );
@@ -129,7 +132,7 @@ export default function About() {
                                 {translator.name}
                             </h3>
                             <p className="text-muted-foreground">
-                                {translator.translation}
+                                {t("translation-template", { lang: t(translator.translation)})}
                             </p>
                         </div>
                     );
@@ -150,7 +153,7 @@ export default function About() {
                                 {translator.name}
                             </h3>
                             <p className="text-muted-foreground">
-                                {translator.translation}
+                                {t("translation-template", { lang: t(translator.translation)})}
                             </p>
                         </div>
                     );
@@ -176,43 +179,36 @@ export default function About() {
                 {/* Mission Section */}
                 <section className="mb-20">
                     <h1 className="mb-8 text-4xl font-bold tracking-tight text-[#0F172A] md:text-5xl lg:text-6xl">
-                        About Syrup
+                        {t("about-header")}
                     </h1>
                     <p className="mb-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
-                        Syrup is an open-source browser extension that helps you
-                        save money by automatically finding and applying the
-                        best coupon codes when you shop online.
+                        {t("about-desc")}
                     </p>
                     <p className="max-w-3xl text-lg text-muted-foreground md:text-xl">
-                        Our mission is to make online shopping more affordable
-                        and accessible for everyone by eliminating the
-                        frustration of searching for working coupon codes.
+                        {t("about-mission")}
                     </p>
                 </section>
 
                 {/* Key Features Section */}
                 <section className="mb-20">
                     <h2 className="mb-8 text-3xl font-bold text-[#0F172A]">
-                        What Makes Us Different
+                        {t("about-differences")}
                     </h2>
                     <div className="grid gap-8 md:grid-cols-3">
                         <div className="rounded-lg border bg-card p-6 transition-all duration-200 hover:shadow-lg hover:scale-105">
                             <h3 className="mb-3 text-xl font-semibold">
-                                100% Open Source
+                                {t("about-open-source-header")}
                             </h3>
                             <p className="text-muted-foreground">
-                                We believe in transparency. Our entire codebase
-                                is open source and available for anyone to
-                                inspect, contribute to, or learn from.
+                                {t("about-open-source-desc")}
                             </p>
                         </div>
                         <div className="rounded-lg border bg-card p-6 transition-all duration-200 hover:shadow-lg hover:scale-105">
                             <h3 className="mb-3 text-xl font-semibold">
-                                Privacy First
+                                {t("about-privacy-header")}
                             </h3>
                             <p className="text-muted-foreground">
-                                We don't track your personal data or shopping
-                                habits.
+                                {t("about-privacy-desc")}
                             </p>
                         </div>
                     </div>
@@ -221,7 +217,7 @@ export default function About() {
                 {/* Team Section */}
                 <section className="mb-20">
                     <h2 className="mb-8 text-3xl font-bold text-[#0F172A]">
-                        Developers
+                        {t("about-developers")}
                     </h2>
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                         {DevelopersElement}
@@ -230,13 +226,13 @@ export default function About() {
                         ref={contributorsRef}
                         className="mt-12 mb-8 text-3xl font-bold text-[#0F172A]"
                     >
-                        Contributors
+                        {t("about-contributors")}
                     </h2>
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                         {ContributorsElement}
                     </div>
                     <h2 className="mt-12 mb-8 text-3xl font-bold text-[#0F172A]">
-                        Translators
+                        {t("about-translators")}
                     </h2>
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                         {TranslationElement}
@@ -247,12 +243,10 @@ export default function About() {
                 <section>
                     <div className="rounded-lg bg-[#C4401C]/10 p-8 md:p-12">
                         <h2 className="mb-4 text-3xl font-bold text-[#C4401C]">
-                            Join Our Community
+                            {t("about-join-header")}
                         </h2>
                         <p className="mb-6 max-w-2xl text-lg text-muted-foreground">
-                            Want to contribute to Syrup? We welcome
-                            contributions of all kinds - from code to
-                            documentation, bug reports to feature suggestions.
+                            {t("about-join-desc")}
                         </p>
                         <div className="flex flex-col gap-4 sm:flex-row">
                             <Button
@@ -261,7 +255,7 @@ export default function About() {
                             >
                                 <Link href="https://github.com/Abdallah-Alwarawreh/syrup">
                                     <Github className="mr-2 h-4 w-4" />
-                                    View on GitHub
+                                    {t("about-view-on-github")}
                                 </Link>
                             </Button>
                             <Button
@@ -270,7 +264,7 @@ export default function About() {
                                 className="bg-white"
                             >
                                 <Link href="https://github.com/Abdallah-Alwarawreh/syrup/issues">
-                                    Report an Issue
+                                    {t("about-report")}
                                 </Link>
                             </Button>
                         </div>

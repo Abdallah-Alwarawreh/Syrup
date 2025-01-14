@@ -3,16 +3,19 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Star } from 'lucide-react';
 import testimonials from "@/lib/Testimonials";
 
+import { useTranslations } from 'next-intl';
+
 export function Testimonials() {
+    const t = useTranslations("HomePage");
     return (
         <section className="py-24 bg-gray-50">
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <h2 className="text-4xl font-bold mb-4">
-                        What Our Users Say
+                        {t("testimonials-header")}
                     </h2>
                     <p className="text-gray-600 text-lg">
-                        Join people who save with Syrup
+                        {t("testimonials-desc")}
                     </p>
                 </div>
                 <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">

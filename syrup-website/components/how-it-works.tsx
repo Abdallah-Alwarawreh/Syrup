@@ -1,6 +1,9 @@
 import Image from "next/image";
 
+import { useTranslations } from 'next-intl';
+
 export function HowItWorks() {
+    const t = useTranslations("HomePage");
     return (
         <section className="container mx-auto px-4 py-24">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -22,42 +25,39 @@ export function HowItWorks() {
                     </div>
                     <div className="absolute -right-8 top-1/2 -translate-y-1/2">
                         <div className="bg-amber-100 text-[#a82c04] p-4 rounded-lg shadow-lg">
-                            <div className="font-semibold">Coupons Found!</div>
-                            <div className="text-sm">9 coupon codes</div>
+                            <div className="font-semibold">{t("how-coupon-found")}</div>
+                            <div className="text-sm">{t("how-9-coupons")}</div>
                         </div>
                     </div>
                 </div>
 
                 <div className="space-y-8">
                     <h2 className="text-4xl font-bold text-gray-900">
-                        How it works
+                        {t("how-header")}
                     </h2>
                     <div className="space-y-6">
                         <div className="space-y-2">
                             <h3 className="text-xl font-semibold">
-                                1. Add in Seconds
+                                {t("how-first-step")}
                             </h3>
                             <p className="text-gray-600">
-                                It just takes a few clicks to add to your
-                                computer and it's 100% free.
+                                {t("how-first-step-desc")}
                             </p>
                         </div>
                         <div className="space-y-2">
                             <h3 className="text-xl font-semibold">
-                                2. Shop Normally
+                                {t("how-second-step")}
                             </h3>
                             <p className="text-gray-600">
-                                Browse your favorite stores and Syrup will
-                                notify you when savings are available.
+                                {t("how-second-step-desc")}
                             </p>
                         </div>
                         <div className="space-y-2">
                             <h3 className="text-xl font-semibold">
-                                3. Save Money
+                                {t("how-third-step-desc")}
                             </h3>
                             <p className="text-gray-600">
-                                Syrup automatically finds and applies the best
-                                coupon codes at checkout.
+                                {t("how-third-step-desc")}
                             </p>
                         </div>
                     </div>

@@ -7,31 +7,30 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 
+import { useTranslations } from 'next-intl';
+
 export function Features() {
+    const t = useTranslations("HomePage");
     const features = [
         {
             icon: ShoppingCart,
-            title: "Shop Smarter",
-            description:
-                "Automatically find and apply the best coupon codes when you shop online.",
+            title: t("features-shop-smarter"),
+            description: t("features-shop-smarter-desc"),
         },
         {
             icon: Percent,
-            title: "Save More",
-            description:
-                "Get exclusive access to the best deals and discounts across thousands of stores.",
+            title: t("features-save-more"),
+            description: t("features-save-more-desc"),
         },
         {
             icon: Clock,
-            title: "Save Time",
-            description:
-                "No more searching for coupon codes. We do the work for you in seconds.",
+            title: t("features-save-time"),
+            description: t("features-save-time-desc"),
         },
         {
             icon: Shield,
-            title: "Shop Securely",
-            description:
-                "Your privacy and security are our top priority. Shop with confidence.",
+            title: t("features-shop-securely"),
+            description: t("features-shop-securely-desc"),
         },
     ];
 
@@ -40,10 +39,10 @@ export function Features() {
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <h2 className="text-4xl font-bold mb-4">
-                        Why Choose Syrup?
+                        {t("features-why-syrup")}
                     </h2>
                     <p className="text-gray-600 text-lg">
-                        Join smart shoppers who save time and money with Syrup.
+                        {t("features-why-syrup-answer")}
                     </p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
