@@ -61,5 +61,8 @@
     },
     "Theme": {
         "message": "Téma"
+    },
+    "language_name": {
+        "message": "Angličtina"
     }
 }
