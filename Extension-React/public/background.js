@@ -1,12 +1,26 @@
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "getCoupons") {
-        fetch(
-            "https://api.discountdb.ch/api/v1/syrup/coupons?domain=" +
-                request.domain
-        )
+        let database = "";
+        try {
+            if (localStorage.getItem("database") === null) {
+                database = "https://api.discountdb.ch/api/v1/syrup/coupons";
+            } else {
+                database = localStorage.getItem("database");
+            }
+        } catch (e) {
+            database = "https://api.discountdb.ch/api/v1/syrup/coupons";
+        }
+        fetch(database + "?domain=" + request.domain)
             .then((response) => response.json())
             .then((data) => {
-                sendResponse({ coupons: data });
+                chrome.storage.local.set({ coupons: data }, () => {
+                    if (chrome.runtime.lastError) {
+                        console.error("Error setting coupons:", chrome.runtime.lastError);
+                        sendResponse({ coupons: [] });
+                    } else {
+                        sendResponse({ coupons: data });
+                    }
+                });
             })
             .catch((err) => {
                 sendResponse({ coupons: [] });

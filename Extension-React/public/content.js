@@ -33,6 +33,16 @@
             removeCouponButtonSelector:
                 "button[data-testid='coupon-delete-applied-button']",
         },
+        "fossil.com": {
+            inputSelector: ".coupon-code-field",
+            preApplyButtonSelector: ".optional-promo",
+            applyButtonSelector: ".promo-code-btn",
+            successSelector: ".coupon-code-applied",
+            failureSelector: ".coupon-error-message",
+            priceSelector: ".grand-total",
+            removeCouponButtonSelector: ".remove-coupon",
+            removeCouponButtonSelectorConfirm: ".delete-coupon-confirmation-btn",
+        },
     };
 
     const platformConfigs = {
@@ -75,29 +85,30 @@
             try {
                 chrome.runtime.sendMessage(
                     { action: "getCoupons", domain },
-                    (response) => {
-                        if (chrome.runtime.lastError) {
-                            logger.error(
-                                "Runtime error during message passing:",
-                                chrome.runtime.lastError
-                            );
-                            reject(chrome.runtime.lastError.message);
-                            return;
-                        }
+                        (response) => {
+                            const fetchedCoupons = JSON.stringify(response.coupons.coupons);
+                            if (chrome.runtime.lastError) {
+                                logger.error(
+                                    "Runtime error during message passing:",
+                                    chrome.runtime.lastError
+                                );
+                                reject(chrome.runtime.lastError.message);
+                                return;
+                            }
 
-                        if (
-                            response &&
-                            response.coupons &&
-                            response.coupons.length > 0
-                        ) {
-                            coupons = response.coupons;
-                            resolve();
-                            chrome.storage.local.set({ coupons });
-                        } else {
-                            logger.warn("No coupons returned from background");
-                            resolve();
+                            if (
+                                fetchedCoupons &&
+                                fetchedCoupons.length > 0
+                            ) {
+                                localStorage.setItem("database", fetchedCoupons);
+                                coupons = fetchedCoupons;
+                                logger.warn("Coupons fetched:", coupons);
+                                resolve();
+                            } else {
+                                logger.warn("No coupons returned from background");
+                                resolve();
+                            }
                         }
-                    }
                 );
             } catch (error) {
                 logger.error("Error fetching coupons:", error);
@@ -214,7 +225,7 @@
         }
     }
 
-    async function revertCoupon(inputSelector, removeCouponButtonSelector) {
+    async function revertCoupon(inputSelector, removeCouponButtonSelector, removeCouponButtonSelectorConfirm) {
         try {
             if (inputSelector) {
                 const input = document.querySelector(inputSelector);
@@ -224,6 +235,9 @@
             }
             if (removeCouponButtonSelector) {
                 document.querySelector(removeCouponButtonSelector)?.click();
+            }
+            if (removeCouponButtonSelectorConfirm) {
+                document.querySelector(removeCouponButtonSelectorConfirm)?.click();
             }
             await new Promise((resolve) => setTimeout(resolve, 1000));
         } catch (error) {
@@ -408,15 +422,16 @@
 
         showTestingPopover(coupons.length);
 
-        for (let i = 0; i < coupons.length; i++) {
+        const ParseCoupons = JSON.parse(coupons);
+        for (let i = 0; i < ParseCoupons.length; i++) {
             if (stopTesting || useBestNow) {
                 break;
             }
 
-            const coupon = coupons[i];
-            const couponCode = coupon.couponCode || coupon; // handle either {couponCode: "..."} or raw string
+            const coupon = ParseCoupons[i];
+            const couponCode = coupon.code || coupon; // handle either {couponCode: "..."} or raw string
 
-            updateTestingPopover(i + 1, coupons.length, couponCode, bestPrice);
+            updateTestingPopover(i + 1, coupons.length, couponCode, bestPrice); 
 
             try {
                 const result = await applySingleCoupon(
@@ -440,7 +455,8 @@
 
                 await revertCoupon(
                     config.inputSelector,
-                    config.removeCouponButtonSelector
+                    config.removeCouponButtonSelector,
+                    config.removeCouponButtonSelectorConfirm
                 );
             } catch (error) {
                 logger.error(`Error testing coupon ${couponCode}:`, error);
@@ -844,7 +860,7 @@
      *******************************************************/
     async function main() {
         await logger.init();
-        let domain = window.location.hostname.replace("www.", "");
+        let domain = window.location.hostname.replace("www.", "").replace("https://", "").replace("http://", "");
         if (domainReplacements[domain]) domain = domainReplacements[domain];
         const path = window.location.pathname;
 

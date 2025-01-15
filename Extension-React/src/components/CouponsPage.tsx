@@ -49,9 +49,8 @@ const CouponsPage: React.FC<CouponData> = ({
     const subDomainName: string = getSubDomainName(parsedSubDomain);
 
     const handleDomain = () => {
-        const domain = document.querySelector(
-            'input[name="couponType"]:checked'
-        )?.id;
+
+        const domain = document.querySelector('input[name="couponType"]:checked')?.id;
         if (domain === "domain") {
             document.querySelector(".Domain")?.classList.remove("hidden");
             document.querySelector(".SubDomain")?.classList.add("hidden");
@@ -80,46 +79,19 @@ const CouponsPage: React.FC<CouponData> = ({
                     <>
                         {isSubDomain ? (
                             <>
-                                <label
-                                    htmlFor="domain"
-                                    className="DomainLabel w-[50%] m-1.5 flex items-center justify-center rounded-lg text-foreground text-sm hover:cursor-pointer bg-card"
-                                >
+                                <label htmlFor="domain" className="DomainLabel w-[50%] m-1.5 flex items-center justify-center rounded-lg text-foreground text-sm hover:cursor-pointer bg-card">
                                     {domainName}
-                                    <input
-                                        className="hidden"
-                                        type="radio"
-                                        name="couponType"
-                                        id="domain"
-                                        onChange={handleDomain}
-                                        defaultChecked
-                                    />
+                                    <input className="hidden" type="radio" name="couponType" id="domain" onChange={handleDomain} defaultChecked/>
                                 </label>
-                                <label
-                                    htmlFor="subDomain"
-                                    className="SubDomainLabel w-[50%] m-1.5 flex items-center justify-center rounded-lg text-foreground text-sm hover:cursor-pointer"
-                                >
+                                <label htmlFor="subDomain" className="SubDomainLabel w-[50%] m-1.5 flex items-center justify-center rounded-lg text-foreground text-sm hover:cursor-pointer">
                                     {subDomainName}
-                                    <input
-                                        className="hidden"
-                                        type="radio"
-                                        name="couponType"
-                                        id="subDomain"
-                                        onChange={handleDomain}
-                                    />
+                                    <input className="hidden" type="radio" name="couponType" id="subDomain" onChange={handleDomain}/>
                                 </label>
                             </>
                         ) : (
-                            <label
-                                htmlFor="domain"
-                                className="w-[100%] m-1.5 flex items-center justify-center bg-card rounded-lg text-foreground text-sm cursor-pointer"
-                            >
+                            <label htmlFor="domain" className="w-[100%] m-1.5 flex items-center justify-center bg-card rounded-lg text-foreground text-sm cursor-pointer">
                                 {domainName}
-                                <input
-                                    className="hidden"
-                                    type="radio"
-                                    name="couponType"
-                                    id="domain"
-                                />
+                                <input className="hidden" type="radio" name="couponType" id="domain"/>
                             </label>
                         )}
                     </>

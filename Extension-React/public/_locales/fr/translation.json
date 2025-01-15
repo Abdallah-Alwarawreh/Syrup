@@ -14,5 +14,9 @@
     "Settings": "Paramètres",
     "Language": "Langue",
     "no_coupons_found": "Aucun coupon trouvé",
-    "keep_looking": "Je vous tiendrai informé si j'en trouve un!"
+    "keep_looking": "Je vous tiendrai informé si j'en trouve un!",
+    "custom_database": "Base de données personnalisée",
+    "leave_empty_default": "Laissez vide pour le paramètre par défaut",
+    "Updated": "Mis à jour",
+    "url_invalide": "URL invalide"
 }

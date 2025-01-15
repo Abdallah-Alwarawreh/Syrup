@@ -4,7 +4,7 @@
     "description": "A Honey alternative, find and apply the best coupons automatically.",
     "version": "0.4",
     "default_locale": "en",
-    "permissions": ["activeTab", "storage"],
+    "permissions": ["storage", "activeTab"],
     "background": {
         "service_worker": "background.js",
         "scripts": ["background.js"]
