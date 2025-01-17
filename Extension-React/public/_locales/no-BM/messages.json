@@ -1,0 +1,65 @@
+{
+    "apply": {
+        "message": "Bruk"
+    },
+    "ignore": {
+        "message": "Ignorer"
+    },
+    "syrup_logo": {
+        "message": "Syrup Logo"
+    },
+    "show_extension": {
+        "message": "Vis Utvidelse"
+    },
+    "no_auto_apply_setup": {
+        "message": "Ingen auto-bruk oppsett for denne nettsiden."
+    },
+    "click_apply_to_try_them_all": {
+        "message": "Klikk Bruk for å prøve alle."
+    },
+    "syrup_found_coupons": {
+        "message": "Syrup fant kuponger!"
+    },
+    "got_it": {
+        "message": "Fikk den"
+    },
+    "testing_coupons": {
+        "message": "Tester Kuponger..."
+    },
+    "testing_coupon_current_of_total": {
+        "message": "Tester kupong %currentIndex% av %total%"
+    },
+    "cancel": {
+        "message": "Avbryt"
+    },
+    "use_best": {
+        "message": "Bruk Beste"
+    },
+    "testing_cancelled": {
+        "message": "Test Avbrutt."
+    },
+    "scan_was_stopped_no_coupons_applied": {
+        "message": "Scan ble stoppet. Ingen kuponger brukt."
+    },
+    "we_found_the_best_coupon": {
+        "message": "Vi fant den bedse kupongen!"
+    },
+    "applied_coupon_and_saved_savings_new_total": {
+        "message": "Brukte kupong \"%bestCoupon%\" og sparte %savings%. Nytt beløp: %finalPrice%"
+    },
+    "no_better_price_found": {
+        "message": "Ingen bedre pris funnet."
+    },
+    "all_coupons_tested_but_none_lowered_your_total": {
+        "message": "Alle kuponger ble prøvd, men ingen reduserte beløpet ditt."
+    },
+    "now_trying_best_so_far": {
+        "message": "Prøver nå \"%currentCoupon%\". Beste pris hittil: %bestPriceSoFar%"
+    },
+    "best_price_so_far": {
+        "message": "Beste pris hittil: $%bestPriceSoFar%"
+    },
+    "Theme": {
+        "message": "Tema"
+    }
+}
