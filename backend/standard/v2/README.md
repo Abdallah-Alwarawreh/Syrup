@@ -1,4 +1,4 @@
-# Syrup API Documentation
+# Syrup API Documentation V2 (beta)
 
 ## Overview
 
