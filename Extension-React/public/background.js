@@ -3,12 +3,12 @@ chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
         let database = "";
         try {
             if (localStorage.getItem("database") === null) {
-                database = "https://api.discountdb.ch/api/v1/syrup/coupons";
+                database = "https://db.joinsyrup.com/api/v1/syrup/coupons";
             } else {
                 database = localStorage.getItem("database");
             }
         } catch (e) {
-            database = "https://api.discountdb.ch/api/v1/syrup/coupons";
+            database = "https://db.joinsyrup.com/api/v1/syrup/coupons";
         }
         fetch(database + "?domain=" + request.domain)
             .then((response) => response.json())

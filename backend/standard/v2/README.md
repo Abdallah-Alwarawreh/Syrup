@@ -13,7 +13,7 @@ Syrup.
 The API endpoints must be accessible under the `/syrup/v2` path. The default base URL is:
 
 ```
-https://api.discountdb.ch
+https://db.joinsyrup.com
 ```
 
 ## Authentication
@@ -21,6 +21,7 @@ https://api.discountdb.ch
 The API supports two authentication methods:
 
 1. Bearer Token Authentication
+
     - HTTP Bearer scheme with JWT token support
     - Implementation details are left to the provider
 
@@ -35,12 +36,12 @@ Authentication can be optional, and providers can choose which method to impleme
 
 Providers can implement various optional features:
 
-- Coupon reporting
-- Coupon suggestions
-- Merchant suggestions
-- Merchant updates
-- Autofill suggestions
-- Autofill updates
+-   Coupon reporting
+-   Coupon suggestions
+-   Merchant suggestions
+-   Merchant updates
+-   Autofill suggestions
+-   Autofill updates
 
 ## Core Endpoints
 
@@ -162,21 +163,21 @@ Manages domain-specific autofill configurations for automated coupon entry.
 
 The API uses cursor-based pagination with the following parameters:
 
-- `limit`: Maximum number of items per page (1-100, default 20)
-- `cursor`: Opaque cursor for the next page
-- Response includes `next_cursor` and `has_more` fields
+-   `limit`: Maximum number of items per page (1-100, default 20)
+-   `cursor`: Opaque cursor for the next page
+-   Response includes `next_cursor` and `has_more` fields
 
 ## Rate Limiting
 
 All endpoints include rate limiting headers:
 
-- `X-RateLimit-Limit`: Maximum requests allowed
-- `X-RateLimit-Remaining`: Requests remaining
-- `X-RateLimit-Reset`: Seconds until reset
+-   `X-RateLimit-Limit`: Maximum requests allowed
+-   `X-RateLimit-Remaining`: Requests remaining
+-   `X-RateLimit-Reset`: Seconds until reset
 
 When rate limit is exceeded (429 status):
 
-- `Retry-After`: Seconds to wait before retry
+-   `Retry-After`: Seconds to wait before retry
 
 ## Error Handling
 
@@ -184,19 +185,19 @@ Standard HTTP status codes are used with consistent error response format:
 
 ```typescript
 {
-    error: string;     // Error type/code
-    message: string;   // User-friendly message
-    code: string;     // Machine-readable code
+    error: string; // Error type/code
+    message: string; // User-friendly message
+    code: string; // Machine-readable code
 }
 ```
 
 Common status codes:
 
-- 400: Bad Request
-- 401: Unauthorized
-- 403: Forbidden
-- 429: Too Many Requests
-- 500: Internal Server Error
+-   400: Bad Request
+-   401: Unauthorized
+-   403: Forbidden
+-   429: Too Many Requests
+-   500: Internal Server Error
 
 ## Search Capabilities
 
@@ -204,21 +205,21 @@ The API provides powerful search functionality for both coupons and merchants:
 
 ### Filtering
 
-- Complex filter combinations using `filterBy` parameter
-- Supports numeric ranges, date ranges, arrays, and simple matches
-- Flexible date formats for temporal queries
+-   Complex filter combinations using `filterBy` parameter
+-   Supports numeric ranges, date ranges, arrays, and simple matches
+-   Flexible date formats for temporal queries
 
 ### Sorting
 
-- Multiple sort fields available
-- Ascending/descending options
-- Score-based default sorting
+-   Multiple sort fields available
+-   Ascending/descending options
+-   Score-based default sorting
 
 ### Search Options
 
-- Fuzzy matching support
-- Field-specific searching
-- Faceted search results
+-   Fuzzy matching support
+-   Field-specific searching
+-   Faceted search results
 
 ## Security Recommendations
 
@@ -232,8 +233,8 @@ The API provides powerful search functionality for both coupons and merchants:
 
 ## Implementation Notes
 
-- All timestamps should be in ISO format at GMT0
-- URIs should be properly formatted and validated
-- CSS selectors in autofill configurations should be tested for reliability
-- Score calculations should consider multiple factors for accuracy
-- Implement proper caching strategies for improved performance
+-   All timestamps should be in ISO format at GMT0
+-   URIs should be properly formatted and validated
+-   CSS selectors in autofill configurations should be tested for reliability
+-   Score calculations should consider multiple factors for accuracy
+-   Implement proper caching strategies for improved performance
