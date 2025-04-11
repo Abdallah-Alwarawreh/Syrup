@@ -3,1119 +3,1250 @@ openapi: 3.1.1
 info:
   title: Syrup API Standard
   description: A standardized interface for coupon code providers to integrate with the Syrup browser extension.
-  version: 2.0.0
+  version: 2.1.0
 
 servers:
-  - url: "https://api.discountdb.ch"
-    description: "Primary API endpoint"
+  - url: "https://db.joinsyrup.com" # Example URL, provider implements their own
+    description: "Provider API endpoint"
 
 tags:
   - name: system
     description: System-level information and status
   - name: coupons
-    description: Coupon management and reporting
+    description: Coupon management, voting, and suggestions
+  - name: sites
+    description: Site information and suggestions (represents a specific domain/storefront)
   - name: merchants
-    description: Merchant information and suggestions
+    description: Merchant information and suggestions (represents the overall brand/company)
   - name: autofill
-    description: Domain-specific autofill configurations
+    description: Domain-specific autofill configurations and suggestions
 
 paths:
   /syrup/v2/info:
     get:
       summary: Provider info
-      description: Retrieves information about the providers implementation
+      description: Retrieves information about the provider's implementation, features, and authentication.
       tags:
         - system
       responses:
-        200:
+        '200':
           description: Success
           content:
             application/json:
               schema:
                 $ref: "#/components/schemas/InfoResponse"
-        500:
-          description: Internal Server Error
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/ErrorResponse"
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented' # If info endpoint itself isn't implemented
+
   /syrup/v2/coupons:
     get:
       summary: Search for coupons
-      description: Search for coupons with filtering, sorting and pagination
+      description: Search for coupons with filtering, sorting, and pagination. Filters are applied via the `filter_by` parameter.
       tags:
         - coupons
       parameters:
-        - name: q
-          in: query
-          schema:
-            type: string
-          description: Search query string
-
-        - name: limit
-          in: query
-          schema:
-            type: integer
-            minimum: 1
-            maximum: 100
-            default: 20
-
-        - name: cursor
-          in: query
-          schema:
-            type: string
-          description: |
-            Cursor for pagination. Use the next_cursor from the previous response to get the next page.
-            Omit this parameter for the first page.
-          example: eyJpZCI6MTAwfQ==
-
-        - name: filterBy
-          description: |
-            Filter coupons using query parameters. All filters are optional. Supports these formats:  
-
-            1. Simple Values:  
-              `?filterBy[merchant_id]=123`  
-              `?filterBy[store_type]=online`  
-
-            2. Arrays (use [] suffix):  
-              `?filterBy[categories][]=food&filterBy[categories][]=drinks`  
-              Creates array: [food, drinks]  
-
-            3. Numeric Ranges (use comma-separated values):  
-              `?filterBy[discount_value]=10,50`    # Between 10 and 50  
-              `?filterBy[discount_value]=10,`      # 10 or more  
-              `?filterBy[discount_value]=,50`      # Up to 50  
-
-            4. Date Ranges (YYYY-MM-DD format):  
-              `?filterBy[end_date]=2024-01-01,2024-12-31`    # Between dates  
-              `?filterBy[end_date]=2024-01-01,`              # After date  
-              `?filterBy[end_date]=,2024-12-31`              # Before date  
-
-            Examples:  
-            - Find food coupons with 20-50% off:  
-              `?filterBy[categories][]=food&filterBy[discount_value]=20,50&filterBy[discount_type]=PERCENTAGE_OFF`  
-            
-            - Find valid online coupons:  
-              `?filterBy[store_type]=online&filterBy[is_expired]=false`
-          in: query
-          style: deepObject
-          explode: true
-          schema:
-            type: object
-            properties:
-              # Numeric ranges (format: "min,max", ",max", or "min,")
-              discount_value:
-                type: string
-                pattern: '^(\d*\.?\d+)?,(\d*\.?\d+)?$'
-                example: "10,50"
-              minimum_purchase_amount:
-                type: string
-                pattern: '^(\d*\.?\d+)?,(\d*\.?\d+)?$'
-              maximum_discount_amount:
-                type: string
-                pattern: '^(\d*\.?\d+)?,(\d*\.?\d+)?$'
-
-              # Date ranges (format: "date1,date2", ",date2", or "date1,")
-              created_at:
-                type: string
-                pattern: '^(\d{4}-\d{2}-\d{2})?,(\d{4}-\d{2}-\d{2})?$'
-                example: "2024-01-01,2024-12-31"
-              end_date:
-                type: string
-                pattern: '^(\d{4}-\d{2}-\d{2})?,(\d{4}-\d{2}-\d{2})?$'
-
-              # Simple array values
-              categories:
-                type: array
-                items:
-                  type: string
-              tags:
-                type: array
-                items:
-                  type: string
-              regions:
-                type: array
-                items:
-                  type: string
-
-              # Enums
-              discount_type:
-                type: string
-                enum: [PERCENTAGE_OFF, FIXED_AMOUNT, BOGO, FREE_SHIPPING]
-              store_type:
-                type: string
-                enum: [online, in_store, both]
-
-              # Simple string matches
-              merchant_id:
-                type: string
-              merchant_name:
-                type: string
-              merchant_domain:
-                type: string
-
-              # Simple booleans
-              is_expired:
-                type: boolean
-              is_stackable:
-                type: boolean
-
-        - name: sortBy
-          in: query
-          description: |
-            Sort coupons by different criteria. Available options:
-            - score:desc/asc: Sort by coupon score
-            - created_at:desc/asc: Sort by when coupons were added (newest/oldest first)
-            - end_date:desc/asc: Sort by expiration date (furthest/soonest expiring first)
-            - discount_value:desc/asc: Sort by discount amount (highest/lowest savings first)
-            - minimum_purchase_amount:desc/asc: Sort by minimum spend required
-            - maximum_discount_amount:desc/asc: Sort by maximum possible savings
-            - title:desc/asc: Sort alphabetically by coupon title
-          schema:
-            pattern: '^[a-zA-Z_]+:(asc|desc)$'
-            type: string
-            enum:
-              - score:asc
-              - score:desc
-              - created_at:asc
-              - created_at:desc
-              - end_date:asc
-              - end_date:desc
-              - discount_value:asc
-              - discount_value:desc
-              - minimum_purchase_amount:asc
-              - minimum_purchase_amount:desc
-              - maximum_discount_amount:asc
-              - maximum_discount_amount:desc
-              - title:asc
-              - title:desc
-            default: score:desc
-
-        - name: fuzzy
-          in: query
-          description: Wheather or not to allow typos in the search query. If you as provider don't support this, ignore this parameter.
-          schema:
-            type: boolean
-            default: false
-
-        - name: dateRange
-          in: query
-          description: |
-            Date range for coupon validity (format: YYYY-MM-DD,YYYY-MM-DD)
-          schema:
-            type: string
-            pattern: '^\d{4}-\d{2}-\d{2},\d{4}-\d{2}-\d{2}$'
-            example: 2024-01-01,2024-12-31
-
-        - name: searchIn
-          in: query
-          schema:
-            type: array
-            items:
-              type: string
-              enum:
-                - code
-                - description
-                - merchant_name
-                - merchant_domain
-                - title
-                - categories
-                - terms_conditions
-            default: ["title", "description", "merchant_name", "merchant_domain"]
-          style: form
-          explode: false
-          description: Specify which fields to search in.
-          example: "title,description,merchant_name"
+        - $ref: '#/components/parameters/QueryParamQ'
+        - $ref: '#/components/parameters/QueryParamLimit'
+        - $ref: '#/components/parameters/QueryParamCursor'
+        - $ref: '#/components/parameters/QueryParamCouponFilterBy'
+        - $ref: '#/components/parameters/QueryParamSortByCoupon'
+        - $ref: '#/components/parameters/QueryParamFuzzy'
+        - $ref: '#/components/parameters/QueryParamSearchInCoupon'
       responses:
-        200:
-          description: Success
+        '200':
+          description: Success - Found coupons matching the criteria.
           headers:
             X-RateLimit-Limit:
-              description: The number of requests allowed in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitLimit'
             X-RateLimit-Remaining:
-              description: The number of requests remaining in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitRemaining'
             X-RateLimit-Reset:
-              description: The number of seconds left in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitReset'
           content:
             application/json:
               schema:
                 $ref: "#/components/schemas/CouponSearchResponse"
         '400':
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/BadRequest'
         '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Unauthorized'
         '403':
-          description: Forbidden
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Forbidden'
+        '406':
+          $ref: '#/components/responses/NotAcceptable'
         '429':
-          description: Too Many Requests
-          headers:
-            Retry-After:
-              description: |
-                This indicates how long to wait before making a new request. (seconds)
-              schema:
-                type: integer
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/TooManyRequests'
         '500':
-          description: Internal Server Error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented' # If search/filtering isn't implemented
     post:
       summary: Suggest a new coupon
+      description: Submits a new coupon for potential inclusion by the provider. Provider review/approval process is implementation-specific.
       tags:
         - coupons
       requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/CouponSuggestBody'
+        $ref: '#/components/requestBodies/CouponSuggestBody'
       responses:
-        200:
-          description: Success
+        '201': # Use 201 Created for successful resource creation suggestion
+          description: Suggestion Accepted - The coupon suggestion was received successfully. It may require provider review. Returns the suggested coupon data as interpreted by the server.
           headers:
             X-RateLimit-Limit:
-              description: The number of requests allowed in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitLimit'
             X-RateLimit-Remaining:
-              description: The number of requests remaining in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitRemaining'
             X-RateLimit-Reset:
-              description: The number of seconds left in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitReset'
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/CouponResponse"
+                $ref: "#/components/schemas/Coupon" # Return the created/suggested coupon
         '400':
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/BadRequest'
         '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Unauthorized'
         '403':
-          description: Forbidden
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Forbidden' # e.g., User not allowed to suggest
+        '406':
+          $ref: '#/components/responses/NotAcceptable'
         '429':
-          description: Too Many Requests
-          headers:
-            Retry-After:
-              description: |
-                This indicates how long to wait before making a new request. (seconds)
-              schema:
-                type: integer
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/TooManyRequests'
         '500':
-          description: Internal Server Error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented' # If suggestions aren't supported
+
   /syrup/v2/coupons/{coupon_id}:
     get:
-      summary: Get a coupon by id
+      summary: Get a coupon by ID
+      description: Retrieves the details of a specific coupon using its unique ID.
       tags:
         - coupons
       parameters:
-        - name: coupon_id
-          description: The id of the coupon
-          in: path
-          required: true
-          schema:
-            type: string
+        - $ref: '#/components/parameters/PathParamCouponId'
       responses:
-        200:
-          description: Success
+        '200':
+          description: Success - Coupon details retrieved.
           headers:
             X-RateLimit-Limit:
-              description: The number of requests allowed in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitLimit'
             X-RateLimit-Remaining:
-              description: The number of requests remaining in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitRemaining'
             X-RateLimit-Reset:
-              description: The number of seconds left in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitReset'
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/CouponResponse"
+                $ref: "#/components/schemas/Coupon"
         '400':
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/BadRequest' # e.g., Invalid ID format
         '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Unauthorized'
         '403':
-          description: Forbidden
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound' # Coupon with this ID not found
+        '406':
+          $ref: '#/components/responses/NotAcceptable'
         '429':
-          description: Too Many Requests
-          headers:
-            Retry-After:
-              description: |
-                This indicates how long to wait before making a new request. (seconds)
-              schema:
-                type: integer
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/TooManyRequests'
         '500':
-          description: Internal Server Error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-  /syrup/v2/coupons/{coupon_id}/reports:
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented'
+
+  /syrup/v2/coupons/{coupon_id}/votes:
     post:
-      summary: Report if a coupon was valid or not
+      summary: Vote on a coupon's validity
+      description: Submits a user vote (up or down) indicating whether the coupon worked for them. This helps calculate the coupon's score/reliability.
       tags:
         - coupons
       parameters:
-        - name: coupon_id
-          description: The id of the coupon
-          in: path
-          required: true
-          schema:
-            type: string
+        - $ref: '#/components/parameters/PathParamCouponId'
       requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/VoteBody'
+        $ref: '#/components/requestBodies/VoteBody'
       responses:
-        200:
-          description: Success
+        '200':
+          description: Success - Vote recorded. Returns the updated coupon state.
           headers:
             X-RateLimit-Limit:
-              description: The number of requests allowed in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitLimit'
             X-RateLimit-Remaining:
-              description: The number of requests remaining in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitRemaining'
             X-RateLimit-Reset:
-              description: The number of seconds left in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitReset'
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/CouponResponse'
+                $ref: '#/components/schemas/Coupon' # Return updated coupon
         '400':
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/BadRequest'
         '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Unauthorized'
         '403':
-          description: Forbidden
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Forbidden' # e.g., User already voted recently
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '406':
+          $ref: '#/components/responses/NotAcceptable'
         '429':
-          description: Too Many Requests
-          headers:
-            Retry-After:
-              description: |
-                This indicates how long to wait before making a new request. (seconds)
-              schema:
-                type: integer
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/TooManyRequests'
         '500':
-          description: Internal Server Error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented' # If voting isn't supported
+
   /syrup/v2/coupons/{coupon_id}/history/votes:
     get:
-      summary: Get the history of votes on a coupon
+      summary: Get coupon vote history
+      description: Retrieves the timestamps of historical up and down votes for a specific coupon.
       tags:
         - coupons
       parameters:
-        - name: coupon_id
-          description: The id of the coupon
-          in: path
-          required: true
-          schema:
-            type: string
+        - $ref: '#/components/parameters/PathParamCouponId'
       responses:
-        200:
-          description: Success
+        '200':
+          description: Success - Vote history retrieved.
           headers:
             X-RateLimit-Limit:
-              description: The number of requests allowed in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitLimit'
             X-RateLimit-Remaining:
-              description: The number of requests remaining in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitRemaining'
             X-RateLimit-Reset:
-              description: The number of seconds left in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitReset'
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/CouponHistoryResponse'
         '400':
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/BadRequest'
         '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Unauthorized'
         '403':
-          description: Forbidden
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '406':
+          $ref: '#/components/responses/NotAcceptable'
         '429':
-          description: Too Many Requests
-          headers:
-            Retry-After:
-              description: |
-                This indicates how long to wait before making a new request. (seconds)
-              schema:
-                type: integer
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/TooManyRequests'
         '500':
-          description: Internal Server Error
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented' # If history isn't tracked/exposed
+
+  /syrup/v2/sites:
+    get:
+      summary: Search for sites
+      description: Search for sites (specific domains/storefronts) with filtering, sorting, and pagination.
+      tags:
+        - sites
+      parameters:
+        - $ref: '#/components/parameters/QueryParamQ'
+        - $ref: '#/components/parameters/QueryParamLimit'
+        - $ref: '#/components/parameters/QueryParamCursor'
+        - $ref: '#/components/parameters/QueryParamSiteFilterBy'
+        - $ref: '#/components/parameters/QueryParamSortBySite'
+        - $ref: '#/components/parameters/QueryParamSearchInSite'
+      responses:
+        '200':
+          description: Success - Found sites matching the criteria.
+          headers:
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/RateLimitLimit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/RateLimitRemaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/RateLimitReset'
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ErrorResponse'
+                $ref: '#/components/schemas/SiteSearchResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '406':
+          $ref: '#/components/responses/NotAcceptable'
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented'
+    post:
+      summary: Suggest a new site
+      description: Submits a new site (domain/storefront) for potential inclusion, linking it to an existing merchant.
+      tags:
+        - sites
+      requestBody:
+        $ref: '#/components/requestBodies/SiteSuggestBody'
+      responses:
+        '201':
+          description: Suggestion Accepted - The site suggestion was received successfully.
+          headers:
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/RateLimitLimit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/RateLimitRemaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/RateLimitReset'
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Site"
+        '400':
+          $ref: '#/components/responses/BadRequest' # e.g., Invalid domain format, merchant_id not found
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '406':
+          $ref: '#/components/responses/NotAcceptable'
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented'
+
+  /syrup/v2/sites/{site_id}:
+    get:
+      summary: Get a site by ID
+      description: Retrieves the details of a specific site using its unique ID.
+      tags:
+        - sites
+      parameters:
+        - $ref: '#/components/parameters/PathParamSiteId'
+      responses:
+        '200':
+          description: Success - Site details retrieved.
+          headers:
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/RateLimitLimit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/RateLimitRemaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/RateLimitReset'
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Site"
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '406':
+          $ref: '#/components/responses/NotAcceptable'
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented'
+
+  /syrup/v2/sites/{site_id}/suggestions:
+    post:
+      summary: Suggest a change to this site
+      description: Submits recommended changes (like name or associated merchant) for an existing site.
+      tags:
+        - sites
+      parameters:
+        - $ref: '#/components/parameters/PathParamSiteId'
+      requestBody:
+        $ref: '#/components/requestBodies/SiteSuggestBody'
+      responses:
+        '202': # Use 202 Accepted for suggestions that need processing
+          description: Suggestion Accepted - The change suggestion for the site was received.
+          headers:
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/RateLimitLimit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/RateLimitRemaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/RateLimitReset'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Site' # Return current/updated site state
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '406':
+          $ref: '#/components/responses/NotAcceptable'
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented'
 
   /syrup/v2/merchants:
     get:
       summary: Search for merchants
+      description: Search for merchants (brands/companies) with filtering, sorting, and pagination.
       tags:
         - merchants
       parameters:
-        - name: q
-          in: query
-          schema:
-            type: string
-          description: Search query string
-
-        - name: limit
-          in: query
-          schema:
-            type: integer
-            minimum: 1
-            maximum: 100
-            default: 20
-
-        - name: cursor
-          in: query
-          schema:
-            type: string
-          description: |
-            Cursor for pagination. Use the next_cursor from the previous response to get the next page.
-            Omit this parameter for the first page.
-          example: eyJpZCI6MTAwfQ==
-
-        - name: searchIn
-          in: query
-          schema:
-            type: array
-            items:
-              type: string
-              enum:
-                - name
-                - domains
-            default: ["name", "domains"]
-          style: form
-          explode: false
-          description: Specify which fields to search in.
-          example: "name,domains"
-
-        - name: sortBy
-          in: query
-          schema:
-            type: string
-            enum:
-              - created_at
-              - id
-            default: created_at
-          description: Field to sort by for pagination purposes
-
+        - $ref: '#/components/parameters/QueryParamQ'
+        - $ref: '#/components/parameters/QueryParamLimit'
+        - $ref: '#/components/parameters/QueryParamCursor'
+        - $ref: '#/components/parameters/QueryParamSortByMerchant'
+        - $ref: '#/components/parameters/QueryParamSearchInMerchant'
       responses:
-        200:
-          description: Success
+        '200':
+          description: Success - Found merchants matching the criteria.
           headers:
             X-RateLimit-Limit:
-              description: The number of requests allowed in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitLimit'
             X-RateLimit-Remaining:
-              description: The number of requests remaining in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitRemaining'
             X-RateLimit-Reset:
-              description: The number of seconds left in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitReset'
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/MerchantSearchResponse'
         '400':
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/BadRequest'
         '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Unauthorized'
         '403':
-          description: Forbidden
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Forbidden'
+        '406':
+          $ref: '#/components/responses/NotAcceptable'
         '429':
-          description: Too Many Requests
-          headers:
-            Retry-After:
-              description: |
-                This indicates how long to wait before making a new request. (seconds)
-              schema:
-                type: integer
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/TooManyRequests'
         '500':
-          description: Internal Server Error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented'
     post:
       summary: Suggest a new merchant
+      description: Submits a new merchant (brand/company) for potential inclusion.
       tags:
         - merchants
       requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/MerchantSuggestBody'
+        $ref: '#/components/requestBodies/MerchantSuggestBody'
       responses:
-        200:
-          description: Success
+        '201':
+          description: Suggestion Accepted - The merchant suggestion was received successfully.
           headers:
             X-RateLimit-Limit:
-              description: The number of requests allowed in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitLimit'
             X-RateLimit-Remaining:
-              description: The number of requests remaining in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitRemaining'
             X-RateLimit-Reset:
-              description: The number of seconds left in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitReset'
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/MerchantResponse'
+                $ref: "#/components/schemas/Merchant"
         '400':
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/BadRequest'
         '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Unauthorized'
         '403':
-          description: Forbidden
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Forbidden'
+        '406':
+          $ref: '#/components/responses/NotAcceptable'
         '429':
-          description: Too Many Requests
-          headers:
-            Retry-After:
-              description: |
-                This indicates how long to wait before making a new request. (seconds)
-              schema:
-                type: integer
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/TooManyRequests'
         '500':
-          description: Internal Server Error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented'
 
   /syrup/v2/merchants/{merchant_id}:
     get:
-      summary: Get a merchant by id
+      summary: Get a merchant by ID
+      description: Retrieves the details of a specific merchant using its unique ID.
       tags:
         - merchants
       parameters:
-        - name: merchant_id
-          description: The id of the merchant
-          in: path
-          required: true
-          schema:
-            type: string
+        - $ref: '#/components/parameters/PathParamMerchantId'
       responses:
-        200:
-          description: Success
+        '200':
+          description: Success - Merchant details retrieved.
           headers:
             X-RateLimit-Limit:
-              description: The number of requests allowed in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitLimit'
             X-RateLimit-Remaining:
-              description: The number of requests remaining in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitRemaining'
             X-RateLimit-Reset:
-              description: The number of seconds left in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitReset'
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/MerchantResponse'
+                $ref: '#/components/schemas/Merchant'
         '400':
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/BadRequest'
         '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Unauthorized'
         '403':
-          description: Forbidden
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '406':
+          $ref: '#/components/responses/NotAcceptable'
         '429':
-          description: Too Many Requests
-          headers:
-            Retry-After:
-              description: |
-                This indicates how long to wait before making a new request. (seconds)
-              schema:
-                type: integer
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/TooManyRequests'
         '500':
-          description: Internal Server Error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented'
 
-    patch:
-      summary: Recommend a change to this merchant
+  /syrup/v2/merchants/{merchant_id}/suggestions:
+    post:
+      summary: Suggest a change to this merchant
+      description: Submits recommended changes (like name, logo, banner) for an existing merchant.
       tags:
         - merchants
       parameters:
-        - name: merchant_id
-          description: The id of the merchant
-          in: path
-          required: true
-          schema:
-            type: string
+        - $ref: '#/components/parameters/PathParamMerchantId'
       requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/MerchantSuggestBody'
+        $ref: '#/components/requestBodies/MerchantSuggestBody' # Suggesting changes using the same structure
       responses:
-        200:
-          description: Success
+        '202':
+          description: Suggestion Accepted - The change suggestion for the merchant was received.
           headers:
             X-RateLimit-Limit:
-              description: The number of requests allowed in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitLimit'
             X-RateLimit-Remaining:
-              description: The number of requests remaining in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitRemaining'
             X-RateLimit-Reset:
-              description: The number of seconds left in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitReset'
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/MerchantResponse'
+                $ref: '#/components/schemas/Merchant' # Return current/updated merchant state
         '400':
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/BadRequest'
         '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Unauthorized'
         '403':
-          description: Forbidden
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '406':
+          $ref: '#/components/responses/NotAcceptable'
         '429':
-          description: Too Many Requests
-          headers:
-            Retry-After:
-              description: |
-                This indicates how long to wait before making a new request. (seconds)
-              schema:
-                type: integer
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/TooManyRequests'
         '500':
-          description: Internal Server Error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented'
 
   /syrup/v2/autofill/{domain}:
     get:
-      summary: Get the autofill selectors for a specific domain
+      summary: Get autofill configuration by domain
+      description: Retrieves the autofill steps and validation logic for a specific domain.
       tags:
         - autofill
       parameters:
-        - name: domain
-          description: The domain of the website. (amazon.com)
-          in: path
-          required: true
-          schema:
-            type: string
+        - $ref: '#/components/parameters/PathParamDomain'
       responses:
-        200:
-          description: Success
+        '200':
+          description: Success - Autofill configuration retrieved.
           headers:
             X-RateLimit-Limit:
-              description: The number of requests allowed in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitLimit'
             X-RateLimit-Remaining:
-              description: The number of requests remaining in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitRemaining'
             X-RateLimit-Reset:
-              description: The number of seconds left in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitReset'
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AutoFillResponse'
+                $ref: '#/components/schemas/AutoFillConfig'
         '400':
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/BadRequest' # e.g., Invalid domain format
         '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Unauthorized'
         '403':
-          description: Forbidden
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound' # No config for this domain
+        '406':
+          $ref: '#/components/responses/NotAcceptable'
         '429':
-          description: Too Many Requests
-          headers:
-            Retry-After:
-              description: |
-                This indicates how long to wait before making a new request. (seconds)
-              schema:
-                type: integer
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/TooManyRequests'
         '500':
-          description: Internal Server Error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-    patch:
-      summary: Recommend a change to this autofill
-      tags:
-        - autofill
-      parameters:
-        - name: domain
-          description: The domain of the website. (amazon.com)
-          in: path
-          required: true
-          schema:
-            type: string
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AutoFillBody'
-      responses:
-        200:
-          description: Success
-          headers:
-            X-RateLimit-Limit:
-              description: The number of requests allowed in the current window
-              schema:
-                type: integer
-            X-RateLimit-Remaining:
-              description: The number of requests remaining in the current window
-              schema:
-                type: integer
-            X-RateLimit-Reset:
-              description: The number of seconds left in the current window
-              schema:
-                type: integer
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AutoFillResponse'
-        '400':
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-        '403':
-          description: Forbidden
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-        '429':
-          description: Too Many Requests
-          headers:
-            Retry-After:
-              description: |
-                This indicates how long to wait before making a new request. (seconds)
-              schema:
-                type: integer
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-        '500':
-          description: Internal Server Error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented'
     post:
-      summary: Suggest a new autofill
+      summary: Suggest a new or updated autofill configuration
+      description: Submits a new or replacement autofill configuration for a specific domain.
       tags:
         - autofill
       parameters:
-        - name: domain
-          description: The domain of the website. (amazon.com)
-          in: path
-          required: true
-          schema:
-            type: string
+        - $ref: '#/components/parameters/PathParamDomain'
       requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AutoFillBody'
+        $ref: '#/components/requestBodies/AutoFillBody'
       responses:
-        200:
-          description: Success
+        '201': # If creating a new one
+          description: Suggestion Accepted - New autofill configuration suggested successfully.
           headers:
             X-RateLimit-Limit:
-              description: The number of requests allowed in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitLimit'
             X-RateLimit-Remaining:
-              description: The number of requests remaining in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitRemaining'
             X-RateLimit-Reset:
-              description: The number of seconds left in the current window
-              schema:
-                type: integer
+              $ref: '#/components/headers/RateLimitReset'
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AutoFillResponse'
-        '400':
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-        '403':
-          description: Forbidden
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-        '429':
-          description: Too Many Requests
+                $ref: '#/components/schemas/AutoFillConfig'
+        '202': # If suggesting an update to an existing one
+          description: Suggestion Accepted - Autofill configuration update suggested successfully.
           headers:
-            Retry-After:
-              description: |
-                This indicates how long to wait before making a new request. (seconds)
-              schema:
-                type: integer
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/RateLimitLimit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/RateLimitRemaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/RateLimitReset'
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ErrorResponse'
+                $ref: '#/components/schemas/AutoFillConfig'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '406':
+          $ref: '#/components/responses/NotAcceptable'
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
         '500':
-          description: Internal Server Error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
+          $ref: '#/components/responses/InternalServerError'
+        '501':
+          $ref: '#/components/responses/NotImplemented'
 
 
 components:
+  # ========= Security Schemes =========
   securitySchemes:
-    bearerAuth:
+    bearer_auth:
       description: |
-        Http bearer authorization.
-        - This can be a JWT, or any other kind of token. The type of token used is left up to the implementation.
-        - The means by which the token is distributed is left up to the implementation.
-        - Whether this is used is left up to the implementation.
+        HTTP Bearer authentication. This can be a JWT, or any other kind of opaque bearer token. The specific token type and distribution method are implementation-dependent. Optional.
       type: http
       scheme: bearer
-      bearerFormat: JWT
-    apiKeyAuth:
+    api_key_auth:
       description: |
-        Http api key header authorization using the `X-API-KEY` api key.
-        - The means by which the token is distributed is left up to the implementation.
-        - This should be a normal string token and not a JWT token.
-        - Whether this is used is left up to the implementation.
+        HTTP API Key authentication using the `X-Api-Key` header. The key distribution method is implementation-dependent. Should be a standard string token, not JWT. Optional.
       type: apiKey
       in: header
       name: X-Api-Key
 
+  # ========= Parameters =========
+  parameters:
+    # --- Path Parameters ---
+    PathParamCouponId:
+      name: coupon_id
+      description: The unique identifier of the coupon.
+      in: path
+      required: true
+      schema:
+        type: string
+        example: "coup_123abc"
+    PathParamSiteId:
+      name: site_id
+      description: The unique identifier of the site (domain/storefront).
+      in: path
+      required: true
+      schema:
+        type: string
+        example: "site_456def"
+    PathParamMerchantId:
+      name: merchant_id
+      description: The unique identifier of the merchant (brand/company).
+      in: path
+      required: true
+      schema:
+        type: string
+        example: "merch_789ghi"
+    PathParamDomain:
+      name: domain
+      description: The domain name (e.g., amazon.com) for which the configuration applies.
+      in: path
+      required: true
+      schema:
+        type: string
+        format: hostname
+        example: "example.com"
+
+    # --- Query Parameters ---
+    QueryParamQ:
+      name: q
+      in: query
+      schema:
+        type: string
+      description: General search query string.
+    QueryParamLimit:
+      name: limit
+      in: query
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 100
+        default: 20
+      description: Maximum number of items to return per page.
+    QueryParamCursor:
+      name: cursor
+      in: query
+      schema:
+        type: string
+      description: |
+        Opaque cursor for pagination. Use the `next_cursor` from a previous response to fetch the next page. Omit for the first page. example: "eyJpZCI6MTAwfQ==". actual format is implementation-specific
+    QueryParamFuzzy:
+      name: fuzzy
+      in: query
+      description: Whether to allow typos in the search query (`q`). Provider support may vary.
+      schema:
+        type: boolean
+        default: false
+
+    # --- Coupon Specific Query Params ---
+    QueryParamCouponFilterBy:
+      name: filter_by
+      description: |
+        Filter coupons using query parameters based on coupon properties. All filters are optional. Supports deepObject style for complex filtering:
+
+        1.  **Simple Values:** `?filter_by[site_id]=site_123`, `?filter_by[store_type]=online`
+        2.  **Arrays:** `?filter_by[categories][]=food&filter_by[categories][]=drinks` -> `["food", "drinks"]`
+        3.  **Numeric Ranges:** (comma-separated `min,max`, `min,`, or `,max`)
+            `?filter_by[discount_value]=10,50` (Between 10 and 50)
+            `?filter_by[discount_value]=10,` (10 or more)
+            `?filter_by[discount_value]=,50` (Up to 50)
+        4.  **Date Ranges:** (YYYY-MM-DD format, comma-separated `date1,date2`, `date1,`, or `,date2`)
+            `?filter_by[end_date]=2024-01-01,2024-12-31` (Between dates)
+            `?filter_by[end_date]=2024-01-01,` (On or after date)
+            `?filter_by[end_date]=,2024-12-31` (On or before date)
+
+        **Examples:**
+        - Find food coupons with 20-50% off:
+          `?filter_by[categories][]=food&filter_by[discount_value]=20,50&filter_by[discount_type]=percentage_off`
+        - Find valid online coupons for a specific site:
+          `?filter_by[site_id]=site_123&filter_by[store_type]=online&filter_by[is_expired]=false`
+      in: query
+      style: deepObject
+      explode: true
+      schema:
+        type: object
+        properties:
+          # Numeric ranges
+          discount_value:
+            type: string
+            pattern: '^(\d*\.?\d+)?,(\d*\.?\d+)?$'
+            example: "10,50"
+          minimum_purchase_amount:
+            type: string
+            pattern: '^(\d*\.?\d+)?,(\d*\.?\d+)?$'
+          maximum_discount_amount:
+            type: string
+            pattern: '^(\d*\.?\d+)?,(\d*\.?\d+)?$'
+          # Date ranges
+          created_at:
+            type: string
+            pattern: '^(\d{4}-\d{2}-\d{2})?,(\d{4}-\d{2}-\d{2})?$'
+            example: "2024-01-01,2024-12-31"
+          end_date:
+            type: string
+            pattern: '^(\d{4}-\d{2}-\d{2})?,(\d{4}-\d{2}-\d{2})?$'
+          # Simple array values
+          categories:
+            type: array
+            items:
+              type: string
+            description: |
+              Categories are usually broader, predefined classifications (like "Electronics", "Clothing")
+          tags:
+            type: array
+            items:
+              type: string
+            description: |
+              Tags are more specific, numerous, and sometimes user-generated keywords ("Laptop Deals", "Summer Sale", "Nike")
+          regions:
+            type: array
+            items:
+              type: string
+          # Enums
+          discount_type:
+            $ref: '#/components/schemas/DiscountType'
+          store_type:
+            type: string
+            enum: [ online, in_store, both ]
+          # Simple string matches
+          site_id:
+            type: string
+          site_domain:
+            type: string
+            format: hostname
+          # Simple booleans
+          is_expired:
+            type: boolean
+          is_stackable:
+            type: boolean
+    QueryParamSortByCoupon:
+      name: sort_by
+      in: query
+      description: |
+        Sort coupons. Format: `field:(asc|desc)`. Default is `score:desc`.
+        Available fields: `score`, `created_at`, `end_date`, `discount_value`, `minimum_purchase_amount`, `maximum_discount_amount`, `title`.
+      schema:
+        type: string
+        pattern: '^[a-z_]+:(asc|desc)$'
+        enum:
+          - score:asc
+          - score:desc
+          - created_at:asc
+          - created_at:desc
+          - end_date:asc
+          - end_date:desc
+          - discount_value:asc
+          - discount_value:desc
+          - minimum_purchase_amount:asc
+          - minimum_purchase_amount:desc
+          - maximum_discount_amount:asc
+          - maximum_discount_amount:desc
+          - title:asc
+          - title:desc
+        default: score:desc
+    QueryParamSearchInCoupon:
+      name: search_in
+      in: query
+      schema:
+        type: array
+        items:
+          type: string
+          enum:
+            - code
+            - description
+            - title
+            - categories
+            - tags
+            - terms_conditions
+            - site_name
+            - site_domain
+        default: [ "title", "description", "site_name", "site_domain" ]
+      style: form
+      explode: false # Comma-separated: search_in=title,description
+      description: Specify which fields the text query (`q`) should search within.
+      example: "title,description,site_name"
+
+    # --- Site Specific Query Params ---
+    QueryParamSiteFilterBy:
+      name: filter_by
+      description: |
+        Filter sites. Example: `?filter_by[merchant_id]=merch_123`
+      in: query
+      style: deepObject
+      explode: true
+      schema:
+        type: object
+        properties:
+          merchant_id:
+            type: string
+          domain:
+            type: string
+            format: hostname
+          name:
+            type: string
+    QueryParamSortBySite:
+      name: sort_by
+      in: query
+      description: |
+        Sort sites. Format: `field:(asc|desc)`. Default `created_at:desc`. Available: `created_at`, `name`, `domain`.
+      schema:
+        type: string
+        pattern: '^[a-z_]+:(asc|desc)$'
+        enum:
+          - created_at:asc
+          - created_at:desc
+          - name:asc
+          - name:desc
+          - domain:asc
+          - domain:desc
+        default: created_at:desc
+    QueryParamSearchInSite:
+      name: search_in
+      in: query
+      schema:
+        type: array
+        items:
+          type: string
+          enum:
+            - name
+            - domain
+        default: [ "name", "domain" ]
+      style: form
+      explode: false
+      description: Specify which fields the text query (`q`) should search within.
+      example: "name,domain"
+
+    # --- Merchant Specific Query Params ---
+    QueryParamSortByMerchant:
+      name: sort_by
+      in: query
+      description: |
+        Sort merchants. Format: `field:(asc|desc)`. Default `created_at:desc`. Available: `created_at`, `name`.
+      schema:
+        type: string
+        pattern: '^[a-z_]+:(asc|desc)$'
+        enum:
+          - created_at:asc
+          - created_at:desc
+          - name:asc
+          - name:desc
+        default: created_at:desc
+    QueryParamSearchInMerchant:
+      name: search_in
+      in: query
+      schema:
+        type: array
+        items:
+          type: string
+          enum:
+            - name
+        default: [ "name" ]
+      style: form
+      explode: false
+      description: Specify which fields the text query (`q`) should search within.
+      example: "name"
+
+  # ========= Headers =========
+  headers:
+    RateLimitLimit:
+      description: The maximum number of requests allowed in the current window.
+      schema:
+        type: integer
+    RateLimitRemaining:
+      description: The number of requests remaining in the current window.
+      schema:
+        type: integer
+    RateLimitReset:
+      description: The number of seconds until the rate limit window resets.
+      schema:
+        type: integer
+    RetryAfter:
+      description: Indicates how many seconds to wait before making a new request (used with 429 responses).
+      schema:
+        type: integer
+
+  # ========= Request Bodies =========
+  requestBodies:
+    VoteBody:
+      description: The vote to cast on a coupon.
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - vote_type
+            properties:
+              vote_type:
+                type: string
+                description: Use 'up' if the coupon worked, 'down' if it failed.
+                enum:
+                  - up
+                  - down
+    CouponSuggestBody:
+      description: Data for suggesting a new coupon.
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - code
+              - title
+              - discount_value
+              - discount_type
+              - site_id
+            properties:
+              code:
+                type: string
+                description: The coupon code itself (e.g., "SUMMER20").
+              title:
+                type: string
+                description: Short, descriptive title (e.g., "20% Off Sitewide").
+              description:
+                type: string
+                description: Optional longer description including key conditions or highlights.
+              discount_value:
+                type: number
+                minimum: 0
+                description: The numeric value of the discount (e.g., 20 for 20%, 10 for $10 off).
+              discount_type:
+                $ref: '#/components/schemas/DiscountType'
+              site_id:
+                type: string
+                description: The ID of the site (domain/storefront) this coupon applies to.
+              start_date:
+                type: string
+                format: date-time # ISO 8601 format (UTC recommended)
+                description: Optional start date/time when the coupon becomes valid.
+              end_date:
+                type: string
+                format: date-time # ISO 8601 format (UTC recommended)
+                description: Optional expiration date/time.
+              terms_conditions:
+                type: string
+                description: Detailed terms and conditions, exclusions, etc.
+              minimum_purchase_amount:
+                type: number
+                minimum: 0
+                description: Minimum spend required to use the coupon.
+              maximum_discount_amount:
+                type: number
+                minimum: 0
+                description: Maximum savings possible with this coupon (esp. for percentages).
+              categories:
+                type: array
+                items: { type: string }
+                description: Broad categories (e.g., "clothing", "electronics").
+              tags:
+                type: array
+                items: { type: string }
+                description: Specific keywords or tags (e.g., "free_shipping", "student_discount").
+              regions:
+                type: array
+                items: { type: string }
+                description: ISO 3166-1 alpha-2 country codes where the coupon is valid (e.g., ["US", "CA"]). Empty means global or unspecified.
+              store_type:
+                type: string
+                enum: [ online, in_store, both ]
+                default: online
+              is_stackable:
+                type: boolean
+                default: false
+                description: Whether this coupon can typically be combined with others.
+    SiteSuggestBody:
+      description: Data for suggesting a new site (domain/storefront).
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - name
+              - domain
+              - merchant_id
+            properties:
+              name:
+                type: string
+                description: Display name for the site (e.g., "Example Store UK").
+              domain:
+                type: string
+                format: hostname
+                description: The primary domain associated with this site (e.g., "example.co.uk").
+              merchant_id:
+                type: string
+                description: The ID of the parent merchant (brand) this site belongs to.
+    MerchantSuggestBody:
+      description: Data for suggesting a new merchant (brand/company).
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - name
+            properties:
+              name:
+                type: string
+                description: Name of the merchant (e.g., "Example Inc.").
+              logo_url:
+                type: string
+                format: uri
+                description: URL to the merchant's logo.
+              banner_url:
+                type: string
+                format: uri
+                description: URL to a promotional banner image for the merchant.
+    AutoFillBody:
+      description: Data for suggesting or updating an autofill configuration.
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - steps
+              - validator
+              - revert_selector
+            properties:
+              steps:
+                type: array
+                items:
+                  type: object
+                  required:
+                    - selector
+                    - action
+                  properties:
+                    selector:
+                      type: string
+                      description: CSS selector for the target element.
+                    action:
+                      type: string
+                      enum: [ click, type_coupon ]
+                      description: Action to perform on the element.
+              validator:
+                type: object
+                required:
+                  - price_selector
+                  - success_selector
+                  - failure_selector
+                  - timeout
+                properties:
+                  price_selector:
+                    type: string
+                    description: CSS selector for the element displaying the price/total.
+                  price_regex:
+                    type: string
+                    description: Optional regex to extract the numeric price from the element's text.
+                  success_selector:
+                    type: string
+                    description: CSS selector for an element that appears/becomes visible on successful coupon application.
+                  failure_selector:
+                    type: string
+                    description: CSS selector for an element that appears/becomes visible on failed coupon application.
+                  timeout:
+                    type: integer
+                    minimum: 0
+                    description: Time in milliseconds to wait for success/failure selectors before considering the attempt timed out (and likely failed).
+              revert_selector:
+                type: string
+                description: CSS selector for an element (e.g., a 'remove coupon' button) to click to undo the coupon application attempt.
+
+  # ========= Responses (Common Errors) =========
+  responses:
+    BadRequest:
+      description: Bad Request - The request was malformed or contained invalid parameters.
+      headers:
+        X-RateLimit-Limit:
+          $ref: '#/components/headers/RateLimitLimit'
+        X-RateLimit-Remaining:
+          $ref: '#/components/headers/RateLimitRemaining'
+        X-RateLimit-Reset:
+          $ref: '#/components/headers/RateLimitReset'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    Unauthorized:
+      description: Unauthorized - Authentication credentials are required or invalid.
+      headers:
+        X-RateLimit-Limit:
+          $ref: '#/components/headers/RateLimitLimit'
+        X-RateLimit-Remaining:
+          $ref: '#/components/headers/RateLimitRemaining'
+        X-RateLimit-Reset:
+          $ref: '#/components/headers/RateLimitReset'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    Forbidden:
+      description: Forbidden - Authentication succeeded, but the client does not have permission to access the resource or perform the action.
+      headers:
+        X-RateLimit-Limit:
+          $ref: '#/components/headers/RateLimitLimit'
+        X-RateLimit-Remaining:
+          $ref: '#/components/headers/RateLimitRemaining'
+        X-RateLimit-Reset:
+          $ref: '#/components/headers/RateLimitReset'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    NotFound:
+      description: Not Found - The requested resource (e.g., coupon, site, merchant) could not be found.
+      headers:
+        X-RateLimit-Limit:
+          $ref: '#/components/headers/RateLimitLimit'
+        X-RateLimit-Remaining:
+          $ref: '#/components/headers/RateLimitRemaining'
+        X-RateLimit-Reset:
+          $ref: '#/components/headers/RateLimitReset'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    NotAcceptable:
+      description: Not Acceptable - The server cannot produce a response matching the criteria specified in the request's `Accept` headers.
+      headers:
+        X-RateLimit-Limit:
+          $ref: '#/components/headers/RateLimitLimit'
+        X-RateLimit-Remaining:
+          $ref: '#/components/headers/RateLimitRemaining'
+        X-RateLimit-Reset:
+          $ref: '#/components/headers/RateLimitReset'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    TooManyRequests:
+      description: Too Many Requests - The client has exceeded the rate limit.
+      headers:
+        X-RateLimit-Limit:
+          $ref: '#/components/headers/RateLimitLimit'
+        X-RateLimit-Remaining:
+          $ref: '#/components/headers/RateLimitRemaining'
+        X-RateLimit-Reset:
+          $ref: '#/components/headers/RateLimitReset'
+        Retry-After:
+          $ref: '#/components/headers/RetryAfter'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    InternalServerError:
+      description: Internal Server Error - An unexpected error occurred on the server.
+      headers:
+        X-RateLimit-Limit:
+          $ref: '#/components/headers/RateLimitLimit'
+        X-RateLimit-Remaining:
+          $ref: '#/components/headers/RateLimitRemaining'
+        X-RateLimit-Reset:
+          $ref: '#/components/headers/RateLimitReset'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    NotImplemented:
+      description: Not Implemented - The server does not support the requested functionality.
+      headers:
+        X-RateLimit-Limit:
+          $ref: '#/components/headers/RateLimitLimit'
+        X-RateLimit-Remaining:
+          $ref: '#/components/headers/RateLimitRemaining'
+        X-RateLimit-Reset:
+          $ref: '#/components/headers/RateLimitReset'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+
+  # ========= Schemas =========
   schemas:
     ErrorResponse:
       type: object
@@ -1126,17 +1257,17 @@ components:
       properties:
         error:
           type: string
-          description: |
-            Short description or code of the error.
+          description: Short identifier for the error type.
+          example: "invalid_parameter"
         message:
           type: string
-          description: |
-            A user friendly message to the user.
+          description: User-friendly explanation of the error.
+          example: "The 'limit' parameter must be between 1 and 100."
         code:
           type: string
-          description: |
-            Machine-readable error code for client handling.
-          example: INVALID_COUPON_CODE
+          description: Machine-readable error code for client handling.
+          example: "VALIDATION_ERROR"
+
     InfoResponse:
       type: object
       required:
@@ -1147,95 +1278,127 @@ components:
       properties:
         version:
           type: string
-          description: |
-            The API version in semantic format.
+          description: The version of the Syrup API Standard implemented by the provider (e.g., "2.1.0").
         provider_name:
           type: string
-          description: |
-            The name of the provider.
+          description: The name of the coupon provider (e.g., "Syrup").
         auth:
           type: object
-          description: |
-            Information about the authentication process.
+          description: Information about the authentication requirements.
           required:
             - required
             - type
           properties:
             required:
               type: boolean
-              description: |
-                Whether or not to use authentication.
+              description: Whether authentication is mandatory for most endpoints.
             type:
               type: string
-              description: |
-                Type of authentication
-              enum:
-                - none
-                - bearer
-                - api_key
+              description: The type of authentication supported/required.
+              enum: [ none, bearer, api_key ]
             new_token:
               type: string
               description: |
-                A token provided to the user for ease of use. This token will be automatically used for further requests as long as the user doesnt change it (optional)
+                An optional token provided by the server upon initial info request for immediate use. The client should store and use this token for subsequent requests if provided and authentication is required.
+            signup_url:
+              type: string
+              format: uri
+              description: Optional URL where users/developers can sign up or manage their API access with the provider.
         features:
           type: array
           description: |
-            The available features
+            List of optional features supported by this provider implementation. Clients can check this list to enable/disable corresponding UI elements or functionality.
           items:
             type: string
             enum:
-              - coupons_report
-              - coupons_suggest
-              - merchants_suggest
-              - merchants_patch
-              - autofill_suggest
-              - autofill_patch
-    CouponSearchResponse:
+              - coupons_suggest # POST /coupons
+              - coupons_vote # POST /coupons/{id}/votes
+              - coupons_vote_history # GET /coupons/{id}/history/votes
+              - sites_suggest # POST /sites
+              - sites_suggest_change # POST /sites/{id}/suggestions
+              - merchants_suggest # POST /merchants
+              - merchants_suggest_change # POST /merchants/{id}/suggestions
+              - autofill_suggest # POST /autofill/{domain}
+              - coupon_search_facets # Facets included in GET /coupons response
+              - coupon_search_fuzzy # fuzzy parameter supported in GET /coupons
+
+    PaginationInfo: # Reusable pagination schema
       type: object
       required:
-        - data
         - count
         - total
         - has_more
       properties:
-        data:
-          type: array
-          description: Array of coupons
-          items:
-            $ref: '#/components/schemas/Coupon'
         count:
-          type: number
-          description: Number of coupons returned
+          type: integer
+          minimum: 0
+          description: Number of items returned in the current page (`data` array length).
         total:
-          type: number
-          description: Total number of coupons found
+          type: integer
+          minimum: 0
+          description: Total number of items available across all pages for the given query/filters. Providers may return an estimate for performance reasons, especially on the first page, or -1 if the total count is too expensive to compute.
         next_cursor:
           type: string
-          description: Cursor to get the next page. Only present if has_more is true.
+          description: Opaque cursor string to use in the `cursor` query parameter to request the next page. Only present if `has_more` is true.
+          example: "eyJpZCI6MTAwfQ=="
         has_more:
           type: boolean
-          description: Whether there are more items available
-        facets:
-          type: object
-          description: |
-            Statistics about the search results broken down by key attributes. 
-            Example: For 100 coupons found, facets might show:
-            {
-              "categories": {"electronics": 45, "clothing": 30, "food": 25},
-              "discount_types": {"PERCENTAGE_OFF": 70, "FIXED_AMOUNT": 30}
-            }
-            This helps users understand result distribution and refine their filters.
+          description: Indicates if there are more items available beyond the current page.
+
+    CouponSearchResponse:
+      type: object
+      required:
+        - data
+      allOf: # Combine pagination with data
+        - $ref: '#/components/schemas/PaginationInfo'
+        - type: object
           properties:
-            categories:
+            data:
+              type: array
+              description: Array of coupon objects matching the search criteria.
+              items:
+                $ref: '#/components/schemas/Coupon'
+            facets:
               type: object
-              additionalProperties:
-                type: number
-            discount_types:
-              type: object
-              additionalProperties:
-                type: number
-    CouponResponse:
-      $ref: '#/components/schemas/Coupon'
+              description: |
+                Optional statistics about the search results, broken down by key attributes. Helps users understand result distribution and refine filters. Only present if the 'coupon_search_facets' feature is supported.
+                Example: `{"categories": {"electronics": 45, "clothing": 30}, "discount_types": {"PERCENTAGE_OFF": 70}}`
+              properties:
+                categories:
+                  type: object
+                  description: Counts per category. Keys are category names, values are counts.
+                  additionalProperties: { type: integer, minimum: 0 }
+                discount_types:
+                  type: object
+                  description: Counts per discount type. Keys are DiscountType enum values, values are counts.
+                  additionalProperties: { type: integer, minimum: 0 }
+                store_types:
+                  type: object
+                  description: Counts per store type ('online', 'in_store', 'both'). Keys are store type names, values are counts.
+                  additionalProperties: { type: integer, minimum: 0 }
+                regions:
+                  type: object
+                  description: Counts per region (ISO 3166-1 alpha-2 codes). Keys are region codes, values are counts.
+                  additionalProperties: { type: integer, minimum: 0 }
+                site_ids:
+                  type: object
+                  description: Counts per site ID. Keys are site IDs, values are counts. Useful for showing distribution across different storefronts.
+                  additionalProperties: { type: integer, minimum: 0 }
+                merchant_ids:
+                  type: object
+                  description: Counts per merchant ID. Keys are merchant IDs, values are counts. Useful for showing distribution across different brands.
+                  additionalProperties: { type: integer, minimum: 0 }
+                is_stackable:
+                  type: object
+                  description: Counts for stackable vs non-stackable. Keys are 'true' and 'false' (as strings), values are counts.
+                  properties:
+                    'true':
+                      type: integer
+                      minimum: 0
+                    'false':
+                      type: integer
+                      minimum: 0
+                  additionalProperties: false # Explicitly disallow other keys
 
     CouponHistoryResponse:
       type: object
@@ -1245,203 +1408,53 @@ components:
         - down_votes
       properties:
         id:
-          type: integer
-          description: Unique ID of the coupon
+          type: string # Match Coupon ID type
+          description: Unique ID of the coupon.
         up_votes:
           type: array
-          description: Array of DateTime in ISO format at GMT0 for every up-vote
+          description: Array of timestamps (ISO 8601 format, UTC recommended) for each recorded up-vote.
           items:
             type: string
-            example: 2025-01-25T15:30:00
+            format: date-time
+            example: "2025-01-25T15:30:00Z"
         down_votes:
           type: array
-          description: Array of DateTime in ISO format at GMT0 for every down-vote
+          description: Array of timestamps (ISO 8601 format, UTC recommended) for each recorded down-vote.
           items:
             type: string
-            example: 2025-01-25T15:30:00
+            format: date-time
+            example: "2025-01-26T10:00:00Z"
+
+    SiteSearchResponse:
+      type: object
+      required:
+        - data
+      allOf: # Combine pagination with data
+        - $ref: '#/components/schemas/PaginationInfo'
+        - type: object
+          properties:
+            data:
+              type: array
+              description: Array of site objects matching the search criteria.
+              items:
+                $ref: '#/components/schemas/Site'
 
     MerchantSearchResponse:
       type: object
       required:
         - data
-        - count
-        - total
-        - has_more
-      properties:
-        data:
-          type: array
-          description: Array of merchants
-          items:
-            $ref: '#/components/schemas/Merchant'
-        count:
-          type: number
-          description: Number of merchants returned
-        total:
-          type: number
-          description: Total number of merchants found
-        next_cursor:
-          type: string
-          description: Cursor to get the next page. Only present if has_more is true.
-        has_more:
-          type: boolean
-          description: Whether there are more items available
-
-    MerchantResponse:
-      $ref: '#/components/schemas/Merchant'
-
-    AutoFillResponse:
-      $ref: '#/components/schemas/AutoFillConfig'
-
-    VoteBody:
-      type: object
-      required:
-        - vote_type
-      properties:
-        vote_type:
-          type: string
-          enum:
-            - negative
-            - positive
-
-    CouponSuggestBody:
-      type: object
-      required:
-        - code
-        - title
-        - description
-        - discount_value
-        - discount_type
-        - merchant_id
-      properties:
-        code:
-          type: string
-          description: The coupon code
-        title:
-          type: string
-          description: Title of the code including simple description and amount
-        description:
-          type: string
-          description: Long description of the code including simple conditions
-        discount_value:
-          type: number
-          description: The discount amount or percentage
-        discount_type:
-          $ref: '#/components/schemas/DiscountType'
-        merchant_id:
-          type: string
-          description: ID of the associated merchant
-        start_date:
-          type: string
-          format: date-time
-          description: When the coupon becomes valid (ISO format at GMT0)
-        end_date:
-          type: string
-          format: date-time
-          description: When the coupon expires (ISO format at GMT0)
-        terms_conditions:
-          type: string
-          description: Explicit terms or conditions of usage
-        minimum_purchase_amount:
-          type: number
-        maximum_discount_amount:
-          type: number
-        categories:
-          type: array
-          items:
-            type: string
-          description: General categories related to the coupon
-        tags:
-          type: array
-          items:
-            type: string
-          description: Specific tags related to the coupon
-        regions:
-          type: array
-          items:
-            type: string
-          description: Countries/regions where the coupon is valid
-        store_type:
-          type: string
-          enum:
-            - online
-            - in_store
-            - both
-        is_stackable:
-          type: boolean
-          description: Whether the coupon can be combined with others
-
-    MerchantSuggestBody:
-      type: object
-      required:
-        - name
-        - domains
-      properties:
-        name:
-          type: string
-          description: Name of the merchant
-        domains:
-          type: array
-          description: Domains of this merchant. [apple.com, apple.uk, ...]
-          items:
-            type: string
-            format: uri
-        logo_url:
-          type: string
-          format: uri
-        banner_url:
-          type: string
-          format: uri
-
-    AutoFillBody:
-      type: object
-      required:
-        - steps
-        - validator
-        - revertSelector
-      properties:
-        steps:
-          type: array
-          items:
-            type: object
-            required:
-              - selector
-              - action
-            properties:
-              selector:
-                type: string
-                description: CSS selector for the object
-              action:
-                type: string
-                enum:
-                  - click
-                  - type_coupon
-        validator:
-          type: object
-          required:
-            - priceSelector
-            - successSelector
-            - failureSelector
-            - timeout
+      allOf: # Combine pagination with data
+        - $ref: '#/components/schemas/PaginationInfo'
+        - type: object
           properties:
-            priceSelector:
-              type: string
-              description: CSS selector to get the price
-            priceRegex:
-              type: string
-              description: An optional regex to cut out the price
-            successSelector:
-              type: string
-              description: CSS selector to an element that is visible on success
-            failureSelector:
-              type: string
-              description: CSS selector to an element that is visible on failure
-            timeout:
-              type: number
-              description: Time in ms to wait before the coupon timeouts and gets marked as invalide
-        revertSelector:
-          type: string
-          description: CSS selector to an element to reset the coupon on click
+            data:
+              type: array
+              description: Array of merchant objects matching the search criteria.
+              items:
+                $ref: '#/components/schemas/Merchant'
 
+    AutoFillResponse: # Response for GET /autofill/{domain}
+      $ref: '#/components/schemas/AutoFillConfig'
 
     Coupon:
       type: object
@@ -1450,139 +1463,178 @@ components:
         - created_at
         - code
         - title
-        - description
         - discount_value
         - discount_type
-        - merchant
+        - site
         - score
+        - up_votes
+        - down_votes
       properties:
         id:
-          type: integer
-          description: Unique ID of the coupon
+          type: string # Allow non-numeric IDs
+          description: Unique identifier for the coupon.
+          example: "coup_123abc"
         created_at:
           type: string
-          description: DateTime of coupon creation in ISO format at GMT0
-          example: 2025-01-25T15:30:00
-          format: date-time
+          format: date-time # ISO 8601 format (UTC recommended)
+          description: Timestamp when the coupon was added to the provider's database.
+          example: "2025-01-25T15:30:00Z"
         code:
           type: string
-          description: The coupon code
+          description: The coupon code itself (e.g., "SUMMER20").
         title:
           type: string
-          description: Title of the code. Should include simple description and amount.
+          description: Short, descriptive title (e.g., "20% Off Sitewide").
         description:
           type: string
-          description: Long description of the code. Should include simple conditions.
+          description: Optional longer description including key conditions or highlights.
         discount_value:
           type: number
+          minimum: 0
+          description: The numeric value of the discount (e.g., 20 for 20%, 10 for $10 off).
         discount_type:
           $ref: '#/components/schemas/DiscountType'
-        merchant:
-          $ref: '#/components/schemas/Merchant'
+        site:
+          $ref: '#/components/schemas/Site'
         start_date:
           type: string
-          description: From when on the coupon is valid in ISO format at GMT0
-          example: 2025-01-25T15:30:00
-          format: date-time
+          format: date-time # ISO 8601 format (UTC recommended)
+          description: Optional start date/time when the coupon becomes valid.
+          example: "2025-06-01T00:00:00Z"
         end_date:
           type: string
-          description: Until when the coupons is valid in ISO format at GMT0
-          example: 2025-01-25T15:30:00
-          format: date-time
+          format: date-time # ISO 8601 format (UTC recommended)
+          description: Optional expiration date/time. Null or far future date if non-expiring.
+          example: "2025-06-30T23:59:59Z"
         terms_conditions:
           type: string
-          description: Explicit terms or conditions of usage.
+          description: Detailed terms and conditions, exclusions, etc.
         minimum_purchase_amount:
           type: number
+          minimum: 0
+          description: Minimum spend required to use the coupon.
         maximum_discount_amount:
           type: number
+          minimum: 0
+          description: Maximum savings possible with this coupon (esp. for percentages).
         up_votes:
-          type: number
-          description: |
-            Number of up-votes. For a up-vote history see `/coupons/{coupon_id}/history/votes`
+          type: integer
+          minimum: 0
+          description: Number of positive votes ('worked') received. See vote history endpoint for timestamps.
         down_votes:
-          type: number
-          description: |
-            Number of down-votes. For a down-vote history see `/coupons/{coupon_id}/history/votes`
+          type: integer
+          minimum: 0
+          description: Number of negative votes ('didn't work') received. See vote history endpoint for timestamps.
         categories:
           type: array
-          description: Categories related to the coupon, categories are general categorisation
+          description: Broad categories associated with the coupon or site (e.g., "clothing", "electronics"). Defined by provider.
           items:
             type: string
         tags:
           type: array
-          description: Tags related to the coupon, tags are specific categorisation
+          description: Specific keywords or tags associated with the coupon (e.g., "free_shipping", "student_discount", "flash_sale"). Can be more numerous/dynamic than categories.
           items:
             type: string
         regions:
           type: array
-          description: countries/regions where the coupon is valid
+          description: ISO 3166-1 alpha-2 country codes where the coupon is valid (e.g., ["US", "CA"]). Empty means global or applicability determined by site/merchant.
           items:
             type: string
         store_type:
           type: string
-          enum:
-            - online
-            - in_store
-            - both
+          enum: [ online, in_store, both ]
+          default: online
+          description: Where the coupon can be used.
         is_stackable:
           type: boolean
-          description: Can be combined with other coupons
+          default: false
+          description: Whether this coupon can typically be combined with others. Provider determined.
         score:
           type: number
-          description: Score calculated by provider (higher = better coupon)
+          description: Provider-calculated score indicating coupon quality/reliability (higher is better). May incorporate votes, recency, savings, etc. Calculation logic is provider-specific.
+          example: 0.85
         metadata:
           type: object
-          description: Custom key-value data
+          description: Optional field for provider-specific custom key-value data.
           additionalProperties: true
 
     DiscountType:
       type: string
-      description: |
-        (BOGO -> buy one get one)
+      description: The type of discount offered by the coupon.
       enum:
-        - PERCENTAGE_OFF
-        - FIXED_AMOUNT
-        - BOGO
+        - PERCENTAGE_OFF # e.g., 20% off
+        - FIXED_AMOUNT # e.g., $10 off
+        - BUY_ONE_GET_ONE_FREE # Includes variations like Buy X Get Y
         - FREE_SHIPPING
+        - OTHER # For types not covered above
 
-    Merchant:
+    Site: # Entity representing a specific domain/storefront
       type: object
       required:
         - id
         - created_at
         - updated_at
         - name
-        - domains
+        - domain
+        - merchant # Embed merchant reference
       properties:
         id:
           type: string
-          description: Unique ID of the merchant
+          description: Unique identifier for the site.
+          example: "site_456def"
         created_at:
           type: string
-          description: DateTime of coupon creation in ISO format at GMT0
-          example: 2025-01-25T15:30:00
           format: date-time
+          description: Timestamp when the site was added.
+          example: "2025-01-10T10:00:00Z"
         updated_at:
           type: string
-          description: DateTime of coupon creation in ISO format at GMT0
-          example: 2025-01-25T15:50:00
           format: date-time
+          description: Timestamp when the site was last updated.
+          example: "2025-04-10T11:30:00Z"
         name:
           type: string
-          description: Name of the merchant
-        domains:
-          type: array
-          description: Domains of this merchant. [apple.com, apple.uk, ...]
-          items:
-            type: string
-            format: uri
+          description: Display name for the site (e.g., "Example Store UK").
+        domain:
+          type: string
+          format: hostname
+          description: The primary domain associated with this site (e.g., "example.co.uk").
+        merchant: # Embed Merchant object (or a MerchantReference if preferred)
+          $ref: '#/components/schemas/Merchant'
+
+    Merchant: # Represents the overall brand/company
+      type: object
+      required:
+        - id
+        - created_at
+        - updated_at
+        - name
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the merchant.
+          example: "merch_789ghi"
+        created_at:
+          type: string
+          format: date-time
+          description: Timestamp when the merchant was added.
+          example: "2024-12-01T09:00:00Z"
+        updated_at:
+          type: string
+          format: date-time
+          description: Timestamp when the merchant was last updated.
+          example: "2025-03-15T14:20:00Z"
+        name:
+          type: string
+          description: Name of the merchant (e.g., "Example Inc.").
         logo_url:
           type: string
           format: uri
+          description: URL to the merchant's logo.
         banner_url:
           type: string
           format: uri
+          description: URL to a promotional banner image for the merchant.
 
     AutoFillConfig:
       type: object
@@ -1591,18 +1643,20 @@ components:
         - domain
         - steps
         - validator
-        - revertSelector
+        - revert_selector
       properties:
         id:
           type: string
-          description: The ID of this auto-fill
+          description: Unique identifier for this autofill configuration.
+          example: "af_amazon_us"
         domain:
           type: string
-          description: The Domain of the website
-          format: uri
-          example: amazon.com
+          format: hostname
+          description: The domain this configuration applies to.
+          example: "amazon.com"
         steps:
           type: array
+          description: Sequence of actions to apply the coupon code.
           items:
             type: object
             required:
@@ -1611,43 +1665,55 @@ components:
             properties:
               selector:
                 type: string
-                description: CSS selector for the object
+                description: CSS selector for the target element.
+                example: "#couponCodeInput"
               action:
                 type: string
-                enum:
-                  - click
-                  - type_coupon
+                enum: [ click, type_coupon ]
+                description: Action to perform (`click` button, `type_coupon` into input).
         validator:
           type: object
+          description: Selectors and rules to determine if the coupon application was successful.
           required:
-            - priceSelector
-            - successSelector
-            - failureSelector
+            - price_selector
+            - success_selector
+            - failure_selector
             - timeout
           properties:
-            priceSelector:
+            price_selector:
               type: string
-              description: CSS selector to get the price
-            priceRegex:
+              description: CSS selector for the element displaying the final price/total after potential discount.
+              example: ".checkout-total-price"
+            price_regex:
               type: string
-              description: An optional regex to cut out the price
-            successSelector:
+              description: Optional regex with a capturing group to extract the numeric price value from the `price_selector` element's text content.
+              example: "\\$([\\d,]+\\.\\d{2})"
+            success_selector:
               type: string
-              description: CSS selector to an element that is visible on success
-            failureSelector:
+              description: CSS selector for an element that appears or becomes visible only when the coupon is successfully applied (e.g., a success message, discount line item).
+              example: ".coupon-success-message"
+            failure_selector:
               type: string
-              description: CSS selector to an element that is visible on failure
+              description: CSS selector for an element that appears or becomes visible only when the coupon fails (e.g., an error message "Invalid code").
+              example: ".coupon-error-message"
             timeout:
-              type: number
-              description: Time in ms to wait before the coupon timeouts and gets marked as invalide
-        revertSelector:
+              type: integer
+              minimum: 0
+              description: Time in milliseconds to wait for `success_selector` or `failure_selector` to appear after applying the coupon before assuming failure/timeout.
+              example: 5000 # 5 seconds
+        revert_selector:
           type: string
-          description: CSS selector to an element to reset the coupon on click
+          description: CSS selector for an element (e.g., a 'remove coupon' link/button) to click to attempt to undo the coupon application. Used if validation fails or another coupon needs testing.
+          example: ".remove-coupon-button"
 
-
-
-
+# ========= Global Security =========
+# Defines which security schemes are available globally.
+# Individual operations can override this or specify which schemes they use if multiple are defined.
+# Use {} for optional security (allows anonymous access if provider configured it).
+# Use [{"bearer_auth": []}] or [{"api_key_auth": []}] if auth is strictly required.
+# Use [{"bearer_auth": []}, {"api_key_auth": []}] if EITHER bearer OR api key is required.
+# The /info endpoint should ideally always be accessible without auth.
 security:
-  - {}
-  - bearerAuth: []
-  - apiKeyAuth: []
+  - { } # Indicates security is optional by default, provider determines enforcement via /info response
+  - bearer_auth: [ ]
+  - api_key_auth: [ ]
