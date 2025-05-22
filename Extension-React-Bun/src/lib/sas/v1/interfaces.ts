@@ -1,11 +1,11 @@
-import {
+import type {
     CouponListResponse,
     ListCouponsParams,
     MerchantListResponse,
     SuccessResponse,
     VersionResponse
 } from "@/lib/sas/models.ts";
-import { CacheOptions } from "@/lib/sas/cache.ts";
+import type { CacheOptions } from "@/lib/sas/cache.ts";
 
 export interface SyrupAPIV1 {
     getVersion(): Promise<VersionResponse>;

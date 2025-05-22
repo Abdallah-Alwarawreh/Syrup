@@ -6,7 +6,7 @@ import universalLanguageDetect from "@unly/universal-language-detector";
 import langNames from "@/json/language_names.json";
 import { getSetting, setSetting } from "@/lib/settings.ts";
 
-export const languages = Object.keys(langNames);
+export const languages = Object.keys(langNames).sort((a, b) => a.localeCompare(b));
 export const languageNames: Record<string, string> = langNames;
 
 const fallbackLanguage = "en";
