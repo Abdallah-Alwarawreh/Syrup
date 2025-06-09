@@ -26,7 +26,7 @@ type MessageRequest =
     | OpenPopupRequest
     | CheckDevRequest;
 
-export const syrupApiClient = new SyrupApiClientV1(
+const syrupApiClient = new SyrupApiClientV1(
     "https://db.joinsyrup.com/api/v1/syrup"
 );
 

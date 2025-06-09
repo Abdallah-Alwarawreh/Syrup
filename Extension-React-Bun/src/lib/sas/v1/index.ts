@@ -1,4 +1,4 @@
-import {
+import type {
     ApiConfig,
     CouponListResponse,
     ErrorResponse,
@@ -7,8 +7,8 @@ import {
     SuccessResponse,
     VersionResponse
 } from "@/lib/sas/models.ts";
-import { CacheManager, CacheOptions } from "@/lib/sas/cache.ts";
-import { SyrupAPIV1 } from "@/lib/sas/v1/interfaces.ts";
+import { CacheManager, type CacheOptions } from "@/lib/sas/cache.ts";
+import { type SyrupAPIV1 } from "@/lib/sas/v1/interfaces.ts";
 
 export class SyrupApiClientV1 implements SyrupAPIV1 {
     private readonly baseUrl: string;

@@ -2,20 +2,21 @@
     "manifest_version": 3,
     "name": "Syrup (Open Beta)",
     "description": "A Honey alternative, find and apply the best coupons automatically.",
-    "version": "0.4",
+    "homepage_url": "https://joinsyrup.com",
+    "version": "1.6.0",
     "default_locale": "en",
     "permissions": ["activeTab", "storage"],
     "background": {
         "service_worker": "background/index.js",
         "scripts": ["background/index.js"]
     },
+    "icons": {
+        "32": "icons/32.png",
+        "128": "icons/128.png"
+    },
     "action": {
         "default_popup": "index.html",
-        "default_icon": {
-            "16": "icons/Syrup.png",
-            "48": "icons/Syrup.png",
-            "128": "icons/Syrup.png"
-        }
+        "default_icon": "icons/full.png"
     },
     "content_scripts": [
         {
